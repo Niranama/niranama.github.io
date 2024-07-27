@@ -1,0 +1,15 @@
+#undef DECODE_BLOCK
+#undef INPUT_BLOCK_ADD
+#undef INPUT_BLOCK_SUB
+#undef SWAP_BC
+#undef IEOR_3
+#undef IEOR_4
+#undef XOR_W
+#undef INCR_W
+#undef PERM_ELT_C
+#undef PERM_ELT_JAVA
+#undef PERM_STEP_0
+#undef PERM_STEP_1
+#undef PERM_STEP_2
+#undef STATE_ROTL
+#undef STATE_ADD

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="XpfLib - General Package Documentation">
+    <meta name="author" content="Niranama" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>Class_BaseSymTable &ndash; XpfGeneral</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">XpfGeneral </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/absint.html">Abstract Interfaces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>Class_BaseSymTable
+      <small>Module</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title=" 0.0% of total for modules and submodules.">95 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/Class - BaseSymTable.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/class - basesymtable.f90.html'>Class - BaseSymTable.f90</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Class_BaseSymTable</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+        <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#types-0"
+         aria-expanded="false" aria-controls="types-0">
+         <h4 class="card-header bg-primary text-white">Derived Types</h4>
+      </a>
+      <div id="types-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../module/class_basesymtable.html#type-basesymtable">BaseSymTable</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  </div>
+
+    </div>
+
+    <div class="col-md-9" id='text'>
+      <p><strong>PURPOSE OF THIS MODULE</strong>: <br>
+  This module contains the <em>BaseSymTable</em> type and its related routines.
+  The <em>BaseSymTable</em> type is an abstract collection type representing a
+  symbol table, which is a collection that associates a <em>value</em> with a
+  <em>key</em>.  The user can insert key-value pairs into the symbol table with
+  the expectation of later being able to search for the value associated
+  with a given key. <br>
+  The <em>BaseSymTable</em> type extends the <em>BaseCollection</em> type to define
+  additional methods for various common operations of a symbol table.  All
+  other symbol table types (unordered or ordered ones) should extend from
+  this base type.  By design, the <em>BaseSymTable</em> type is a parameterized
+  derive type where all its subtypes utilize the <em>GenStore</em> type as a
+  generic data storage of a value for a key-value pair inserted into a
+  collection.  However, the type of a storage of a key varies depending
+  on the type of the symbol table. <br></p>
+<br>          <div class="card mb-4">
+      <h3 class="card-header card-title bg-light">Uses</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href='../module/modbase_common.html'>ModBase_Common</a></li>
+                  <li class="list-inline-item"><a href='../module/class_basecollection.html'>Class_BaseCollection</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+      
+      <br>
+
+
+
+
+
+
+        <section>
+          <h2>Derived Types</h2>
+              <div class="card">
+    <div class="card-header codesum">
+      <span class="anchor" id="type-basesymtable"></span>
+      <h3>
+        type, public, extends(<a href='../type/basecollection.html'>BaseCollection</a>)&nbsp;::&nbsp;
+        <a href='../type/basesymtable.html'>BaseSymTable</a>
+        
+      </h3>
+    </div>
+    <div class="card-body">
+      <p>The <em>BaseSymTable</em> type is an abstract collection type that
+ defines an API for a symbol table, which is a collection
+ that associates a <em>value</em> with a <em>key</em>. <br>
+ The <em>BaseSymTable</em> type and its subclasses are intended to be
+ used with the <a href="../module/class_genstore.html#type-genstore">GenStore</a>
+ type, which is a generic data storage type.  The <em>GenStore</em> type
+ used to store a value of an inserted key-value pair can store
+ various data type providing that the size (in bytes) of the data
+ to be stored is known at compile time. <br>
+ As a result, the <em>BaseSymTable</em> type and all its subclasses are
+ parameterized collection types that requires a known byte size of
+ the value to be stored in a collection.  This known byte size must
+ be specified at compile time when a collection type is declared. <br>
+ The following code snippet shows various ways to declare the
+ <em>BaseSymTable</em> type and its subclasses.
+<br>
+<Pre><Code style="color:MidnightBlue;">
+  ! declare an allocatable variable of the <em>BaseSymTable</em> type
+  ! and then allocate it to one of its concrete subtypes
+  TYPE Point2D
+      REAL    :: X, Y
+  END TYPE
+  INTEGER, PARAMETER :: PointSize = SIZEOF(Point2D(0.0, 0.0)) ! byte size of Point2D
+  CLASS(BaseSymTable(:)), ALLOCATABLE :: Collection
+  ALLOCATE(HashTable(PointSize) :: Collection)    ! a hash table of key-value pairs where Point2D is the value type
+
+  ! or directly declare variables of its concrete subtypes
+  INTEGER, PARAMETER :: IntSize = C_SIZEOF(0)     ! byte size of default integer
+  INTEGER, PARAMETER :: RealSize = C_SIZEOF(0.0)  ! byte size of default real
+  TYPE(TreeTable(IntSize))    ::  IntTree         ! a tree table of key-value pairs where integer is the value type
+  TYPE(ListTable(RealSize))   ::  RealList        ! a list table of key-value pairs where real is the value type
+  </Code></Pre>
+</p>
+
+        <h4>Components</h4>
+          <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Visibility</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+<th></th><th scope="col">Initial</th>        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-valsize~6"></span>
+              integer(kind=kI4B),
+            </td>
+              <td>public,</td>
+            <td>
+              LEN
+            </td>
+            <td>::</td>
+            <td><strong>ValSize</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+<p>size of data content (value) in bytes</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+
+        <h4>Type-Bound Procedures</h4>
+        <table class="table table-striped varlist">
+          <tbody>
+              <tr>
+                <td>  procedure(CopyObj), public, deferred ::
+  <strong><a href='../type/assignable.html#boundprocedure-copyassign~2'>CopyAssign</a></strong></td>
+                <td><p><em>CopyAssign</em> is a binding name of the <em>CopyObj</em> deferred procedure. <br>
+ Use the assignment expression in place of the <em>CopyAssign</em> method
+ to make a copy of an <em>Assignable</em> object.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(CloneObj), public, deferred ::
+  <strong><a href='../type/assignable.html#boundprocedure-makeclone~2'>MakeClone</a></strong></td>
+                <td><p><em>MakeClone</em> is a binding name of the <em>CloneObj</em> deferred procedure. <br>
+ Use the <em>GetClone</em> method in place of the <em>MakeClone</em> method
+ to create and return a copy of an <em>Assignable</em> object.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(EqualObj), public, deferred ::
+  <strong><a href='../type/assignable.html#boundprocedure-isequalto~2'>IsEqualTo</a></strong></td>
+                <td><p><em>IsEqualTo</em> is a binding name of the <em>EqualObj</em> deferred procedure. <br></p></td>
+              </tr>
+              <tr>
+                <td>  procedure(FreeObj), public, deferred ::
+  <strong><a href='../type/assignable.html#boundprocedure-freememory~3'>FreeMemory</a></strong></td>
+                <td><p><em>FreeMemory</em> is a binding name of the <em>FreeObj</em> deferred procedure. <br>
+ Use the <em>MemFree</em> method in place of the <em>FreeMemory</em> method to free
+ memory the <em>Assignable</em> object if the object contains allocatable and/or
+ pointer component(s).</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(TypeName), public, deferred ::
+  <strong><a href='../type/assignable.html#boundprocedure-gettypename~2'>GetTypeName</a></strong></td>
+                <td><p><em>GetTypeName</em> is a binding name of the <em>TypeName</em> deferred procedure. <br>
+ Use the <em>GetName</em> method in place of the <em>GetTypeName</em> method to get
+ the name of the <em>concrete</em> type of an <em>Assignable</em> object (i.e. name
+ of a concrete subtype of an <em>Assignable</em> abstract type).</p></td>
+              </tr>
+              <tr>
+                <td>  generic, public ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-assignment%28%3D%29~21'>ASSIGNMENT(=)</a></strong> => <a href='../type/stringbuilder.html#boundprocedure-copyassign~3'>CopyAssign</a></td>
+                <td><p><strong>Operator Overload</strong>: ASSIGNMENT(=)  <br>
+ <strong>Purpose</strong>:  To copy a source object to a destination object. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    DstObj = SrcObj</p></td>
+              </tr>
+              <tr>
+                <td>  generic, public ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-memfree~21'>MemFree</a></strong> => <a href='../type/stringbuilder.html#boundprocedure-freememory~4'>FreeMemory</a></td>
+                <td><p><strong>Type-Bound Subroutine</strong>: MemFree <br>
+ <strong>Purpose</strong>:  To free memory of an <em>Assignable</em> object. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Obj%MemFree()</p></td>
+              </tr>
+              <tr>
+                <td>  generic, public ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-getclone~56'>GetClone</a></strong> => <a href='../type/stringbuilder.html#boundprocedure-makeclone~3'>MakeClone</a></td>
+                <td><p><strong>Type-Bound Subroutine</strong>: GetClone <br>
+ <strong>Purpose</strong>:  To create and return a copy of an <em>Assignable</em> object. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL SrcObj%GetClone(DstObj)</p></td>
+              </tr>
+              <tr>
+                <td>  generic, public ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-getname~123'>GetName</a></strong> => <a href='../type/stringbuilder.html#boundprocedure-gettypename~3'>GetTypeName</a></td>
+                <td><p><strong>Type-Bound Function</strong>: GetName <br>
+ <strong>Purpose</strong>:  To get the <em>concrete</em> type name of an <em>Assignable</em> object. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    TypeName = Obj%GetName()</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(CopyCol), public, deferred ::
+  <strong><a href='../type/basecollection.html#boundprocedure-makecopy~3'>MakeCopy</a></strong></td>
+                <td><p><em>MakeCopy</em> is a binding name of the <em>CopyCol</em> deferred procedure. <br>
+ Use the <em>Construct</em> method in place of the <em>MakeCopy</em> method
+ to construct a new collection from another collection.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(Destroy), public, deferred ::
+  <strong><a href='../type/basecollection.html#boundprocedure-destruct~8'>Destruct</a></strong></td>
+                <td><p><em>Destruct</em> is a binding name of the <em>Destroy</em> deferred procedure. <br>
+ <strong>Type-Bound Subroutine</strong>: Destruct <br>
+ <strong>Purpose</strong>:  To remove all items from the collection and free memory
+               of items stored in the collection.<br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Destruct() <br>
+ <strong>Important Note</strong>:  For some collections, this method is equivalent to
+               the <em>Clear</em> method.  For other collections (e.g. dynamic-
+               array-based), the two methods are not equivalent to one
+               another.  For these collections (which require an explicit
+               construction of the collection), after calling the <em>Destruct</em>
+               method, the user should reconstruct the collection (by calling
+               a <em>Construction</em> method again) before using other operations
+               once more.  Otherwise, the collection's behavior may not be
+               as expected.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(ColSize), public, deferred ::
+  <strong><a href='../type/basecollection.html#boundprocedure-getsize~8'>GetSize</a></strong></td>
+                <td><p><em>GetSize</em> is a binding name of the <em>ColSize</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: GetSize <br>
+ <strong>Purpose</strong>:  To get the current size of the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Size = Collection%GetSize()</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basecollection.html#boundprocedure-isempty~15'>IsEmpty</a></strong> => BaseCollection_IsEmpty</td>
+                <td><p><strong>Type-Bound Function</strong>: IsEmpty <br>
+ <strong>Purpose</strong>:  To check whether the collection is empty or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = Collection%IsEmpty() <br>
+  ---&gt;    IF (.NOT.Collection%IsEmpty()) DoSomeThing</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(Move2FirstPair), public, deferred ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-startfirst~38'>StartFirst</a></strong></td>
+                <td><p><em>StartFirst</em> is a binding name of the <em>Move2FirstPair</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: StartFirst <br>
+ <strong>Purpose</strong>:  To start an iteration and return a flag indicating whether
+               the collection is empty or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    IsEmpty = Collection%StartFirst() <br>
+  ---&gt;    IsEmpty = Collection%StartFirst(FirstKey) <br>
+  ---&gt;    IsEmpty = Collection%StartFirst(Value=FirstVal) <br>
+  ---&gt;    IsEmpty = Collection%StartFirst(FirstKey, FirstVal)</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(Move2NextPair), public, deferred ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-moveforward~39'>MoveForward</a></strong></td>
+                <td><p><em>MoveForward</em> is a binding name of the <em>Move2NextPair</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: MoveForward <br>
+ <strong>Purpose</strong>:  To move to the next key-value pair and return a flag
+               indicating whether the cursor pointer has reached the end of
+               the collection or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward() <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward(NextKey) <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward(Value=NextVal) <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward(NextKey, NextVal)</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(AddPair), public, deferred ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-insert~29'>Insert</a></strong></td>
+                <td><p><em>Insert</em> is a binding name of the <em>AddPair</em> deferred procedure. <br>
+ <strong>Type-Bound Subroutine</strong>: Insert <br>
+ <strong>Purpose</strong>:  To insert the specified key-value pair to the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Insert(Key, Value) <br></p></td>
+              </tr>
+              <tr>
+                <td>  procedure(DelPair), public, deferred ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-delete~26'>Delete</a></strong></td>
+                <td><p><em>Delete</em> is a binding name of the <em>DelPair</em> deferred procedure. <br>
+ <strong>Type-Bound Subroutine</strong>: Delete <br>
+ <strong>Purpose</strong>:  To delete the current key-value pair from the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Delete() <br>
+ <strong>Note</strong>: This method is intended to be used in conjunction with the
+ <em>StartFirst</em> and <em>MoveForward</em> methods.  Therefore, after the call to
+ one of those methods and then calling this one will result in a removal
+ of the current pair data of the iteration (i.e. the same key-value pair
+ that can be retrieved via the <em>StartFirst</em> and <em>MoveForward</em> methods).</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(DelKey), public, deferred ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-remove~33'>Remove</a></strong></td>
+                <td><p><em>Remove</em> is a binding name of the <em>DelKey</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: Remove <br>
+ <strong>Purpose</strong>:  To remove the specified key (and its associated value) from
+               the collection.  Also, return a flag indicating whether the
+               key-value pair is successfully removed or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = Collection%Remove(Key) <br>
+  ---&gt;    IF (.NOT.Collection%Remove(Key)) DoSomething</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(FindKey), public, deferred ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-contain~19'>Contain</a></strong></td>
+                <td><p><em>Contain</em> is a binding name of the <em>FindKey</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: Contain <br>
+ <strong>Purpose</strong>:  To find the specified key in the collection.  Return true if
+               the specified key is found.  Otherwise, return false. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = Collection%Contain(Key) <br>
+  ---&gt;    IF (.NOT.Collection%Contain(Key)) DoSomething</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(GetVal), public, deferred ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-getvalue~16'>GetValue</a></strong></td>
+                <td><p><em>GetValue</em> is a binding name of the <em>GetVal</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: GetValue <br>
+ <strong>Purpose</strong>:  To get a value associated with the specified key in the collection.
+               Also, return a flag indicating whether the key-value pair is
+               successfully found or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = Collection%GetValue(Key, Value) <br>
+  ---&gt;    IF (.NOT.Collection%GetValue(Key, Value)) DoSomething</p></td>
+              </tr>
+              <tr>
+                <td>  procedure(GetKey), public, deferred ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-getkeyptr~4'>GetKeyPtr</a></strong></td>
+                <td><p><em>GetKeyPtr</em> is a binding name of the <em>GetKey</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: GetKeyPtr <br>
+ <strong>Purpose</strong>:  To get a pointer to a key stored in a symbol table.
+               The pointer is intended to be used as a mold for
+               the key (i.e. provides type of the stored key).
+               Return null pointer if the table is empty. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    KeyPtr =&gt; Collection%GetKeyPtr()</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-clear~37'>Clear</a></strong> => BaseSymTable_RemoveAllPairs</td>
+                <td><p><strong>Type-Bound Subroutine</strong>: Clear <br>
+ <strong>Purpose</strong>:  To remove all key-value pairs from the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Clear()</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-symboltable_createbyarray~3'>SymbolTable_CreateByArray</a></strong></td>
+                <td><p><em>SymbolTable_CreateByArray</em> is an procedure to create the collection
+  from an array of key-value pairs. See the <em>Construct</em> method for usage.</p></td>
+              </tr>
+              <tr>
+                <td>  generic, public ::
+  <strong><a href='../type/basesymtable.html#boundprocedure-construct~56'>Construct</a></strong> => <a href='../type/treetable.html#boundprocedure-makecopy~14'>MakeCopy</a>, <a href='../type/basesymtable.html#boundprocedure-symboltable_createbyarray~3'>SymbolTable_CreateByArray</a></td>
+                <td><p><strong>Type-Bound Subroutine</strong>: Construct <br>
+ <strong>Purpose</strong>:  To construct a new collection from an array of key-value
+               pairs or from another collection. <br>
+ <strong>Usage</strong>: <br>
+          ! create a collection from an array of 25 key-value pairs <br>
+  ---&gt;    CALL Collection%Construct(25, Keys, Values) <br>
+          ! create a collection from another collection <br>
+  ---&gt;    CALL Collection%Construct(OtherCollection)</p></td>
+              </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+
+        </section>
+        <br>
+
+
+
+
+
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col"><p>XpfGeneral was developed by Niranama<br>&copy; 2024 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>

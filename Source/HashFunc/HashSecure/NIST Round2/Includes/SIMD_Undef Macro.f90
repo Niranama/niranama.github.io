@@ -1,0 +1,16 @@
+#undef REDS1
+#undef REDS2
+#undef FFT_LOOP
+#undef FFT8
+#undef FFT16
+#undef INNER
+#undef WSREAD
+#undef WBREAD
+#undef IFF
+#undef MAJ
+#undef STEP_ELT
+#undef STEP_SMALL
+#undef STEP_BIG
+#undef STEP_ELT_II
+#undef STEP_SMALL_II
+#undef STEP_BIG_II

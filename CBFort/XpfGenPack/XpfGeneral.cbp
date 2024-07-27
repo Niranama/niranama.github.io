@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="XpfGeneral" />
+		<Option platforms="Windows;" />
+		<Option pch_mode="2" />
+		<Option compiler="gfortran" />
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Windows;" />
+				<Option output="Bin/Debug/XpfGeneral.lib" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="Obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gfortran" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-cpp" />
+					<Add option="-fimplicit-none" />
+					<Add option="-ffree-line-length-none" />
+					<Add option="-fdefault-double-8" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-fwrapv" />
+					<Add option="-fno-range-check" />
+					<Add directory="../../Source" />
+					<Add directory="../../CBFort/XpfGenPack/Obj/Debug" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="../../Source/Bases/Core/Class - Assignable.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Core/Class - Comparable.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Core/Class - ErrorData.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Core/Class - Hashable.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Core/Class - KeyStore.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Core/ModBase - Common.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Core/ModBase - Conversion.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Core/ModBase - Error Handlers.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Core/ModBase - IO Handlers.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/Class - ErrorInfo.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/Class - MathExpParser.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/Class - ProgressBar.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/Class - Timer.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/ModBase - CharUtil.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/ModBase - CppStdUtil.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/ModBase - LargeTables.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/ModBase - MathUtil.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/ModBase - MiscUtil.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/ModBase - SIntUtil.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/ModBase - SlatecUtil.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/Bases/Util/ModBase - UIntUtil.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="../../Source/CharConv/ModBase - CharConv.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/CharConv/SubBase - IntFromChar.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="../../Source/CharConv/SubBase - IntToChar.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/CharConv/SubBase - RealDPConv.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/CharConv/SubBase - RealQPConv.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/CharConv/SubBase - RealSPConv.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/Collections/Intrusive/Class - IntrusiveBSTrees.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/Collections/Intrusive/Class - IntrusiveHashList.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/Collections/Intrusive/Class - IntrusiveHashTree.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Collections/Intrusive/Class - IntrusiveLinkedLists.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/Collections/Intrusive/SubClass - CommonBSTree.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Collections/Intrusive/SubClass - IntrusiveAVLTree.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Collections/Intrusive/SubClass - IntrusiveLinearList.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="../../Source/Collections/Intrusive/SubClass - IntrusiveRBTree.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Collections/Intrusive/SubClass - IntrusiveRingList.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListAnyType.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListAssignable.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListCharacter.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListCmpxDP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListCmpxQP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListCmpxSP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListInteger1B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListInteger2B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListInteger4B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListInteger8B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListLogical.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListRealDP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListRealQP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DblLnkList/Class - ListRealSP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrAssignable.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrCharacter.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrCmpxDP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrCmpxQP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrCmpxSP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrInteger1B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrInteger2B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrInteger4B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrInteger8B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrLogical.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrRealDP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrRealQP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/DynArray/Class - DArrRealSP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/HashTable/Class - HTabCharacter.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/Containers/HashTable/Class - HTabHashable.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Containers/HashTable/Class - HTabInteger1B.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/Containers/HashTable/Class - HTabInteger2B.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/Containers/HashTable/Class - HTabInteger4B.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/Containers/HashTable/Class - HTabInteger8B.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/Containers/HashTable/Class - HTabRealDP.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/Containers/HashTable/Class - HTabRealQP.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/Containers/HashTable/Class - HTabRealSP.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/Containers/ModBase - BalancedTrees.f90">
+			<Option weight="9" />
+		</Unit>
+		<Unit filename="../../Source/Containers/ModBase - DoublyLinkedLists.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Containers/ModBase - DynamicArrays.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Containers/ModBase - HashTables.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/Containers/ModBase - PriorityQueues.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Containers/PriorityQ/Class - PQBasic.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/PriorityQ/Class - PQCharacter.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/PriorityQ/Class - PQHeap.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/PriorityQ/Class - PQInteger1B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/PriorityQ/Class - PQInteger2B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/PriorityQ/Class - PQInteger4B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/PriorityQ/Class - PQInteger8B.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/PriorityQ/Class - PQRealDP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/PriorityQ/Class - PQRealQP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/PriorityQ/Class - PQRealSP.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Containers/RBTree/Class - TreeCharacter.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Containers/RBTree/Class - TreeComparable.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Containers/RBTree/Class - TreeInteger1B.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Containers/RBTree/Class - TreeInteger2B.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Containers/RBTree/Class - TreeInteger4B.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Containers/RBTree/Class - TreeInteger8B.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Containers/RBTree/Class - TreeRealDP.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Containers/RBTree/Class - TreeRealQP.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Containers/RBTree/Class - TreeRealSP.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash32/SubBase - CityNFarmHash32 - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash32/SubBase - Lookup3Hash - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash32/SubBase - Murmur3Hash32 - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash32/SubBase - NMHashV2 - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash32/SubBase - WaterHash - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash32/SubBase - XXHash32 - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - CityHash64 - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - FarmNaHash - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - FarmUoHash - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - KomiHash - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - MetroHash - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - Murmur3Hash - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - PengyHash - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - SpookyHash - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - WyHash - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - XX3Hash128 - Exp.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - XX3Hash64 - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/Hash64/SubBase - XXHash64 - Exp.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/ModBase - ExperimentalHash32.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Experimental/ModBase - ExperimentalHash64.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Bases/Class - BaseHasher.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Bases/Class - Hasher32.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Bases/Class - Hasher64.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher32/Class - HalfSip24Hasher32.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher32/Class - Murmur3Hasher32.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher32/Class - NMHasher32.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher32/Class - WaterHasher32.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher32/Class - XXHasher32.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher64/Class - FarmNaHasher64.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher64/Class - FarmUoHasher64.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher64/Class - KomiHasher64.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher64/Class - MetroHasher64.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher64/Class - Murmur3Hasher64.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher64/Class - SipHasher64.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher64/Class - SpookyHasher64.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher64/Class - WyHasher64.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher64/Class - XX3Hasher64.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Hashers/Hasher64/Class - XXHasher64.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash32/SubBase - CityNFarmHash32 - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash32/SubBase - Lookup3Hash - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash32/SubBase - Murmur3Hash32 - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash32/SubBase - NMHashV2 - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash32/SubBase - WaterHash - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash32/SubBase - XXHash32 - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash64/SubBase - CityNFarmHash64 - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash64/SubBase - KomiHash - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash64/SubBase - MetroHash - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash64/SubBase - Murmur3Hash - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash64/SubBase - PengyHash - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash64/SubBase - SpookyHash - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash64/SubBase - WyHash - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash64/SubBase - XX3Hash128 - Opt.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash64/SubBase - XX3Hash64 - Opt.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/Hash64/SubBase - XXHash64 - Opt.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/ModBase - OptimalHash32.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Optimal/ModBase - OptimalHash64.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - CityNFarmHash32 - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - CrapwowHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - FastHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - HalfSipHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - Lookup3Hash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - Murmur3Hash32 - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - NMHashV1 - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - NMHashV2 - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - SuperFastHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - WaterHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash32/SubBase - XXHash32 - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - CityNFarmHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - KomiHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - MetroHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - MirMumHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - Murmur3Hash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - Mx3Hash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - PengyHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - SipHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - SpookyHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - WyHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/Hash64/SubBase - XXHash - Ref.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/ModBase - ReferenceHash32.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Reference/ModBase - ReferenceHash64.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Simple/ModBase - SimpleHash32.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashGeneral/Simple/ModBase - SimpleHash64.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Base Classes/Class - BaseDigest.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Base Classes/Class - MDEngine.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Base Classes/Class - MDHelper.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Blake/Class - Blake1B.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Blake/Class - Blake1S.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Blake/Class - Blake2B.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Blake/Class - Blake2Core.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Blake/Class - Blake2S.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Blake/Class - Blake3.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Blake/SubClass - Blake3Compress.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Blake/SubClass - Blake3Private.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Keccak/Class - KP1600Core.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Keccak/Class - KP1600Sponge.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Keccak/Class - Kangaroo.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Keccak/Class - Keccak.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Keccak/Class - SHAKE.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/Keccak/Class - cSHAKE.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/MD/Class - MD2.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/MD/Class - MD4.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/MD/Class - MD5.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Finalists/Class - GroestlB.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Finalists/Class - GroestlS.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Finalists/Class - JHDigest.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Finalists/Class - Skein.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - BmwB.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - BmwS.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - CubeHash.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - EchoB.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - EchoS.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - Fugue.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - HamsiB.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - HamsiS.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - Luffa.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - SIMDB.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - SIMDS.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - Shabal.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - ShaviteB.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/NIST Round2/Class - ShaviteS.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/SHA/Class - SHA0.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/SHA/Class - SHA1.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/SHA/Class - SHA2B.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/SHA/Class - SHA2S.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashSecure/SHA/Class - SHA3.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashUtil/Class - ByteConverter.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashUtil/ModBase - BytePack.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/HashFunc/HashUtil/ModBase - ByteUtil.f90">
+			<Option weight="9" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt32/Class - ApInt32.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt32/SubClass - Api32 - Arithmetic.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt32/SubClass - Api32 - Auxiliary.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt32/SubClass - Api32 - Bitwise.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt32/SubClass - Api32 - Comparison.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt32/SubClass - Api32 - Conversion.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/Class - ApInt64.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/SubClass - Api64 - AddSub.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/SubClass - Api64 - Arithmetic.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/SubClass - Api64 - Assignment.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/SubClass - Api64 - Auxiliary.f90">
+			<Option weight="10" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/SubClass - Api64 - Bitwise.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/SubClass - Api64 - Comparison.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/SubClass - Api64 - Constructor.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/SubClass - Api64 - Conversion.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/SubClass - Api64 - DivMod.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Arbritary/ApInt64/SubClass - Api64 - Multiply.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/SInt128/ModBase - SInt128.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/SInt128/SubBase - I128_Arithmetic.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/SInt128/SubBase - I128_Bitwise.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/SInt128/SubBase - I128_Comparision.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/SInt128/SubBase - I128_Conversion.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/SInt128/SubBase - I128_Experimental.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/UInt128/ModBase - UInt128.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/UInt128/SubBase - U128_Arithmetic.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/UInt128/SubBase - U128_Bitwise.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/UInt128/SubBase - U128_Comparision.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/UInt128/SubBase - U128_Conversion.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/HighPrecision/Int128Bits/UInt128/SubBase - U128_Experimental.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/InputNOutput/ModBase - HTML Report.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/InputNOutput/ModBase - LTK Input.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - MemHandlers - Assignable.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - MemHandlers - Character.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - MemHandlers - Comparable.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - MemHandlers - Complex.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - MemHandlers - Hashable.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - MemHandlers - Integer.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - MemHandlers - KeyStore.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - MemHandlers - Logical.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - MemHandlers - Misc.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - MemHandlers - Real.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/MemHandlers/ModBase - Memory Handlers.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Bases/Class - BaseRNG.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Bases/Class - IntegerRNG.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Bases/Class - LongRNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Bases/Class - StreamRNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Bases/SubClass - Rng Auxiliary.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Bases/SubClass - Rng Ziggurat.f90">
+			<Option weight="6" />
+			<Option compiler="gfortran" use="0" buildCommand="\n" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - Cmwc4096RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - IsaacRNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - Jsf32RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - Kiss32RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - L32X64MRNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - L32X64RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - Lfsr113RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - Mrg32k3aRNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - Mt32RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - Mwc256RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - PcgLcg32RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - PcgMcg32RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - RanLuxRNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - Sfc32RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - SuperKiss32RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - Taus88RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - Well32RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - XoRoShiRo64RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Integer/Class - XoShiRo128RNG.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - ChaChaRNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - Jsf64RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - Kiss64RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - KomiRNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - L128X1024RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - L128X128RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - L128X256RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - L128XMRNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - L64X1024RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - L64X128RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - L64X256RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - L64XMRNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - Lfsr258RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - Mrg63k3aRNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - MswsRNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - Mt64RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - PcgRxsMXs64RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - RanLuxPpRNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - Sfc64RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - Sip24RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - SplitMixRNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - SuperKiss64RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - WyRNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - XoRoShiRo1024RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - XoRoShiRo128RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - XoShiRo256RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/Long/Class - XoShiRo512RNG.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/RandGen/ModBase - PrngBuilder.f90">
+			<Option weight="9" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/ModBase - Ranking.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/ModBase - SortAscend.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/ModBase - SortDescend.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/Ranking/SubBase - Ranking - Char.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/Ranking/SubBase - Ranking - Comparable.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/Ranking/SubBase - Ranking - I16.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/Ranking/SubBase - Ranking - I32.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/Ranking/SubBase - Ranking - I64.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/Ranking/SubBase - Ranking - I8.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/Ranking/SubBase - Ranking - R128.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/Ranking/SubBase - Ranking - R32.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/Ranking/SubBase - Ranking - R64.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortAscend/SubBase - SortAscend - Char.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortAscend/SubBase - SortAscend - Comparable.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortAscend/SubBase - SortAscend - I16.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortAscend/SubBase - SortAscend - I32.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortAscend/SubBase - SortAscend - I64.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortAscend/SubBase - SortAscend - I8.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortAscend/SubBase - SortAscend - R128.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortAscend/SubBase - SortAscend - R32.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortAscend/SubBase - SortAscend - R64.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortDescend/SubBase - SortDescend - Char.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortDescend/SubBase - SortDescend - Comparable.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortDescend/SubBase - SortDescend - I16.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortDescend/SubBase - SortDescend - I32.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortDescend/SubBase - SortDescend - I64.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortDescend/SubBase - SortDescend - I8.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortDescend/SubBase - SortDescend - R128.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortDescend/SubBase - SortDescend - R32.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/SortNRank/SortDescend/SubBase - SortDescend - R64.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Strings/ChrString/SubBase - Character.f90">
+			<Option weight="9" />
+		</Unit>
+		<Unit filename="../../Source/Strings/ChrString/SubBase - ChrStr Assignment.f90">
+			<Option weight="9" />
+		</Unit>
+		<Unit filename="../../Source/Strings/ChrString/SubBase - ChrStr Conversion.f90">
+			<Option weight="9" />
+		</Unit>
+		<Unit filename="../../Source/Strings/ChrString/SubBase - ChrStr Inquiry.f90">
+			<Option weight="9" />
+		</Unit>
+		<Unit filename="../../Source/Strings/ChrString/SubBase - ChrStr Manipulation.f90">
+			<Option weight="9" />
+		</Unit>
+		<Unit filename="../../Source/Strings/Class - Alphabets.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/Strings/Class - FvlStr.f90">
+			<Option weight="11" />
+		</Unit>
+		<Unit filename="../../Source/Strings/Class - PatternFinder.f90">
+			<Option weight="9" />
+		</Unit>
+		<Unit filename="../../Source/Strings/Class - StringBuilder.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/Strings/FvlString/SubClass - FvlStr Assignment.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/Strings/FvlString/SubClass - FvlStr Conversion.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/Strings/FvlString/SubClass - FvlStr Inquiry.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/Strings/FvlString/SubClass - FvlStr Intrinsic.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/Strings/FvlString/SubClass - FvlStr Manipulation.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/Strings/FvlString/SubClass - FvlStr Miscellaneous.f90">
+			<Option weight="12" />
+		</Unit>
+		<Unit filename="../../Source/Strings/ModBase - ChrStr.f90">
+			<Option weight="8" />
+		</Unit>
+		<Unit filename="../../Source/Strings/ModBase - StringSorts.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/Strings/Tries_GFortran/Class - AlphabetTrie.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/Strings/Tries_GFortran/Class - MultiwayTrie.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/Strings/Tries_GFortran/Class - TernaryTrie.f90">
+			<Option weight="13" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Burkardt/ModLib - CDFLIB.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Burkardt/ModLib - CHRPAK.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Burkardt/ModLib - CSV Files.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Burkardt/ModLib - FILUM.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Burkardt/ModLib - PDFLIB.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Burkardt/ModLib - POLPAK.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Burkardt/ModLib - Probability.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Burkardt/ModLib - RANLIB.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Burkardt/ModLib - SpecFunc.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Miscellaneous/ModLib - Adjac.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Miscellaneous/ModLib - AdjacTapeless.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Miscellaneous/ModLib - BigInteger.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Miscellaneous/ModLib - EPlusInput.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Miscellaneous/ModLib - Evaluate.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Miscellaneous/ModLib - FParser.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Miscellaneous/ModLib - PrimeConstants1.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Miscellaneous/ModLib - PrimeConstants2.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Miscellaneous/ModLib - PrimeNumbers.f90">
+			<Option weight="5" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Miscellaneous/ModLib - Random.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/ModTest - Diehard.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - 3DSphere.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - BinaryRank3132.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - BinaryRank6x8.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - Birthday.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - BitStream.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - CountThe1s_SpecificBytes.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - CountThe1s_Stream.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - Craps.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - MinDistance.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - OPSO_OQSO_DNA.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - OPerm5.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - OverlapSum.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - ParkingLot.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - Runs.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/Diehard/SubTest - Squeeze.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/ProbDist/ModBase - MyLib.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="../../Source/Tools/ProbDist/ModBase - ProbDist.f90">
+			<Option weight="6" />
+		</Unit>
+		<Unit filename="../../Source/Tools/ProbDist/SubBase - FBar.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/ProbDist/SubBase - FDist.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/ProbDist/SubBase - FInv.f90">
+			<Option weight="7" />
+		</Unit>
+		<Unit filename="../../Source/Tools/ProbDist/SubBase - FMass.f90">
+			<Option weight="7" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

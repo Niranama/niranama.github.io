@@ -1,0 +1,3624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="XpfLib - General Package Documentation">
+    <meta name="author" content="Niranama" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>ModBase_CharConv &ndash; XpfGeneral</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">XpfGeneral </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/absint.html">Abstract Interfaces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>ModBase_CharConv
+      <small>Module</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title=" 0.1% of total for modules and submodules.">276 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/ModBase - CharConv.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/modbase - charconv.f90.html'>ModBase - CharConv.f90</a></li>
+            <li class="breadcrumb-item active" aria-current="page">ModBase_CharConv</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+        <div id="sidebar">
+      <h3>Contents</h3>
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#vars-0"
+         aria-expanded="false" aria-controls="vars-0">
+         <h4 class="card-header bg-primary text-white">Variables</h4>
+      </a>
+      <div id="vars-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../module/modbase_charconv.html#variable-fortnum">FortNum</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#variable-fplusnum">FPlusNum</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#variable-jsonnum">JsonNum</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#inters-0"
+         aria-expanded="false" aria-controls="inters-0">
+         <h4 class="card-header bg-primary text-white">Interfaces</h4>
+      </a>
+      <div id="inters-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realsp_tostring_dragonbox">RealSP_ToString_DragonBox</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realsp_tostring_ryu">RealSP_ToString_Ryu</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realsp_tostring_schubfach">RealSP_ToString_Schubfach</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realsp_fromstring_fastfloat">RealSP_FromString_FastFloat</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realsp_fromstring_libc">RealSP_FromString_LibC</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realsp_fromstring_yy">RealSP_FromString_YY</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realsp_fromstring_lemire">RealSP_FromString_Lemire</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realdp_tostring_dragonbox">RealDP_ToString_DragonBox</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realdp_tostring_ryu">RealDP_ToString_Ryu</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realdp_tostring_schubfach">RealDP_ToString_Schubfach</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realdp_fromstring_fastfloat">RealDP_FromString_FastFloat</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realdp_fromstring_libc">RealDP_FromString_LibC</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realdp_fromstring_yy">RealDP_FromString_YY</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realdp_fromstring_lemire">RealDP_FromString_Lemire</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realqp_tostring_dragonbox">RealQP_ToString_DragonBox</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realqp_tostring_ryu">RealQP_ToString_Ryu</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realqp_tostring_schubfach">RealQP_ToString_Schubfach</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realqp_fromstring_fastfloat">RealQP_FromString_FastFloat</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realqp_fromstring_libc">RealQP_FromString_LibC</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realqp_fromstring_yy">RealQP_FromString_YY</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-realqp_fromstring_lemire">RealQP_FromString_Lemire</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i32_tochar_basic">I32_ToChar_Basic</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i32_tochar_cc">I32_ToChar_CC</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i32_tochar_yy">I32_ToChar_YY</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i32_tochar_yyll">I32_ToChar_YYLL</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i32_tochar_jea">I32_ToChar_JEA</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i64_tochar_basic">I64_ToChar_Basic</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i64_tochar_cc">I64_ToChar_CC</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i64_tochar_yy">I64_ToChar_YY</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i64_tochar_yyll">I64_ToChar_YYLL</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i64_tochar_jea">I64_ToChar_JEA</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i32_fromchar_cc_fortnum">I32_FromChar_CC_FortNum</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i32_fromchar_cc_fortplus">I32_FromChar_CC_FortPlus</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i32_fromchar_cc_jsonnum">I32_FromChar_CC_JsonNum</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i32_fromchar_lemire_fortplus">I32_FromChar_Lemire_FortPlus</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i32_fromchar_yy_jsonnum">I32_FromChar_YY_JsonNum</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i64_fromchar_cc_fortnum">I64_FromChar_CC_FortNum</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i64_fromchar_cc_fortplus">I64_FromChar_CC_FortPlus</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i64_fromchar_cc_jsonnum">I64_FromChar_CC_JsonNum</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i64_fromchar_lemire_fortplus">I64_FromChar_Lemire_FortPlus</a>
+            <a class="list-group-item" href="../module/modbase_charconv.html#interface-i64_fromchar_yy_jsonnum">I64_FromChar_YY_JsonNum</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  </div>
+
+    </div>
+
+    <div class="col-md-9" id='text'>
+      <p><strong>PURPOSE OF THIS MODULE</strong>: <br>
+  This module contains routines that perform a conversion between a number
+  and a (decimal) string.  The routines may be categorized into 4 groups: <br>
+  - real-number-to-string conversion routines, <br>
+  - real-number-from-string conversion routines, <br>
+  - integer-number-to-string conversion routines, and <br>
+  - integer-number-from-string conversion routines. <br>
+  For real numbers, routines for all three common precisions (including
+  single-precision, double-precision and quadruple-precision) are provided.
+  For integer numbers, routines for only 32-bit and 64-bit integers are provided. <br>
+  See technical information regarding the integer-number-from-string conversion routines
+  in the <a href="../module/subbase_intfromchar.html">SubBase_IntFromChar</a> submodule. <br>
+  Also, see technical information regarding the conversion routines for real numbers in
+  the <a href="../module/subbase_realdpconv.html">SubBase_RealDPConv</a> submodule.</p>
+<br>          <div class="card mb-4">
+      <h3 class="card-header card-title bg-light">Uses</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href='../module/modbase_common.html'>ModBase_Common</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+          <div class="card">
+      <h3 class="card-header card-title bg-light">Used by</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-inline">
+                <li class="list-inline-item"><h5>Descendants:</h5></li>
+                  <li class="list-inline-item"><a href='../module/subbase_intfromchar.html'>SubBase_IntFromChar</a></li>
+                  <li class="list-inline-item"><a href='../module/subbase_inttochar.html'>SubBase_IntToChar</a></li>
+                  <li class="list-inline-item"><a href='../module/subbase_realdpconv.html'>SubBase_RealDPConv</a></li>
+                  <li class="list-inline-item"><a href='../module/subbase_realqpconv.html'>SubBase_RealQPConv</a></li>
+                  <li class="list-inline-item"><a href='../module/subbase_realspconv.html'>SubBase_RealSPConv</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+      <br>
+
+
+        <section>
+          <h2>Variables</h2>
+            <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Visibility</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+<th></th><th scope="col">Initial</th>        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-fortnum"></span>
+              integer(kind=kI4B),
+            </td>
+              <td>public,</td>
+            <td>
+parameter               
+            </td>
+            <td>::</td>
+            <td><strong>FortNum</strong></td>
+<td> =</td>
+                <td>1</td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-fplusnum"></span>
+              integer(kind=kI4B),
+            </td>
+              <td>public,</td>
+            <td>
+parameter               
+            </td>
+            <td>::</td>
+            <td><strong>FPlusNum</strong></td>
+<td> =</td>
+                <td>2</td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-jsonnum"></span>
+              integer(kind=kI4B),
+            </td>
+              <td>public,</td>
+            <td>
+parameter               
+            </td>
+            <td>::</td>
+            <td><strong>JsonNum</strong></td>
+<td> =</td>
+                <td>3</td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+        </section>
+        <br>
+
+
+        <section>
+          <h2>Interfaces</h2>
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realsp_tostring_dragonbox"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealSP_ToString_DragonBox(Number, IsScientific) result(cStr)  
+
+    </h3>
+  <p>To convert a single-precision floating-point value to a character
+ (decimal) string using the DragonBox algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~5"></span>
+              real(kind=kSP),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-isscientific~13"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsScientific</strong></td>
+            <td>
+                <p>format flag <br>
+- true  if to write the given number in scientific format. <br>
+- false if to write the given number in general format. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realsp_tostring_ryu"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealSP_ToString_Ryu(Number, IsScientific) result(cStr)  
+
+    </h3>
+  <p>To convert a single-precision floating-point value to a character
+ (decimal) string using the Ryu algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~6"></span>
+              real(kind=kSP),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-isscientific~14"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsScientific</strong></td>
+            <td>
+                <p>format flag <br>
+- true  if to write the given number in scientific format. <br>
+- false if to write the given number in general format. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realsp_tostring_schubfach"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealSP_ToString_Schubfach(Number, IsScientific) result(cStr)  
+
+    </h3>
+  <p>To convert a single-precision floating-point value to a character
+ (decimal) string using the Schubfach algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~7"></span>
+              real(kind=kSP),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-isscientific~15"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsScientific</strong></td>
+            <td>
+                <p>format flag <br>
+- true  if to write the given number in scientific format. <br>
+- false if to write the given number in general format. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realsp_fromstring_fastfloat"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealSP_FromString_FastFloat(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a single-precision
+ floating-point value using the FastFloat algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~61"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~24"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~24"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kSP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realsp_fromstring_libc"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealSP_FromString_LibC(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a single-precision
+ floating-point value using the LibC algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~62"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~2"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~25"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~25"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kSP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realsp_fromstring_yy"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealSP_FromString_YY(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a single-precision
+ floating-point value using the YY algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~63"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~3"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~26"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~26"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kSP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realsp_fromstring_lemire"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealSP_FromString_Lemire(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a single-precision
+ floating-point value using the Lemire algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~64"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~4"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~27"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~27"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kSP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realdp_tostring_dragonbox"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealDP_ToString_DragonBox(Number, IsScientific) result(cStr)  
+
+    </h3>
+  <p>To convert a double-precision floating-point value to a character
+ (decimal) string using the DragonBox algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~12"></span>
+              real(kind=kDP),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-isscientific~16"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsScientific</strong></td>
+            <td>
+                <p>format flag <br>
+- true  if to write the given number in scientific format. <br>
+- false if to write the given number in general format. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realdp_tostring_ryu"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealDP_ToString_Ryu(Number, IsScientific) result(cStr)  
+
+    </h3>
+  <p>To convert a double-precision floating-point value to a character
+ (decimal) string using the Ryu algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~13"></span>
+              real(kind=kDP),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-isscientific~17"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsScientific</strong></td>
+            <td>
+                <p>format flag <br>
+- true  if to write the given number in scientific format. <br>
+- false if to write the given number in general format. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realdp_tostring_schubfach"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealDP_ToString_Schubfach(Number, IsScientific) result(cStr)  
+
+    </h3>
+  <p>To convert a double-precision floating-point value to a character
+ (decimal) string using the Schubfach algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~14"></span>
+              real(kind=kDP),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-isscientific~18"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsScientific</strong></td>
+            <td>
+                <p>format flag <br>
+- true  if to write the given number in scientific format. <br>
+- false if to write the given number in general format. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realdp_fromstring_fastfloat"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealDP_FromString_FastFloat(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a double-precision
+ floating-point value using the FastFloat algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~68"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~5"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~28"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~28"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kDP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realdp_fromstring_libc"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealDP_FromString_LibC(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a double-precision
+ floating-point value using the LibC algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~69"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~6"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~29"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~29"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kDP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realdp_fromstring_yy"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealDP_FromString_YY(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a double-precision
+ floating-point value using the YY algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~70"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~7"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~30"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~30"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kDP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realdp_fromstring_lemire"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealDP_FromString_Lemire(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a double-precision
+ floating-point value using the Lemire algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~71"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~8"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~31"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~31"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kDP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realqp_tostring_dragonbox"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealQP_ToString_DragonBox(Number, IsScientific) result(cStr)  
+
+    </h3>
+  <p>To convert a quadruple-precision floating-point value to a character
+ (decimal) string using the DragonBox algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~19"></span>
+              real(kind=kQP),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-isscientific~19"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsScientific</strong></td>
+            <td>
+                <p>format flag <br>
+- true  if to write the given number in scientific format. <br>
+- false if to write the given number in general format. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realqp_tostring_ryu"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealQP_ToString_Ryu(Number, IsScientific) result(cStr)  
+
+    </h3>
+  <p>To convert a quadruple-precision floating-point value to a character
+ (decimal) string using the Ryu algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~20"></span>
+              real(kind=kQP),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-isscientific~20"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsScientific</strong></td>
+            <td>
+                <p>format flag <br>
+- true  if to write the given number in scientific format. <br>
+- false if to write the given number in general format. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realqp_tostring_schubfach"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealQP_ToString_Schubfach(Number, IsScientific) result(cStr)  
+
+    </h3>
+  <p>To convert a quadruple-precision floating-point value to a character
+ (decimal) string using the Schubfach algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~21"></span>
+              real(kind=kQP),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-isscientific~21"></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsScientific</strong></td>
+            <td>
+                <p>format flag <br>
+- true  if to write the given number in scientific format. <br>
+- false if to write the given number in general format. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realqp_fromstring_fastfloat"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealQP_FromString_FastFloat(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a quadruple-precision
+ floating-point value using the FastFloat algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~75"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~9"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~32"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~32"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kQP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realqp_fromstring_libc"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealQP_FromString_LibC(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a quadruple-precision
+ floating-point value using the LibC algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~76"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~10"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~33"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~33"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kQP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realqp_fromstring_yy"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealQP_FromString_YY(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a quadruple-precision
+ floating-point value using the YY algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~77"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~11"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~34"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~34"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kQP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-realqp_fromstring_lemire"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function RealQP_FromString_Lemire(cStr, ParseOpt, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a character (decimal) string to a quadruple-precision
+ floating-point value using the Lemire algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~78"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parseopt~12"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ParseOpt</strong></td>
+            <td>
+                <p>flag indicating how to interpret the input string <br>
+  - <em>FortNum</em> (or 1): interpreted as a strict Fortran number, <br>
+  - <em>FPlusNum</em> (or 2): interpreted as a relaxed Fortran number, or <br>
+  - <em>JsonNum</em> (or 3): interpreted as a JSON number.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~35"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~35"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>error message</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>real(kind=kQP)</small>
+    </h4>
+    <p>floating-point number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i32_tochar_basic"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I32_ToChar_Basic(Number) result(cStr)  
+
+    </h3>
+  <p>To convert a 32-bit integer number to a character (decimal)
+ string using the basic algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~26"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i32_tochar_cc"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I32_ToChar_CC(Number) result(cStr)  
+
+    </h3>
+  <p>To convert a 32-bit integer number to a character (decimal)
+ string using the CC algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~27"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i32_tochar_yy"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I32_ToChar_YY(Number) result(cStr)  
+
+    </h3>
+  <p>To convert a 32-bit integer number to a character (decimal)
+ string using the YY algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~28"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i32_tochar_yyll"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I32_ToChar_YYLL(Number) result(cStr)  
+
+    </h3>
+  <p>To convert a 32-bit integer number to a character (decimal)
+ string using the YY algorithm with large tables.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~29"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i32_tochar_jea"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I32_ToChar_JEA(Number) result(cStr)  
+
+    </h3>
+  <p>To convert a 32-bit integer number to a character (decimal)
+ string using the JEA algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~30"></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i64_tochar_basic"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I64_ToChar_Basic(Number) result(cStr)  
+
+    </h3>
+  <p>To convert a 64-bit integer number to a character (decimal)
+ string using the basic algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~31"></span>
+              integer(kind=kI8B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i64_tochar_cc"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I64_ToChar_CC(Number) result(cStr)  
+
+    </h3>
+  <p>To convert a 64-bit integer number to a character (decimal)
+ string using the CC algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~32"></span>
+              integer(kind=kI8B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i64_tochar_yy"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I64_ToChar_YY(Number) result(cStr)  
+
+    </h3>
+  <p>To convert a 64-bit integer number to a character (decimal)
+ string using the YY algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~33"></span>
+              integer(kind=kI8B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i64_tochar_yyll"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I64_ToChar_YYLL(Number) result(cStr)  
+
+    </h3>
+  <p>To convert a 64-bit integer number to a character (decimal)
+ string using the YY algorithm with large tables.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~34"></span>
+              integer(kind=kI8B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i64_tochar_jea"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I64_ToChar_JEA(Number) result(cStr)  
+
+    </h3>
+  <p>To convert a 64-bit integer number to a character (decimal)
+ string using the JEA algorithm.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-number~35"></span>
+              integer(kind=kI8B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Number</strong></td>
+            <td>
+                <p>number</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>character string</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i32_fromchar_cc_fortnum"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I32_FromChar_CC_FortNum(cStr, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a decimal string to a 32-bit integer value using the
+ CC algorithm where the string is interpreted as a Fortran number.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~89"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~36"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if input is not invalid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~36"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if input is not invalid</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI4B)</small>
+    </h4>
+    <p>number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i32_fromchar_cc_fortplus"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I32_FromChar_CC_FortPlus(cStr, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a decimal string to a 32-bit integer value using the
+ CC algorithm where the string is interpreted as a FPlus number.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~90"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~37"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if input is not invalid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~37"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if input is not invalid</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI4B)</small>
+    </h4>
+    <p>number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i32_fromchar_cc_jsonnum"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I32_FromChar_CC_JsonNum(cStr, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a decimal string to a 32-bit integer value using the
+ CC algorithm where the string is interpreted as a JSON number.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~91"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~38"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if input is not invalid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~38"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if input is not invalid</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI4B)</small>
+    </h4>
+    <p>number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i32_fromchar_lemire_fortplus"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I32_FromChar_Lemire_FortPlus(cStr, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a decimal string to a 32-bit integer value using the
+ Lemire algorithm where the string is interpreted as a FPlus number.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~92"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~39"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if input is not invalid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~39"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if input is not invalid</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI4B)</small>
+    </h4>
+    <p>number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i32_fromchar_yy_jsonnum"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I32_FromChar_YY_JsonNum(cStr, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a decimal string to a 32-bit integer value using the
+ YY algorithm where the string is interpreted as a JSON number.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~93"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~40"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if input is not invalid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~40"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if input is not invalid</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI4B)</small>
+    </h4>
+    <p>number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i64_fromchar_cc_fortnum"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I64_FromChar_CC_FortNum(cStr, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a decimal string to a 64-bit integer value using the
+ CC algorithm where the string is interpreted as a Fortran number.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~94"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~41"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if input is not invalid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~41"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if input is not invalid</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI8B)</small>
+    </h4>
+    <p>number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i64_fromchar_cc_fortplus"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I64_FromChar_CC_FortPlus(cStr, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a decimal string to a 64-bit integer value using the
+ CC algorithm where the string is interpreted as a FPlus number.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~95"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~42"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if input is not invalid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~42"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if input is not invalid</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI8B)</small>
+    </h4>
+    <p>number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i64_fromchar_cc_jsonnum"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I64_FromChar_CC_JsonNum(cStr, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a decimal string to a 64-bit integer value using the
+ CC algorithm where the string is interpreted as a JSON number.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~96"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~43"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if input is not invalid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~43"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if input is not invalid</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI8B)</small>
+    </h4>
+    <p>number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i64_fromchar_lemire_fortplus"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I64_FromChar_Lemire_FortPlus(cStr, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a decimal string to a 64-bit integer value using the
+ Lemire algorithm where the string is interpreted as a FPlus number.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~97"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~44"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if input is not invalid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~44"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if input is not invalid</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI8B)</small>
+    </h4>
+    <p>number</p>
+
+        </li>
+    </ul>
+  </div>
+
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-i64_fromchar_yy_jsonnum"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function I64_FromChar_YY_JsonNum(cStr, ErrFlag, ErrMsg) result(Number)  
+
+    </h3>
+  <p>To convert a decimal string to a 64-bit integer value using the
+ YY algorithm where the string is interpreted as a JSON number.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-cstr~98"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>cStr</strong></td>
+            <td>
+                <p>character string</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errflag~45"></span>
+              logical,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ErrFlag</strong></td>
+            <td>
+                <p>true if input is not invalid</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-errmsg~45"></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if input is not invalid</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI8B)</small>
+    </h4>
+    <p>number</p>
+
+        </li>
+    </ul>
+  </div>
+
+        </section>
+        <br>
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col"><p>XpfGeneral was developed by Niranama<br>&copy; 2024 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>

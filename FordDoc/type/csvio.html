@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="XpfLib - General Package Documentation">
+    <meta name="author" content="Niranama" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>CSVIO &ndash; XpfGeneral </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">XpfGeneral </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/absint.html">Abstract Interfaces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>CSVIO
+      <small>Derived Type</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title="<p> 0.6% of total for derived types.</p>Including implementation: 435 statements,  0.5% of total for derived types.">33 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/Class - CSVIO.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/class - csvio.f90.html'>Class - CSVIO.f90</a></li>
+                <li class="breadcrumb-item"><a href='../module/class_csvio.html'>Class_CSVIO</a></li>
+            <li class="breadcrumb-item active" aria-current="page">CSVIO</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+      <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#fins-0"
+         aria-expanded="false" aria-controls="fins-0">
+         <h4 class="card-header bg-primary text-white">Finalization Procedures</h4>
+      </a>
+      <div id="fins-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/csvio.html#finalproc-finalizecsvfile">FinalizeCSVFile</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#boundprocs-0"
+         aria-expanded="false" aria-controls="boundprocs-0">
+         <h4 class="card-header bg-primary text-white">Type-Bound Procedures</h4>
+      </a>
+      <div id="boundprocs-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-initialize~60">Initialize</a>
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-reset~35">Reset</a>
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-addfield">AddField</a>
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-addrecord">AddRecord</a>
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-addfields">AddFields</a>
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-writeoutput~2">WriteOutput</a>
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-readinput~2">ReadInput</a>
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-getfield">GetField</a>
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-getrowfields">GetRowFields</a>
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-getcolfields">GetColFields</a>
+            <a class="list-group-item" href="../type/csvio.html#boundprocedure-gettablefields">GetTableFields</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+    <div class="card card-primary">
+      <div class="card-header text-left"><h3 class="card-title">Source Code</h3></div>
+      <div class="list-group">
+        <a class="list-group-item" href="../type/csvio.html#src">CSVIO</a>
+      </div>
+    </div>
+
+
+  </div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+      <h2>type, public :: CSVIO</h2>
+    <p>The <em>CSVIO</em> type is an IO (input/output) type that can be used to handle
+ reading from and writing to CSV (comma-separated values) files.</p>
+    <br>
+
+    
+
+      <section>
+        <h2>Finalization Procedures</h2>
+            <div class="card">
+    <div class="card-header codesum">
+      <span class="anchor" id="finalproc-finalizecsvfile"></span>
+      <h3>final :: <strong>FinalizeCSVFile</strong> </h3>
+    </div>
+    <div class="card-body">
+      
+      
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item">
+            <h3>
+    private  subroutine FinalizeCSVFile(CSVObj)  
+
+    </h3>
+  <p>To finalize the CSVIO object</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-csvobj~15"></span>
+              type(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+      </li>
+    </ul>
+  </div>
+
+      </section>
+      <br>
+
+      <section>
+        <h2>Type-Bound Procedures</h2>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-initialize~60"></span>
+      <h3>
+          procedure, public ::
+  <strong>Initialize</strong> => InitializeCSVFile
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Subroutine Interface</strong>: Initialize <br>
+ <strong>Purpose</strong>:  To initialize the CSVIO object.  Optionally, a user can specify
+      a quote character and/or a separator character to be used in place of
+      the default characters. <br>
+ <strong>Usage</strong>: <br>
+  ! use default quote (") and separator (,) characters <br>
+  ---&gt;    CALL CSVObj%Initialize() <br>
+  ! specify different quote (') character <br>
+  ---&gt;    CALL CSVObj%Initialize(Quote="'") <br>
+  ! specify different separator (;) character <br>
+  ---&gt;    CALL CSVObj%Initialize(Separator=';') <br>
+  ! specify different quote (') and separator (|) characters <br>
+  ---&gt;    CALL CSVObj%Initialize(Quote="'", Separator='|') <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine InitializeCSVFile(CSVObj, Quote, Separator)  
+</h3>
+
+  <p>To initialize the CSVIO object.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=1),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Quote</strong></td>
+            <td>
+                <p>a character used to enclose a string for a string field; default is a double quotation mark (").</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=1),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Separator</strong></td>
+            <td>
+                <p>a character used to separate a field; default is a comma (,).</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-reset~35"></span>
+      <h3>
+          procedure, public ::
+  <strong>Reset</strong> => ResetCSVFile
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Subroutine Interface</strong>: Reset <br>
+ <strong>Purpose</strong>:  To reset the CSVIO object to its initial state where all stored
+      values/records are deallocated and/or destroyed. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL CSVObj%Reset() <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine ResetCSVFile(CSVObj)  
+</h3>
+
+  <p>To reset the CSVIO object.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-addfield"></span>
+      <h3>
+          procedure, public ::
+  <strong>AddField</strong> => AddFieldValue
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Subroutine Interface</strong>: AddField <br>
+ <strong>Purpose</strong>:  To add a field value to the current record.  Currently, the method
+      internally supports only Fortran intrinsic types and the <em>FvlStr</em>  type as
+      a type of the field value.  However, a user can specify a procedure to convert
+      the field value to a Fortran character string if the type of the field is
+      different from those supported. <br>
+ <strong>Usage</strong>: <br>
+  ! type of FieldVal is supported internally <br>
+  ---&gt;    CALL CSVObj%AddField(FieldVal) <br>
+  ! type of FieldVal is NOT supported internally <br>
+  ---&gt;    CALL CSVObj%AddField(FieldVal, ToStrProc) <br>
+ <strong>Note</strong>: After calling the <em>AddField</em> method multiple times, a user may want to add a
+      field value to a new record (i.e. a record next to the current one).  In this
+      case, the user must call the <em>AddRecord</em> method explicitly before calling the
+      <em>AddField</em> method to add the field value to the next record. <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine AddFieldValue(CSVObj, FieldVal, ToStr)  
+</h3>
+
+  <p>To add a field value to the current record.  Currently, the routine internally supports
+ only Fortran intrinsic types and the <em>FvlStr</em>  type as a type of the field value.
+ However, a user can supply a user-written procedure to convert the field value to a
+ Fortran character string if the type of the field is different from those supported.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>FieldVal</strong></td>
+            <td>
+                <p>field value</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              procedure(<a href='../interface/val2str.html'>Val2Str</a>),
+            </td>
+<td></td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ToStr</strong></td>
+            <td>
+                <p>procedure to convert field value to string</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-addrecord"></span>
+      <h3>
+          procedure, public ::
+  <strong>AddRecord</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Subroutine Interface</strong>: AddRecord <br>
+ <strong>Purpose</strong>:  To add the current record to the record queue and update components of
+      the CSVIO object as necessary.  See note for the <em>AddField</em> method. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL CSVObj%AddRecord() <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine AddRecord(CSVObj)  
+</h3>
+
+  <p>To add the current record to the record queue and
+ update CSVObj components as necessary.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-addfields"></span>
+      <h3>
+          generic, public ::
+  <strong>AddFields</strong> => AddFieldValues1D, AddFieldValues2D
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Subroutine Interface</strong>: AddFields <br>
+ <strong>Purpose</strong>:  To add a row or a table of field values to the record queue.  If the type
+      of the specified field values is not one of Fortran intrinsic types or the <em>FvlStr</em>
+      type, a user must specify the <em>ToStr</em> procedure argument in order to convert the
+      field values to Fortran character strings. <br>
+ <strong>Usage</strong>: <br>
+  ! type of FieldVals is supported internally <br>
+  ---&gt;    CALL CSVObj%AddFields(FieldVals) <br>
+  ! type of FieldVals is NOT supported internally <br>
+  ---&gt;    CALL CSVObj%AddFields(FieldVals, ToStrProc) <br>
+ <strong>Note</strong>: Unlike the <em>AddField</em> method, the <em>AddFields</em> method calls the <em>AddRecord</em>
+      method internally so the user does not need to. <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine AddFieldValues1D(CSVObj, FieldVal, ToStr)  
+</h3>
+
+  <p>To add field values to the current record and then add the record to the record queue.
+ If the type of field values is not one of Fortran intrinsic types or the <em>FvlStr</em> type,
+ a user must specify the <em>ToStr</em> procedure argument in order to convert the field values
+ to Fortran character strings.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>FieldVal</strong>(:)</td>
+            <td>
+                <p>field values</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              procedure(<a href='../interface/val2str.html'>Val2Str</a>),
+            </td>
+<td></td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ToStr</strong></td>
+            <td>
+                <p>procedure to convert field value to string</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine AddFieldValues2D(CSVObj, FieldVal, ToStr)  
+</h3>
+
+  <p>To add a table of field values to the record queue.  If the type of field values is not
+ one of Fortran intrinsic types or the <em>FvlStr</em> type, a user must specify the <em>ToStr</em>
+ procedure argument in order to convert the field values to Fortran character strings.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>FieldVal</strong>(:,:)</td>
+            <td>
+                <p>field values</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              procedure(<a href='../interface/val2str.html'>Val2Str</a>),
+            </td>
+<td></td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ToStr</strong></td>
+            <td>
+                <p>procedure to convert field value to string</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-writeoutput~2"></span>
+      <h3>
+          procedure, public ::
+  <strong>WriteOutput</strong> => WriteCSVOutput
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Subroutine Interface</strong>: WriteOutput <br>
+ <strong>Purpose</strong>:  To open the output file and write all records stored in the CSVIO
+      object to it. <br>
+ <strong>Usage</strong>: <br>
+  ! append records to an existing file <br>
+  ---&gt;    CALL CSVObj%WriteOutput(FileName) <br>
+  ! write records to a new file <br>
+  ---&gt;    CALL CSVObj%WriteOutput(FileName, NewFile=.TRUE.) <br>
+ <strong>Note</strong>: This method should only be called after the <em>AddField</em> and/or <em>AddFields</em>
+      method(s) has/have already been called. <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine WriteCSVOutput(CSVObj, FileName, NewFile)  
+</h3>
+
+  <p>To open the output file and write all stored records to it.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>FileName</strong></td>
+            <td>
+                <p>output file name</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>NewFile</strong></td>
+            <td>
+                <p>flag indicating whether to open a new file or not. <br>
+ - True if requesting to open a specified file name as a new CSV file.
+   If there is an existing file with the same name, that existing file
+   will then be deleted upon opening the file. <br>
+ - False if requesting to open a specified file name as an existing CSV file.
+   When a new data field is added, it will be appended to the existing data
+   starting with a new record (row). <br>
+ Default value is false. <br></p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-readinput~2"></span>
+      <h3>
+          procedure, public ::
+  <strong>ReadInput</strong> => ReadCSVInput
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Subroutine Interface</strong>: ReadCSVInput <br>
+ <strong>Purpose</strong>:  To open the input file and read records from it.  The routine also
+      perform a tokenization of the records and store the tokens in its field value
+      component, which will be readily available to be retrieved by a user. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL CSVObj%ReadCSVInput(FileName) <br>
+ <strong>Note</strong>: This method should be called before one of the <em>GetField</em> methods is called. <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine ReadCSVInput(CSVObj, FileName)  
+</h3>
+
+  <p>To open the input file and read records from it.  The routine also tokenizes
+ the records and store the tokens in its field value component, which will be
+ readily available to be retrieved by a user.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>FileName</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getfield"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetField</strong> => GetFieldValue
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Function Interface</strong>: GetField <br>
+ <strong>Purpose</strong>:  To retrieve a field value from the stored field values according to the
+      specified row and column and return a logical flag indicating whether there is an
+      error occurred when converting from a stored field value to the user-specified
+      field value. <br>
+      Currently, the routine internally supports only Fortran intrinsic types and the
+      <em>FvlStr</em> type as a valid type of the user-specified field value.  However, a user
+      can supply a user-written procedure to convert the field value to a Fortran character
+      string if the type of the field is different from those supported. <br>
+ <strong>Usage</strong>: <br>
+  ! type of FieldVal is supported internally <br>
+  ---&gt;    ErrFlag = CSVObj%GetField(iRow, jCol, FieldVal) <br>
+  ---&gt;    ErrFlag = CSVObj%GetField(iRow, jCol, FieldVal, ErrMsg) <br>
+  ! type of FieldVal is NOT supported internally <br>
+  ---&gt;    ErrFlag = CSVObj%GetField(iRow, jCol, FieldVal, ToVal=ToValProc) <br>
+  ---&gt;    ErrFlag = CSVObj%GetField(iRow, jCol, FieldVal, ErrMsg, ToValProc) <br>
+ <strong>Note</strong>: If the type of the user-specified field value is either the Fortran <em>CHARACTER</em>
+      type or the <em>FvlStr</em> type, an error will never occur. <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function GetFieldValue(CSVObj, iRow, jCol, FieldVal, ErrMsg, ToVal) result(ErrFlag)  
+</h3>
+
+  <p>To retrieve a field value from the stored field values according to the specified
+ row and column and return a logical flag indicating whether there is an error
+ occurred when converting from a stored field value to the user-specified field value. <br>
+ Currently, the routine internally supports only Fortran intrinsic types and the
+ <em>FvlStr</em> type as a valid type of the user-specified field value.  However, a user
+ can supply a user-written procedure to convert the field value to a Fortran character
+ string if the type of the field is different from those supported.  It should be noted
+ that if the type of the user-specified field value is either the Fortran <em>CHARACTER</em>
+ type or the <em>FvlStr</em> type, an error will never occur. <br></p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iRow</strong></td>
+            <td>
+                <p>row of the desired field</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>jCol</strong></td>
+            <td>
+                <p>column of the desired field</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>FieldVal</strong></td>
+            <td>
+                <p>field value</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if an error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              procedure(<a href='../interface/str2val.html'>Str2Val</a>),
+            </td>
+<td></td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ToVal</strong></td>
+            <td>
+                <p>procedure to convert string to field value</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if an error occurred</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getrowfields"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetRowFields</strong> => GetFieldValues1DRow
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Function Interface</strong>: GetRowFields <br>
+ <strong>Purpose</strong>:  To retrieve field values of the specified row from the stored field values
+      and return a logical flag indicating whether there is an error occurred when converting
+      from the stored field values to the user-specified field values. <br>
+      In order to use this method, types of the stored field values in the specified row
+      must be the same and the <em>Mold</em> argument is used to provide the concrete type of the
+      <em>FieldVal</em> argument (which represents the user-specified field values) when it is
+      allocated. <br>
+      If the concrete type of the user-specified field values is not one of Fortran intrinsic
+      types or the <em>FvlStr</em> type, a user must specify the <em>ToVal</em> procedure argument in order
+      to convert Fortran character strings to the user-specified field values. <br>
+ <strong>Usage</strong>: <br>
+  ! type of FieldVal is supported internally <br>
+  ---&gt;    ErrFlag = CSVObj%GetRowFields(iRow, FieldVals, Mold) <br>
+  ---&gt;    ErrFlag = CSVObj%GetRowFields(iRow, FieldVals, Mold, ErrMsg) <br>
+  ! type of FieldVal is NOT supported internally <br>
+  ---&gt;    ErrFlag = CSVObj%GetRowFields(iRow, FieldVals, Mold, ToVal=ToValProc) <br>
+  ---&gt;    ErrFlag = CSVObj%GetRowFields(iRow, FieldVals, Mold, ErrMsg, ToValProc) <br>
+ <strong>Note</strong>: If the type of the user-specified field value is either the Fortran <em>CHARACTER</em>
+      type or the <em>FvlStr</em> type, an error will never occur. <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function GetFieldValues1DRow(CSVObj, iRow, FieldVal, Mold, ErrMsg, ToVal) result(ErrFlag)  
+</h3>
+
+  <p>To retrieve field values of the specified row from the stored field values and return
+ a logical flag indicating whether there is an error occurred when converting from the
+ stored field values to the user-specified field values. <br>
+ In order to use this routine, types of the stored field values in the specified row
+ must be the same and the <em>Mold</em> argument is used to provide the concrete type of the
+ <em>FieldVal</em> argument (which represents the user-specified field values) when it is
+ allocated. <br>
+ If the concrete type of the user-specified field values is not one of Fortran intrinsic
+ types or the <em>FvlStr</em> type, a user must specify the <em>ToVal</em> procedure argument in order
+ to convert Fortran character strings to the user-specified field values.  It should be
+ noted that if the type of the user-specified field values is either the Fortran <em>CHARACTER</em>
+ type or the <em>FvlStr</em> type, an error will never occur. <br></p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iRow</strong></td>
+            <td>
+                <p>row of the desired fields</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>FieldVal</strong>(:)</td>
+            <td>
+                <p>field values</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Mold</strong></td>
+            <td>
+                <p>mold</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if an error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              procedure(<a href='../interface/str2val.html'>Str2Val</a>),
+            </td>
+<td></td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ToVal</strong></td>
+            <td>
+                <p>procedure to convert string to field value</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if an error occurred</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getcolfields"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetColFields</strong> => GetFieldValues1DColumn
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Function Interface</strong>: GetColFields <br>
+ <strong>Purpose</strong>:  To retrieve field values of the specified column from the stored field values
+      and return a logical flag indicating whether there is an error occurred when converting
+      from the stored field values to the user-specified field values. <br>
+      In order to use this method, types of the stored field values in the specified column
+      must be the same and the <em>Mold</em> argument is used to provide the concrete type of the
+      <em>FieldVal</em> argument (which represents the user-specified field values) when it is
+      allocated. <br>
+      If the concrete type of the user-specified field values is not one of Fortran intrinsic
+      types or the <em>FvlStr</em> type, a user must specify the <em>ToVal</em> procedure argument in order
+      to convert Fortran character strings to the user-specified field values. <br>
+ <strong>Usage</strong>: <br>
+  ! type of FieldVal is supported internally <br>
+  ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold) <br>
+  ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, SkipHeader=.TRUE.) <br>
+  ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, ErrMsg=ErrMsg) <br>
+  ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, .TRUE., ErrMsg) <br>
+  ! type of FieldVal is NOT supported internally <br>
+  ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, ToVal=ToValProc) <br>
+  ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, .TRUE., ToVal=ToValProc) <br>
+  ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, ErrMsg=ErrMsg, ToVal=ToValProc) <br>
+  ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, .TRUE., ErrMsg, ToValProc) <br>
+ <strong>Note</strong>: If the type of the user-specified field value is either the Fortran <em>CHARACTER</em>
+      type or the <em>FvlStr</em> type, an error will never occur. <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function GetFieldValues1DColumn(CSVObj, jCol, FieldVal, Mold, SkipHeader, ErrMsg, ToVal) result(ErrFlag)  
+</h3>
+
+  <p>To retrieve field values of the specified column from the stored field values and return
+ a logical flag indicating whether there is an error occurred when converting from the
+ stored field values to the user-specified field values. <br>
+ In order to use this routine, types of the stored field values in the specified column
+ must be the same and the <em>Mold</em> argument is used to provide the concrete type of the
+ <em>FieldVal</em> argument (which represents the user-specified field values) when it is
+ allocated. <br>
+ If the concrete type of the user-specified field values is not one of Fortran intrinsic
+ types or the <em>FvlStr</em> type, a user must specify the <em>ToVal</em> procedure argument in order
+ to convert Fortran character strings to the user-specified field values.  It should be
+ noted that if the type of the user-specified field values is either the Fortran <em>CHARACTER</em>
+ type or the <em>FvlStr</em> type, an error will never occur. <br></p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>jCol</strong></td>
+            <td>
+                <p>column of the desired fields</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>FieldVal</strong>(:)</td>
+            <td>
+                <p>field values</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Mold</strong></td>
+            <td>
+                <p>mold</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SkipHeader</strong></td>
+            <td>
+                <p>flag indicating whether the field in the first row is excluded. <br>
+ - True if the field in the first row is excluded.  This indicates
+   that there is a header where the type of its fields is different
+   from fields in other rows. <br>
+ - False if to return all field values in the specified column. <br>
+ Default is false. <br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if an error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              procedure(<a href='../interface/str2val.html'>Str2Val</a>),
+            </td>
+<td></td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ToVal</strong></td>
+            <td>
+                <p>procedure to convert string to field value</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if an error occurred</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-gettablefields"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetTableFields</strong> => GetFieldValues2D
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Function Interface</strong>: GetTableFields <br>
+ <strong>Purpose</strong>:  To retrieve all field values from the stored field values and return a logical
+      flag indicating whether there is an error occurred when converting from the stored field
+      values to the user-specified field values. <br>
+      In order to use this routine, types of all stored field values (maybe with the exception
+      of the first row) must be the same and the <em>Mold</em> argument is used to provide the concrete
+      type of the <em>FieldVal</em> argument (which represents the user-specified field values) when
+      it is allocated. <br>
+      If the concrete type of the user-specified field values is not one of Fortran intrinsic
+      types or the <em>FvlStr</em> type, a user must specify the <em>ToVal</em> procedure argument in order
+      to convert Fortran character strings to the user-specified field values. <br>
+      If types of the stored field values in the first row are different from types of field
+      values in other rows, the <em>SkipHeader</em> argument should be present and is set to true.
+      In this case, a user may separately retrieve the header (i.e. the stored field values
+      in the first row) using the <em>GetRowFields</em> method. <br>
+ <strong>Usage</strong>: <br>
+  ! type of FieldVal is supported internally <br>
+  ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold) <br>
+  ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, SkipHeader=.TRUE.) <br>
+  ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, ErrMsg=ErrMsg) <br>
+  ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, .TRUE., ErrMsg) <br>
+  ! type of FieldVal is NOT supported internally <br>
+  ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, ToVal=ToValProc) <br>
+  ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, .TRUE., ToVal=ToValProc) <br>
+  ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, ErrMsg=ErrMsg, ToVal=ToValProc) <br>
+  ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, .TRUE., ErrMsg, ToValProc) <br>
+ <strong>Note</strong>: If the type of the user-specified field value is either the Fortran <em>CHARACTER</em>
+      type or the <em>FvlStr</em> type, an error will never occur. <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function GetFieldValues2D(CSVObj, FieldVal, Mold, SkipHeader, ErrMsg, ToVal) result(ErrFlag)  
+</h3>
+
+  <p>To retrieve all field values from the stored field values and return a logical
+ flag indicating whether there is an error occurred when converting from the
+ stored field values to the user-specified field values. <br>
+ In order to use this routine, types of all stored field values (maybe with the
+ exception of the first row) must be the same and the <em>Mold</em> argument is used to
+ provide the concrete type of the <em>FieldVal</em> argument (which represents the
+ user-specified field values) when it is allocated. <br>
+ If the concrete type of the user-specified field values is not one of Fortran
+ intrinsic types or the <em>FvlStr</em> type, a user must specify the <em>ToVal</em> procedure
+ argument in order to convert Fortran character strings to the user-specified
+ field values.  It should be noted that if the type of the user-specified field
+ values is either the Fortran <em>CHARACTER</em> type or the <em>FvlStr</em> type, an error
+ will never occur. <br>
+ If types of the stored field values in the first row are different from types
+ of field values in other rows, the <em>SkipHeader</em> argument should be present and
+ is set to true.  In this case, a user may separately retrieve the header (i.e.
+ the stored field values in the first row) using the <em>GetRowFields</em> method. <br></p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/csvio.html'>CSVIO</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>CSVObj</strong></td>
+            <td>
+                <p>CSVIO object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>FieldVal</strong>(:,:)</td>
+            <td>
+                <p>field values</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Mold</strong></td>
+            <td>
+                <p>mold</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SkipHeader</strong></td>
+            <td>
+                <p>flag indicating whether the fields in the first row are excluded. <br>
+ - True if the fields in the first row are excluded.  This indicates
+   that there is a header where the type of its fields is different
+   from fields in other rows. <br>
+ - False if to return all field values in the specified column. <br>
+ Default is false. <br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=:),
+            </td>
+<td>intent(out),</td>
+              <td>optional,</td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>ErrMsg</strong></td>
+            <td>
+                <p>message if an error occurred</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              procedure(<a href='../interface/str2val.html'>Str2Val</a>),
+            </td>
+<td></td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ToVal</strong></td>
+            <td>
+                <p>procedure to convert string to field value</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if an error occurred</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+      </section>
+
+    <section>
+    <h3><span class="anchor" id="src"></span>Source Code</h3>
+    <div class="hl codehilite"><pre><span></span><span class="w">    </span><span class="k">TYPE </span><span class="n">CSVIO</span>
+<span class="w">        </span><span class="k">PRIVATE</span>
+<span class="w">        </span><span class="c">!% a character used to enclose a string field with a quote</span>
+<span class="w">        </span><span class="n">tChar</span><span class="w">                           </span><span class="kd">::</span><span class="w"> </span><span class="n">Quote</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="n">CHR_DOUBLEQUOTE</span>
+<span class="w">        </span><span class="c">!% a character used as a separator</span>
+<span class="w">        </span><span class="n">tChar</span><span class="w">                           </span><span class="kd">::</span><span class="w"> </span><span class="n">Separator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CHR_COMMA</span>
+<span class="w">        </span><span class="c">!% total number of rows in the file</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">                          </span><span class="kd">::</span><span class="w"> </span><span class="n">TotRow</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">        </span><span class="c">!% total number of columns in the file</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">                          </span><span class="kd">::</span><span class="w"> </span><span class="n">TotCol</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">        </span><span class="c">!% current column</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">                          </span><span class="kd">::</span><span class="w"> </span><span class="n">iCol</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">        </span><span class="c">!% current io unit number</span>
+<span class="w">        </span><span class="n">tInteger</span><span class="w">                        </span><span class="kd">::</span><span class="w"> </span><span class="n">IOUnit</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">        </span><span class="c">!% flag indicating whether to add blank fields</span>
+<span class="w">        </span><span class="n">tLogical</span><span class="w">                        </span><span class="kd">::</span><span class="w"> </span><span class="n">AddBlank</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">FalseVal</span>
+<span class="w">        </span><span class="c">!% current record</span>
+<span class="w">        </span><span class="k">TYPE</span><span class="p">(</span><span class="n">FvlStr</span><span class="p">)</span><span class="w">                    </span><span class="kd">::</span><span class="w"> </span><span class="n">CurrRecord</span>
+<span class="w">        </span><span class="c">!% field values used for reading; allocated to the *FvlStr* type</span>
+<span class="w">        </span><span class="k">CLASS</span><span class="p">(</span><span class="n">Assignable</span><span class="p">),</span><span class="w"> </span><span class="k">ALLOCATABLE</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">FieldVal</span><span class="p">(:,:)</span>
+<span class="w">        </span><span class="c">!% queue of records</span>
+<span class="w">        </span><span class="k">TYPE</span><span class="p">(</span><span class="n">QueueAssignable</span><span class="p">)</span><span class="w">           </span><span class="kd">::</span><span class="w"> </span><span class="n">RecordQueue</span>
+<span class="w">        </span><span class="c">!------------------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; *NOTE*: The following two components can actually be local variables but</span>
+<span class="w">        </span><span class="c">!  this will cause an error when the multiple-file optimization is used. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!------------------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!% working record used for reading</span>
+<span class="w">        </span><span class="k">TYPE</span><span class="p">(</span><span class="n">FvlStr</span><span class="p">)</span><span class="w">                    </span><span class="kd">::</span><span class="w"> </span><span class="n">WrkRecord</span>
+<span class="w">        </span><span class="c">!% working row fields used when reading</span>
+<span class="w">        </span><span class="k">TYPE</span><span class="p">(</span><span class="n">FvlStr</span><span class="p">),</span><span class="w">      </span><span class="k">ALLOCATABLE</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">WrkFieldVal</span><span class="p">(:)</span>
+<span class="w">    </span><span class="k">CONTAINS</span>
+<span class="w">        </span><span class="c">!----------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!                           Private Procedures</span>
+<span class="w">        </span><span class="c">!----------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! opening and closing file procedures</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">,</span><span class="w"> </span><span class="k">PRIVATE</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">OpenCSVOutput</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">,</span><span class="w"> </span><span class="k">PRIVATE</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">OpenCSVInput</span>
+<span class="w">        </span><span class="c">! adding and writing fields/records procedures</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">,</span><span class="w"> </span><span class="k">PRIVATE</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">WriteRecord</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">,</span><span class="w"> </span><span class="k">PRIVATE</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">AddFieldValues1D</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">,</span><span class="w"> </span><span class="k">PRIVATE</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">AddFieldValues2D</span>
+<span class="w">        </span><span class="c">!----------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!                           Public Procedures</span>
+<span class="w">        </span><span class="c">!----------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!----------------------------------------</span>
+<span class="w">        </span><span class="c">! -----     common procedures       -----</span>
+<span class="w">        </span><span class="c">!----------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; **Subroutine Interface**: Initialize &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To initialize the CSVIO object.  Optionally, a user can specify</span>
+<span class="w">        </span><span class="c">!       a quote character and/or a separator character to be used in place of </span>
+<span class="w">        </span><span class="c">!       the default characters. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! use default quote (&quot;) and separator (,) characters &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%Initialize() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! specify different quote (&#39;) character &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%Initialize(Quote=&quot;&#39;&quot;) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! specify different separator (;) character &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%Initialize(Separator=&#39;;&#39;) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! specify different quote (&#39;) and separator (|) characters &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%Initialize(Quote=&quot;&#39;&quot;, Separator=&#39;|&#39;) &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Initialize</span><span class="w">       </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">InitializeCSVFile</span>
+<span class="w">        </span><span class="c">!&gt; **Subroutine Interface**: Reset &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To reset the CSVIO object to its initial state where all stored</span>
+<span class="w">        </span><span class="c">!       values/records are deallocated and/or destroyed. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%Reset() &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Reset</span><span class="w">            </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">ResetCSVFile</span>
+<span class="w">        </span><span class="c">!-------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----     writing-related procedures       -----</span>
+<span class="w">        </span><span class="c">!-------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; **Subroutine Interface**: AddField &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To add a field value to the current record.  Currently, the method</span>
+<span class="w">        </span><span class="c">!       internally supports only Fortran intrinsic types and the *FvlStr*  type as</span>
+<span class="w">        </span><span class="c">!       a type of the field value.  However, a user can specify a procedure to convert</span>
+<span class="w">        </span><span class="c">!       the field value to a Fortran character string if the type of the field is</span>
+<span class="w">        </span><span class="c">!       different from those supported. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVal is supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%AddField(FieldVal) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVal is NOT supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%AddField(FieldVal, ToStrProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: After calling the *AddField* method multiple times, a user may want to add a</span>
+<span class="w">        </span><span class="c">!       field value to a new record (i.e. a record next to the current one).  In this</span>
+<span class="w">        </span><span class="c">!       case, the user must call the *AddRecord* method explicitly before calling the</span>
+<span class="w">        </span><span class="c">!       *AddField* method to add the field value to the next record. &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">AddField</span><span class="w">         </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">AddFieldValue</span>
+<span class="w">        </span><span class="c">!&gt; **Subroutine Interface**: AddRecord &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To add the current record to the record queue and update components of</span>
+<span class="w">        </span><span class="c">!       the CSVIO object as necessary.  See note for the *AddField* method. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%AddRecord() &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">AddRecord</span>
+<span class="w">        </span><span class="c">!&gt; **Subroutine Interface**: AddFields &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To add a row or a table of field values to the record queue.  If the type </span>
+<span class="w">        </span><span class="c">!       of the specified field values is not one of Fortran intrinsic types or the *FvlStr*</span>
+<span class="w">        </span><span class="c">!       type, a user must specify the *ToStr* procedure argument in order to convert the</span>
+<span class="w">        </span><span class="c">!       field values to Fortran character strings. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVals is supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%AddFields(FieldVals) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVals is NOT supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%AddFields(FieldVals, ToStrProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: Unlike the *AddField* method, the *AddFields* method calls the *AddRecord*</span>
+<span class="w">        </span><span class="c">!       method internally so the user does not need to. &lt;br&gt;</span>
+<span class="w">        </span><span class="k">GENERIC</span><span class="w">     </span><span class="kd">::</span><span class="w"> </span><span class="n">AddFields</span><span class="w">        </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">AddFieldValues1D</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span>
+<span class="w">                                           </span><span class="n">AddFieldValues2D</span>
+<span class="w">        </span><span class="c">!&gt; **Subroutine Interface**: WriteOutput &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To open the output file and write all records stored in the CSVIO</span>
+<span class="w">        </span><span class="c">!       object to it. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! append records to an existing file &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%WriteOutput(FileName) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! write records to a new file &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%WriteOutput(FileName, NewFile=.TRUE.) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: This method should only be called after the *AddField* and/or *AddFields*</span>
+<span class="w">        </span><span class="c">!       method(s) has/have already been called. &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">WriteOutput</span><span class="w">      </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">WriteCSVOutput</span>
+<span class="w">        </span><span class="c">!-------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----     reading-related procedures       -----</span>
+<span class="w">        </span><span class="c">!-------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; **Subroutine Interface**: ReadCSVInput &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To open the input file and read records from it.  The routine also</span>
+<span class="w">        </span><span class="c">!       perform a tokenization of the records and store the tokens in its field value</span>
+<span class="w">        </span><span class="c">!       component, which will be readily available to be retrieved by a user. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL CSVObj%ReadCSVInput(FileName) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: This method should be called before one of the *GetField* methods is called. &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">ReadInput</span><span class="w">        </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">ReadCSVInput</span>
+<span class="w">        </span><span class="c">!&gt; **Function Interface**: GetField &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To retrieve a field value from the stored field values according to the</span>
+<span class="w">        </span><span class="c">!       specified row and column and return a logical flag indicating whether there is an</span>
+<span class="w">        </span><span class="c">!       error occurred when converting from a stored field value to the user-specified</span>
+<span class="w">        </span><span class="c">!       field value. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!       Currently, the routine internally supports only Fortran intrinsic types and the</span>
+<span class="w">        </span><span class="c">!       *FvlStr* type as a valid type of the user-specified field value.  However, a user</span>
+<span class="w">        </span><span class="c">!       can supply a user-written procedure to convert the field value to a Fortran character</span>
+<span class="w">        </span><span class="c">!       string if the type of the field is different from those supported. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVal is supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetField(iRow, jCol, FieldVal) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetField(iRow, jCol, FieldVal, ErrMsg) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVal is NOT supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetField(iRow, jCol, FieldVal, ToVal=ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetField(iRow, jCol, FieldVal, ErrMsg, ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: If the type of the user-specified field value is either the Fortran *CHARACTER*</span>
+<span class="w">        </span><span class="c">!       type or the *FvlStr* type, an error will never occur. &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetField</span><span class="w">         </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">GetFieldValue</span>
+<span class="w">        </span><span class="c">!&gt; **Function Interface**: GetRowFields &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To retrieve field values of the specified row from the stored field values</span>
+<span class="w">        </span><span class="c">!       and return a logical flag indicating whether there is an error occurred when converting</span>
+<span class="w">        </span><span class="c">!       from the stored field values to the user-specified field values. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!       In order to use this method, types of the stored field values in the specified row</span>
+<span class="w">        </span><span class="c">!       must be the same and the *Mold* argument is used to provide the concrete type of the</span>
+<span class="w">        </span><span class="c">!       *FieldVal* argument (which represents the user-specified field values) when it is</span>
+<span class="w">        </span><span class="c">!       allocated. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!       If the concrete type of the user-specified field values is not one of Fortran intrinsic</span>
+<span class="w">        </span><span class="c">!       types or the *FvlStr* type, a user must specify the *ToVal* procedure argument in order</span>
+<span class="w">        </span><span class="c">!       to convert Fortran character strings to the user-specified field values. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVal is supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetRowFields(iRow, FieldVals, Mold) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetRowFields(iRow, FieldVals, Mold, ErrMsg) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVal is NOT supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetRowFields(iRow, FieldVals, Mold, ToVal=ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetRowFields(iRow, FieldVals, Mold, ErrMsg, ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: If the type of the user-specified field value is either the Fortran *CHARACTER*</span>
+<span class="w">        </span><span class="c">!       type or the *FvlStr* type, an error will never occur. &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetRowFields</span><span class="w">     </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">GetFieldValues1DRow</span>
+<span class="w">        </span><span class="c">!&gt; **Function Interface**: GetColFields &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To retrieve field values of the specified column from the stored field values</span>
+<span class="w">        </span><span class="c">!       and return a logical flag indicating whether there is an error occurred when converting</span>
+<span class="w">        </span><span class="c">!       from the stored field values to the user-specified field values. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!       In order to use this method, types of the stored field values in the specified column</span>
+<span class="w">        </span><span class="c">!       must be the same and the *Mold* argument is used to provide the concrete type of the</span>
+<span class="w">        </span><span class="c">!       *FieldVal* argument (which represents the user-specified field values) when it is</span>
+<span class="w">        </span><span class="c">!       allocated. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!       If the concrete type of the user-specified field values is not one of Fortran intrinsic</span>
+<span class="w">        </span><span class="c">!       types or the *FvlStr* type, a user must specify the *ToVal* procedure argument in order</span>
+<span class="w">        </span><span class="c">!       to convert Fortran character strings to the user-specified field values. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVal is supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, SkipHeader=.TRUE.) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, ErrMsg=ErrMsg) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, .TRUE., ErrMsg) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVal is NOT supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, ToVal=ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, .TRUE., ToVal=ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, ErrMsg=ErrMsg, ToVal=ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetColFields(jCol, FieldVals, Mold, .TRUE., ErrMsg, ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: If the type of the user-specified field value is either the Fortran *CHARACTER*</span>
+<span class="w">        </span><span class="c">!       type or the *FvlStr* type, an error will never occur. &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetColFields</span><span class="w">     </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">GetFieldValues1DColumn</span>
+<span class="w">        </span><span class="c">!&gt; **Function Interface**: GetTableFields &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To retrieve all field values from the stored field values and return a logical</span>
+<span class="w">        </span><span class="c">!       flag indicating whether there is an error occurred when converting from the stored field</span>
+<span class="w">        </span><span class="c">!       values to the user-specified field values. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!       In order to use this routine, types of all stored field values (maybe with the exception</span>
+<span class="w">        </span><span class="c">!       of the first row) must be the same and the *Mold* argument is used to provide the concrete</span>
+<span class="w">        </span><span class="c">!       type of the *FieldVal* argument (which represents the user-specified field values) when</span>
+<span class="w">        </span><span class="c">!       it is allocated. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!       If the concrete type of the user-specified field values is not one of Fortran intrinsic</span>
+<span class="w">        </span><span class="c">!       types or the *FvlStr* type, a user must specify the *ToVal* procedure argument in order</span>
+<span class="w">        </span><span class="c">!       to convert Fortran character strings to the user-specified field values. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!       If types of the stored field values in the first row are different from types of field </span>
+<span class="w">        </span><span class="c">!       values in other rows, the *SkipHeader* argument should be present and is set to true.</span>
+<span class="w">        </span><span class="c">!       In this case, a user may separately retrieve the header (i.e. the stored field values</span>
+<span class="w">        </span><span class="c">!       in the first row) using the *GetRowFields* method. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVal is supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, SkipHeader=.TRUE.) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, ErrMsg=ErrMsg) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, .TRUE., ErrMsg) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ! type of FieldVal is NOT supported internally &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, ToVal=ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, .TRUE., ToVal=ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, ErrMsg=ErrMsg, ToVal=ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    ErrFlag = CSVObj%GetTableFields(FieldVals, Mold, .TRUE., ErrMsg, ToValProc) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: If the type of the user-specified field value is either the Fortran *CHARACTER*</span>
+<span class="w">        </span><span class="c">!       type or the *FvlStr* type, an error will never occur. &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetTableFields</span><span class="w">   </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">GetFieldValues2D</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----                 Final Procedure                           -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="k">FINAL</span><span class="w">               </span><span class="kd">::</span><span class="w"> </span><span class="n">FinalizeCSVFile</span>
+<span class="w">    </span><span class="k">END TYPE </span><span class="n">CSVIO</span>
+</pre></div>
+
+    </section>
+    
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col"><p>XpfGeneral was developed by Niranama<br>&copy; 2024 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>

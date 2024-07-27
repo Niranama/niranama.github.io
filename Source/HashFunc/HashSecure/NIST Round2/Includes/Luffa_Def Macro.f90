@@ -1,0 +1,82 @@
+#define M2(D, S) \
+    Tmp  = S(7); \
+    D(7) = S(6); \
+    D(6) = S(5); \
+    D(5) = S(4); \
+    D(4) = IEOR(S(3), Tmp); \
+    D(3) = IEOR(S(2), Tmp); \
+    D(2) = S(1); \
+    D(1) = IEOR(S(0), Tmp); \
+    D(0) = Tmp
+#define XOR_ALL(D, S1, S2) \
+    D(0) = IEOR(S1(0), S2(0)); \
+    D(1) = IEOR(S1(1), S2(1)); \
+    D(2) = IEOR(S1(2), S2(2)); \
+    D(3) = IEOR(S1(3), S2(3)); \
+    D(4) = IEOR(S1(4), S2(4)); \
+    D(5) = IEOR(S1(5), S2(5)); \
+    D(6) = IEOR(S1(6), S2(6)); \
+    D(7) = IEOR(S1(7), S2(7))
+#define SUB_CRUMB(A0, A1, A2, A3) \
+    Tmp = A0; \
+    A0 = IOR(A0, A1); \
+    A2 = IEOR(A2, A3); \
+    A1 = NOT(A1); \
+    A0 = IEOR(A0, A3); \
+    A3 = IAND(A3, Tmp); \
+    A1 = IEOR(A1, A3); \
+    A3 = IEOR(A3, A2); \
+    A2 = IAND(A2, A0); \
+    A0 = NOT(A0); \
+    A2 = IEOR(A2, A1); \
+    A1 = IOR(A1, A3); \
+    Tmp = IEOR(Tmp, A1); \
+    A3 = IEOR(A3, A2); \
+    A2 = IAND(A2, A1); \
+    A1 = IEOR(A1, A0); \
+    A0 = Tmp
+#define MIX_WORD(U, V) \
+    V = IEOR(V, U); \
+    U = IEOR(RotateLeft(U, 2), V); \
+    V = IEOR(RotateLeft(V, 14), U); \
+    U = IEOR(RotateLeft(U, 10), V); \
+    V = RotateLeft(V, 1)
+#define TWEAK3(V1, V2) \
+    V1(4) = RotateLeft(V1(4), 1); \
+    V1(5) = RotateLeft(V1(5), 1); \
+    V1(6) = RotateLeft(V1(6), 1); \
+    V1(7) = RotateLeft(V1(7), 1); \
+    V2(4) = RotateLeft(V2(4), 2); \
+    V2(5) = RotateLeft(V2(5), 2); \
+    V2(6) = RotateLeft(V2(6), 2); \
+    V2(7) = RotateLeft(V2(7), 2)
+#define TWEAK4(V1, V2, V3) \
+    V1(4) = RotateLeft(V1(4), 1); \
+    V1(5) = RotateLeft(V1(5), 1); \
+    V1(6) = RotateLeft(V1(6), 1); \
+    V1(7) = RotateLeft(V1(7), 1); \
+    V2(4) = RotateLeft(V2(4), 2); \
+    V2(5) = RotateLeft(V2(5), 2); \
+    V2(6) = RotateLeft(V2(6), 2); \
+    V2(7) = RotateLeft(V2(7), 2); \
+    V3(4) = RotateLeft(V3(4), 3); \
+    V3(5) = RotateLeft(V3(5), 3); \
+    V3(6) = RotateLeft(V3(6), 3); \
+    V3(7) = RotateLeft(V3(7), 3)
+#define TWEAK5(V1, V2, V3, V4) \
+    V1(4) = RotateLeft(V1(4), 1); \
+    V1(5) = RotateLeft(V1(5), 1); \
+    V1(6) = RotateLeft(V1(6), 1); \
+    V1(7) = RotateLeft(V1(7), 1); \
+    V2(4) = RotateLeft(V2(4), 2); \
+    V2(5) = RotateLeft(V2(5), 2); \
+    V2(6) = RotateLeft(V2(6), 2); \
+    V2(7) = RotateLeft(V2(7), 2); \
+    V3(4) = RotateLeft(V3(4), 3); \
+    V3(5) = RotateLeft(V3(5), 3); \
+    V3(6) = RotateLeft(V3(6), 3); \
+    V3(7) = RotateLeft(V3(7), 3); \
+    V4(4) = RotateLeft(V4(4), 4); \
+    V4(5) = RotateLeft(V4(5), 4); \
+    V4(6) = RotateLeft(V4(6), 4); \
+    V4(7) = RotateLeft(V4(7), 4)

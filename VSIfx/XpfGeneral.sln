@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "XpfGeneral", "XpfGeneral\XpfGeneral.vfproj", "{55E06672-B9FF-4980-A305-332DDC0C2E12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55E06672-B9FF-4980-A305-332DDC0C2E12}.Debug|x64.ActiveCfg = Debug|x64
+		{55E06672-B9FF-4980-A305-332DDC0C2E12}.Debug|x64.Build.0 = Debug|x64
+		{55E06672-B9FF-4980-A305-332DDC0C2E12}.Debug|x86.ActiveCfg = Debug|Win32
+		{55E06672-B9FF-4980-A305-332DDC0C2E12}.Debug|x86.Build.0 = Debug|Win32
+		{55E06672-B9FF-4980-A305-332DDC0C2E12}.Release|x64.ActiveCfg = Release|x64
+		{55E06672-B9FF-4980-A305-332DDC0C2E12}.Release|x64.Build.0 = Release|x64
+		{55E06672-B9FF-4980-A305-332DDC0C2E12}.Release|x86.ActiveCfg = Release|Win32
+		{55E06672-B9FF-4980-A305-332DDC0C2E12}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46C9F11B-6964-4B54-80AA-13CD051F2A29}
+	EndGlobalSection
+EndGlobal

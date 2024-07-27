@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="XpfGenLib" />
+		<Option platforms="Windows;" />
+		<Option pch_mode="2" />
+		<Option compiler="gfortran" />
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Windows;" />
+				<Option output="Bin/Debug/XpfGenPack.lib" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="Obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gfortran" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-cpp" />
+					<Add option="-fimplicit-none" />
+					<Add option="-ffree-line-length-none" />
+					<Add option="-fdefault-double-8" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add directory="../../Source" />
+					<Add directory="../../CBFort/XpfGenPack/Obj/Debug" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="../../Source/ThirdParties/Display/ModLib - Display - Auxiliary.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Display/ModLib - Display - Default.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Display/ModLib - Display - IByte.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Display/ModLib - Display - ILong.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Display/ModLib - Display - IShort.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Display/ModLib - Display - LByte.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Display/ModLib - Display - Quad.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Display/ModLib - Display.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FLibCpp/ModLib_FLC.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FLibCpp/ModLib_FLC_Algorithm.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FLibCpp/ModLib_FLC_Map.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FLibCpp/ModLib_FLC_Random.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FLibCpp/ModLib_FLC_Set.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FLibCpp/ModLib_FLC_String.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FLibCpp/ModLib_FLC_Vector.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ExtLib - FMLib - FMArithmetic.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ExtLib - FMLib - FMSpecial.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ExtLib - FMLib - IMFunctions.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ExtLib - FMLib - ZMFunctions.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM - 1.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM - 10.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM - 2.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM - 3.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM - 4.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM - 5.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM - 6.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM - 7.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM - 8.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM - 9.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - FMZM.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - Global.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - Interval.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - LongInteger.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - Main.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - QuadReal.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FMLib/ModLib - FMLib - Rational.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FeatFlow/ModLib - FeatFlow - GenOutput.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FeatFlow/ModLib - FeatFlow - IO.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FeatFlow/ModLib - FeatFlow - ParamList.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FeatFlow/ModLib - FeatFlow - Parser.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FeatFlow/ModLib - FeatFlow - PerfConfig.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FeatFlow/ModLib - FeatFlow - StackInt.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/FeatFlow/ModLib - FeatFlow - System.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/Dislin/ModLib - DislinD.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/Dislin/ModLib - DislinPlots.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/Dislin/ModLib - DislinS.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/FENIA/ModLib - FENIA.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/FENIA/Submodules/SubLib - ArrayManipulation.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/FENIA/Submodules/SubLib - EquationParsing.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/FENIA/Submodules/SubLib - HypertextMarkup.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/FENIA/Submodules/SubLib - MathNumerics.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/FENIA/Submodules/SubLib - ScalableVectorGraphics.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/FENIA/Submodules/SubLib - Utilities.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/FENIA/Submodules/SubLib - VisualizationTookit.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/FortGL/ModLib - FGL - Draw.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/FortGL/ModLib - FGL - Image.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/ModLib - ForSVG.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/ModLib - Ogpf.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/ModLib - Plotter.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/Pixel/ModLib - Pixel.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/Pixel/ModLib - PixelSlices.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/Pixel/ModLib - ReadGif.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/Pixel/ModLib - WriteGif.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Graphics/Pixel/ModLib - WriteGifAnimated.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/JSONFortran/ModLib - JSONFile.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/JSONFortran/ModLib - JSONKinds.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/JSONFortran/ModLib - JSONModule.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/JSONFortran/ModLib - JSONParameters.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/JSONFortran/ModLib - JSONString.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/JSONFortran/ModLib - JSONValue.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/MPFun/ExtLib - MPFun - MPMask.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/MPFun/ModLib - MPFun - A.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/MPFun/ModLib - MPFun - B.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/MPFun/ModLib - MPFun - C.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/MPFun/ModLib - MPFun - D.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/MPFun/ModLib - MPFun - E.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/MPFun/ModLib - MPFun - F.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/MPFun/ModLib - MPFun - G.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/MPFun/ModLib - MPFun - H.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/MPFun/ModLib - MPFun - Main.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/RegExp/Forgex/ModLib - Automaton.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/RegExp/Forgex/ModLib - Forgex.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/RegExp/Forgex/ModLib - PQueue.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/RegExp/Forgex/ModLib - Segment.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/RegExp/Forgex/ModLib - SegmentDisjoin.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/RegExp/Forgex/ModLib - SyntaxTree.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/RegExp/Forgex/ModLib - UTF8.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/RegExp/ModLib - RegExp.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/RegExp/ModLib - TinyRegex.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/BeFoR64/ModLib - BeFor64.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/BeFoR64/ModLib - BeFor64PackData.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/FACE/ModLib - Face.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/FoXy/ModLib - FoXy.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/FoXy/ModLib - FoXyXMLFile.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/FoXy/ModLib - FoXyXMLTag.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/PENF/ModLib - Penf.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/PENF/ModLib - PenfBSize.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/PENF/ModLib - PenfGlobal.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/PENF/ModLib - PenfStringify.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/StringiFor/ModLib - Stringifor.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/StringiFor/ModLib - StringiforString.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/VTKFortran/ModLib - PVTKFile.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/VTKFortran/ModLib - VTKDataEncoder.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/VTKFortran/ModLib - VTKFile.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/VTKFortran/ModLib - VTKFortran.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/VTKFortran/ModLib - VTKParameters.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/VTKFortran/ModLib - VTMFile.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/VTKFortran/ModLib - XMLWriterASCII.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/VTKFortran/ModLib - XMLWriterAbstract.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/VTKFortran/ModLib - XMLWriterAppended.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="../../Source/ThirdParties/Szaghi/VTKFortran/ModLib - XMLWriterBinary.f90">
+			<Option weight="0" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

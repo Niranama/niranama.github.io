@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="XpfLib - General Package Documentation">
+    <meta name="author" content="Niranama" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>BaseIterable &ndash; XpfGeneral </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">XpfGeneral </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/absint.html">Abstract Interfaces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>BaseIterable
+      <small>Derived Type</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title="<p> 0.2% of total for derived types.</p>Including implementation: 35 statements,  0.0% of total for derived types.">13 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/Class - BaseIterable.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/class - baseiterable.f90.html'>Class - BaseIterable.f90</a></li>
+                <li class="breadcrumb-item"><a href='../module/class_baseiterable.html'>Class_BaseIterable</a></li>
+            <li class="breadcrumb-item active" aria-current="page">BaseIterable</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+      <div id="sidebar">
+      <h3>Contents</h3>
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#vars-0"
+         aria-expanded="false" aria-controls="vars-0">
+         <h4 class="card-header bg-primary text-white">Variables</h4>
+      </a>
+      <div id="vars-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/baseiterable.html#variable-valsize">ValSize</a>
+            <a class="list-group-item" href="../type/baseiterable.html#variable-equalto">EqualTo</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#boundprocs-0"
+         aria-expanded="false" aria-controls="boundprocs-0">
+         <h4 class="card-header bg-primary text-white">Type-Bound Procedures</h4>
+      </a>
+      <div id="boundprocs-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-copyassign~2">CopyAssign</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-makeclone~2">MakeClone</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-isequalto~2">IsEqualTo</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-freememory~3">FreeMemory</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-gettypename~2">GetTypeName</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-assignment%28%3D%29~7">ASSIGNMENT(=)</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-memfree~7">MemFree</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-getclone~42">GetClone</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-getname~109">GetName</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-makecopy~3">MakeCopy</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-destruct~8">Destruct</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-getsize~8">GetSize</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-construct~80">Construct</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-isempty~15">IsEmpty</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-startfirst~7">StartFirst</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-moveforward~7">MoveForward</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-insert~8">Insert</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-delete~4">Delete</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-toarray~4">ToArray</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-getall~4">GetAll</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-clear~10">Clear</a>
+            <a class="list-group-item" href="../type/baseiterable.html#boundprocedure-seteqproc">SetEQProc</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+    <div class="card card-primary">
+      <div class="card-header text-left"><h3 class="card-title">Source Code</h3></div>
+      <div class="list-group">
+        <a class="list-group-item" href="../type/baseiterable.html#src">BaseIterable</a>
+      </div>
+    </div>
+
+
+  </div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+      <h2>type, public, ABSTRACT, extends(<a href='../type/basecollection.html'>BaseCollection</a>) :: BaseIterable</h2>
+    <p>The <em>BaseIterable</em> type is an abstract collection type that
+ defines an API for iterable collections, which are collections
+ that can iterate over their items. <br>
+ The <em>BaseIterable</em> type and its subclasses are intended to be
+ used with the <a href="../module/class_genstore.html#type-genstore">GenStore</a>
+ type, which is a generic data storage type.  The <em>GenStore</em> type
+ can store various data type providing that the size (in bytes) of
+ the data to be stored is known at compile time. <br>
+ As a result, the <em>BaseIterable</em> type and all its subclasses are
+ parameterized collection types that requires a known byte size of
+ the data to be stored in a collection.  This known byte size must
+ be specified at compile time when a collection type is declared. <br>
+ The following code snippet shows various ways to declare the
+ <em>BaseIterable</em> type and its subclasses.
+<br>
+<Pre><Code style="color:MidnightBlue;">
+  ! declare an allocatable variable of the <em>BaseIterable</em> type
+  ! and then allocate it to one of its concrete subtypes
+  TYPE Point2D
+      REAL    :: X, Y
+  END TYPE
+  INTEGER, PARAMETER :: PointSize = SIZEOF(Point2D(0.0, 0.0)) ! byte size of Point2D
+  CLASS(BaseIterable(:)), ALLOCATABLE :: Collection
+  ALLOCATE(StackArray(PointSize) :: Collection)   ! a stack of Point2D items
+
+  ! or directly declare variables of its concrete subtypes
+  INTEGER, PARAMETER :: IntSize = C_SIZEOF(0)     ! byte size of default integer
+  INTEGER, PARAMETER :: RealSize = C_SIZEOF(0.0)  ! byte size of default real
+  TYPE(DequeArray(IntSize))   ::  IntDeque        ! a deque of integer items
+  TYPE(ListArray(RealSize))   ::  RealList        ! a list of real items
+  </Code></Pre>
+</p>
+    <br>
+
+    <section>
+    <h2>Components</h2>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Visibility</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+<th></th><th scope="col">Initial</th>        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-valsize"></span>
+              integer(kind=kI4B),
+            </td>
+              <td>public,</td>
+            <td>
+              LEN
+            </td>
+            <td>::</td>
+            <td><strong>ValSize</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>size of data content (a value of an element) in bytes</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-equalto"></span>
+              procedure(<a href='../interface/isequalgen.html'>IsEqualGen</a>),
+            </td>
+              <td>public,</td>
+            <td>
+              NOPASS, POINTER
+            </td>
+            <td>::</td>
+            <td><strong>EqualTo</strong></td>
+<td>=&gt; </td>
+                <td>NULL()</td>
+            <td>
+                <p>procedure to compare GenStore items</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    </section>
+    <br>
+    
+
+
+      <section>
+        <h2>Type-Bound Procedures</h2>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-copyassign~2"></span>
+      <h3>
+          procedure(CopyObj), public, deferred ::
+  <strong>CopyAssign</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>CopyAssign</em> is a binding name of the <em>CopyObj</em> deferred procedure. <br>
+ Use the assignment expression in place of the <em>CopyAssign</em> method
+ to make a copy of an <em>Assignable</em> object.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     subroutine CopyObj(DstObj, SrcObj)  
+<small>Prototype</small></h3>
+
+  <p><em>CopyObj</em> is a deferred procedure to copy the source object to the
+destination object.  The procedure typically provides a value-copying
+task for the object's components.  However, for objects with pointer
+and/or allocatable components, the procedure may also provide a storage
+allocation task of those pointer and/or allocatable components for the
+destination object.  The procedure should also provides a type-guard
+statement to check whether the source and destination objects have the
+same <em>concrete</em> type or not.  If their types are not the same, the
+procedure should report an error.  It is important to note that the
+<em>CopyObj</em> procedure is intended to be used in an assignment expression,
+such as "DstObj = SrcObj".</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-makeclone~2"></span>
+      <h3>
+          procedure(CloneObj), public, deferred ::
+  <strong>MakeClone</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>MakeClone</em> is a binding name of the <em>CloneObj</em> deferred procedure. <br>
+ Use the <em>GetClone</em> method in place of the <em>MakeClone</em> method
+ to create and return a copy of an <em>Assignable</em> object.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     subroutine CloneObj(SrcObj, DstObj)  
+<small>Prototype</small></h3>
+
+  <p><em>CloneObj</em> is a deferred procedure to create and return a copy of
+an <em>Assignable-class</em> object.  The difference between the <em>CopyObj</em>
+and <em>CloneObj</em> procedures is that when comparing the source and
+destination objects using the <em>EqualObj</em> procedure, the comparison
+based on using the <em>CopyObj</em> procedure should always return true
+(i.e. both objects are equal) whereas the comparison based on using
+the <em>CloneObj</em> procedure may or may not return true depending on
+the concrete extended type.  Also, the <em>CloneObj</em> procedure does not
+need a type-guard statement because it must allocate the destination
+based on the actual type of the source object.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-isequalto~2"></span>
+      <h3>
+          procedure(EqualObj), public, deferred ::
+  <strong>IsEqualTo</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>IsEqualTo</em> is a binding name of the <em>EqualObj</em> deferred procedure. <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     function EqualObj(LhsObj, RhsObj) result(Flag)  
+<small>Prototype</small></h3>
+
+  <p><em>EqualObj</em> is a deferred procedure to compare whether two objects
+are equal to one another or not.  It is important to note that the
+<em>EqualObj</em> procedure is intended to be used in an equal expression,
+such as "LhsObj == RhsObj".  The procedure should implement an
+equivalence relation on non-null objects such that: <br>
+- It is <em>reflexive</em>: for any non-null object X, the expression (X == X)
+  should return true. <br>
+- It is <em>symmetric</em>: for any non-null objects X and Y, (X == Y) returns
+  true if and only if (Y == X) returns true. <br>
+- It is <em>transitive</em>: for any non-null objects X, Y and Z, if (X == Y)
+  returns true and (Y == Z)  returns true, then (X == Z) should return
+  true. <br>
+- For a non-null object X and a null object Y, (X == Y) should return
+  false.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>LhsObj</strong></td>
+            <td>
+                <p>an object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>RhsObj</strong></td>
+            <td>
+                <p>another object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if both objects are equal</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-freememory~3"></span>
+      <h3>
+          procedure(FreeObj), public, deferred ::
+  <strong>FreeMemory</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>FreeMemory</em> is a binding name of the <em>FreeObj</em> deferred procedure. <br>
+ Use the <em>MemFree</em> method in place of the <em>FreeMemory</em> method to free
+ memory the <em>Assignable</em> object if the object contains allocatable and/or
+ pointer component(s).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     subroutine FreeObj(Obj)  
+<small>Prototype</small></h3>
+
+  <p><em>FreeObj</em> is a deferred procedure to free storage/memory of an object
+with pointer and/or allocatable components.  For an object without
+any pointer or allocatable components, the routine would do nothing
+(i.e. it is a dummy routine).</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-gettypename~2"></span>
+      <h3>
+          procedure(TypeName), public, deferred ::
+  <strong>GetTypeName</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>GetTypeName</em> is a binding name of the <em>TypeName</em> deferred procedure. <br>
+ Use the <em>GetName</em> method in place of the <em>GetTypeName</em> method to get
+ the name of the <em>concrete</em> type of an <em>Assignable</em> object (i.e. name
+ of a concrete subtype of an <em>Assignable</em> abstract type).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     function TypeName(Obj) result(Name)  
+<small>Prototype</small></h3>
+
+  <p><em>TypeName</em> is a deferred procedure to get name of a concrete
+  extended type that is a subtype of the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-assignment%28%3D%29~7"></span>
+      <h3>
+          generic, public ::
+  <strong>ASSIGNMENT(=)</strong> => <a href='../type/stringbuilder.html#boundprocedure-copyassign~3'>CopyAssign</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_CopyAssign(DstObj, SrcObj)  
+</h3>
+
+  <p>To copy the source object to the destination object.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-memfree~7"></span>
+      <h3>
+          generic, public ::
+  <strong>MemFree</strong> => <a href='../type/stringbuilder.html#boundprocedure-freememory~4'>FreeMemory</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_Free(Obj)  
+</h3>
+
+  <p>To free memory of the StringBuilder object.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getclone~42"></span>
+      <h3>
+          generic, public ::
+  <strong>GetClone</strong> => <a href='../type/stringbuilder.html#boundprocedure-makeclone~3'>MakeClone</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_Clone(SrcObj, DstObj)  
+</h3>
+
+  <p>To clone the StringBuilder object.   This is a deferred
+ procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getname~109"></span>
+      <h3>
+          generic, public ::
+  <strong>GetName</strong> => <a href='../type/stringbuilder.html#boundprocedure-gettypename~3'>GetTypeName</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function StringBuilder_GetTypeName(Obj) result(Name)  
+</h3>
+
+  <p>To get the name of the StringBuilder type.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-makecopy~3"></span>
+      <h3>
+          procedure(CopyCol), public, deferred ::
+  <strong>MakeCopy</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>MakeCopy</em> is a binding name of the <em>CopyCol</em> deferred procedure. <br>
+ Use the <em>Construct</em> method in place of the <em>MakeCopy</em> method
+ to construct a new collection from another collection.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     subroutine CopyCol(This, Other)  
+<small>Prototype</small></h3>
+
+  <p>CopyCol is a deferred procedure to creates a new collection (This)
+ with the same items as the given collection (Other).  In essence,
+ this is a constructor that allows the user to copy items from
+ any collection. <br>
+ It should be noted that this procedure is slightly different from
+ the <em>CopyObj</em> procedure inherited from the <em>Assignable</em> type such
+ that types of <em>This</em> and <em>Other</em> collections can be different
+ whereas types of <em>SrcObj</em> and <em>DstObj</em> objects must be the same.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>This</strong></td>
+            <td>
+                <p>collection object to be created</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Other</strong></td>
+            <td>
+                <p>collection object to be copied from</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-destruct~8"></span>
+      <h3>
+          procedure(Destroy), public, deferred ::
+  <strong>Destruct</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>Destruct</em> is a binding name of the <em>Destroy</em> deferred procedure. <br>
+ <strong>Type-Bound Subroutine</strong>: Destruct <br>
+ <strong>Purpose</strong>:  To remove all items from the collection and free memory
+               of items stored in the collection.<br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Destruct() <br>
+ <strong>Important Note</strong>:  For some collections, this method is equivalent to
+               the <em>Clear</em> method.  For other collections (e.g. dynamic-
+               array-based), the two methods are not equivalent to one
+               another.  For these collections (which require an explicit
+               construction of the collection), after calling the <em>Destruct</em>
+               method, the user should reconstruct the collection (by calling
+               a <em>Construction</em> method again) before using other operations
+               once more.  Otherwise, the collection's behavior may not be
+               as expected.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     subroutine Destroy(Collection)  
+<small>Prototype</small></h3>
+
+  <p><em>Destroy</em> is a deferred procedure to destruct the collection where
+ all items are removed (this operation is essentially the same as
+ that of the <em>ClearElm</em> procedure) and the storage of those items
+ are freed.   For the second operation, this is also done by
+ the <em>ClearElm</em> procedure for some collections.  However, for others
+ (such as dynamic-array-based collections), this must only be done
+ by this procedure.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getsize~8"></span>
+      <h3>
+          procedure(ColSize), public, deferred ::
+  <strong>GetSize</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>GetSize</em> is a binding name of the <em>ColSize</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: GetSize <br>
+ <strong>Purpose</strong>:  To get the current size of the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Size = Collection%GetSize()</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     function ColSize(Collection) result(Size)  
+<small>Prototype</small></h3>
+
+  <p><em>ColSize</em> is a deferred procedure to get the current size
+  of the collection, which represents the number of items
+  currently stored in the collection.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI4B)</small>
+    </h4>
+    <p>collection size</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-construct~80"></span>
+      <h3>
+          generic, public ::
+  <strong>Construct</strong> => <a href='../type/basecollection.html#boundprocedure-makecopy~3'>MakeCopy</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                    <h3>
+     subroutine CopyCol(This, Other)  
+<small>Prototype</small></h3>
+
+  <p>CopyCol is a deferred procedure to creates a new collection (This)
+ with the same items as the given collection (Other).  In essence,
+ this is a constructor that allows the user to copy items from
+ any collection. <br>
+ It should be noted that this procedure is slightly different from
+ the <em>CopyObj</em> procedure inherited from the <em>Assignable</em> type such
+ that types of <em>This</em> and <em>Other</em> collections can be different
+ whereas types of <em>SrcObj</em> and <em>DstObj</em> objects must be the same.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>This</strong></td>
+            <td>
+                <p>collection object to be created</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Other</strong></td>
+            <td>
+                <p>collection object to be copied from</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-isempty~15"></span>
+      <h3>
+          procedure, public ::
+  <strong>IsEmpty</strong> => BaseCollection_IsEmpty
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: IsEmpty <br>
+ <strong>Purpose</strong>:  To check whether the collection is empty or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = Collection%IsEmpty() <br>
+  ---&gt;    IF (.NOT.Collection%IsEmpty()) DoSomeThing</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function BaseCollection_IsEmpty(Collection) result(Flag)  
+</h3>
+
+  <p>To check whether the collection is currently empty or not.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if the collection currently contains no item.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-startfirst~7"></span>
+      <h3>
+          procedure(Move2FirstElm), public, deferred ::
+  <strong>StartFirst</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>StartFirst</em> is a binding name of the <em>Move2FirstElm</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: StartFirst <br>
+ <strong>Purpose</strong>:  To start the <em>forward</em> iteration and return a flag indicating
+               whether the collection is empty or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    IsEmpty = Collection%StartFirst() <br>
+  ---&gt;    IsEmpty = Collection%StartFirst(FirstItem)</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     function Move2FirstElm(Collection, Item) result(IsEmpty)  
+<small>Prototype</small></h3>
+
+  <p><em>Move2FirstElm</em> is a deferred procedure to move to
+  the first element in an iterable collection.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/baseiterable.html'>BaseIterable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>iterable collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Item</strong></td>
+            <td>
+                <p>the first element as output if requested (and available)</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>a flag indicating whether the collection contains no element or not <br>
+- true if the collection is empty. <br>
+- otherwise the first element is available.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-moveforward~7"></span>
+      <h3>
+          procedure(Move2NextElm), public, deferred ::
+  <strong>MoveForward</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>MoveForward</em> is a binding name of the <em>Move2NextElm</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: MoveForward <br>
+ <strong>Purpose</strong>:  To move to the next iteration and return a flag indicating whether
+               the cursor pointer has reached the end of the collection or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward() <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward(NextItem)</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     function Move2NextElm(Collection, Item) result(IsTheEnd)  
+<small>Prototype</small></h3>
+
+  <p><em>Move2NextElm</em> is a deferred procedure to move to
+  the next element in an iterable collection.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/baseiterable.html'>BaseIterable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>iterable collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Item</strong></td>
+            <td>
+                <p>the next element as output if requested (and available)</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>a flag indicating whether the move to the end of the collection occurs or not <br>
+- true if next element is NOT available. <br>
+- otherwise next element is available.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-insert~8"></span>
+      <h3>
+          procedure(AddElm), public, deferred ::
+  <strong>Insert</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>Insert</em> is a binding name of the <em>AddElm</em> deferred procedure. <br>
+ <strong>Type-Bound Subroutine</strong>: Insert <br>
+ <strong>Purpose</strong>:  To insert the specified item to the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Insert(Item) <br>
+ <strong>Note</strong>:  This is a default procedure for adding an item to the collection.
+      For a particular collection, an alias name (e.g. the <em>Push</em> method for
+      a stack collection) may be used in place of the <em>Insert</em> method.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     subroutine AddElm(Collection, Item)  
+<small>Prototype</small></h3>
+
+  <p><em>AddElm</em> is a deferred procedure to add an item to a collection.
+ For a collection with various <em>add</em> procedures.  This procedure
+ should be the default one.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/baseiterable.html'>BaseIterable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>iterable collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Item</strong></td>
+            <td>
+                <p>the item to be added to the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-delete~4"></span>
+      <h3>
+          procedure(DelElm), public, deferred ::
+  <strong>Delete</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>Delete</em> is a binding name of the <em>DelElm</em> deferred procedure. <br>
+ <strong>Type-Bound Subroutine</strong>: Delete <br>
+ <strong>Purpose</strong>:  To delete an item from the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Delete() <br>
+ <strong>Note</strong>: This method is intended to be used in conjunction with
+  the <em>StartFirst</em> and <em>MoveForward</em> methods.  Therefore, after
+  the call to one of those methods and then calling this one
+  will result in a removal of the current item of the iteration
+  (i.e. the same item that can be retrieved via the <em>StartFirst</em>
+  and <em>MoveForward</em> methods).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     subroutine DelElm(Collection)  
+<small>Prototype</small></h3>
+
+  <p><em>DelElm</em> is a deferred procedure to delete an item from a collection.
+  This procedure is intended to be used in conjunction with the
+  <em>Move2FirstElm</em> and <em>Move2NextElm</em> procedures.  Therefore, after
+  the call to either procedure and then calling this procedure will
+  result in a removal of the current item of the iteration (i.e. the
+  same item that can be retrieved via those <em>Move</em> procedures).</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/baseiterable.html'>BaseIterable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>iterable collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-toarray~4"></span>
+      <h3>
+          procedure(DelNGetElm), public, deferred ::
+  <strong>ToArray</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>ToArray</em> is a binding name of the <em>DelNGetElm</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: ToArray <br>
+ <strong>Purpose</strong>:  To get and remove all items from the collection.  Also, return
+               a flag indicating whether the items are successfully removed. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Success = Collection%ToArray(Items) <br>
+  ---&gt;    IF (.NOT.Collection%ToArray(Items)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     function DelNGetElm(Collection, Items) result(Flag)  
+<small>Prototype</small></h3>
+
+  <p><em>DelNGetElm</em> is a deferred procedure to get and remove all items
+  from the collection.  Also, return a flag indicating whether the
+  items are successfully removed.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/baseiterable.html'>BaseIterable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>iterable collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Items</strong>(:)</td>
+            <td>
+                <p>the items to be retrieved and removed from the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>flag indicating whether the items are successfully removed. <br>
+- true if the items are successfully removed.
+- false if the items are NOT successfully removed.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getall~4"></span>
+      <h3>
+          procedure(GetAllElm), public, deferred ::
+  <strong>GetAll</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>GetAll</em> is a binding name of the <em>GetAllElm</em> deferred procedure. <br>
+ <strong>Type-Bound Function</strong>: GetAll <br>
+ <strong>Purpose</strong>:  To get all items (without removing them) from the collection.
+               Also, return a flag indicating whether the items are available. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Success = Collection%GetAll(Items) <br>
+  ---&gt;    IF (.NOT.Collection%GetAll(Items)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     function GetAllElm(Collection, Items) result(Flag)  
+<small>Prototype</small></h3>
+
+  <p><em>GetAllElm</em> is a deferred procedure to get all items (without
+  removing them) from the collection.  Also, return a flag
+  indicating whether the items are available.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/baseiterable.html'>BaseIterable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>iterable collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Items</strong>(:)</td>
+            <td>
+                <p>the items to be retrieved from the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>flag indicating whether the items are successfully retrieved. <br>
+- true if the items are available.
+- false if the items are NOT available.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-clear~10"></span>
+      <h3>
+          procedure, public ::
+  <strong>Clear</strong> => BaseIterable_ClearItems
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>Clear</em> is a procedure deferred by the <em>BaseCollection</em> type. <br>
+ <strong>Type-Bound Subroutine</strong>: Clear <br>
+ <strong>Purpose</strong>:  To remove all items from the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Clear() <br>
+ <strong>Note</strong>: The <em>Clear</em> method provided by the <em>BaseIterable</em> type is
+      a simple implementation.   It can be overridden by a better and
+      more efficient implementation.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine BaseIterable_ClearItems(Collection)  
+</h3>
+
+  <p>To remove all of the items from the collection. <br>
+ This routine provides a basic implementation of the <em>Clear</em>
+ deferred procedure required by the <em>BaseCollection</em> class. <br>
+ This routine should be overridden if a better implementation
+ is available.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/baseiterable.html'>BaseIterable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-seteqproc"></span>
+      <h3>
+          procedure, public ::
+  <strong>SetEQProc</strong> => BaseIterable_SetEQProc
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Subroutine</strong>: SetEQProc <br>
+ <strong>Purpose</strong>:  To set a pointer to the <em>IsEqualTo</em> procedure.   This method
+               must be called before calling the <em>IsEqualTo</em> method to check
+               whether two iterable collections are equal to one another or not.
+               Otherwise, the <em>IsEqualTo</em> method would always return false.  <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%SetEQProc(IsEqualTo)</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine BaseIterable_SetEQProc(Collection, IsEqualTo)  
+</h3>
+
+  <p>To set a pointer to the <em>IsEqualTo</em> procedure.  This procedure
+ must be called before calling the <em>IsEqualTo</em> method to check
+ whether two iterable collections are equal to one another or not.
+ Otherwise, the <em>IsEqualTo</em> method would always return false.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/baseiterable.html'>BaseIterable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              procedure(<a href='../interface/isequalgen.html'>IsEqualGen</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsEqualTo</strong></td>
+            <td>
+                <p>user-supplied procedure to compare items stored in the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+      </section>
+
+    <section>
+    <h3><span class="anchor" id="src"></span>Source Code</h3>
+    <div class="hl codehilite"><pre><span></span><span class="w">    </span><span class="k">TYPE</span><span class="p">,</span><span class="w"> </span><span class="k">ABSTRACT</span><span class="p">,</span><span class="w"> </span><span class="k">EXTENDS</span><span class="p">(</span><span class="n">BaseCollection</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">BaseIterable</span><span class="p">(</span><span class="n">ValSize</span><span class="p">)</span>
+<span class="w">        </span><span class="c">!% size of data content (a value of an element) in bytes</span>
+<span class="w">        </span><span class="n">tInteger</span><span class="p">,</span><span class="w">              </span><span class="nb">LEN</span><span class="w">              </span><span class="kd">::</span><span class="w"> </span><span class="n">ValSize</span>
+<span class="w">        </span><span class="c">!% procedure to compare GenStore items</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">IsEqualGen</span><span class="p">),</span><span class="w"> </span><span class="k">NOPASS</span><span class="p">,</span><span class="w"> </span><span class="k">POINTER</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">EqualTo</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="nb">NULL</span><span class="p">()</span>
+<span class="w">    </span><span class="k">CONTAINS</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----                     Deferred Procedures                   -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; *StartFirst* is a binding name of the *Move2FirstElm* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Function**: StartFirst &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To start the *forward* iteration and return a flag indicating</span>
+<span class="w">        </span><span class="c">!                whether the collection is empty or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsEmpty = Collection%StartFirst() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsEmpty = Collection%StartFirst(FirstItem)</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">Move2FirstElm</span><span class="p">),</span><span class="w"> </span><span class="k">DEFERRED</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">StartFirst</span>
+<span class="w">        </span><span class="c">!&gt; *MoveForward* is a binding name of the *Move2NextElm* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Function**: MoveForward &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To move to the next iteration and return a flag indicating whether</span>
+<span class="w">        </span><span class="c">!                the cursor pointer has reached the end of the collection or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsTheEnd = Collection%MoveForward() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsTheEnd = Collection%MoveForward(NextItem)</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">Move2NextElm</span><span class="p">),</span><span class="w">  </span><span class="k">DEFERRED</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">MoveForward</span>
+<span class="w">        </span><span class="c">!&gt; *Insert* is a binding name of the *AddElm* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Subroutine**: Insert &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To insert the specified item to the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Insert(Item) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**:  This is a default procedure for adding an item to the collection.</span>
+<span class="w">        </span><span class="c">!       For a particular collection, an alias name (e.g. the *Push* method for</span>
+<span class="w">        </span><span class="c">!       a stack collection) may be used in place of the *Insert* method.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">AddElm</span><span class="p">),</span><span class="w">        </span><span class="k">DEFERRED</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">Insert</span>
+<span class="w">        </span><span class="c">!&gt; *Delete* is a binding name of the *DelElm* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Subroutine**: Delete &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To delete an item from the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Delete() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: This method is intended to be used in conjunction with</span>
+<span class="w">        </span><span class="c">!   the *StartFirst* and *MoveForward* methods.  Therefore, after</span>
+<span class="w">        </span><span class="c">!   the call to one of those methods and then calling this one</span>
+<span class="w">        </span><span class="c">!   will result in a removal of the current item of the iteration</span>
+<span class="w">        </span><span class="c">!   (i.e. the same item that can be retrieved via the *StartFirst*</span>
+<span class="w">        </span><span class="c">!   and *MoveForward* methods).</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">DelElm</span><span class="p">),</span><span class="w">        </span><span class="k">DEFERRED</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">Delete</span>
+<span class="w">        </span><span class="c">!&gt; *ToArray* is a binding name of the *DelNGetElm* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Function**: ToArray &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get and remove all items from the collection.  Also, return</span>
+<span class="w">        </span><span class="c">!                a flag indicating whether the items are successfully removed. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Success = Collection%ToArray(Items) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.Collection%ToArray(Items)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">DelNGetElm</span><span class="p">),</span><span class="w">    </span><span class="k">DEFERRED</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">ToArray</span>
+<span class="w">        </span><span class="c">!&gt; *GetAll* is a binding name of the *GetAllElm* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Function**: GetAll &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get all items (without removing them) from the collection.</span>
+<span class="w">        </span><span class="c">!                Also, return a flag indicating whether the items are available. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Success = Collection%GetAll(Items) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.Collection%GetAll(Items)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">GetAllElm</span><span class="p">),</span><span class="w">     </span><span class="k">DEFERRED</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">GetAll</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----      Deferred Procedures from BaseCollection Type         -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; *Clear* is a procedure deferred by the *BaseCollection* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Subroutine**: Clear &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To remove all items from the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Clear() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: The *Clear* method provided by the *BaseIterable* type is</span>
+<span class="w">        </span><span class="c">!       a simple implementation.   It can be overridden by a better and</span>
+<span class="w">        </span><span class="c">!       more efficient implementation.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Clear</span><span class="w">        </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">BaseIterable_ClearItems</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----         Specific Procedures by BaseIterable Type          -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Subroutine**: SetEQProc &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To set a pointer to the *IsEqualTo* procedure.   This method</span>
+<span class="w">        </span><span class="c">!                must be called before calling the *IsEqualTo* method to check</span>
+<span class="w">        </span><span class="c">!                whether two iterable collections are equal to one another or not.</span>
+<span class="w">        </span><span class="c">!                Otherwise, the *IsEqualTo* method would always return false.  &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%SetEQProc(IsEqualTo)</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">SetEQProc</span><span class="w">    </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">BaseIterable_SetEQProc</span>
+<span class="w">    </span><span class="k">END TYPE </span><span class="n">BaseIterable</span>
+</pre></div>
+
+    </section>
+    
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col"><p>XpfGeneral was developed by Niranama<br>&copy; 2024 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>

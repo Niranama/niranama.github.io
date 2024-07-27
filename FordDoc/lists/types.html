@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="XpfLib - General Package Documentation">
+    <meta name="author" content="Niranama" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>All Types &ndash; XpfGeneral
+</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">XpfGeneral </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/absint.html">Abstract Interfaces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12" id='text'>
+			 <h1>Derived Types</h1>
+			 <table class="table table-striped nostretched">
+			 <thead>
+			 <tr><th>Type</th><th>Location</th><th>Extends</th><th>Description</th></tr>
+			 </thead><tbody>
+			   <tr><td><a href='../type/alphabettrie.html'>AlphabetTrie</a></td><td><a href='../module/class_alphabettrie.html'>Class_AlphabetTrie</a></td><td>None</td><td><p>The <em>AlphabetTrie</em> type is a container type that utilizes a multi-way trie
+ implementation to provide common operations for a symbol table where its
+ keys are character strings and its values can be of any type.</p></td></tr>
+			   <tr><td><a href='../type/apint32.html'>ApInt32</a></td><td><a href='../module/class_apint32.html'>Class_ApInt32</a></td><td>None</td><td><p><em>ApInt32</em> is a mutable arbitrary-precision signed integer type where
+  its representations are as follows. <br>
+- Base is 2<sup>32</sup>. <br>
+- Magnitude is represented by the 'Digit' array in little-endian order. <br>
+- The 'Length' first 'Digit' count as the <em>ApInt32</em> number (i.e. it is always
+  less than or equal to the size/capacity of the 'Digit' array). <br>
+- Sign is represented by a sign integer (-1 or 1). <br>
+- Internally zero is allowed to have either sign.
+  (Otherwise one would have to remember to check for sign-swap for division,
+  multiplication etc...) <br>
+- Zero can have many forms: <br>
+  -&gt; The most common form of zero has 'Length' = 1 and Digit(0) = 0 (set through
+     ZeroApInt32()). <br>
+  -&gt; If 'Digit' has not yet been allocated or 'Length' is less than 1, the number
+     is considered to be zero. <br></p></td></tr>
+			   <tr><td><a href='../type/apint64.html'>ApInt64</a></td><td><a href='../module/class_apint64.html'>Class_ApInt64</a></td><td>None</td><td><p><em>ApInt64</em> is a mutable arbitrary-precision signed integer type where
+  its representations are as follows. <br>
+- Base is 2<sup>64</sup>. <br>
+- Magnitude is represented by the 'Digit' array in little-endian order. <br>
+- The 'Length' first 'Digit' count as the <em>ApInt64</em> number (i.e. it is always
+  less than or equal to the size/capacity of the 'Digit' array). <br>
+- Sign is represented by a sign integer (-1 or 1). <br>
+- Internally zero is allowed to have either sign.
+  (Otherwise one would have to remember to check for sign-swap for division,
+  multiplication etc...) <br>
+- Zero can have many forms: <br>
+  -&gt; The most common form of zero has 'Length' = 1 and Digit(0) = 0 (set through
+     ZeroApInt64()). <br>
+  -&gt; If 'Digit' has not yet been allocated or 'Length' is less than 1, the number
+     is considered to be zero. <br></p></td></tr>
+			   <tr><td><a href='../type/asciialphabet.html'>AsciiAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>AsciiAlphabet</em> type is a data type representing the ASCII alphabet { 0-127 characters' code }.</p></td></tr>
+			   <tr><td><a href='../type/assignable.html'>Assignable</a></td><td><a href='../module/class_assignable.html'>Class_Assignable</a></td><td>None</td><td><p>The <em>Assignable</em> type is an abstract data type that must be able to
+ make a copy of itself. <br></p></td></tr>
+			   <tr><td><a href='../type/base64alphabet.html'>Base64Alphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>Base64Alphabet</em> type is a data type representing the base-64 alphabet { 64 characters }.</p></td></tr>
+			   <tr><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td>None</td><td><p>The <em>BaseAlphabet</em> type is an abstract data type for alphabets intended to
+ be used with string-processing code that must convert between an alphabet
+ of size R and the integers through 1 through R.</p></td></tr>
+			   <tr><td><a href='../type/basecollection.html'>BaseCollection</a></td><td><a href='../module/class_basecollection.html'>Class_BaseCollection</a></td><td><a href='../type/assignable.html'>Assignable</a></td><td><p>The <em>BaseCollection</em> type is an abstract collection type that defines
+ an API for various common operations.  Some operations are deferred
+ while others (with default implementation) can be overridden.</p></td></tr>
+			   <tr><td><a href='../type/basedigest.html'>BaseDigest</a></td><td><a href='../module/class_basedigest.html'>Class_BaseDigest</a></td><td>None</td><td><p><em>BaseDigest</em> is an abstract type representing a base type for a
+ <em>(Message) Digest</em> object.  It defines an API for common operations
+ of an incremental cryptographic hash function.</p></td></tr>
+			   <tr><td><a href='../type/basehasher.html'>BaseHasher</a></td><td><a href='../module/class_basehasher.html'>Class_BaseHasher</a></td><td>None</td><td><p><em>BaseHasher</em> is an abstract type representing a base hasher that
+ defines an <em>incomplete</em> application programming interface (API)
+ for an incremental non-cryptographic hash function.</p></td></tr>
+			   <tr><td><a href='../type/baseiterable.html'>BaseIterable</a></td><td><a href='../module/class_baseiterable.html'>Class_BaseIterable</a></td><td><a href='../type/basecollection.html'>BaseCollection</a></td><td><p>The <em>BaseIterable</em> type is an abstract collection type that
+ defines an API for iterable collections, which are collections
+ that can iterate over their items. <br>
+ The <em>BaseIterable</em> type and its subclasses are intended to be
+ used with the <a href="../module/class_genstore.html#type-genstore">GenStore</a>
+ type, which is a generic data storage type.  The <em>GenStore</em> type
+ can store various data type providing that the size (in bytes) of
+ the data to be stored is known at compile time. <br>
+ As a result, the <em>BaseIterable</em> type and all its subclasses are
+ parameterized collection types that requires a known byte size of
+ the data to be stored in a collection.  This known byte size must
+ be specified at compile time when a collection type is declared. <br>
+ The following code snippet shows various ways to declare the
+ <em>BaseIterable</em> type and its subclasses.
+<br>
+<Pre><Code style="color:MidnightBlue;">
+  ! declare an allocatable variable of the <em>BaseIterable</em> type
+  ! and then allocate it to one of its concrete subtypes
+  TYPE Point2D
+      REAL    :: X, Y
+  END TYPE
+  INTEGER, PARAMETER :: PointSize = SIZEOF(Point2D(0.0, 0.0)) ! byte size of Point2D
+  CLASS(BaseIterable(:)), ALLOCATABLE :: Collection
+  ALLOCATE(StackArray(PointSize) :: Collection)   ! a stack of Point2D items
+
+  ! or directly declare variables of its concrete subtypes
+  INTEGER, PARAMETER :: IntSize = C_SIZEOF(0)     ! byte size of default integer
+  INTEGER, PARAMETER :: RealSize = C_SIZEOF(0.0)  ! byte size of default real
+  TYPE(DequeArray(IntSize))   ::  IntDeque        ! a deque of integer items
+  TYPE(ListArray(RealSize))   ::  RealList        ! a list of real items
+  </Code></Pre>
+</p></td></tr>
+			   <tr><td><a href='../type/baserng.html'>BaseRNG</a></td><td><a href='../module/class_baserng.html'>Class_BaseRNG</a></td><td>None</td><td><p>The <em>BaseRNG</em> type is an abstract PRNG type that provides an API
+ for random number generations.  Some random number generations are
+ deferred while others (with default implementation) can be overridden.</p></td></tr>
+			   <tr><td><a href='../type/basesymtable.html'>BaseSymTable</a></td><td><a href='../module/class_basesymtable.html'>Class_BaseSymTable</a></td><td><a href='../type/basecollection.html'>BaseCollection</a></td><td><p>The <em>BaseSymTable</em> type is an abstract collection type that
+ defines an API for a symbol table, which is a collection
+ that associates a <em>value</em> with a <em>key</em>. <br>
+ The <em>BaseSymTable</em> type and its subclasses are intended to be
+ used with the <a href="../module/class_genstore.html#type-genstore">GenStore</a>
+ type, which is a generic data storage type.  The <em>GenStore</em> type
+ used to store a value of an inserted key-value pair can store
+ various data type providing that the size (in bytes) of the data
+ to be stored is known at compile time. <br>
+ As a result, the <em>BaseSymTable</em> type and all its subclasses are
+ parameterized collection types that requires a known byte size of
+ the value to be stored in a collection.  This known byte size must
+ be specified at compile time when a collection type is declared. <br>
+ The following code snippet shows various ways to declare the
+ <em>BaseSymTable</em> type and its subclasses.
+<br>
+<Pre><Code style="color:MidnightBlue;">
+  ! declare an allocatable variable of the <em>BaseSymTable</em> type
+  ! and then allocate it to one of its concrete subtypes
+  TYPE Point2D
+      REAL    :: X, Y
+  END TYPE
+  INTEGER, PARAMETER :: PointSize = SIZEOF(Point2D(0.0, 0.0)) ! byte size of Point2D
+  CLASS(BaseSymTable(:)), ALLOCATABLE :: Collection
+  ALLOCATE(HashTable(PointSize) :: Collection)    ! a hash table of key-value pairs where Point2D is the value type
+
+  ! or directly declare variables of its concrete subtypes
+  INTEGER, PARAMETER :: IntSize = C_SIZEOF(0)     ! byte size of default integer
+  INTEGER, PARAMETER :: RealSize = C_SIZEOF(0.0)  ! byte size of default real
+  TYPE(TreeTable(IntSize))    ::  IntTree         ! a tree table of key-value pairs where integer is the value type
+  TYPE(ListTable(RealSize))   ::  RealList        ! a list table of key-value pairs where real is the value type
+  </Code></Pre>
+</p></td></tr>
+			   <tr><td><a href='../type/binaryalphabet.html'>BinaryAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>BinaryAlphabet</em> type is a data type representing the binary alphabet { 0, 1 }.</p></td></tr>
+			   <tr><td><a href='../type/blake1b.html'>Blake1B</a></td><td><a href='../module/class_blake1b.html'>Class_Blake1B</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>Blake1B</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>BLAKE-384</em> or the <em>BLAKE-512 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/blake1s.html'>Blake1S</a></td><td><a href='../module/class_blake1s.html'>Class_Blake1S</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>Blake1S</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>BLAKE-224</em> or the <em>BLAKE-256 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/blake2b.html'>Blake2B</a></td><td><a href='../module/class_blake2b.html'>Class_Blake2B</a></td><td><a href='../type/blake2core.html'>Blake2Core</a></td><td><p><em>Blake2B</em> is a concrete <em>digest</em> type that implements an incremental cryptographic
+ hash function by employing the <em>BLAKE2b message-digest</em> algorithm.  It can also be
+ utilized as a hash-based message authentication code (HMAC).</p></td></tr>
+			   <tr><td><a href='../type/blake2core.html'>Blake2Core</a></td><td><a href='../module/class_blake2core.html'>Class_Blake2Core</a></td><td><a href='../type/basedigest.html'>BaseDigest</a></td><td><p><em>Blake2Core</em> is an abstract <em>digest</em> type provided to be a parent type
+ for other <em>Blake2-based digest</em> types to implement incremental cryptographic
+ hash functions.</p></td></tr>
+			   <tr><td><a href='../type/blake2s.html'>Blake2S</a></td><td><a href='../module/class_blake2s.html'>Class_Blake2S</a></td><td><a href='../type/blake2core.html'>Blake2Core</a></td><td><p><em>Blake2S</em> is a concrete <em>digest</em> type that implements an incremental cryptographic
+ hash function by employing the <em>BLAKE2s message-digest</em> algorithm.  It can also be
+ utilized as a hash-based message authentication code (HMAC).</p></td></tr>
+			   <tr><td><a href='../type/blake3.html'>Blake3</a></td><td><a href='../module/class_blake3.html'>Class_Blake3</a></td><td><a href='../type/basedigest.html'>BaseDigest</a></td><td><p><em>Blake3</em> is a concrete <em>digest</em> type that implements an incremental cryptographic
+ hash function by employing the <em>BLAKE3 message-digest</em> algorithm.  It can also be
+ utilized as a hash-based message authentication code (HMAC).  It can be used as
+ a key derivation function (KDF) as well.  In addition, it can be employed as an
+ extendable-output function (XOF) to output the hash value with a desired length.</p></td></tr>
+			   <tr><td><a href='../type/bmwb.html'>BmwB</a></td><td><a href='../module/class_bmwb.html'>Class_BmwB</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>BmwB</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>BMW-384</em> or the <em>BMW-512 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/bmws.html'>BmwS</a></td><td><a href='../module/class_bmws.html'>Class_BmwS</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>BmwS</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>BMW-224</em> or the <em>BMW-256 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/bstnode.html'>BSTNode</a></td><td><a href='../module/class_intrusivebstrees.html'>Class_IntrusiveBSTrees</a></td><td><a href='../type/comparable.html'>Comparable</a></td><td><p><em>BSTNode</em> is a binary-search tree node type provided to be used with both
+ the <em>IntrusiveAVLTree</em> and <em>IntrusiveRBTree</em> container types.   Like the
+ <em>DoublyLinkedNode</em> type, the <em>BSTNode</em>  contains no data content.  Therefore,
+ an intrusive container working with objects (or nodes) in the <em>BSTNode</em> class
+ can operate without having to manage the data content. <br>
+ However, to use the intrusive container properly, for example, a user would
+ typically define a new node type that extends the <em>BSTNode</em> type as follows:
+ 
+<Pre><Code style="color:MidnightBlue;">
+ ! a tree-node object with default integer as type of its key and
+   default real as type of its content
+ TYPE, EXTENDS(BSTNode) :: IntegerRealNode
+     INTEGER     :: key          ! stored key
+     REAL        :: content      ! stored content
+ END TYPE
+ </Code></Pre></p><a href="../type/bstnode.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
+			   <tr><td><a href='../type/byteconverter.html'>ByteConverter</a></td><td><a href='../module/class_byteconverter.html'>Class_ByteConverter</a></td><td>None</td><td><p>The <em>ByteConverter</em> type is a converter type that performs a conversion
+ of bit patterns between a byte (an array of 8-bit integers) array and
+ an other integer type (i.e. a 16-bit, 32-bit or 64-bit integer).</p></td></tr>
+			   <tr><td><a href='../type/chacharng.html'>ChaChaRNG</a></td><td><a href='../module/class_chacharng.html'>Class_ChaChaRNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>ChaChaRNG</em> type is a <em>Long</em> PRNG type based on the <em>ChaCha</em> algorithm
+ by D.J. Bernstein.</p></td></tr>
+			   <tr><td><a href='../type/cmwc4096rng.html'>Cmwc4096RNG</a></td><td><a href='../module/class_cmwc4096rng.html'>Class_Cmwc4096RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>Cmwc4096RNG</em> type is an <em>Integer</em> PRNG type based on the <em>CMWC</em>
+ (Complimentary-Multiply-With-Carry) algorithm by George Marsaglia.</p></td></tr>
+			   <tr><td><a href='../type/code39alphabet.html'>Code39Alphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>Code39Alphabet</em> type is a data type representing the Code-39 alphabet { 43+1 characters }.</p></td></tr>
+			   <tr><td><a href='../type/comparable.html'>Comparable</a></td><td><a href='../module/class_comparable.html'>Class_Comparable</a></td><td><a href='../type/assignable.html'>Assignable</a></td><td><p>A <em>Comparable</em> type is an abstract data type that can be compared to
+  itself.  When two <em>Comparable</em> objects are compared, we can specify
+  whether they are less than, greater than or equal to one another or not.
+  This data type can also be called a <em>Sortable</em> type because it can be
+  used with a sorting algorithm.</p></td></tr>
+			   <tr><td><a href='../type/container.html'>Container</a></td><td><a href='../module/modbase_common.html'>ModBase_Common</a></td><td>None</td><td><p>container type that utilize 'c' pointer (C_PTR) type</p></td></tr>
+			   <tr><td><a href='../type/cshake.html'>cSHAKE</a></td><td><a href='../module/class_cshake.html'>Class_cSHAKE</a></td><td><a href='../type/kp1600core.html'>KP1600Core</a></td><td><p><em>cSHAKE</em> is a concrete <em>Keccak-based digest</em> type that implements an
+ incremental cryptographic hash function by employing either the
+ <em>cSHAKE-128</em> or the <em>cSHAKE-256 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/csvio.html'>CSVIO</a></td><td><a href='../module/class_csvio.html'>Class_CSVIO</a></td><td>None</td><td><p>The <em>CSVIO</em> type is an IO (input/output) type that can be used to handle
+ reading from and writing to CSV (comma-separated values) files.</p></td></tr>
+			   <tr><td><a href='../type/cubehash.html'>CubeHash</a></td><td><a href='../module/class_cubehash.html'>Class_CubeHash</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>CubeHash</em> is a concrete <em>digest</em> type that implements an incremental
+ cryptographic hash function based on the CubeHash hash functions.</p></td></tr>
+			   <tr><td><a href='../type/darrassignable.html'>DArrAssignable</a></td><td><a href='../module/class_darrassignable.html'>Class_DArrAssignable</a></td><td>None</td><td><p><em>DArrAssignable</em> is a container type that employs a dynamic-array implementation
+ to provide common operations for a list container.  It can also represent other
+ forms of containers including a LIFO stack, a FIFO queue and a double-ended queue
+ (deque).  The type of items stored in this container is a derived type in the
+ <em>Assignable</em> class (i.e. the <em>Assignable</em> type or its subtypes).</p></td></tr>
+			   <tr><td><a href='../type/darrcharacter.html'>DArrCharacter</a></td><td><a href='../module/class_darrcharacter.html'>Class_DArrCharacter</a></td><td>None</td><td><p><em>DArrCharacter</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>CHARACTER</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrcmpxdp.html'>DArrCmpxDP</a></td><td><a href='../module/class_darrcmpxdp.html'>Class_DArrCmpxDP</a></td><td>None</td><td><p><em>DArrCmpxDP</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>COMPLEX(KIND=kDP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrcmpxqp.html'>DArrCmpxQP</a></td><td><a href='../module/class_darrcmpxqp.html'>Class_DArrCmpxQP</a></td><td>None</td><td><p><em>DArrCmpxQP</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>COMPLEX(KIND=kQP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrcmpxsp.html'>DArrCmpxSP</a></td><td><a href='../module/class_darrcmpxsp.html'>Class_DArrCmpxSP</a></td><td>None</td><td><p><em>DArrCmpxSP</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>COMPLEX(KIND=kSP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrinteger1b.html'>DArrInteger1B</a></td><td><a href='../module/class_darrinteger1b.html'>Class_DArrInteger1B</a></td><td>None</td><td><p><em>DArrInteger1B</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>INTEGER(KIND=kI1B)</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrinteger2b.html'>DArrInteger2B</a></td><td><a href='../module/class_darrinteger2b.html'>Class_DArrInteger2B</a></td><td>None</td><td><p><em>DArrInteger2B</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>INTEGER(KIND=kI2B)</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrinteger4b.html'>DArrInteger4B</a></td><td><a href='../module/class_darrinteger4b.html'>Class_DArrInteger4B</a></td><td>None</td><td><p><em>DArrInteger4B</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>INTEGER(KIND=kI4B)</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrinteger8b.html'>DArrInteger8B</a></td><td><a href='../module/class_darrinteger8b.html'>Class_DArrInteger8B</a></td><td>None</td><td><p><em>DArrInteger8B</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>INTEGER(KIND=kI8B)</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrlogical.html'>DArrLogical</a></td><td><a href='../module/class_darrlogical.html'>Class_DArrLogical</a></td><td>None</td><td><p><em>DArrLogical</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>LOGICAL</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrrealdp.html'>DArrRealDP</a></td><td><a href='../module/class_darrrealdp.html'>Class_DArrRealDP</a></td><td>None</td><td><p><em>DArrRealDP</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>REAL(KIND=kDP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrrealqp.html'>DArrRealQP</a></td><td><a href='../module/class_darrrealqp.html'>Class_DArrRealQP</a></td><td>None</td><td><p><em>DArrRealQP</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>REAL(KIND=kQP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/darrrealsp.html'>DArrRealSP</a></td><td><a href='../module/class_darrrealsp.html'>Class_DArrRealSP</a></td><td>None</td><td><p><em>DArrRealSP</em> is a container type that employs a dynamic-array implementation to provide
+  common operations for a list container.  It can also represent other forms of
+  containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>REAL(KIND=kSP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/decimalalphabet.html'>DecimalAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>DecimalAlphabet</em> type is a data type representing the decimal alphabet
+ { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }.</p></td></tr>
+			   <tr><td><a href='../type/dequearray.html'>DequeArray</a></td><td><a href='../module/class_dynamicarrays.html'>Class_DynamicArrays</a></td><td><a href='../type/queuearray.html'>QueueArray</a></td><td><p><strong>Description</strong>: <br>
+  The <em>DequeArray</em> type is a collection type that employs a resizable-array
+  implementation to provide common operations for a double-ended queue (deque).
+  It can be used as a FIFO queue or a LIFO stack as well. <br>
+ <strong>Usage Overview</strong>: <br>
+  The <em>DequeArray</em> type is a <em>deque</em> collection type that provides common
+  operations of a double-ended queue (deque).  Their operations can be categorized
+  as follows: <br>
+  (1) Construction and destruction.  Methods for these operations include <br>
+  (1.1) <em>Construct</em> method - method to construct the collection either from
+      another collection or from an array of items, <br>
+  (1.2) <em>CreateEmpty</em> method - method to construct an empty collection, <br>
+  (1.3) <em>Destruct</em> method - method to destruct the collection. <br>
+  (2) Insert and remove.  Methods for these operations include <br>
+  (2.1) <em>AddFirst</em> method - method to insert an item to the front of the collection, <br>
+  (2.2) <em>AddLast</em> method - method to insert an item to the end of the collection, <br>
+  (2.3) <em>RemoveFirst</em> method - method to get and remove the first item of the collection, <br>
+  (2.4) <em>RemoveLast</em> method - method to get and remove the last item of the collection, <br>
+  (2.5) <em>Clear</em> method - method to remove all items from the collection. <br>
+  (2.6) <em>ToArray</em> method - method to remove and retrieve all items from the collection. <br>
+  (3) Inquiry.  Methods for these operations include <br>
+  (3.1) <em>PeekFirst</em> method - method to retrieve the first item of the collection, <br>
+  (3.2) <em>PeekLast</em> method - method to retrieve the last item of the collection, <br>
+  (3.3) <em>GetSize</em> method - method to get the collection size (number of items stored), <br>
+  (3.4) <em>IsEmpty</em> method - method to check whether the collection is empty or not. <br>
+  (3.5) <em>GetAll</em> method - method to retrieve all items from the collection. <br>
+  (4) Iteration.  Methods for these operations include <br>
+  (4.1) <em>StartFirst</em> method - method to start a forward iteration over items, <br>
+  (4.2) <em>MoveForward</em> method - method to move forward to the next item, <br>
+  (4.3) <em>StartLast</em> method - method to start a backward iteration over items, <br>
+  (4.4) <em>MoveBackward</em> method - method to move backward to the previous item. <br>
+  The <em>DequeArray</em> type also supports the usual <em>Enqueue</em>, <em>Dequeue</em> and <em>PeekFirst</em>
+  operations of a FIFO queue as well as the usual <em>Push</em>, <em>Pop</em> and <em>PeekTop</em> operations
+  of a LIFO stack.  Therefore, when using as a queue or a stack, these operations can be
+  used in place of <em>insert</em>, <em>remove</em>, <em>peek</em> operations of a deque as desired.</p></td></tr>
+			   <tr><td><a href='../type/dequelinked.html'>DequeLinked</a></td><td><a href='../module/class_linkedlists.html'>Class_LinkedLists</a></td><td><a href='../type/queuelinked.html'>QueueLinked</a></td><td><p><strong>Description</strong>: <br>
+  The <em>DequeLinked</em> type is a collection type that employs a linked-list
+  implementation to provide common operations for a double-ended queue (deque).
+  It can be used as a FIFO queue or a LIFO stack as well. <br>
+ <strong>Usage Overview</strong>: <br>
+  The <em>DequeLinked</em> type is a <em>deque</em> collection type that provides common
+  operations of a double-ended queue (deque).  Their operations can be categorized
+  as follows: <br>
+  (1) Construction and destruction.  Methods for these operations include <br>
+  (1.1) <em>Construct</em> method - method to construct the collection either from
+      another collection or from an array of items, <br>
+  (1.2) <em>Destruct</em> method - method to destruct the collection. <br>
+  (2) Insert and remove.  Methods for these operations include <br>
+  (2.1) <em>AddFirst</em> method - method to insert an item to the front of the collection, <br>
+  (2.2) <em>AddLast</em> method - method to insert an item to the end of the collection, <br>
+  (2.3) <em>RemoveFirst</em> method - method to get and remove the first item of the collection, <br>
+  (2.4) <em>RemoveLast</em> method - method to get and remove the last item of the collection, <br>
+  (2.5) <em>Clear</em> method - method to remove all items from the collection. <br>
+  (2.6) <em>ToArray</em> method - method to remove and retrieve all items from the collection. <br>
+  (3) Inquiry.  Methods for these operations include <br>
+  (3.1) <em>PeekFirst</em> method - method to retrieve the first item of the collection, <br>
+  (3.2) <em>PeekLast</em> method - method to retrieve the last item of the collection, <br>
+  (3.3) <em>GetSize</em> method - method to get the collection size (number of items stored), <br>
+  (3.4) <em>IsEmpty</em> method - method to check whether the collection is empty or not. <br>
+  (3.5) <em>GetAll</em> method - method to retrieve all items from the collection. <br>
+  (4) Iteration.  Methods for these operations include <br>
+  (4.1) <em>StartFirst</em> method - method to start a forward iteration over items, <br>
+  (4.2) <em>MoveForward</em> method - method to move forward to the next item, <br>
+  (4.3) <em>StartLast</em> method - method to start a backward iteration over items, <br>
+  (4.4) <em>MoveBackward</em> method - method to move backward to the previous item. <br>
+  The <em>DequeArray</em> type also supports the usual <em>Enqueue</em>, <em>Dequeue</em> and <em>PeekFirst</em>
+  operations of a FIFO queue as well as the usual <em>Push</em>, <em>Pop</em> and <em>PeekTop</em> operations
+  of a LIFO stack.  Therefore, when using as a queue or a stack, these operations can be
+  used in place of <em>insert</em>, <em>remove</em>, <em>peek</em> operations of a deque as desired.</p></td></tr>
+			   <tr><td><a href='../type/dnaalphabet.html'>DnaAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>DnaAlphabet</em> type is a data type representing the DNA alphabet { A, C, T, G }.</p></td></tr>
+			   <tr><td><a href='../type/doublylinkednode.html'>DoublyLinkedNode</a></td><td><a href='../module/class_intrusivelinkedlists.html'>Class_IntrusiveLinkedLists</a></td><td>None</td><td><p><em>DoublyLinkedNode</em> is a doubly-linked node type that contains two pointer
+  components that can point to its adjacent nodes (next node and previous
+  node) in two directions, which allow a doubly-linked list to be formed.
+  Unlike a traditional (non-intrusive) list node, the <em>DoublyLinkedNode</em> type
+  contains no data content.  Therefore, an intrusive container working with
+  nodes in the <em>DoublyLinkedNode</em> class can operate without having to manage
+  the data content. <br>
+  However, to use the intrusive container properly, for example, a user must
+  define a new node type that extends the <em>DoublyLinkedNode</em> type as follows:
+<br>
+<Pre><Code style="color:MidnightBlue;">
+  ! a list-node object with default integer as type of its data content
+  TYPE, EXTENDS(DoublyLinkedNode) :: IntegerListNode
+      INTEGER     :: content      ! stored content
+  END TYPE
+  </Code></Pre></p><a href="../type/doublylinkednode.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
+			   <tr><td><a href='../type/echob.html'>EChoB</a></td><td><a href='../module/class_echob.html'>Class_EChoB</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>EChoB</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>ECHO-384</em> or the <em>ECHO-512 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/echos.html'>EChoS</a></td><td><a href='../module/class_echos.html'>Class_EChoS</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>EChoS</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>ECHO-224</em> or the <em>ECHO-256 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/equation.html'>Equation</a></td><td><a href='../module/modbase_common.html'>ModBase_Common</a></td><td>None</td><td><p>an equation type that can be used to parse strings/texts expressing
+ mathematical expressions to a 'Function Parser' so that a system of
+ equations can be evaluated at runtime.</p></td></tr>
+			   <tr><td><a href='../type/errordata.html'>ErrorData</a></td><td><a href='../module/class_error_data.html'>Class_Error_Data</a></td><td>None</td><td><p><em>ErrorData</em> is an error data type that can be used to handle and report errors.</p></td></tr>
+			   <tr><td><a href='../type/errorinfo.html'>ErrorInfo</a></td><td><a href='../module/class_error_info.html'>Class_Error_Info</a></td><td>None</td><td><p><em>ErrorInfo</em> is an error data type that can be used to handle and report errors.</p></td></tr>
+			   <tr><td><a href='../type/extendedasciialphabet.html'>ExtendedAsciiAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>ExtendedAsciiAlphabet</em> type is a data type representing the extended ASCII alphabet
+ { 0-255 characters' code }.</p></td></tr>
+			   <tr><td><a href='../type/farmnahasher64.html'>FarmNaHasher64</a></td><td><a href='../module/class_farmnahasher64.html'>Class_FarmNaHasher64</a></td><td><a href='../type/hasher64.html'>Hasher64</a></td><td><p><em>FarmNaHasher64</em> is a hasher type that outputs the hash value as a 64-bit integer.
+ It employs the <em>FarmNa</em> hash algorithm by Google Inc.</p></td></tr>
+			   <tr><td><a href='../type/farmuohasher64.html'>FarmUoHasher64</a></td><td><a href='../module/class_farmuohasher64.html'>Class_FarmUoHasher64</a></td><td><a href='../type/hasher64.html'>Hasher64</a></td><td><p><em>FarmUoHasher64</em> is a hasher type that outputs the hash value as a 64-bit integer.
+ It employs the <em>FarmUo</em> hash algorithm by Google Inc.</p></td></tr>
+			   <tr><td><a href='../type/fugue.html'>Fugue</a></td><td><a href='../module/class_fugue.html'>Class_Fugue</a></td><td><a href='../type/basedigest.html'>BaseDigest</a></td><td><p><em>Fugue</em> is a concrete <em>digest</em> type that implements an incremental
+ cryptographic hash function based on the Fugue hash algorithms.</p></td></tr>
+			   <tr><td><a href='../type/fvlstr.html'>FvlStr</a></td><td><a href='../module/class_fvlstr.html'>Class_FvlStr</a></td><td><a href='../type/hashable.html'>Hashable</a></td><td><p><em>FvlStr</em> is a string type that represents a variable-length string class.
+ It provides various methods/procedures to handle and manipulate strings.</p></td></tr>
+			   <tr><td><a href='../type/genericalphabet.html'>GenericAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>GenericAlphabet</em> type is a generic data type that can represent any alphabets.
+ An instance of the <em>GenericAlphabet</em> type can be created via the <em>Construct</em> method
+ from either a given set of characters or a radix (representing a number of characters
+ in the set where the characters' code are from 0 to radix-1).</p></td></tr>
+			   <tr><td><a href='../type/genstore.html'>GenStore</a></td><td><a href='../module/class_genstore.html'>Class_GenStore</a></td><td>None</td><td><p>The <em>GenStore</em> type is a generic storage type that can hold
+ various data types.  A data content is stored as an array
+ of 8-bit integers (bytes) where its byte size must be known
+ at compile time (i.e. when the <em>GenStore</em> type is declared).</p></td></tr>
+			   <tr><td><a href='../type/groestlb.html'>GroestlB</a></td><td><a href='../module/class_groestlb.html'>Class_GroestlB</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>GroestlB</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>Groestl-384</em> or the <em>Groestl-512 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/groestls.html'>GroestlS</a></td><td><a href='../module/class_groestls.html'>Class_GroestlS</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>GroestlS</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>Groestl-224</em> or the <em>Groestl-256 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/halfsip24hasher32.html'>HalfSip24Hasher32</a></td><td><a href='../module/class_halfsip24hasher32.html'>Class_HalfSip24Hasher32</a></td><td><a href='../type/hasher32.html'>Hasher32</a></td><td><p><em>HalfSip24Hasher32</em> is a hasher type that outputs the hash value as a 32-bit integer.
+ It employs the <em>HalfSip24</em> hash algorithm by Jean-Philippe Aumasson.</p></td></tr>
+			   <tr><td><a href='../type/hamsib.html'>HamsiB</a></td><td><a href='../module/class_hamsib.html'>Class_HamsiB</a></td><td><a href='../type/basedigest.html'>BaseDigest</a></td><td><p><em>HamsiB</em> is a concrete <em>digest</em> type that implements an incremental
+ cryptographic hash function based on the Hamsi hash algorithms.</p></td></tr>
+			   <tr><td><a href='../type/hamsis.html'>HamsiS</a></td><td><a href='../module/class_hamsis.html'>Class_HamsiS</a></td><td><a href='../type/basedigest.html'>BaseDigest</a></td><td><p><em>HamsiS</em> is a concrete <em>digest</em> type that implements an incremental
+ cryptographic hash function based on the Hamsi hash algorithms.</p></td></tr>
+			   <tr><td><a href='../type/hashable.html'>Hashable</a></td><td><a href='../module/class_hashable.html'>Class_Hashable</a></td><td><a href='../type/comparable.html'>Comparable</a></td><td><p>A <em>Hashable</em> type is an abstract data type that can be converted to a
+  hash value.</p></td></tr>
+			   <tr><td><a href='../type/hasher32.html'>Hasher32</a></td><td><a href='../module/class_hasher32.html'>Class_Hasher32</a></td><td><a href='../type/basehasher.html'>BaseHasher</a></td><td><p><em>Hasher32</em> is an abstract type representing a hasher that outputs the hash value
+ as a 32-bit integer for an incremental non-cryptographic hash function.</p></td></tr>
+			   <tr><td><a href='../type/hasher64.html'>Hasher64</a></td><td><a href='../module/class_hasher64.html'>Class_Hasher64</a></td><td><a href='../type/basehasher.html'>BaseHasher</a></td><td><p><em>Hasher64</em> is an abstract type representing a hasher that outputs the hash value
+ as a 64-bit integer for an incremental non-cryptographic hash function.</p></td></tr>
+			   <tr><td><a href='../type/hashlistnode.html'>HashListNode</a></td><td><a href='../module/class_intrusivehashlist.html'>Class_IntrusiveHashList</a></td><td><a href='../type/doublylinkednode.html'>DoublyLinkedNode</a></td><td><p>The <em>HashListNode</em> type is a doubly-linked-list node type intended to be
+ used in conjunction with the <em>IntrusiveHashList</em> type.  Similar to other
+ intrusive containers, the <em>IntrusiveHashList</em> type requires a user to
+ define a new (concrete) node type that extends the <em>HashListNode</em> type
+ where the new node type contains a key and its associated value as its
+ components. <br>
+ The following code snippet illustrates how to define a new node type.
+<br>
+<Pre><Code style="color:MidnightBlue;">
+  TYPE, EXTENDS(HashListNode) :: AssociativeNode
+      CHARACTER(LEN=:), ALLOCATABLE   :: Key      ! stored string key
+      INTEGER                         :: Value1   ! stored integer value
+      REAL                            :: Value2   ! stored real value
+  END TYPE
+  </Code></Pre></p><a href="../type/hashlistnode.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
+			   <tr><td><a href='../type/hashmap.html'>HashMap</a></td><td><a href='../module/class_hashmap.html'>Class_HashMap</a></td><td><a href='../type/basesymtable.html'>BaseSymTable</a></td><td><p>The <em>HashMap</em> type is a collection type that employs a linear-probing
+ hash table implementation to provide common operations for an unordered
+ symbol table.  The linear-probing is a collision handling technique used
+ in hashing, where the algorithm looks for the next available slot in the
+ hash table to store the collided key.  The <em>HashMap</em> type employs an array
+ of the <em>TabItem</em> type as its component (i.e. table items as its Items)
+ to store a key-value pair. <br>
+ As an unordered symbol table, the <em>HashMap</em> type extends the <em>BaseSymTable</em>
+ type directly and implements all deferred procedures required by all its super
+ classes (including the <em>Assignable</em> type and the <em>BaseCollection</em> type).  As a
+ symbol table, the <em>HashMap</em> type does not allow duplicated keys; therefore,
+ if an inserted key is equal to a key stored in the table, an associated value
+ of the stored key is replaced by an associated value of the inserted key.  <br>
+ The <em>HashMap</em> type employs the dynamic-array technique to resize the <em>TabItem</em>
+ array when the load factor is greater than or equal to 0.5 for an insertion
+ operation or less than or equal to 0.125 for a removal operation.  As a result,
+ the <em>HashMap</em> type requires an explicit construction via either the <em>CreateEmpty</em>
+ or the <em>Construct</em> method before using other provided operations.  When the
+ <em>MemFree</em> or the <em>Destruct</em> method is called, the hash table also needs to be
+ re-construct because those methods essentially deallocate the working array.</p></td></tr>
+			   <tr><td><a href='../type/hashtable.html'>HashTable</a></td><td><a href='../module/class_hashtable.html'>Class_HashTable</a></td><td><a href='../type/basesymtable.html'>BaseSymTable</a></td><td><p>The <em>HashTable</em> type is a collection type that employs a separate-chaining
+ hash table implementation to provide common operations for an unordered
+ symbol table.  The separate-chaining technique combines a linked list with
+ a hash table to solve the collision problem.  The <em>HashTable</em> type employs
+ an array of the <em>IntrusiveLinearList</em> type as its component (i.e. using
+ an array of linked lists as its buckets) to store <em>TabNode</em> objects.  As an
+ intrusive container, the <em>IntrusiveLinearList</em> type only provides a linking/
+ unlinking task for common linked-list operations, the memory management task
+ of the inserted <em>TabNode</em> objects is directly handled by the <em>HashTable</em> type. <br>
+ As an unordered symbol table, the <em>HashTable</em> type extends the <em>BaseSymTable</em>
+ type directly and implements all deferred procedures required by all its super
+ classes (including the <em>Assignable</em> type and the <em>BaseCollection</em> type).  As a
+ symbol table, the <em>HashTable</em> type does not allow duplicated keys; therefore,
+ if an inserted key is equal to a key stored in the table, an associated value
+ of the stored key is replaced by an associated value of the inserted key.  <br>
+ In order to avoid long linked lists (due to many keys hashed to the same
+ indices), the <em>HashTable</em> type employs the dynamic-array technique to resize
+ the linked-list array.  As a result, the <em>HashTable</em> type requires an explicit
+ construction via either the <em>CreateEmpty</em> or the <em>Construct</em> method before
+ using other provided operations.  When the <em>MemFree</em> or the <em>Destruct</em> method
+ is called, the hash table also needs to be re-construct because those methods
+ essentially deallocate the working array.</p></td></tr>
+			   <tr><td><a href='../type/hashtreenode.html'>HashTreeNode</a></td><td><a href='../module/class_intrusivehashtree.html'>Class_IntrusiveHashTree</a></td><td><a href='../type/bstnode.html'>BSTNode</a></td><td><p>The <em>HashTreeNode</em> type is a binary-search-tree node type intended to be
+ used in conjunction with the <em>IntrusiveHashTree</em> type.  Similar to other
+ intrusive containers, the <em>IntrusiveHashTree</em> type requires a user to
+ define a new (concrete) node type that extends the <em>HashTreeNode</em> type
+ where the new node type contains a key and its associated value as its
+ components. <br>
+ The following code snippet illustrates how to define a new node type.
+<br>
+<Pre><Code style="color:MidnightBlue;">
+  TYPE, EXTENDS(HashTreeNode) :: AssociativeNode
+      CHARACTER(LEN=:), ALLOCATABLE   :: Key      ! stored string key
+      INTEGER                         :: Value1   ! stored integer value
+      REAL                            :: Value2   ! stored real value
+  END TYPE
+  </Code></Pre></p><a href="../type/hashtreenode.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
+			   <tr><td><a href='../type/hexadecimalalphabet.html'>HexadecimalAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>HexadecimalAlphabet</em> type is a data type representing the hexadecimal alphabet
+ { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F }.</p></td></tr>
+			   <tr><td><a href='../type/htabcharacter.html'>HTabCharacter</a></td><td><a href='../module/class_htabcharacter.html'>Class_HTabCharacter</a></td><td>None</td><td><p>The <em>HTabCharacter</em> type is a container type that employs an open-addressing hash
+ table implementation to provide common operations for an unordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/htabhashable.html'>HTabHashable</a></td><td><a href='../module/class_htabhashable.html'>Class_HTabHashable</a></td><td>None</td><td><p>The <em>HTabHashable</em> type is a table type that employs an open-addressing hash table
+ implementation to provide common operations for an unordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/htabinteger1b.html'>HTabInteger1B</a></td><td><a href='../module/class_htabinteger1b.html'>Class_HTabInteger1B</a></td><td>None</td><td><p>The <em>HTabInteger1B</em> type is a container type that employs an open-addressing hash
+ table implementation to provide common operations for an unordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/htabinteger2b.html'>HTabInteger2B</a></td><td><a href='../module/class_htabinteger2b.html'>Class_HTabInteger2B</a></td><td>None</td><td><p>The <em>HTabInteger2B</em> type is a container type that employs an open-addressing hash
+ table implementation to provide common operations for an unordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/htabinteger4b.html'>HTabInteger4B</a></td><td><a href='../module/class_htabinteger4b.html'>Class_HTabInteger4B</a></td><td>None</td><td><p>The <em>HTabInteger4B</em> type is a container type that employs an open-addressing hash
+ table implementation to provide common operations for an unordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/htabinteger8b.html'>HTabInteger8B</a></td><td><a href='../module/class_htabinteger8b.html'>Class_HTabInteger8B</a></td><td>None</td><td><p>The <em>HTabInteger8B</em> type is a container type that employs an open-addressing hash
+ table implementation to provide common operations for an unordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/htabrealdp.html'>HTabRealDP</a></td><td><a href='../module/class_htabrealdp.html'>Class_HTabRealDP</a></td><td>None</td><td><p>The <em>HTabRealDP</em> type is a container type that employs an open-addressing hash
+ table implementation to provide common operations for an unordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/htabrealqp.html'>HTabRealQP</a></td><td><a href='../module/class_htabrealqp.html'>Class_HTabRealQP</a></td><td>None</td><td><p>The <em>HTabRealQP</em> type is a container type that employs an open-addressing hash
+ table implementation to provide common operations for an unordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/htabrealsp.html'>HTabRealSP</a></td><td><a href='../module/class_htabrealsp.html'>Class_HTabRealSP</a></td><td>None</td><td><p>The <em>HTabRealSP</em> type is a container type that employs an open-addressing hash
+ table implementation to provide common operations for an unordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><a href='../module/class_integerrng.html'>Class_IntegerRNG</a></td><td><a href='../type/baserng.html'>BaseRNG</a></td><td><p>The <em>IntegerRNG</em> type is an abstract PRNG type that directly extends
+ the <em>BaseRNG</em> type.  It is provided to aid the implementation of an
+ <em>Integer</em> PRNG whose main purpose is to produce a 32-bit integer random
+ number.  Therefore, all so-called <em>Integer</em> PRNGs should extend from
+ this base type.</p></td></tr>
+			   <tr><td><a href='../type/intrusiveavltree.html'>IntrusiveAVLTree</a></td><td><a href='../module/class_intrusivebstrees.html'>Class_IntrusiveBSTrees</a></td><td>None</td><td><p><em>IntrusiveAVLTree</em> is a binary-search tree container type that represents an
+ ordered symbol table of objects in the <em>BSTNode</em> class.  It supports various
+ common operations including the <em>Insert</em>, <em>Remove</em>, <em>Contain</em>, <em>GetSize</em>, and
+ <em>IsEmpty</em> methods.  It also provides ordered methods for finding the minimum,
+ maximum, floor, and ceiling objects.  In addition, it provides methods to
+ perform an iteration over all nodes (or objects) in two directions (from minimum
+ node to maximum node, and vice versa).  <br>
+ The <em>IntrusiveAVLTree</em> type internally employs the AVL tree (Georgy Adelson-
+ Velsky and Evgenii Landis' tree), which is a self-balancing tree.  In an AVL
+ tree, the heights of the two child subtrees of any node differ by at most one;
+ if at any time they differ by more than one, re-balancing is done to restore
+ this property.  <br>
+ As previously discussed, the <em>IntrusiveAVLTree</em> type provides methods that
+ allow an iteration over all objects in two directions.
+ The following code snippet illustrates how to perform an inorder traversal over
+ the tree from the minimum object to the maximum object.
+ 
+<Pre><Code style="color:MidnightBlue;">
+ ! start (forward) inorder traversal (from the minimum object)
+ IsEmpty = Tree%StartMin()
+ IF (.NOT.IsEmpty) DoSomeThing...
+ DO
+     ! move to the next (successor) object
+     IsTheEnd = Tree%MoveForward()
+     ! check whether we reach the end of the tree or not
+     IF (IsTheEnd) EXIT
+     ! if not, do the task we need
+     DoSomeThing...
+ END DO
+ </Code></Pre></p><a href="../type/intrusiveavltree.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
+			   <tr><td><a href='../type/intrusivehashlist.html'>IntrusiveHashList</a></td><td><a href='../module/class_intrusivehashlist.html'>Class_IntrusiveHashList</a></td><td>None</td><td><p>The <em>IntrusiveHashList</em> type is an intrusive container type that employs a
+ separate-chaining hash table implementation to provide common operations for
+ an unordered symbol table.  The separate-chaining technique combines a linked
+ list with a hash table to solve the collision problem.  <br>
+ The <em>IntrusiveHashList</em> type employs an array of the <em>IntrusiveLinearList</em> type
+ as its component (i.e. using an array of linked lists as its buckets) to store
+ <em>HashListNode</em> objects.  Although the <em>IntrusiveHashList</em> type handles a memory
+ management of its working lists, these working lists (as intrusive containers)
+ only provide a linking/unlinking task for common linked-list operations.  This
+ means that the memory management task of the inserted <em>HashListNode</em> objects
+ is essentially handled by a user who is an owner of those inserted objects. <br>
+ As a symbol table, the <em>IntrusiveHashList</em> type does not allow duplicated keys;
+ therefore, if an inserted key node has a key equal to that of a key node stored
+ in the table, the stored key node is replaced by the inserted key node.  <br>
+ In order to avoid long linked lists (due to many keys hashed to the same indices),
+ the <em>IntrusiveHashList</em> type employs the dynamic-array technique to resize the
+ linked-list array.  As a result, the <em>IntrusiveHashList</em> type requires an explicit
+ construction via the <em>Construct</em> method before using other provided operations.
+ When the <em>Destruct</em> method is called, the hash table also needs to be re-construct
+ because this method essentially deallocates the working array.  <br></p></td></tr>
+			   <tr><td><a href='../type/intrusivehashtree.html'>IntrusiveHashTree</a></td><td><a href='../module/class_intrusivehashtree.html'>Class_IntrusiveHashTree</a></td><td>None</td><td><p>The <em>IntrusiveHashTree</em> type is an intrusive container type that employs a
+ separate-chaining hash table implementation to provide common operations for
+ an unordered symbol table.  The separate-chaining technique combines a balanced
+ binary-search tree with a hash table to solve the collision problem.  <br>
+ The <em>IntrusiveHashTree</em> type employs an array of the <em>IntrusiveRBTree</em> type
+ as its component (i.e. using an array of balanced trees as its buckets) to store
+ <em>HashTreeNode</em> objects.  Although the <em>IntrusiveHashTree</em> type handles a memory
+ management of its working trees, these working trees (as intrusive containers)
+ only provide a linking/unlinking task for common balanced-tree operations.  This
+ means that the memory management task of the inserted <em>HashTreeNode</em> objects
+ is essentially handled by a user who is an owner of those inserted objects. <br>
+ As a symbol table, the <em>IntrusiveHashTree</em> type does not allow duplicated keys;
+ therefore, if an inserted key node has a key equal to that of a key node stored
+ in the table, the stored key node is replaced by the inserted key node.  <br>
+ In order to avoid large balanced trees (due to many keys hashed to the same indices),
+ the <em>IntrusiveHashTree</em> type employs the dynamic-array technique to resize the
+ balanced-tree array.  As a result, the <em>IntrusiveHashTree</em> type requires an explicit
+ construction via the <em>Construct</em> method before using other provided operations.
+ When the <em>Destruct</em> method is called, the hash table also needs to be re-construct
+ because this method essentially deallocates the working array.  <br></p></td></tr>
+			   <tr><td><a href='../type/intrusivelinearlist.html'>IntrusiveLinearList</a></td><td><a href='../module/class_intrusivelinkedlists.html'>Class_IntrusiveLinkedLists</a></td><td><a href='../type/intrusiveringlist.html'>IntrusiveRingList</a></td><td><p><em>IntrusiveLinearList</em> is an intrusive doubly-linked list container type
+  that provides common linked-list operations without a memory management
+  task.  The management of objects inserted in the list must be done by
+  a user, which is the owner of those objects. <br>
+  See the <a href="../module/Class_IntrusiveLinkedLists.html#type-doublylinkednode">DoublyLinkedNode</a>
+  type for how to define an object to be inserted into the intrusive list. <br>
+  As a doubly-linked list type, the <em>IntrusiveLinearList</em> type provides
+  four methods that allow iterations over its objects in two directions.
+  The following code snippet illustrates how to typically traverse the list.
+<br>
+<Pre><Code style="color:MidnightBlue;">
+  ! start forward iteration (from the first or head node)
+  IsEmpty = List%StartFirst()
+  IF (.NOT.IsEmpty) DoSomeThing...
+  DO
+      ! move to the next iteration
+      IsTheEnd = List%MoveForward()
+      ! check whether we reach the end of the list or not
+      IF (IsTheEnd) EXIT
+      ! if not, do the task we need
+      DoSomeThing...
+  END DO
+  </Code></Pre></p><a href="../type/intrusivelinearlist.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
+			   <tr><td><a href='../type/intrusiverbtree.html'>IntrusiveRBTree</a></td><td><a href='../module/class_intrusivebstrees.html'>Class_IntrusiveBSTrees</a></td><td><a href='../type/intrusiveavltree.html'>IntrusiveAVLTree</a></td><td><p><em>IntrusiveRBTree</em> is a binary-search tree container type that represents an
+ ordered symbol table of objects in the <em>BSTNode</em> class.  It is a subtype of
+ the <em>IntrusiveAVLTree</em> type and thus inherits all methods from its super class.
+ Internally, the <em>IntrusiveRBTree</em> type utilizes a left-leaning red-black (RB)
+ tree, which is also a self-balancing tree.  It only overrides those methods
+ that require a different implementation.</p></td></tr>
+			   <tr><td><a href='../type/intrusiveringlist.html'>IntrusiveRingList</a></td><td><a href='../module/class_intrusivelinkedlists.html'>Class_IntrusiveLinkedLists</a></td><td>None</td><td><p><em>IntrusiveRingList</em> is an intrusive circularly-linked list container type
+  that provides common linked-list operations without a memory management
+  task.  The management of objects inserted in the list must be done by
+  a user, which is the owner of those objects. <br>
+  See the <a href="../module/Class_IntrusiveLinkedLists.html#type-doublylinkednode">DoublyLinkedNode</a>
+  type for how to define an object to be inserted into an intrusive container. <br>
+  Similar to the <em>IntrusiveLinearList</em> type, the <em>IntrusiveRingList</em> type provides
+  four methods that allow iterations over its objects in two directions.  See the
+  <a href="../module/Class_IntrusiveLinkedLists.html#type-intrusivelinearlist">IntrusiveLinearList</a>
+  for various illustrations of an iteration over an intrusive list. <br>
+  Nonetheless, unlike the <em>IntrusiveLinearList</em> type, the meanings of the returned
+  <em>EndOfList</em> flag from the <em>MoveForward</em> and <em>MoveBackward</em> methods are NOT the same
+  for the two intrusive list types.  For the linear list, the end of list means that
+  the next pointer of the cursor node points to NULL (i.e. its association status is
+  disassociated).  However, for the circular list, the end of list means that the
+  next pointer of the cursor node points back to the starting node.  Therefore, for
+  the circular list, the user can ignore the <em>EndOfList</em> flag and loop over the list
+  once more if necessary without having to call the <em>StartFirst</em> or <em>StartLast</em>
+  method again. <br>
+  It is important to note that the intrusive circular list allows insertion of
+  duplicated objects (i.e. objects that are equal to one another).  It even allows
+  the same object to be inserted twice (i.e. it does not check  whether the same
+  object is actually inserted more than once).  Therefore, it is the user as the
+  owner of inserted objects who must be responsible for how to handle those inserted
+  objects properly.</p></td></tr>
+			   <tr><td><a href='../type/isaccrng.html'>IsaccRNG</a></td><td><a href='../module/class_isaccrng.html'>Class_IsaccRNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>IsaccRNG</em> type is an <em>Integer</em> PRNG type based on the <em>ISAAC</em>
+ (Indirection, Shift, Accumulate, Add, and Count) algorithm.</p></td></tr>
+			   <tr><td><a href='../type/jhdigest.html'>JHDigest</a></td><td><a href='../module/class_jhdigest.html'>Class_JHDigest</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>JHDigest</em> is a concrete <em>digest</em> type that implements an incremental
+ cryptographic hash function based on the JH hash functions.</p></td></tr>
+			   <tr><td><a href='../type/jsf32rng.html'>Jsf32RNG</a></td><td><a href='../module/class_jsf32rng.html'>Class_Jsf32RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>Jsf32RNG</em> type is an <em>Integer</em> PRNG type based on the small
+ fast non-cryptographic PRNG by Bob Jenkins.</p></td></tr>
+			   <tr><td><a href='../type/jsf64rng.html'>Jsf64RNG</a></td><td><a href='../module/class_jsf64rng.html'>Class_Jsf64RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>Jsf32RNG</em> type is a <em>Long</em> PRNG type based on the small
+ fast non-cryptographic PRNG by Bob Jenkins.</p></td></tr>
+			   <tr><td><a href='../type/kangaroo.html'>Kangaroo</a></td><td><a href='../module/class_kangaroo.html'>Class_Kangaroo</a></td><td><a href='../type/basedigest.html'>BaseDigest</a></td><td><p><em>Kangaroo</em> is a concrete <em>Keccak-based digest</em> type that implements an incremental
+ cryptographic hash function by employing either the <em>KangarooTwelve</em> or the
+ <em>MarsupilamiFourteen message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/keccak.html'>Keccak</a></td><td><a href='../module/class_keccak.html'>Class_Keccak</a></td><td><a href='../type/kp1600core.html'>KP1600Core</a></td><td><p><em>Keccak</em> is a concrete <em>Keccak-based digest</em> type that implements an
+ incremental cryptographic hash function based on the so-called Keccak
+ hash functions, which is a family of message-digest algorithms.</p></td></tr>
+			   <tr><td><a href='../type/keystore.html'>KeyStore</a></td><td><a href='../module/class_keystore.html'>Class_KeyStore</a></td><td><a href='../type/assignable.html'>Assignable</a></td><td><p>The <em>KeyStore</em> type is a key storage type that can hold
+ different data types appropriate for used in associative
+ (key-value) collections.  A key is stored as an unlimited
+ polymorphic type.</p></td></tr>
+			   <tr><td><a href='../type/kiss32rng.html'>Kiss32RNG</a></td><td><a href='../module/class_kiss32rng.html'>Class_Kiss32RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>Kiss32RNG</em> type is an <em>Integer</em> PRNG type based on the <em>KISS</em>
+ (Keep it Simple Stupid) algorithm by George Marsaglia.</p></td></tr>
+			   <tr><td><a href='../type/kiss64rng.html'>Kiss64RNG</a></td><td><a href='../module/class_kiss64rng.html'>Class_Kiss64RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>Kiss64RNG</em> type is a <em>Long</em> PRNG type based on the <em>KISS</em>
+ (Keep it Simple Stupid) algorithm by George Marsaglia.</p></td></tr>
+			   <tr><td><a href='../type/komihasher64.html'>KomiHasher64</a></td><td><a href='../module/class_komihasher64.html'>Class_KomiHasher64</a></td><td><a href='../type/hasher64.html'>Hasher64</a></td><td><p><em>KomiHasher64</em> is a hasher type that outputs the hash value as a 64-bit integer.
+ It employs the <em>Komi</em> hash algorithm by Aleksey Vaneev.</p></td></tr>
+			   <tr><td><a href='../type/komirng.html'>KomiRNG</a></td><td><a href='../module/class_komirng.html'>Class_KomiRNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>KomiRNG</em> type is a <em>Long</em> PRNG type based on a simple, but reliable,
+ self-starting, and fast 64-bit PRNG by Aleksey Vaneev.</p></td></tr>
+			   <tr><td><a href='../type/kp1600core.html'>KP1600Core</a></td><td><a href='../module/class_kp1600core.html'>Class_KP1600Core</a></td><td><a href='../type/basedigest.html'>BaseDigest</a></td><td><p><em>KP1600Core</em> is an abstract <em>digest</em> type provided to be a parent
+ type for other <em>Keccak-based digest</em> types to implement incremental
+ cryptographic hash functions.</p></td></tr>
+			   <tr><td><a href='../type/kp1600sponge.html'>KP1600Sponge</a></td><td><a href='../module/class_kp1600sponge.html'>Class_KP1600Sponge</a></td><td>None</td><td><p><em>KP1600Sponge</em> is a derived type representing a sponge instance for
+ use with the <em>Keccak Sponge</em> functions.  It gathers the state processed
+ by the permutation as well as the rate.</p></td></tr>
+			   <tr><td><a href='../type/l128x1024rng.html'>L128X1024RNG</a></td><td><a href='../module/class_l128x1024rng.html'>Class_L128X1024RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>L128X1024RNG</em> type is a <em>Long</em> PRNG type based on the <em>L128X1024</em>
+ algorithms, which are specific members of the LXM family of algorithms
+ for pseudo-random number generators.</p></td></tr>
+			   <tr><td><a href='../type/l128x128rng.html'>L128X128RNG</a></td><td><a href='../module/class_l128x128rng.html'>Class_L128X128RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>L128X128RNG</em> type is a <em>Long</em> PRNG type based on the <em>L128X128</em>
+ algorithms, which are specific members of the LXM family of algorithms
+ for pseudo-random number generators.</p></td></tr>
+			   <tr><td><a href='../type/l128x256rng.html'>L128X256RNG</a></td><td><a href='../module/class_l128x256rng.html'>Class_L128X256RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>L128X256RNG</em> type is a <em>Long</em> PRNG type based on the <em>L128X256</em>
+ algorithms, which are specific members of the LXM family of algorithms
+ for pseudo-random number generators.</p></td></tr>
+			   <tr><td><a href='../type/l128xmrng.html'>L128XMRNG</a></td><td><a href='../module/class_l128xmrng.html'>Class_L128XMRNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>L128XMRNG</em> type is a <em>Long</em> PRNG type based on the <em>L128XM</em>
+ algorithms, which are specific members of the LXM family of
+ algorithms for pseudo-random number generators.</p></td></tr>
+			   <tr><td><a href='../type/l32x64mrng.html'>L32X64MRNG</a></td><td><a href='../module/class_l32x64mrng.html'>Class_L32X64MRNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>L32X64MRNG</em> type is an <em>Integer</em> PRNG type based on the <em>L32X64</em>
+ algorithm, which is a specific member of the LXM family of algorithms
+ for pseudo-random number generators.</p></td></tr>
+			   <tr><td><a href='../type/l32x64rng.html'>L32X64RNG</a></td><td><a href='../module/class_l32x64rng.html'>Class_L32X64RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>L32X64RNG</em> type is an <em>Integer</em> PRNG type based on the <em>L32X64</em>
+ algorithm, which is a specific member of the LXM family of algorithms
+ for pseudo-random number generators.</p></td></tr>
+			   <tr><td><a href='../type/l64x1024rng.html'>L64X1024RNG</a></td><td><a href='../module/class_l64x1024rng.html'>Class_L64X1024RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>L64X1024RNG</em> type is a <em>Long</em> PRNG type based on the <em>L64X1024</em>
+ algorithms, which are specific members of the LXM family of algorithms
+ for pseudo-random number generators.</p></td></tr>
+			   <tr><td><a href='../type/l64x128rng.html'>L64X128RNG</a></td><td><a href='../module/class_l64x128rng.html'>Class_L64X128RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>L64X128RNG</em> type is a <em>Long</em> PRNG type based on the <em>L64X128</em>
+ algorithms, which are specific members of the LXM family of algorithms
+ for pseudo-random number generators.</p></td></tr>
+			   <tr><td><a href='../type/l64x256rng.html'>L64X256RNG</a></td><td><a href='../module/class_l64x256rng.html'>Class_L64X256RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>L64X256RNG</em> type is a <em>Long</em> PRNG type based on the <em>L64X256</em>
+ algorithms, which are specific members of the LXM family of algorithms
+ for pseudo-random number generators.</p></td></tr>
+			   <tr><td><a href='../type/l64xmrng.html'>L64XMRNG</a></td><td><a href='../module/class_l64xmrng.html'>Class_L64XMRNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>L64XMRNG</em> type is a <em>Long</em> PRNG type based on the <em>L64XM</em>
+ algorithms, which are specific members of the LXM family of
+ algorithms for pseudo-random number generators.</p></td></tr>
+			   <tr><td><a href='../type/lfsr113rng.html'>Lfsr113RNG</a></td><td><a href='../module/class_lfsr113rng.html'>Class_Lfsr113RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>Lfsr113RNG</em> type is an <em>Integer</em> PRNG type based on 32-bit composite
+ linear feedback shift register (LFSR) algorithm by Pierre L'Ecuyer.</p></td></tr>
+			   <tr><td><a href='../type/lfsr258rng.html'>Lfsr258RNG</a></td><td><a href='../module/class_lfsr258rng.html'>Class_Lfsr258RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>Lfsr258RNG</em> type is a <em>Long</em> PRNG type based on 64-bit composite
+ linear feedback shift register (LFSR) algorithm by Pierre L'Ecuyer.</p></td></tr>
+			   <tr><td><a href='../type/listanytype.html'>ListAnyType</a></td><td><a href='../module/class_listanytype.html'>Class_ListAnyType</a></td><td>None</td><td><p><em>ListAnyType</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container can be any data type.</p></td></tr>
+			   <tr><td><a href='../type/listarray.html'>ListArray</a></td><td><a href='../module/class_dynamicarrays.html'>Class_DynamicArrays</a></td><td><a href='../type/dequearray.html'>DequeArray</a></td><td><p><strong>Description</strong>: <br>
+  The <em>ListArray</em> type is a collection type that employs a resizable-array
+  implementation to provide common operations for a list. <br>
+ <strong>Usage Overview</strong>: <br>
+  The <em>ListArray</em> type provides insert, remove and peek operations at a
+  specified index where the index must be between 1 and the collection size.
+  The <em>ListArray</em> type is a subtype of the <em>DequeArray</em> type; therefore,
+  all operations available for the <em>DequeArray</em> type are also available for
+  the <em>ListArray</em> type.  Furthermore, it thus can be used as a deque, a FIFO
+  queue or a LIFO stack.  <br></p></td></tr>
+			   <tr><td><a href='../type/listassignable.html'>ListAssignable</a></td><td><a href='../module/class_listassignable.html'>Class_ListAssignable</a></td><td>None</td><td><p><em>ListAssignable</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is a derived type in the <em>Assignable</em>
+  class (i.e. the <em>Assignable</em> type or its subtypes).</p></td></tr>
+			   <tr><td><a href='../type/listcharacter.html'>ListCharacter</a></td><td><a href='../module/class_listcharacter.html'>Class_ListCharacter</a></td><td>None</td><td><p><em>ListCharacter</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>CHARACTER</em>.</p></td></tr>
+			   <tr><td><a href='../type/listcmpxdp.html'>ListCmpxDP</a></td><td><a href='../module/class_listcmpxdp.html'>Class_ListCmpxDP</a></td><td>None</td><td><p><em>ListCmpxDP</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>COMPLEX(KIND=kDP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/listcmpxqp.html'>ListCmpxQP</a></td><td><a href='../module/class_listcmpxqp.html'>Class_ListCmpxQP</a></td><td>None</td><td><p><em>ListCmpxQP</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>COMPLEX(KIND=kQP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/listcmpxsp.html'>ListCmpxSP</a></td><td><a href='../module/class_listcmpxsp.html'>Class_ListCmpxSP</a></td><td>None</td><td><p><em>ListCmpxSP</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>COMPLEX(KIND=kSP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/listinteger1b.html'>ListInteger1B</a></td><td><a href='../module/class_listinteger1b.html'>Class_ListInteger1B</a></td><td>None</td><td><p><em>ListInteger1B</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>INTEGER(KIND=kI1B)</em>.</p></td></tr>
+			   <tr><td><a href='../type/listinteger2b.html'>ListInteger2B</a></td><td><a href='../module/class_listinteger2b.html'>Class_ListInteger2B</a></td><td>None</td><td><p><em>ListInteger2B</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>INTEGER(KIND=kI2B)</em>.</p></td></tr>
+			   <tr><td><a href='../type/listinteger4b.html'>ListInteger4B</a></td><td><a href='../module/class_listinteger4b.html'>Class_ListInteger4B</a></td><td>None</td><td><p><em>ListInteger4B</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>INTEGER(KIND=kI4B)</em>.</p></td></tr>
+			   <tr><td><a href='../type/listinteger8b.html'>ListInteger8B</a></td><td><a href='../module/class_listinteger8b.html'>Class_ListInteger8B</a></td><td>None</td><td><p><em>ListInteger8B</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>INTEGER(KIND=kI8B)</em>.</p></td></tr>
+			   <tr><td><a href='../type/listlinked.html'>ListLinked</a></td><td><a href='../module/class_linkedlists.html'>Class_LinkedLists</a></td><td><a href='../type/dequelinked.html'>DequeLinked</a></td><td><p><strong>Description</strong>: <br>
+  The <em>ListLinked</em> type is a collection type that employs a linked-list
+  implementation to provide common operations for a list. <br>
+ <strong>Usage Overview</strong>: <br>
+  The <em>ListLinked</em> type provides insert, remove and peek operations at a
+  specified index where the index must be between 1 and the collection size.
+  The <em>ListLinked</em> type is a subtype of the <em>DequeLinked</em> type; therefore,
+  all operations available for the <em>DequeLinked</em> type are also available for
+  the <em>ListLinked</em> type.  Furthermore, it thus can be used as a deque, a FIFO
+  queue or a LIFO stack.  <br></p></td></tr>
+			   <tr><td><a href='../type/listlogical.html'>ListLogical</a></td><td><a href='../module/class_listlogical.html'>Class_ListLogical</a></td><td>None</td><td><p><em>ListLogical</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>LOGICAL</em>.</p></td></tr>
+			   <tr><td><a href='../type/listrealdp.html'>ListRealDP</a></td><td><a href='../module/class_listrealdp.html'>Class_ListRealDP</a></td><td>None</td><td><p><em>ListRealDP</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>REAL(KIND=kDP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/listrealqp.html'>ListRealQP</a></td><td><a href='../module/class_listrealqp.html'>Class_ListRealQP</a></td><td>None</td><td><p><em>ListRealQP</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>REAL(KIND=kQP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/listrealsp.html'>ListRealSP</a></td><td><a href='../module/class_listrealsp.html'>Class_ListRealSP</a></td><td>None</td><td><p><em>ListRealSP</em> is a container type that employs a doubly-linked list implementation to
+  provide common operations for a list container.  It can also represent other forms
+  of containers including a LIFO stack, a FIFO queue and a double-ended queue (deque).
+  The type of items stored in this container is <em>REAL(KIND=kSP)</em>.</p></td></tr>
+			   <tr><td><a href='../type/listtable.html'>ListTable</a></td><td><a href='../module/class_listtable.html'>Class_ListTable</a></td><td><a href='../type/basesymtable.html'>BaseSymTable</a></td><td><p>The <em>ListTable</em> type is a collection type that employs a linked-list
+ implementation to provide common operations for an unordered symbol
+ table.  The <em>ListTable</em> type employs the <em>IntrusiveLinearList</em> type
+ as its component to store <em>TabNode</em> objects.  As an intrusive container,
+ the <em>IntrusiveLinearList</em> type provides common linked-list operations
+ without a memory management task.  The memory management task of the
+ inserted <em>TabNode</em> objects is handled by the <em>ListTable</em> type.  <br>
+ As an unordered symbol table, the <em>ListTable</em> type directly extends the
+ <em>BaseSymTable</em> type and implements all deferred procedures required by
+ the <em>BaseSymTable</em> type and all its super classes (i.e. the <em>Assignable</em>
+ type and the <em>BaseCollection</em> type).  As a symbol table, the <em>ListTable</em>
+ type does not allow duplicated keys; therefore, if an inserted key is
+ equal to a key stored in the table, an associated value of the stored key
+ is replaced by an associated value of the inserted key.</p></td></tr>
+			   <tr><td><a href='../type/longrng.html'>LongRNG</a></td><td><a href='../module/class_longrng.html'>Class_LongRNG</a></td><td><a href='../type/baserng.html'>BaseRNG</a></td><td><p>The <em>LongRNG</em> type is an abstract PRNG type that directly extends
+ the <em>BaseRNG</em> type.  It is provided to aid the implementation of an
+ <em>Long</em> PRNG whose main purpose is to produce a 64-bit integer random
+ number.  Therefore, all so-called <em>Long</em> PRNGs should extend from
+ this base type.</p></td></tr>
+			   <tr><td><a href='../type/lowercasealphabet.html'>LowercaseAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>LowercaseAlphabet</em> type is a data type representing the lowercase alphabet
+ { a, b, c, ..., z }.</p></td></tr>
+			   <tr><td><a href='../type/luffa.html'>Luffa</a></td><td><a href='../module/class_luffa.html'>Class_Luffa</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>Luffa</em> is a concrete <em>digest</em> type that implements an incremental
+ cryptographic hash function based on the Luffa hash functions.</p></td></tr>
+			   <tr><td><a href='../type/mathexpparser.html'>MathExpParser</a></td><td><a href='../module/class_mathexpparser.html'>Class_MathExpParser</a></td><td>None</td><td><p><em>MathExpParser</em> is a parser type that can be used to parse and evaluate
+  mathematical expressions.</p></td></tr>
+			   <tr><td><a href='../type/md2.html'>MD2</a></td><td><a href='../module/class_md2.html'>Class_MD2</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>MD2</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing
+ the <em>MD2 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/md4.html'>MD4</a></td><td><a href='../module/class_md4.html'>Class_MD4</a></td><td><a href='../type/mdhelper.html'>MDHelper</a></td><td><p><em>MD4</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing
+ the <em>MD4 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/md5.html'>MD5</a></td><td><a href='../module/class_md5.html'>Class_MD5</a></td><td><a href='../type/mdhelper.html'>MDHelper</a></td><td><p><em>MD5</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing
+ the <em>MD5 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/mdengine.html'>MDEngine</a></td><td><a href='../module/class_mdengine.html'>Class_MDEngine</a></td><td><a href='../type/basedigest.html'>BaseDigest</a></td><td><p><em>MDEngine</em> is an abstract <em>digest</em> type provided to be a template
+ (a parent class) for other <em>digest</em> types to implement incremental
+ cryptographic hash functions.</p></td></tr>
+			   <tr><td><a href='../type/mdhelper.html'>MDHelper</a></td><td><a href='../module/class_mdhelper.html'>Class_MDHelper</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>MDHelper</em> is an abstract <em>digest</em> type acting as a helper by
+ implementing the padding common to MD4, MD5, and the SHA family.</p></td></tr>
+			   <tr><td><a href='../type/metrohasher64.html'>MetroHasher64</a></td><td><a href='../module/class_metrohasher64.html'>Class_MetroHasher64</a></td><td><a href='../type/hasher64.html'>Hasher64</a></td><td><p><em>MetroHasher64</em> is a hasher type that outputs the hash value as a 64-bit integer.
+ It employs the <em>Metro</em> hash algorithm by J. Andrew Rogers.</p></td></tr>
+			   <tr><td><a href='../type/mrg32k3arng.html'>Mrg32k3aRNG</a></td><td><a href='../module/class_mrg32k3arng.html'>Class_Mrg32k3aRNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>Mrg32k3aRNG</em> type is an <em>Integer</em> PRNG type based on 32-bit
+ combined multiple recursive generator (MRG) algorithm by Pierre L'Ecuyer.</p></td></tr>
+			   <tr><td><a href='../type/mrg63k3arng.html'>Mrg63k3aRNG</a></td><td><a href='../module/class_mrg63k3arng.html'>Class_Mrg63k3aRNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>Mrg63k3aRNG</em> type is a <em>Long</em> PRNG type based on 63-bit
+ combined multiple recursive generator (MRG) algorithm by Pierre L'Ecuyer.</p></td></tr>
+			   <tr><td><a href='../type/mswsrng.html'>MswsRNG</a></td><td><a href='../module/class_mswsrng.html'>Class_MswsRNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>Mt32RNG</em> type is a <em>Long</em> PRNG type based on the Middle Square
+ Weyl Sequence RNG by B. Widynski.</p></td></tr>
+			   <tr><td><a href='../type/mt32rng.html'>Mt32RNG</a></td><td><a href='../module/class_mt32rng.html'>Class_Mt32RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>Mt32RNG</em> type is an <em>Integer</em> PRNG type based on the Mersenne
+ Twister algorithm by Makoto Matsumoto and Takuji Nishimura.</p></td></tr>
+			   <tr><td><a href='../type/mt64rng.html'>Mt64RNG</a></td><td><a href='../module/class_mt64rng.html'>Class_Mt64RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>Mt64RNG</em> type is a <em>Long</em> PRNG type based on the Mersenne
+ Twister algorithm by Makoto Matsumoto and Takuji Nishimura.</p></td></tr>
+			   <tr><td><a href='../type/multiwaytrie.html'>MultiwayTrie</a></td><td><a href='../module/class_multiwaytrie.html'>Class_MultiwayTrie</a></td><td>None</td><td><p>The <em>MultiwayTrie</em> type is a container type that utilizes a multi-way trie
+ implementation to provide common operations for a symbol table where its
+ keys are character strings and its values can be of any type.</p></td></tr>
+			   <tr><td><a href='../type/murmur3hasher128.html'>Murmur3Hasher128</a></td><td><a href='../module/class_murmur3hasher64.html'>Class_Murmur3Hasher64</a></td><td><a href='../type/murmur3hasher64.html'>Murmur3Hasher64</a></td><td><p><em>Murmur3Hasher128</em> is a hasher type that outputs the hash value as a 128-bit integer.
+ It is a subtype of the <em>Murmur3Hasher64</em> type.</p></td></tr>
+			   <tr><td><a href='../type/murmur3hasher32.html'>Murmur3Hasher32</a></td><td><a href='../module/class_murmur3hasher32.html'>Class_Murmur3Hasher32</a></td><td><a href='../type/hasher32.html'>Hasher32</a></td><td><p><em>Murmur3Hasher32</em> is a hasher type that outputs the hash value as a 32-bit integer.
+ It employs the <em>Murmur3</em> hash algorithm by Austin Appleby.</p></td></tr>
+			   <tr><td><a href='../type/murmur3hasher64.html'>Murmur3Hasher64</a></td><td><a href='../module/class_murmur3hasher64.html'>Class_Murmur3Hasher64</a></td><td><a href='../type/hasher64.html'>Hasher64</a></td><td><p><em>Murmur3Hasher64</em> is a hasher type that outputs the hash value as a 64-bit integer.
+ It employs the <em>Murmur3</em> hash algorithm by Austin Appleby.</p></td></tr>
+			   <tr><td><a href='../type/mwc256rng.html'>Mwc256RNG</a></td><td><a href='../module/class_mwc256rng.html'>Class_Mwc256RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>Mwc256RNG</em> type is an <em>Integer</em> PRNG type based on the <em>MWC</em>
+ (Multiply-With-Carry) algorithm by George Marsaglia.</p></td></tr>
+			   <tr><td><a href='../type/nmhasher32.html'>NMHasher32</a></td><td><a href='../module/class_nmhasher32.html'>Class_NMHasher32</a></td><td><a href='../type/hasher32.html'>Hasher32</a></td><td><p><em>NMHasher32</em> is a hasher type that outputs the hash value as a 32-bit integer.
+ It employs the <em>NM</em> hash algorithm by James Z. M. Gao.</p></td></tr>
+			   <tr><td><a href='../type/nmxhasher32.html'>NMxHasher32</a></td><td><a href='../module/class_nmhasher32.html'>Class_NMHasher32</a></td><td><a href='../type/nmhasher32.html'>NMHasher32</a></td><td></td></tr>
+			   <tr><td><a href='../type/octalalphabet.html'>OctalAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>OctalAlphabet</em> type is a data type representing the octal alphabet { 0, 1, 2, 3, 4, 5, 6, 7 }.</p></td></tr>
+			   <tr><td><a href='../type/orderedsymtable.html'>OrderedSymTable</a></td><td><a href='../module/class_orderedsymtable.html'>Class_OrderedSymTable</a></td><td><a href='../type/basesymtable.html'>BaseSymTable</a></td><td><p>The <em>OrderedSymTable</em> type is an abstract collection type that
+ defines an API for an ordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/patternfinder.html'>PatternFinder</a></td><td><a href='../module/class_patternfinder.html'>Class_PatternFinder</a></td><td>None</td><td><p>The <em>PatternFinder</em> type is a string type that provides various efficient
+ algorithms for a <em>substring searching</em> operation.</p></td></tr>
+			   <tr><td><a href='../type/pcglcg32rng.html'>PcgLcg32RNG</a></td><td><a href='../module/class_pcglcg32rng.html'>Class_PcgLcg32RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>PcgLcg32RNG</em> type is an <em>Integer</em> PRNG type based on algorithms from
+ the Permuted Congruential Generator (PCG) family that use an internal 64-bit
+ Linear Congruential Generator (LCG) and output 32-bits per cycle.</p></td></tr>
+			   <tr><td><a href='../type/pcgmcg32rng.html'>PcgMcg32RNG</a></td><td><a href='../module/class_pcgmcg32rng.html'>Class_PcgMcg32RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>PcgMcg32RNG</em> type is an <em>Integer</em> PRNG type based on algorithms from
+ the Permuted Congruential Generator (PCG) family that use an internal 64-bit
+ Multiplicative Congruential Generator (MCG) and output 32-bits per cycle.</p></td></tr>
+			   <tr><td><a href='../type/pcgrxsmxs64rng.html'>PcgRxsMXs64RNG</a></td><td><a href='../module/class_pcgrxsmxs64rng.html'>Class_PcgRxsMXs64RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>PcgLcg32RNG</em> type is a <em>Long</em> PRNG type based on an algorithm from
+ the Permuted Congruential Generator (PCG) family that use an internal 64-bit
+ Linear Congruential Generator (LCG) and output 64-bits per cycle.</p></td></tr>
+			   <tr><td><a href='../type/pq_basic.html'>PQ_Basic</a></td><td><a href='../module/class_pqbasic.html'>Class_PQBasic</a></td><td>None</td><td><p>The <em>PQ_Basic</em> type is a container type that employs a binary heap implementation
+ to provide common operations for a priority queue.</p></td></tr>
+			   <tr><td><a href='../type/pq_heap.html'>PQ_Heap</a></td><td><a href='../module/class_pqheap.html'>Class_PQHeap</a></td><td>None</td><td><p>The <em>PQ_Heap</em> type is a container type that employs a binary heap implementation
+ to provide common operations for a priority queue.</p></td></tr>
+			   <tr><td><a href='../type/pqcharacter.html'>PQCharacter</a></td><td><a href='../module/class_pqcharacter.html'>Class_PQCharacter</a></td><td>None</td><td><p>The <em>PQCharacter</em> type is a container type that employs a binary heap implementation
+ to provide common operations for a priority queue.</p></td></tr>
+			   <tr><td><a href='../type/pqinteger1b.html'>PQInteger1B</a></td><td><a href='../module/class_pqinteger1b.html'>Class_PQInteger1B</a></td><td>None</td><td><p>The <em>PQInteger1B</em> type is a container type that employs a binary heap implementation
+ to provide common operations for a priority queue.</p></td></tr>
+			   <tr><td><a href='../type/pqinteger2b.html'>PQInteger2B</a></td><td><a href='../module/class_pqinteger2b.html'>Class_PQInteger2B</a></td><td>None</td><td><p>The <em>PQInteger2B</em> type is a container type that employs a binary heap implementation
+ to provide common operations for a priority queue.</p></td></tr>
+			   <tr><td><a href='../type/pqinteger4b.html'>PQInteger4B</a></td><td><a href='../module/class_pqinteger4b.html'>Class_PQInteger4B</a></td><td>None</td><td><p>The <em>PQInteger4B</em> type is a container type that employs a binary heap implementation
+ to provide common operations for a priority queue.</p></td></tr>
+			   <tr><td><a href='../type/pqinteger8b.html'>PQInteger8B</a></td><td><a href='../module/class_pqinteger8b.html'>Class_PQInteger8B</a></td><td>None</td><td><p>The <em>PQInteger8B</em> type is a container type that employs a binary heap implementation
+ to provide common operations for a priority queue.</p></td></tr>
+			   <tr><td><a href='../type/pqrealdp.html'>PQRealDP</a></td><td><a href='../module/class_pqrealdp.html'>Class_PQRealDP</a></td><td>None</td><td><p>The <em>PQRealDP</em> type is a container type that employs a binary heap implementation
+ to provide common operations for a priority queue.</p></td></tr>
+			   <tr><td><a href='../type/pqrealqp.html'>PQRealQP</a></td><td><a href='../module/class_pqrealqp.html'>Class_PQRealQP</a></td><td>None</td><td><p>The <em>PQRealQP</em> type is a container type that employs a binary heap implementation
+ to provide common operations for a priority queue.</p></td></tr>
+			   <tr><td><a href='../type/pqrealsp.html'>PQRealSP</a></td><td><a href='../module/class_pqrealsp.html'>Class_PQRealSP</a></td><td>None</td><td><p>The <em>PQRealSP</em> type is a container type that employs a binary heap implementation
+ to provide common operations for a priority queue.</p></td></tr>
+			   <tr><td><a href='../type/progressbar.html'>ProgressBar</a></td><td><a href='../module/class_progressbar.html'>Class_ProgressBar</a></td><td>None</td><td><p>a derived type to display a progress bar on the console</p></td></tr>
+			   <tr><td><a href='../type/proteinalphabet.html'>ProteinAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>ProteinAlphabet</em> type is a data type representing the protein alphabet
+ { A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, Y }.</p></td></tr>
+			   <tr><td><a href='../type/queuearray.html'>QueueArray</a></td><td><a href='../module/class_dynamicarrays.html'>Class_DynamicArrays</a></td><td>BaseDynArr</td><td><p><strong>Description</strong>: <br>
+  The <em>QueueArray</em> type is a collection type that employs a resizable-array
+  implementation to provide common operations for a FIFO queue. <br>
+ <strong>Usage Overview</strong>: <br>
+  The <em>QueueArray</em> type is a <em>queue</em> collection type that provides common
+  operations of a FIFO queue.  Their operations can be categorized
+  as follows: <br>
+  (1) Construction and destruction.  Methods for these operations include <br>
+  (1.1) <em>Construct</em> method - method to construct the collection either from
+      another collection or from an array of items, <br>
+  (1.2) <em>CreateEmpty</em> method - method to construct an empty collection, <br>
+  (1.3) <em>Destruct</em> method - method to destruct the collection. <br>
+  (2) Insert and remove.  Methods for these operations include <br>
+  (2.1) <em>Enqueue</em> method - method to insert an item to the end of the collection, <br>
+  (2.2) <em>Dequeue</em> method - method to get and remove the first item of the collection, <br>
+  (2.3) <em>Clear</em> method - method to remove all items from the collection. <br>
+  (2.4) <em>ToArray</em> method - method to remove and retrieve all items from the collection. <br>
+  (3) Inquiry.  Methods for these operations include <br>
+  (3.1) <em>PeekFirst</em> method - method to retrieve the first item of the collection, <br>
+  (3.2) <em>GetSize</em> method - method to get the collection size (number of items stored), <br>
+  (3.3) <em>IsEmpty</em> method - method to check whether the collection is empty or not. <br>
+  (3.4) <em>GetAll</em> method - method to retrieve all items from the collection. <br>
+  (4) Iteration.  Methods for these operations include <br>
+  (4.1) <em>StartFirst</em> method - method to start a forward iteration over items, <br>
+  (4.2) <em>MoveForward</em> method - method to move forward to the next item.</p></td></tr>
+			   <tr><td><a href='../type/queuelinked.html'>QueueLinked</a></td><td><a href='../module/class_linkedlists.html'>Class_LinkedLists</a></td><td><a href='../type/baseiterable.html'>BaseIterable</a></td><td><p><strong>Description</strong>: <br>
+  The <em>QueueLinked</em> type is a collection type that employs a linked-list
+  implementation to provide common operations for a FIFO queue. <br>
+ <strong>Usage Overview</strong>: <br>
+  The <em>QueueLinked</em> type is a <em>queue</em> collection type that provides common
+  operations of a FIFO queue.  Their operations can be categorized
+  as follows: <br>
+  (1) Construction and destruction.  Methods for these operations include <br>
+  (1.1) <em>Construct</em> method - method to construct the collection either from
+      another collection or from an array of items, <br>
+  (1.2) <em>Destruct</em> method - method to destruct the collection. <br>
+  (2) Insert and remove.  Methods for these operations include <br>
+  (2.1) <em>Enqueue</em> method - method to insert an item to the end of the collection, <br>
+  (2.2) <em>Dequeue</em> method - method to get and remove the first item of the collection, <br>
+  (2.3) <em>Clear</em> method - method to remove all items from the collection. <br>
+  (2.4) <em>ToArray</em> method - method to remove and retrieve all items from the collection. <br>
+  (3) Inquiry.  Methods for these operations include <br>
+  (3.1) <em>PeekFirst</em> method - method to retrieve the first item of the collection, <br>
+  (3.2) <em>GetSize</em> method - method to get the collection size (number of items stored), <br>
+  (3.3) <em>IsEmpty</em> method - method to check whether the collection is empty or not. <br>
+  (3.4) <em>GetAll</em> method - method to retrieve all items from the collection. <br>
+  (4) Iteration.  Methods for these operations include <br>
+  (4.1) <em>StartFirst</em> method - method to start a forward iteration over items, <br>
+  (4.2) <em>MoveForward</em> method - method to move forward to the next item.</p></td></tr>
+			   <tr><td><a href='../type/ranluxpprng.html'>RanLuxPpRNG</a></td><td><a href='../module/class_ranluxpprng.html'>Class_RanLuxPpRNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>RanLuxPpRNG</em> type is a <em>Long</em> PRNG type based on the <em>RANLUX++</em> algorithm
+ by A. Sibidanov.</p></td></tr>
+			   <tr><td><a href='../type/ranluxrng.html'>RanLuxRNG</a></td><td><a href='../module/class_ranluxrng.html'>Class_RanLuxRNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>RanLuxRNG</em> type is an <em>Integer</em> PRNG type based on the <em>RANLUX</em>
+ algorithm by Martin Luscher.</p></td></tr>
+			   <tr><td><a href='../type/savevar.html'>SaveVar</a></td><td><a href='../module/modbase_common.html'>ModBase_Common</a></td><td><a href='../type/sharepar.html'>SharePar</a></td><td><p>a saved variable type used to modernize legacy code</p></td></tr>
+			   <tr><td><a href='../type/sfc32rng.html'>Sfc32RNG</a></td><td><a href='../module/class_sfc32rng.html'>Class_Sfc32RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>Sfc32RNG</em> type is an <em>Integer</em> PRNG type based on the Small,
+ Fast, Counting (SFC) 32-bit generator by Chris Doty-Humphrey.</p></td></tr>
+			   <tr><td><a href='../type/sfc64rng.html'>Sfc64RNG</a></td><td><a href='../module/class_sfc64rng.html'>Class_Sfc64RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>Sfc64RNG</em> type is a <em>Long</em> PRNG type based on the Small,
+ Fast, Counting (SFC) 64-bit generator by Chris Doty-Humphrey.</p></td></tr>
+			   <tr><td><a href='../type/sha0.html'>SHA0</a></td><td><a href='../module/class_sha0.html'>Class_SHA0</a></td><td><a href='../type/mdhelper.html'>MDHelper</a></td><td><p><em>SHA0</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing
+ the <em>SHA-0 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/sha1.html'>SHA1</a></td><td><a href='../module/class_sha1.html'>Class_SHA1</a></td><td><a href='../type/mdhelper.html'>MDHelper</a></td><td><p><em>SHA1</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing
+ the <em>SHA-1 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/sha2b.html'>SHA2B</a></td><td><a href='../module/class_sha2b.html'>Class_SHA2B</a></td><td><a href='../type/mdhelper.html'>MDHelper</a></td><td><p><em>SHA2B</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either the
+ <em>SHA-384</em> or the <em>SHA-512 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/sha2s.html'>SHA2S</a></td><td><a href='../module/class_sha2s.html'>Class_SHA2S</a></td><td><a href='../type/mdhelper.html'>MDHelper</a></td><td><p><em>SHA2B</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either the
+ <em>SHA-224</em> or the <em>SHA-256 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/sha3.html'>SHA3</a></td><td><a href='../module/class_sha3.html'>Class_SHA3</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>SHA3</em> is a concrete <em>digest</em> type that implements an incremental
+ cryptographic hash function based on the so-called Keccak hash
+ functions, which is a family of message-digest algorithms.</p></td></tr>
+			   <tr><td><a href='../type/shabal.html'>Shabal</a></td><td><a href='../module/class_shabal.html'>Class_Shabal</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>Shabal</em> is a concrete <em>digest</em> type that implements an incremental
+ cryptographic hash function based on the Shabal hash functions.</p></td></tr>
+			   <tr><td><a href='../type/shake.html'>SHAKE</a></td><td><a href='../module/class_shake.html'>Class_SHAKE</a></td><td><a href='../type/kp1600core.html'>KP1600Core</a></td><td><p><em>SHAKE</em> is a concrete <em>Keccak-based digest</em> type that implements an
+ incremental cryptographic hash function by employing either the
+ <em>SHAKE-128</em> or the <em>SHAKE-256 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/sharepar.html'>SharePar</a></td><td><a href='../module/modbase_common.html'>ModBase_Common</a></td><td>None</td><td><p>a share parameter type used to modernize common block of legacy code</p></td></tr>
+			   <tr><td><a href='../type/shaviteb.html'>ShaviteB</a></td><td><a href='../module/class_shaviteb.html'>Class_ShaviteB</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>ShaviteB</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>SHAvite-384</em> or the <em>SHAvite-512 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/shavites.html'>ShaviteS</a></td><td><a href='../module/class_shavites.html'>Class_ShaviteS</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>ShaviteS</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>SHAvite-224</em> or the <em>SHAvite-256 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/simdb.html'>SIMDB</a></td><td><a href='../module/class_simdb.html'>Class_SIMDB</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>SIMDB</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>SIMD-384</em> or the <em>SIMD-512 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/simds.html'>SIMDS</a></td><td><a href='../module/class_simds.html'>Class_SIMDS</a></td><td><a href='../type/mdengine.html'>MDEngine</a></td><td><p><em>SIMDS</em> is a concrete <em>digest</em> type that implements an
+ incremental cryptographic hash function by employing either
+ the <em>SIMD-224</em> or the <em>SIMD-256 message-digest</em> algorithm.</p></td></tr>
+			   <tr><td><a href='../type/sint128.html'>SInt128</a></td><td><a href='../module/modbase_sint128.html'>ModBase_SInt128</a></td><td>None</td><td><p><em>SInt128</em> is a 128-bit signed integer type where the base
+  of its components is 2<sup>64</sup>.</p></td></tr>
+			   <tr><td><a href='../type/sip24rng.html'>Sip24RNG</a></td><td><a href='../module/class_sip24rng.html'>Class_Sip24RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>Sip24RNG</em> type is a <em>Long</em> PRNG type based on the <em>SipHash24</em> algorithm
+ by J.P. Aumasson and D.J. Bernstein.</p></td></tr>
+			   <tr><td><a href='../type/siphasher64.html'>SipHasher64</a></td><td><a href='../module/class_siphasher64.html'>Class_SipHasher64</a></td><td><a href='../type/hasher64.html'>Hasher64</a></td><td><p><em>SipHasher64</em> is a hasher type that outputs the hash value as a 64-bit integer.
+ It employs the <em>Sip</em> hash algorithm by Jean-Philippe Aumasson.</p></td></tr>
+			   <tr><td><a href='../type/skein.html'>Skein</a></td><td><a href='../module/class_skein.html'>Class_Skein</a></td><td><a href='../type/basedigest.html'>BaseDigest</a></td><td><p><em>Skein</em> is a concrete <em>digest</em> type that implements an incremental
+ cryptographic hash function based on the Skein hash algorithms.</p></td></tr>
+			   <tr><td><a href='../type/splitmixrng.html'>SplitMixRNG</a></td><td><a href='../module/class_splitmixrng.html'>Class_SplitMixRNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>SplitMixRNG</em> type is a <em>Long</em> PRNG type based on the
+ <em>SplitMix</em> algorithm by Steele, Lea, and Flood.</p></td></tr>
+			   <tr><td><a href='../type/spookyhasher128.html'>SpookyHasher128</a></td><td><a href='../module/class_spookyhasher64.html'>Class_SpookyHasher64</a></td><td><a href='../type/spookyhasher64.html'>SpookyHasher64</a></td><td><p><em>SpookyHasher128</em> is a hasher type that outputs the hash value as a 128-bit integer.
+ It is a subtype of the <em>SpookyHasher64</em> type.</p></td></tr>
+			   <tr><td><a href='../type/spookyhasher64.html'>SpookyHasher64</a></td><td><a href='../module/class_spookyhasher64.html'>Class_SpookyHasher64</a></td><td><a href='../type/hasher64.html'>Hasher64</a></td><td><p><em>SpookyHasher64</em> is a hasher type that outputs the hash value as a 64-bit integer.
+ It employs the <em>Spooky</em> hash algorithm by Bob Jenkins.</p></td></tr>
+			   <tr><td><a href='../type/stackarray.html'>StackArray</a></td><td><a href='../module/class_dynamicarrays.html'>Class_DynamicArrays</a></td><td>BaseDynArr</td><td><p><strong>Description</strong>: <br>
+  The <em>StackArray</em> type is a collection type that employs a resizable-array
+  implementation to provide common operations for a LIFO stack. <br>
+ <strong>Usage Overview</strong>: <br>
+  The <em>StackArray</em> type is a <em>stack</em> collection type that provides common
+  operations of a LIFO stack.  Their operations can be categorized
+  as follows: <br>
+  (1) Construction and destruction.  Methods for these operations include <br>
+  (1.1) <em>Construct</em> method - method to construct the collection either from
+      another collection or from an array of items, <br>
+  (1.2) <em>CreateEmpty</em> method - method to construct an empty collection, <br>
+  (1.3) <em>Destruct</em> method - method to destruct the collection. <br>
+  (2) Insert and remove.  Methods for these operations include <br>
+  (2.1) <em>Push</em> method - method to insert an item at the top (to the end) of the collection, <br>
+  (2.2) <em>Pop</em> method - method to get and remove the top (last) item of the collection, <br>
+  (2.3) <em>Clear</em> method - method to remove all items from the collection. <br>
+  (2.4) <em>ToArray</em> method - method to remove and retrieve all items from the collection. <br>
+  (3) Inquiry.  Methods for these operations include <br>
+  (3.1) <em>PeekTop</em> method - method to retrieve the top (last) item of the collection, <br>
+  (3.2) <em>GetSize</em> method - method to get the collection size (number of items stored), <br>
+  (3.3) <em>IsEmpty</em> method - method to check whether the collection is empty or not. <br>
+  (3.4) <em>GetAll</em> method - method to retrieve all items from the collection. <br>
+  (4) Iteration.  Methods for these operations include <br>
+  (4.1) <em>StartFirst</em> method - method to start a forward iteration over items, <br>
+  (4.2) <em>MoveForward</em> method - method to move forward to the next item.</p></td></tr>
+			   <tr><td><a href='../type/stacklinked.html'>StackLinked</a></td><td><a href='../module/class_linkedlists.html'>Class_LinkedLists</a></td><td><a href='../type/queuelinked.html'>QueueLinked</a></td><td><p><strong>Description</strong>: <br>
+  The <em>StackLinked</em> type is a collection type that employs a linked-list
+  implementation to provide common operations for a LIFO stack. <br>
+ <strong>Usage Overview</strong>: <br>
+  The <em>StackLinked</em> type is a <em>stack</em> collection type that provides common
+  operations of a LIFO stack.  Their operations can be categorized
+  as follows: <br>
+  (1) Construction and destruction.  Methods for these operations include <br>
+  (1.1) <em>Construct</em> method - method to construct the collection either from
+      another collection or from an array of items, <br>
+  (1.2) <em>Destruct</em> method - method to destruct the collection. <br>
+  (2) Insert and remove.  Methods for these operations include <br>
+  (2.1) <em>Push</em> method - method to insert an item at the top (to the end) of the collection, <br>
+  (2.2) <em>Pop</em> method - method to get and remove the top (last) item of the collection, <br>
+  (2.3) <em>Clear</em> method - method to remove all items from the collection. <br>
+  (2.4) <em>ToArray</em> method - method to remove and retrieve all items from the collection. <br>
+  (3) Inquiry.  Methods for these operations include <br>
+  (3.1) <em>PeekTop</em> method - method to retrieve the top (last) item of the collection, <br>
+  (3.2) <em>GetSize</em> method - method to get the collection size (number of items stored), <br>
+  (3.3) <em>IsEmpty</em> method - method to check whether the collection is empty or not. <br>
+  (3.4) <em>GetAll</em> method - method to retrieve all items from the collection. <br>
+  (4) Iteration.  Methods for these operations include <br>
+  (4.1) <em>StartFirst</em> method - method to start a forward iteration over items, <br>
+  (4.2) <em>MoveForward</em> method - method to move forward to the next item. <br>
+ <strong>Note</strong>: Since the <em>StackLinked</em> type is a subtype of the <em>QueueLinked</em> type,
+           it can also be used as a FIFO queue.</p></td></tr>
+			   <tr><td><a href='../type/streamrng.html'>StreamRNG</a></td><td><a href='../module/class_streamrng.html'>Class_StreamRNG</a></td><td><a href='../type/baserng.html'>BaseRNG</a></td><td><p>The <em>StreamRNG</em> type is an abstract PRNG type that directly extends
+ the <em>BaseRNG</em> type.  It provides an additional API for a PRNG that
+ can be used as a stream PRNG.  Therefore, all so-called <em>Stream</em>
+ PRNGs should extend from this base type.</p></td></tr>
+			   <tr><td><a href='../type/stringbuilder.html'>StringBuilder</a></td><td><a href='../module/class_stringbuilder.html'>Class_StringBuilder</a></td><td><a href='../type/comparable.html'>Comparable</a></td><td><p>The <em>StringBuilder</em> type is string type that provides a convenient way
+ to build a string from multiple strings.</p></td></tr>
+			   <tr><td><a href='../type/superkiss32rng.html'>SuperKiss32RNG</a></td><td><a href='../module/class_superkiss32rng.html'>Class_SuperKiss32RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>SuperKiss32RNG</em> type is an <em>Integer</em> PRNG type based on the <em>SuperKISS</em>
+ algorithm by George Marsaglia.</p></td></tr>
+			   <tr><td><a href='../type/superkiss64rng.html'>SuperKiss64RNG</a></td><td><a href='../module/class_superkiss64rng.html'>Class_SuperKiss64RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>SuperKiss64RNG</em> type is a <em>Long</em> PRNG type based on the <em>SuperKISS</em>
+ algorithm by George Marsaglia.</p></td></tr>
+			   <tr><td><a href='../type/taus88rng.html'>Taus88RNG</a></td><td><a href='../module/class_taus88rng.html'>Class_Taus88RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>Taus88RNG</em> type is an <em>Integer</em> PRNG type based on a Tausworthe
+ random number generator by Pierre L'Ecuyer.</p></td></tr>
+			   <tr><td><a href='../type/ternarytrie.html'>TernaryTrie</a></td><td><a href='../module/class_ternarytrie.html'>Class_TernaryTrie</a></td><td>None</td><td><p>The <em>TernaryTrie</em> type is a container type that utilizes a ternary search
+ tree implementation to provide common operations for a symbol table where
+ its keys are character strings and its values can be of any type.</p></td></tr>
+			   <tr><td><a href='../type/timer.html'>Timer</a></td><td><a href='../module/class_timer.html'>Class_Timer</a></td><td>None</td><td><p>a timer type that can be used to measure an elapsed time</p></td></tr>
+			   <tr><td><a href='../type/treecharacter.html'>TreeCharacter</a></td><td><a href='../module/class_treecharacter.html'>Class_TreeCharacter</a></td><td>None</td><td><p><em>TreeCharacter</em> is a container type that employs a left-leaning red-black (RB) tree
+  implementation to provide common operations for an ordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/treecomparable.html'>TreeComparable</a></td><td><a href='../module/class_treecomparable.html'>Class_TreeComparable</a></td><td>None</td><td><p><em>TreeComparable</em> is a container type that employs a left-leaning red-black (RB) tree
+  implementation to provide common operations for an ordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/treeinteger1b.html'>TreeInteger1B</a></td><td><a href='../module/class_treeinteger1b.html'>Class_TreeInteger1B</a></td><td>None</td><td><p><em>TreeInteger1B</em> is a container type that employs a left-leaning red-black (RB) tree
+  implementation to provide common operations for an ordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/treeinteger2b.html'>TreeInteger2B</a></td><td><a href='../module/class_treeinteger2b.html'>Class_TreeInteger2B</a></td><td>None</td><td><p><em>TreeInteger2B</em> is a container type that employs a left-leaning red-black (RB) tree
+  implementation to provide common operations for an ordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/treeinteger4b.html'>TreeInteger4B</a></td><td><a href='../module/class_treeinteger4b.html'>Class_TreeInteger4B</a></td><td>None</td><td><p><em>TreeInteger4B</em> is a container type that employs a left-leaning red-black (RB) tree
+  implementation to provide common operations for an ordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/treeinteger8b.html'>TreeInteger8B</a></td><td><a href='../module/class_treeinteger8b.html'>Class_TreeInteger8B</a></td><td>None</td><td><p><em>TreeInteger8B</em> is a container type that employs a left-leaning red-black (RB) tree
+  implementation to provide common operations for an ordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/treerealdp.html'>TreeRealDP</a></td><td><a href='../module/class_treerealdp.html'>Class_TreeRealDP</a></td><td>None</td><td><p><em>TreeRealDP</em> is a container type that employs a left-leaning red-black (RB) tree
+  implementation to provide common operations for an ordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/treerealqp.html'>TreeRealQP</a></td><td><a href='../module/class_treerealqp.html'>Class_TreeRealQP</a></td><td>None</td><td><p><em>TreeRealQP</em> is a container type that employs a left-leaning red-black (RB) tree
+  implementation to provide common operations for an ordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/treerealsp.html'>TreeRealSP</a></td><td><a href='../module/class_treerealsp.html'>Class_TreeRealSP</a></td><td>None</td><td><p><em>TreeRealSP</em> is a container type that employs a left-leaning red-black (RB) tree
+  implementation to provide common operations for an ordered symbol table.</p></td></tr>
+			   <tr><td><a href='../type/treetable.html'>TreeTable</a></td><td><a href='../module/class_treetable.html'>Class_TreeTable</a></td><td><a href='../type/orderedsymtable.html'>OrderedSymTable</a></td><td><p>The <em>TreeTable</em> type is a collection type that utilizes a balanced BST
+ implementation to provide common operations for an ordered symbol table.
+ The <em>TreeTable</em> type uses the <em>IntrusiveRBTree</em> type as its component
+ to store <em>TabNode</em> objects.  As an intrusive BST container, the
+ <em>IntrusiveRBTree</em> type provides common binary-search-tree operations
+ without a memory management task.  The memory management task of the
+ inserted <em>TabNode</em> objects is handled by the <em>TreeTable</em> type.  <br>
+ As an ordered symbol table, the <em>TreeTable</em> type is a subtype of the
+ <em>OrderedSymTable</em> type.  Thus, it implements all deferred procedures
+ required by the <em>OrderedSymTable</em> type and all its super classes (i.e.
+ the <em>Assignable</em> type, the <em>BaseCollection</em> type and the <em>BaseSymTable</em>
+ type).  As a symbol table, the <em>TreeTable</em> type does not allow duplicated
+ keys; therefore, if an inserted key is equal to a key stored in the table,
+ an associated value of the stored key is replaced by an associated value
+ of the inserted key. <br>
+ Because the <em>IntrusiveRBTree</em> type is a subtype of the <em>IntrusiveAVLTree</em>
+ type, the <em>WrkTree</em> component can be employed as a red-black tree or an
+ AVL tree.  Therefore, the <em>TreeTable</em> type allows a user to specify which
+ type of binary-search tree implementation to be used.  By default, the
+ red-black tree implementation is used.  The user can call the <em>UseAVLTree</em>
+ method to change to AVL tree implementation.  The <em>UseAVLTree</em> method must
+ be called before inserting an object into the symbol table (i.e when the
+ table is empty).  Otherwise, the red-black tree implementation is employed.</p></td></tr>
+			   <tr><td><a href='../type/uint128.html'>UInt128</a></td><td><a href='../module/modbase_uint128.html'>ModBase_UInt128</a></td><td>None</td><td><p><em>UInt128</em> is a 128-bit unsigned integer type where the base
+  of its components is 2<sup>64</sup>.</p></td></tr>
+			   <tr><td><a href='../type/uppercasealphabet.html'>UppercaseAlphabet</a></td><td><a href='../module/class_alphabets.html'>Class_Alphabets</a></td><td><a href='../type/basealphabet.html'>BaseAlphabet</a></td><td><p>The <em>UppercaseAlphabet</em> type is a data type representing the uppercase alphabet
+ { A, B, C, ..., Z }.</p></td></tr>
+			   <tr><td><a href='../type/userparam.html'>UserParam</a></td><td><a href='../module/modbase_common.html'>ModBase_Common</a></td><td>None</td><td><p>a user parameter type used to modernize legacy code</p></td></tr>
+			   <tr><td><a href='../type/waterhasher32.html'>WaterHasher32</a></td><td><a href='../module/class_waterhasher32.html'>Class_WaterHasher32</a></td><td><a href='../type/hasher32.html'>Hasher32</a></td><td><p><em>WaterHasher32</em> is a hasher type that outputs the hash value as a 32-bit integer.
+ It employs the <em>Water</em> hash algorithm by Tommy Ettinger.</p></td></tr>
+			   <tr><td><a href='../type/well32rng.html'>Well32RNG</a></td><td><a href='../module/class_well32rng.html'>Class_Well32RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>Well32RNG</em> type is an <em>Integer</em> PRNG type based on the Well
+ Equidistributed Long-period Linear (WELL) generators by Francois
+ Panneton, Pierre L'Ecuyer, and Makoto Matsumoto.</p></td></tr>
+			   <tr><td><a href='../type/workspace.html'>WorkSpace</a></td><td><a href='../module/modbase_common.html'>ModBase_Common</a></td><td>None</td><td><p>a workspace type used to modernize legacy code</p></td></tr>
+			   <tr><td><a href='../type/wyhasher64.html'>WyHasher64</a></td><td><a href='../module/class_wyhasher64.html'>Class_WyHasher64</a></td><td><a href='../type/hasher64.html'>Hasher64</a></td><td><p><em>WyHasher64</em> is a hasher type that outputs the hash value as a 64-bit integer.
+ It employs the final version 3 of the <em>Wy</em> hash algorithm by Wang Yi.</p></td></tr>
+			   <tr><td><a href='../type/wyrng.html'>WyRNG</a></td><td><a href='../module/class_wyrng.html'>Class_WyRNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>WyRNG</em> type is a <em>Long</em> PRNG type based on a combination of
+WyRand and WyHash64 algorithms by Wang Yi.</p></td></tr>
+			   <tr><td><a href='../type/xoroshiro1024rng.html'>XoRoShiRo1024RNG</a></td><td><a href='../module/class_xoroshiro1024rng.html'>Class_XoRoShiRo1024RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>XoRoShiRo1024RNG</em> type is a <em>Long</em> PRNG type based on algorithms from
+ the Xor-Shift-Rotate family of generators by Sebastiano Vigna.</p></td></tr>
+			   <tr><td><a href='../type/xoroshiro128rng.html'>XoRoShiRo128RNG</a></td><td><a href='../module/class_xoroshiro128rng.html'>Class_XoRoShiRo128RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>XoRoShiRo128RNG</em> type is a <em>Long</em> PRNG type based on algorithms from
+ the Xor-Shift-Rotate family of generators by Sebastiano Vigna.</p></td></tr>
+			   <tr><td><a href='../type/xoroshiro64rng.html'>XoRoShiRo64RNG</a></td><td><a href='../module/class_xoroshiro64rng.html'>Class_XoRoShiRo64RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>XoRoShiRo64RNG</em> type is an <em>Integer</em> PRNG type based on algorithms from
+ the Xor-Shift-Rotate family of generators by Sebastiano Vigna.</p></td></tr>
+			   <tr><td><a href='../type/xoshiro128rng.html'>XoShiRo128RNG</a></td><td><a href='../module/class_xoshiro128rng.html'>Class_XoShiRo128RNG</a></td><td><a href='../type/integerrng.html'>IntegerRNG</a></td><td><p>The <em>XoShiRo128RNG</em> type is an <em>Integer</em> PRNG type based on algorithms from
+ the Xor-Shift-Rotate family of generators by Sebastiano Vigna.</p></td></tr>
+			   <tr><td><a href='../type/xoshiro256rng.html'>XoShiRo256RNG</a></td><td><a href='../module/class_xoshiro256rng.html'>Class_XoShiRo256RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>XoShiRo256RNGRNG</em> type is a <em>Long</em> PRNG type based on algorithms from
+ the Xor-Shift-Rotate family of generators by Sebastiano Vigna.</p></td></tr>
+			   <tr><td><a href='../type/xoshiro512rng.html'>XoShiRo512RNG</a></td><td><a href='../module/class_xoshiro512rng.html'>Class_XoShiRo512RNG</a></td><td><a href='../type/longrng.html'>LongRNG</a></td><td><p>The <em>XoShiRo512RNGRNG</em> type is a <em>Long</em> PRNG type based on algorithms from
+ the Xor-Shift-Rotate family of generators by Sebastiano Vigna.</p></td></tr>
+			   <tr><td><a href='../type/xx3hasher128.html'>XX3Hasher128</a></td><td><a href='../module/class_xx3hasher64.html'>Class_XX3Hasher64</a></td><td><a href='../type/xx3hasher64.html'>XX3Hasher64</a></td><td><p><em>XX3Hasher128</em> is a hasher type that outputs the hash value as a 128-bit integer.
+ It is a subtype of the <em>XX3Hasher64</em> type.</p></td></tr>
+			   <tr><td><a href='../type/xx3hasher64.html'>XX3Hasher64</a></td><td><a href='../module/class_xx3hasher64.html'>Class_XX3Hasher64</a></td><td><a href='../type/hasher64.html'>Hasher64</a></td><td><p><em>XX3Hasher64</em> is a hasher type that outputs the hash value as a 64-bit integer.
+ It employs the <em>XX3</em> hash algorithm by Yann Collet.</p></td></tr>
+			   <tr><td><a href='../type/xxhasher32.html'>XXHasher32</a></td><td><a href='../module/class_xxhasher32.html'>Class_XXHasher32</a></td><td><a href='../type/hasher32.html'>Hasher32</a></td><td><p><em>XXHasher32</em> is a hasher type that outputs the hash value as a 32-bit integer.
+ It employs the <em>XX</em> hash algorithm by Yann Collet.</p></td></tr>
+			   <tr><td><a href='../type/xxhasher64.html'>XXHasher64</a></td><td><a href='../module/class_xxhasher64.html'>Class_XXHasher64</a></td><td><a href='../type/hasher64.html'>Hasher64</a></td><td><p><em>XXHasher64</em> is a hasher type that outputs the hash value as a 64-bit integer.
+ It employs the <em>XX</em> hash algorithm by Yann Collet.</p></td></tr>
+			 </tbody></table>
+             
+        </div>
+      </div>
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col"><p>XpfGeneral was developed by Niranama<br>&copy; 2024 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>

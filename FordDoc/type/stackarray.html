@@ -1,0 +1,2602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="XpfLib - General Package Documentation">
+    <meta name="author" content="Niranama" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>StackArray &ndash; XpfGeneral </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">XpfGeneral </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/absint.html">Abstract Interfaces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>StackArray
+      <small>Derived Type</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title="<p> 0.5% of total for derived types.</p>Including implementation: 63 statements,  0.1% of total for derived types.">26 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/Class - DynamicArrays.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/class - dynamicarrays.f90.html'>Class - DynamicArrays.f90</a></li>
+                <li class="breadcrumb-item"><a href='../module/class_dynamicarrays.html'>Class_DynamicArrays</a></li>
+            <li class="breadcrumb-item active" aria-current="page">StackArray</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+      <div id="sidebar">
+      <h3>Contents</h3>
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#vars-0"
+         aria-expanded="false" aria-controls="vars-0">
+         <h4 class="card-header bg-primary text-white">Variables</h4>
+      </a>
+      <div id="vars-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/stackarray.html#variable-valsize">ValSize</a>
+            <a class="list-group-item" href="../type/stackarray.html#variable-equalto">EqualTo</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#fins-0"
+         aria-expanded="false" aria-controls="fins-0">
+         <h4 class="card-header bg-primary text-white">Finalization Procedures</h4>
+      </a>
+      <div id="fins-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/stackarray.html#finalproc-stackarray_finalize">StackArray_Finalize</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#boundprocs-0"
+         aria-expanded="false" aria-controls="boundprocs-0">
+         <h4 class="card-header bg-primary text-white">Type-Bound Procedures</h4>
+      </a>
+      <div id="boundprocs-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-assignment%28%3D%29~17">ASSIGNMENT(=)</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-memfree~17">MemFree</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-getclone~52">GetClone</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-getname~119">GetName</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-isempty~15">IsEmpty</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-seteqproc">SetEQProc</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-createempty~24">CreateEmpty</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-construct~87">Construct</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-copyassign~10">CopyAssign</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-makeclone~10">MakeClone</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-isequalto~18">IsEqualTo</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-freememory~11">FreeMemory</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-gettypename~13">GetTypeName</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-makecopy~12">MakeCopy</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-clear~31">Clear</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-destruct~40">Destruct</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-getsize~41">GetSize</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-startfirst~33">StartFirst</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-moveforward~34">MoveForward</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-insert~25">Insert</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-delete~22">Delete</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-toarray~19">ToArray</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-getall~19">GetAll</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-offset~55">Offset</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-push~20">Push</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-pop~20">Pop</a>
+            <a class="list-group-item" href="../type/stackarray.html#boundprocedure-peektop~20">PeekTop</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+    <div class="card card-primary">
+      <div class="card-header text-left"><h3 class="card-title">Source Code</h3></div>
+      <div class="list-group">
+        <a class="list-group-item" href="../type/stackarray.html#src">StackArray</a>
+      </div>
+    </div>
+
+
+  </div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+      <h2>type, public, extends(BaseDynArr) :: StackArray</h2>
+    <p><strong>Description</strong>: <br>
+  The <em>StackArray</em> type is a collection type that employs a resizable-array
+  implementation to provide common operations for a LIFO stack. <br>
+ <strong>Usage Overview</strong>: <br>
+  The <em>StackArray</em> type is a <em>stack</em> collection type that provides common
+  operations of a LIFO stack.  Their operations can be categorized
+  as follows: <br>
+  (1) Construction and destruction.  Methods for these operations include <br>
+  (1.1) <em>Construct</em> method - method to construct the collection either from
+      another collection or from an array of items, <br>
+  (1.2) <em>CreateEmpty</em> method - method to construct an empty collection, <br>
+  (1.3) <em>Destruct</em> method - method to destruct the collection. <br>
+  (2) Insert and remove.  Methods for these operations include <br>
+  (2.1) <em>Push</em> method - method to insert an item at the top (to the end) of the collection, <br>
+  (2.2) <em>Pop</em> method - method to get and remove the top (last) item of the collection, <br>
+  (2.3) <em>Clear</em> method - method to remove all items from the collection. <br>
+  (2.4) <em>ToArray</em> method - method to remove and retrieve all items from the collection. <br>
+  (3) Inquiry.  Methods for these operations include <br>
+  (3.1) <em>PeekTop</em> method - method to retrieve the top (last) item of the collection, <br>
+  (3.2) <em>GetSize</em> method - method to get the collection size (number of items stored), <br>
+  (3.3) <em>IsEmpty</em> method - method to check whether the collection is empty or not. <br>
+  (3.4) <em>GetAll</em> method - method to retrieve all items from the collection. <br>
+  (4) Iteration.  Methods for these operations include <br>
+  (4.1) <em>StartFirst</em> method - method to start a forward iteration over items, <br>
+  (4.2) <em>MoveForward</em> method - method to move forward to the next item.</p>
+    <br>
+
+    <section>
+    <h2>Components</h2>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Visibility</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+<th></th><th scope="col">Initial</th>        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-valsize"></span>
+              integer(kind=kI4B),
+            </td>
+              <td>public,</td>
+            <td>
+              LEN
+            </td>
+            <td>::</td>
+            <td><strong>ValSize</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>size of data content (a value of an element) in bytes</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-equalto"></span>
+              procedure(<a href='../interface/isequalgen.html'>IsEqualGen</a>),
+            </td>
+              <td>public,</td>
+            <td>
+              NOPASS, POINTER
+            </td>
+            <td>::</td>
+            <td><strong>EqualTo</strong></td>
+<td>=&gt; </td>
+                <td>NULL()</td>
+            <td>
+                <p>procedure to compare GenStore items</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    </section>
+    <br>
+    
+
+      <section>
+        <h2>Finalization Procedures</h2>
+            <div class="card">
+    <div class="card-header codesum">
+      <span class="anchor" id="finalproc-stackarray_finalize"></span>
+      <h3>final :: <strong>StackArray_Finalize</strong> </h3>
+    </div>
+    <div class="card-body">
+      
+      <p>To perform finalization of the object.</p>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item">
+            <h3>
+    private  subroutine StackArray_Finalize(Collection)  
+
+    </h3>
+  <p>To perform finalization of the object.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-collection~207"></span>
+              type(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+      </li>
+    </ul>
+  </div>
+
+      </section>
+      <br>
+
+      <section>
+        <h2>Type-Bound Procedures</h2>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-assignment%28%3D%29~17"></span>
+      <h3>
+          generic, public ::
+  <strong>ASSIGNMENT(=)</strong> => <a href='../type/stringbuilder.html#boundprocedure-copyassign~3'>CopyAssign</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_CopyAssign(DstObj, SrcObj)  
+</h3>
+
+  <p>To copy the source object to the destination object.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-memfree~17"></span>
+      <h3>
+          generic, public ::
+  <strong>MemFree</strong> => <a href='../type/stringbuilder.html#boundprocedure-freememory~4'>FreeMemory</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_Free(Obj)  
+</h3>
+
+  <p>To free memory of the StringBuilder object.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getclone~52"></span>
+      <h3>
+          generic, public ::
+  <strong>GetClone</strong> => <a href='../type/stringbuilder.html#boundprocedure-makeclone~3'>MakeClone</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_Clone(SrcObj, DstObj)  
+</h3>
+
+  <p>To clone the StringBuilder object.   This is a deferred
+ procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getname~119"></span>
+      <h3>
+          generic, public ::
+  <strong>GetName</strong> => <a href='../type/stringbuilder.html#boundprocedure-gettypename~3'>GetTypeName</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function StringBuilder_GetTypeName(Obj) result(Name)  
+</h3>
+
+  <p>To get the name of the StringBuilder type.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-isempty~15"></span>
+      <h3>
+          procedure, public ::
+  <strong>IsEmpty</strong> => BaseCollection_IsEmpty
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: IsEmpty <br>
+ <strong>Purpose</strong>:  To check whether the collection is empty or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = Collection%IsEmpty() <br>
+  ---&gt;    IF (.NOT.Collection%IsEmpty()) DoSomeThing</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function BaseCollection_IsEmpty(Collection) result(Flag)  
+</h3>
+
+  <p>To check whether the collection is currently empty or not.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if the collection currently contains no item.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-seteqproc"></span>
+      <h3>
+          procedure, public ::
+  <strong>SetEQProc</strong> => BaseIterable_SetEQProc
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Subroutine</strong>: SetEQProc <br>
+ <strong>Purpose</strong>:  To set a pointer to the <em>IsEqualTo</em> procedure.   This method
+               must be called before calling the <em>IsEqualTo</em> method to check
+               whether two iterable collections are equal to one another or not.
+               Otherwise, the <em>IsEqualTo</em> method would always return false.  <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%SetEQProc(IsEqualTo)</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine BaseIterable_SetEQProc(Collection, IsEqualTo)  
+</h3>
+
+  <p>To set a pointer to the <em>IsEqualTo</em> procedure.  This procedure
+ must be called before calling the <em>IsEqualTo</em> method to check
+ whether two iterable collections are equal to one another or not.
+ Otherwise, the <em>IsEqualTo</em> method would always return false.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/baseiterable.html'>BaseIterable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              procedure(<a href='../interface/isequalgen.html'>IsEqualGen</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IsEqualTo</strong></td>
+            <td>
+                <p>user-supplied procedure to compare items stored in the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-createempty~24"></span>
+      <h3>
+          procedure, public ::
+  <strong>CreateEmpty</strong> => BaseDynArr_CreateEmpty
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Subroutine</strong>: CreateEmpty <br>
+ <strong>Purpose</strong>:  To construct an empty collection. <br>
+ <strong>Usage</strong>: <br>
+          ! create an empty collection with specified initial capacity <br>
+  ---&gt;    CALL Collection%CreateEmpty(25) <br>
+          ! create a collection and specify the optional incremental size <br>
+  ---&gt;    CALL Collection%CreateEmpty(25, IncSize=16) <br>
+          ! create a collection and specify the optional shrink flag <br>
+  ---&gt;    CALL Collection%CreateEmpty(25, Shrink=.TRUE.)</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine BaseDynArr_CreateEmpty(Collection, InitCap, IncSize, Shrink)  
+</h3>
+
+  <p>To create an empty collection.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(BaseDynArr(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>BaseDynArr object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>InitCap</strong></td>
+            <td>
+                <p>initial size of the collection</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IncSize</strong></td>
+            <td>
+                <p>incremental size of the collection when it is full</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Shrink</strong></td>
+            <td>
+                <p>flag to shrink the collection capacity <br>
+- true if want to reduce capacity when the size is less than a quarter of the capacity. <br>
+- otherwise, the capacity stays the same. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-construct~87"></span>
+      <h3>
+          generic, public ::
+  <strong>Construct</strong> => <a href='../type/queuearray.html#boundprocedure-makecopy~13'>MakeCopy</a>, BaseDynArr_CreateByArray
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  interface QueueArray_CopyCollection()  
+</h3>
+
+  
+
+  <h4>Arguments</h4>
+    <em>None</em>
+
+        </li>
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine BaseDynArr_CreateByArray(Collection, N, Items, IncSize, Shrink)  
+</h3>
+
+  <p>To create a collection from an array of items.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(BaseDynArr(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>BaseDynArr object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>N</strong></td>
+            <td>
+                <p>number of items</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Items</strong>(:)</td>
+            <td>
+                <p>the items to be added to the collection</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>IncSize</strong></td>
+            <td>
+                <p>incremental size of the collection when it is full</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Shrink</strong></td>
+            <td>
+                <p>flag to shrink the collection capacity <br>
+- true if want to reduce capacity when the size is less than a quarter of the capacity. <br>
+- otherwise, the capacity stays the same. <br>
+- default is false.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-copyassign~10"></span>
+      <h3>
+          procedure, public ::
+  <strong>CopyAssign</strong> => StackArray_CopyAssign
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>CopyAssign</em> is a procedure deferred by the <em>Assignable</em> type. <br>
+ Use the assignment expression in place of the <em>CopyAssign</em> method
+ to make a copy of an <em>Assignable</em> object.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module subroutine StackArray_CopyAssign(DstObj, SrcObj)  
+</h3>
+
+  <p>To copy the source object to the destination object. <br>
+  This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-makeclone~10"></span>
+      <h3>
+          procedure, public ::
+  <strong>MakeClone</strong> => StackArray_Clone
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>MakeClone</em> is a procedure deferred by the <em>Assignable</em> type. <br>
+ Use the <em>GetClone</em> method in place of the <em>MakeClone</em> method
+ to create and return a copy of an <em>Assignable</em> object.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module subroutine StackArray_Clone(SrcObj, DstObj)  
+</h3>
+
+  <p>To clone the StackArray object. <br>
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-isequalto~18"></span>
+      <h3>
+          procedure, public ::
+  <strong>IsEqualTo</strong> => StackArray_IsEqualTo
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>IsEqualTo</em> is a procedure deferred by the <em>Assignable</em> type. <br>
+<strong>Type-Bound Function</strong>: IsEqualTo <br>
+ <strong>Purpose</strong>: To check whether two objects are equal to one another or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = ObjA%IsEqualTo(ObjB) <br>
+  ---&gt;    IF (.NOT.ObjA%IsEqualTo(ObjB)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module function StackArray_IsEqualTo(LhsObj, RhsObj) result(Flag)  
+</h3>
+
+  <p>To check whether LhsObj and RhsObj are equal or not. <br>
+ This is a deferred procedure inherited from the <em>Assignable</em> type. <br>
+ <strong>Important Note</strong>:  The <em>SetEQProc</em> procedure must be called before
+ using this procedure. Otherwise, the procedure always returns false.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>LhsObj</strong></td>
+            <td>
+                <p>an object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>RhsObj</strong></td>
+            <td>
+                <p>another object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if both objects are equal</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-freememory~11"></span>
+      <h3>
+          procedure, public ::
+  <strong>FreeMemory</strong> => StackArray_Free
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>FreeMemory</em> is a procedure deferred by the <em>Assignable</em> type. <br>
+ Use the <em>MemFree</em> method in place of the <em>FreeMemory</em> method to free
+ memory the <em>Assignable</em> object if the object contains allocatable and/or
+ pointer component(s).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module subroutine StackArray_Free(Obj)  
+</h3>
+
+  <p>To free memory of the StackArray object. <br>
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-gettypename~13"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetTypeName</strong> => StackArray_GetTypeName
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>GetTypeName</em> is a procedure deferred by the <em>Assignable</em> type. <br>
+ Use the <em>GetName</em> method in place of the <em>GetTypeName</em> method to get
+ the name of the <em>concrete</em> type of an <em>Assignable</em> object (i.e. name
+ of a concrete subtype of an <em>Assignable</em> abstract type).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module function StackArray_GetTypeName(Obj) result(Name)  
+</h3>
+
+  <p>To get the name of the StackArray type. <br>
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    <p>type name of the object</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-makecopy~12"></span>
+      <h3>
+          procedure, public ::
+  <strong>MakeCopy</strong> => StackArray_CopyCollection
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>MakeCopy</em> is a procedure deferred by the <em>BaseCollection</em> type. <br>
+ Use the <em>Construct</em> method in place of the <em>MakeCopy</em> method to
+ create a collection from another collection.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module subroutine StackArray_CopyCollection(This, Other)  
+</h3>
+
+  <p>To creates a new collection (This) with the same items
+ as the given collection (Other). <br>
+ This is a deferred procedure by the <em>BaseCollection</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>This</strong></td>
+            <td>
+                <p>collection object to be created</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Other</strong></td>
+            <td>
+                <p>collection object to be copied</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-clear~31"></span>
+      <h3>
+          procedure, public ::
+  <strong>Clear</strong> => StackArray_ClearItems
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>Clear</em> is a procedure deferred by the <em>BaseCollection</em> type. <br>
+ <strong>Type-Bound Subroutine</strong>: Clear <br>
+ <strong>Purpose</strong>:  To remove all items from the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Clear()</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module subroutine StackArray_ClearItems(Collection)  
+</h3>
+
+  <p>To remove all of the items from the collection. <br>
+This is a deferred procedure by the <em>BaseCollection</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-destruct~40"></span>
+      <h3>
+          procedure, public ::
+  <strong>Destruct</strong> => StackArray_Destroy
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>Destruct</em> is a procedure deferred by the <em>BaseCollection</em> type. <br>
+ <strong>Type-Bound Subroutine</strong>: Destruct <br>
+ <strong>Purpose</strong>:  To remove all items from the collection and free memory
+               of items stored in the collection.<br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Destruct() <br>
+ <strong>Important Note</strong>:  For the <em>StackArray</em> type, this method is not equivalent
+               to the <em>Clear</em> method.  Therefore, after calling the <em>Destruct</em>
+               method, the user should reconstruct the collection (by calling
+               a <em>Construction</em> method again) before using other operations
+               once more.  Otherwise, the collection's behavior may not be
+               as expected.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module subroutine StackArray_Destroy(Collection)  
+</h3>
+
+  <p>To destruct the collection. <br>
+This is a deferred procedure by the <em>BaseCollection</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getsize~41"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetSize</strong> => StackArray_GetSize
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>GetSize</em> is a procedure deferred by the <em>BaseCollection</em> type. <br>
+ <strong>Type-Bound Function</strong>: GetSize <br>
+ <strong>Purpose</strong>:  To get the current size of the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Size = Collection%GetSize()</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module function StackArray_GetSize(Collection) result(Size)  
+</h3>
+
+  <p>To get the collection size (number of items in the collection). <br>
+ This is a deferred procedure inherited from the <em>BaseCollection</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI4B)</small>
+    </h4>
+    <p>number of items</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-startfirst~33"></span>
+      <h3>
+          procedure, public ::
+  <strong>StartFirst</strong> => StackArray_Move2FirstElm
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>StartFirst</em> is a procedure deferred by the <em>BaseIterable</em> type. <br>
+ <strong>Type-Bound Function</strong>: StartFirst <br>
+ <strong>Purpose</strong>:  To start the <em>forward</em> iteration and return a flag indicating
+               whether the collection is empty or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    IsEmpty = Collection%StartFirst() <br>
+  ---&gt;    IsEmpty = Collection%StartFirst(FirstItem)</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module function StackArray_Move2FirstElm(Collection, Item) result(IsEmpty)  
+</h3>
+
+  <p>To move to the top (last) element in the collection. <br>
+This is a deferred procedure by the <em>BaseIterable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Item</strong></td>
+            <td>
+                <p>the first element as output if requested (and available)</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>a flag indicating whether the collection contains no element or not <br>
+- true if the collection is empty. <br>
+- otherwise the first element is available.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-moveforward~34"></span>
+      <h3>
+          procedure, public ::
+  <strong>MoveForward</strong> => StackArray_Move2NextElm
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>MoveForward</em> is a procedure deferred by the <em>BaseIterable</em> type. <br>
+ <strong>Type-Bound Function</strong>: MoveForward <br>
+ <strong>Purpose</strong>:  To move to the next iteration and return a flag indicating whether
+               the cursor pointer has reached the end of the collection or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward() <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward(NextItem) <br>
+ <strong>Note</strong>: See the <a href="../module/class_baseiterable.html">BaseIterable</a> type
+           for illustrations of an iteration over a collection using the <em>StartFirst</em>
+           and <em>MoveForward</em> methods.<br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module function StackArray_Move2NextElm(Collection, Item) result(IsTheEnd)  
+</h3>
+
+  <p>To move (backward) to the next element in the collection. <br>
+ This is a deferred procedure by the <em>BaseIterable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Item</strong></td>
+            <td>
+                <p>the next element as output if requested (and available)</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>a flag indicating whether the move to the end of the collection occurs or not <br>
+- true if next element is NOT available. <br>
+- otherwise next element is available.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-insert~25"></span>
+      <h3>
+          procedure, public ::
+  <strong>Insert</strong> => StackArray_AddElm
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>Insert</em> is a procedure deferred by the <em>BaseIterable</em> type. <br>
+ Use the <em>Push</em> method in place of the <em>Insert</em> method to add an item
+ to the collection.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module subroutine StackArray_AddElm(Collection, Item)  
+</h3>
+
+  <p>To insert the specified item at the top (end) of the collection. <br>
+ This is a deferred procedure by the <em>BaseIterable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Item</strong></td>
+            <td>
+                <p>the item to be added to the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-delete~22"></span>
+      <h3>
+          procedure, public ::
+  <strong>Delete</strong> => StackArray_DelElm
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>Delete</em> is a procedure deferred by the <em>BaseIterable</em> type. <br>
+ <strong>Type-Bound Subroutine</strong>: Delete <br>
+ <strong>Purpose</strong>:  To delete an item from the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Delete() <br>
+ <strong>Note</strong>: This method is intended to be used in conjunction with
+  the <em>StartFirst</em> and <em>MoveForward</em> methods.  Therefore, after
+  the call to one of those methods and then calling this one
+  will result in a removal of the current item of the iteration
+  (i.e. the same item that can be retrieved via the <em>StartFirst</em>
+  and <em>MoveForward</em> methods).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module subroutine StackArray_DelElm(Collection)  
+</h3>
+
+  <p>To delete an item from a collection.  This procedure is intended to be
+ used in conjunction with the <em>StartFirst</em> and <em>MoveForward</em> methods.
+ Therefore, after the call to one of the methods and then calling this
+ procedure will result in a removal of the current item of the iteration
+ (i.e. the same item that can be retrieved via those methods). <br>
+ This is a deferred procedure by the <em>BaseIterable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-toarray~19"></span>
+      <h3>
+          procedure, public ::
+  <strong>ToArray</strong> => StackArray_ToArray
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>ToArray</em> is a procedure deferred by the <em>BaseIterable</em> type. <br>
+ <strong>Type-Bound Function</strong>: ToArray <br>
+ <strong>Purpose</strong>:  To get and remove all items from the collection.  Also, return
+               a flag indicating whether the items are successfully removed. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Success = Collection%ToArray(Items) <br>
+  ---&gt;    IF (.NOT.Collection%ToArray(Items)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module function StackArray_ToArray(Collection, Items) result(Flag)  
+</h3>
+
+  <p>To get and remove all items from the collection.  Also, return
+a flag indicating whether the items are successfully removed.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Items</strong>(:)</td>
+            <td>
+                <p>the items to be retrieved and removed from the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>flag indicating whether the items are successfully removed. <br>
+- true if the items are successfully removed.
+- false if the items are NOT successfully removed.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getall~19"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetAll</strong> => StackArray_GetAll
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>GetAll</em> is a procedure deferred by the <em>BaseIterable</em> type. <br>
+ <strong>Type-Bound Function</strong>: GetAll <br>
+ <strong>Purpose</strong>:  To get all items (without removing them) from the collection.
+               Also, return a flag indicating whether the items are available. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Success = Collection%GetAll(Items) <br>
+  ---&gt;    IF (.NOT.Collection%GetAll(Items)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module function StackArray_GetAll(Collection, Items) result(Flag)  
+</h3>
+
+  <p>To get all items (without removing them) from the collection.  Also,
+return a flag indicating whether the items are available.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Items</strong>(:)</td>
+            <td>
+                <p>the items to be retrieved from the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>flag indicating whether the items are successfully retrieved. <br>
+- true if the items are available.
+- false if the items are NOT available.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-offset~55"></span>
+      <h3>
+          procedure, public ::
+  <strong>Offset</strong> => StackArray_GetFirst
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p>This procedure is intended for internal uses only.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module function StackArray_GetFirst(Collection) result(First)  
+</h3>
+
+  <p>To get an index pointing to the first item.
+ This is a deferred procedure by the <em>BaseDynArr</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI4B)</small>
+    </h4>
+    <p>first index</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-push~20"></span>
+      <h3>
+          generic, public ::
+  <strong>Push</strong> => <a href='../type/stackarray.html#boundprocedure-insert~25'>Insert</a>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Subroutine</strong>: Push <br>
+ <strong>Purpose</strong>:  To insert the specified item at the top (end) of the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Push(Item)</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  interface StackArray_AddElm()  
+</h3>
+
+  
+
+  <h4>Arguments</h4>
+    <em>None</em>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-pop~20"></span>
+      <h3>
+          procedure, public ::
+  <strong>Pop</strong> => StackArray_Pop
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: Pop <br>
+ <strong>Purpose</strong>:  To get and remove the top (last) item of the collection.
+               Also, return a flag indicating whether the item is
+               successfully removed. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Success = Collection%Pop(Item) <br>
+  ---&gt;    IF (.NOT.Collection%Pop(Item)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module function StackArray_Pop(Collection, Item) result(Flag)  
+</h3>
+
+  <p>To get and remove the top (last) item of the collection.  Also, return
+a flag indicating whether the item is successfully removed.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Item</strong></td>
+            <td>
+                <p>the item to be removed from the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>flag indicating whether the item is successfully removed. <br>
+- true if the collection is NOT empty.
+- false if the collection is empty.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-peektop~20"></span>
+      <h3>
+          procedure, public ::
+  <strong>PeekTop</strong> => StackArray_PeekTop
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: PeekTop <br>
+ <strong>Purpose</strong>:  To get the top (last) item (without removing it from the collection).
+               Also, return a flag indicating whether the item is available or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Success = Collection%PeekTop(Item) <br>
+  ---&gt;    IF (.NOT.Collection%PeekTop(Item)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                  <h3>
+    private module function StackArray_PeekTop(Collection, Item) result(Flag)  
+</h3>
+
+  <p>To get the top (last) item (without removing it from the collection).
+ Also, return a flag indicating whether the item is available.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stackarray.html'>StackArray</a>(*)),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Item</strong></td>
+            <td>
+                <p>the item to be retrieved from the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>flag indicating whether the item is available. <br>
+- true if the collection is NOT empty.
+- false if the collection is empty.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+      </section>
+
+    <section>
+    <h3><span class="anchor" id="src"></span>Source Code</h3>
+    <div class="hl codehilite"><pre><span></span><span class="w">    </span><span class="k">TYPE</span><span class="p">,</span><span class="w"> </span><span class="k">EXTENDS</span><span class="p">(</span><span class="n">BaseDynArr</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">StackArray</span>
+<span class="w">        </span><span class="k">PRIVATE</span>
+<span class="w">        </span><span class="c">!% pointer to top (last) item of the stack</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">      </span><span class="kd">::</span><span class="w"> </span><span class="n">Top</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">        </span><span class="c">!% pointer to current item of the iteration</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">      </span><span class="kd">::</span><span class="w"> </span><span class="n">Cursor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">    </span><span class="k">CONTAINS</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----         Deferred Procedures from Assignable Type          -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; *CopyAssign* is a procedure deferred by the *Assignable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the assignment expression in place of the *CopyAssign* method</span>
+<span class="w">        </span><span class="c">!  to make a copy of an *Assignable* object.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">CopyAssign</span><span class="w">   </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_CopyAssign</span>
+<span class="w">        </span><span class="c">!&gt; *MakeClone* is a procedure deferred by the *Assignable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *GetClone* method in place of the *MakeClone* method</span>
+<span class="w">        </span><span class="c">!  to create and return a copy of an *Assignable* object.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">MakeClone</span><span class="w">    </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_Clone</span>
+<span class="w">        </span><span class="c">!&gt; *IsEqualTo* is a procedure deferred by the *Assignable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: IsEqualTo &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**: To check whether two objects are equal to one another or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Flag = ObjA%IsEqualTo(ObjB) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.ObjA%IsEqualTo(ObjB)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">IsEqualTo</span><span class="w">    </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_IsEqualTo</span>
+<span class="w">        </span><span class="c">!&gt; *FreeMemory* is a procedure deferred by the *Assignable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *MemFree* method in place of the *FreeMemory* method to free</span>
+<span class="w">        </span><span class="c">!  memory the *Assignable* object if the object contains allocatable and/or</span>
+<span class="w">        </span><span class="c">!  pointer component(s).</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">FreeMemory</span><span class="w">   </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_Free</span>
+<span class="w">        </span><span class="c">!&gt; *GetTypeName* is a procedure deferred by the *Assignable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *GetName* method in place of the *GetTypeName* method to get</span>
+<span class="w">        </span><span class="c">!  the name of the *concrete* type of an *Assignable* object (i.e. name</span>
+<span class="w">        </span><span class="c">!  of a concrete subtype of an *Assignable* abstract type).</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetTypeName</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_GetTypeName</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----         Deferred Procedures from BaseCollection Type      -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; *MakeCopy* is a procedure deferred by the *BaseCollection* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *Construct* method in place of the *MakeCopy* method to</span>
+<span class="w">        </span><span class="c">!  create a collection from another collection.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">MakeCopy</span><span class="w">     </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_CopyCollection</span>
+<span class="w">        </span><span class="c">!&gt; *Clear* is a procedure deferred by the *BaseCollection* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Subroutine**: Clear &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To remove all items from the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Clear()</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Clear</span><span class="w">        </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_ClearItems</span>
+<span class="w">        </span><span class="c">!&gt; *Destruct* is a procedure deferred by the *BaseCollection* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Subroutine**: Destruct &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To remove all items from the collection and free memory</span>
+<span class="w">        </span><span class="c">!                of items stored in the collection.&lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Destruct() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Important Note**:  For the *StackArray* type, this method is not equivalent</span>
+<span class="w">        </span><span class="c">!                to the *Clear* method.  Therefore, after calling the *Destruct*</span>
+<span class="w">        </span><span class="c">!                method, the user should reconstruct the collection (by calling</span>
+<span class="w">        </span><span class="c">!                a *Construction* method again) before using other operations</span>
+<span class="w">        </span><span class="c">!                once more.  Otherwise, the collection&#39;s behavior may not be</span>
+<span class="w">        </span><span class="c">!                as expected.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Destruct</span><span class="w">     </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_Destroy</span>
+<span class="w">        </span><span class="c">!&gt; *GetSize* is a procedure deferred by the *BaseCollection* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Function**: GetSize &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get the current size of the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Size = Collection%GetSize()</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetSize</span><span class="w">      </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_GetSize</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----         Deferred Procedures from BaseIterable Type        -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; *StartFirst* is a procedure deferred by the *BaseIterable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Function**: StartFirst &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To start the *forward* iteration and return a flag indicating</span>
+<span class="w">        </span><span class="c">!                whether the collection is empty or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsEmpty = Collection%StartFirst() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsEmpty = Collection%StartFirst(FirstItem)</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">StartFirst</span><span class="w">   </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_Move2FirstElm</span>
+<span class="w">        </span><span class="c">!&gt; *MoveForward* is a procedure deferred by the *BaseIterable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Function**: MoveForward &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To move to the next iteration and return a flag indicating whether</span>
+<span class="w">        </span><span class="c">!                the cursor pointer has reached the end of the collection or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsTheEnd = Collection%MoveForward() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsTheEnd = Collection%MoveForward(NextItem) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: See the &lt;a href=&quot;../module/class_baseiterable.html&quot;&gt;BaseIterable&lt;/a&gt; type</span>
+<span class="w">        </span><span class="c">!            for illustrations of an iteration over a collection using the *StartFirst*</span>
+<span class="w">        </span><span class="c">!            and *MoveForward* methods.&lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">MoveForward</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_Move2NextElm</span>
+<span class="w">        </span><span class="c">!&gt; *Insert* is a procedure deferred by the *BaseIterable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *Push* method in place of the *Insert* method to add an item</span>
+<span class="w">        </span><span class="c">!  to the collection.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Insert</span><span class="w">       </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_AddElm</span>
+<span class="w">        </span><span class="c">!&gt; *Delete* is a procedure deferred by the *BaseIterable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Subroutine**: Delete &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To delete an item from the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Delete() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: This method is intended to be used in conjunction with</span>
+<span class="w">        </span><span class="c">!   the *StartFirst* and *MoveForward* methods.  Therefore, after</span>
+<span class="w">        </span><span class="c">!   the call to one of those methods and then calling this one</span>
+<span class="w">        </span><span class="c">!   will result in a removal of the current item of the iteration</span>
+<span class="w">        </span><span class="c">!   (i.e. the same item that can be retrieved via the *StartFirst*</span>
+<span class="w">        </span><span class="c">!   and *MoveForward* methods).</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Delete</span><span class="w">       </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_DelElm</span>
+<span class="w">        </span><span class="c">!&gt; *ToArray* is a procedure deferred by the *BaseIterable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Function**: ToArray &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get and remove all items from the collection.  Also, return</span>
+<span class="w">        </span><span class="c">!                a flag indicating whether the items are successfully removed. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Success = Collection%ToArray(Items) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.Collection%ToArray(Items)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">ToArray</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_ToArray</span>
+<span class="w">        </span><span class="c">!&gt; *GetAll* is a procedure deferred by the *BaseIterable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Function**: GetAll &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get all items (without removing them) from the collection.</span>
+<span class="w">        </span><span class="c">!                Also, return a flag indicating whether the items are available. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Success = Collection%GetAll(Items) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.Collection%GetAll(Items)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetAll</span><span class="w">   </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_GetAll</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----         Deferred Procedures from BaseDynArr Type          -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!% This procedure is intended for internal uses only.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Offset</span><span class="w">       </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_GetFirst</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----         Specific Procedures by StackArray Type            -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Subroutine**: Push &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To insert the specified item at the top (end) of the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Push(Item)</span>
+<span class="w">        </span><span class="k">GENERIC</span><span class="w">     </span><span class="kd">::</span><span class="w"> </span><span class="n">Push</span><span class="w">     </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">Insert</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: Pop &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get and remove the top (last) item of the collection.</span>
+<span class="w">        </span><span class="c">!                Also, return a flag indicating whether the item is</span>
+<span class="w">        </span><span class="c">!                successfully removed. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Success = Collection%Pop(Item) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.Collection%Pop(Item)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Pop</span><span class="w">      </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_Pop</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: PeekTop &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get the top (last) item (without removing it from the collection).</span>
+<span class="w">        </span><span class="c">!                Also, return a flag indicating whether the item is available or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Success = Collection%PeekTop(Item) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.Collection%PeekTop(Item)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">PeekTop</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">StackArray_PeekTop</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----                   Finalize Procedure                      -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; To perform finalization of the object.</span>
+<span class="w">        </span><span class="k">FINAL</span><span class="w">       </span><span class="kd">::</span><span class="w"> </span><span class="n">StackArray_Finalize</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">    </span><span class="k">END TYPE </span><span class="n">StackArray</span>
+</pre></div>
+
+    </section>
+    
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col"><p>XpfGeneral was developed by Niranama<br>&copy; 2024 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>

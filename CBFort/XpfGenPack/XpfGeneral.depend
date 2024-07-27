@@ -1,0 +1,3277 @@
+# depslib dependency file v1.0
+1719823081 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\core\modbase - common.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1716935764 c:\research\projects-2024\08-xpflib\xpfgenenal\source\macrodef\macro - basic definitions.f90
+
+1721611983 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\modbase - cppstdutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721714651 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\burkardt\modlib - cdflib.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\burkardt\modlib - chrpak.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\burkardt\modlib - probability.f90
+
+1702971785 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\burkardt\modlib - ranlib.f90
+
+1702971917 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\burkardt\modlib - specfunc.f90
+
+1718345567 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\miscellaneous\modlib - adjac.f90
+
+1718345608 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\miscellaneous\modlib - adjactapeless.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\miscellaneous\modlib - biginteger.f90
+
+1721694383 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\miscellaneous\modlib - evaluate.f90
+
+1671257819 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\miscellaneous\modlib - fparser.f90
+
+1718336741 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\miscellaneous\modlib - primeconstants1.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\miscellaneous\modlib - random.f90
+
+1710201436 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\core\modbase - conversion.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710201436 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\class - progressbar.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710201436 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\class - timer.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1719383975 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\modbase - charutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721708468 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\modbase - largetables.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Table - Reciprocity.f90"
+	"Includes/Table - CharDigits.f90"
+	"Includes/Table - LeftShift.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 1.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 2.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 3.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 4.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 5.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 6.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 7.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 8.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 9.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 10.f90"
+	"Includes/Table - PowTen 256 Bits - Small.f90"
+	"Includes/Table - PowTen 256 Bits - Compressed.f90"
+
+1711346387 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - reciprocity.f90
+
+1711346582 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - chardigits.f90
+
+1711346486 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - leftshift.f90
+
+1721693290 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - full - 1.f90
+
+1721693304 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - full - 2.f90
+
+1721693381 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - full - 3.f90
+
+1721693447 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - full - 4.f90
+
+1721693509 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - full - 5.f90
+
+1721693562 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - full - 6.f90
+
+1721693618 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - full - 7.f90
+
+1721693702 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - full - 8.f90
+
+1721693748 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - full - 9.f90
+
+1721693810 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - full - 10.f90
+
+1711346814 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - small.f90
+
+1711347040 c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\includes\table - powten 256 bits - compressed.f90
+
+1720343550 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\modbase - mathutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721633059 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\modbase - sintutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\modbase - charconv.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1719910833 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\collections\intrusive\class - intrusivelinkedlists.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1714019372 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\modbase - referencehash32.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1715672069 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashutil\modbase - bytepack.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\burkardt\modlib - filum.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\burkardt\modlib - pdflib.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\burkardt\modlib - polpak.f90
+
+1718336914 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\miscellaneous\modlib - primeconstants2.f90
+
+1717203674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\core\modbase - error handlers.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721633772 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\core\modbase - io handlers.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721633390 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\modbase - uintutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717204175 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\subbase - intfromchar.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1717845925 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\collections\intrusive\subclass - intrusivelinearlist.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202310 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\collections\intrusive\subclass - intrusiveringlist.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717198586 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\core\class - assignable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1719642856 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\core\class - errordata.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721636925 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\modbase - miscutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717232126 c:\research\projects-2024\08-xpflib\xpfgenenal\source\macrodef\macro - util definitions.f90
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\subbase - inttochar.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1721779525 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\collections\intrusive\class - intrusivehashlist.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717232282 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashutil\class - byteconverter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717548530 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\uint128\modbase - uint128.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717315885 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\inputnoutput\modbase - html report.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1721704744 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memhandlers - character.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Character MemAlloc - Implementation.f90"
+	"Includes/Character MemAlloc - Implementation.f90"
+	"Includes/Character MemResize - Implementation.f90"
+	"Includes/Character MemResize - Implementation.f90"
+
+1657337351 c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\includes\macro - memhandling.f90
+
+1717224696 c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\includes\intrinsic memfree - implementation.f90
+
+1717224674 c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\includes\character memalloc - implementation.f90
+
+1717224647 c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\includes\character memresize - implementation.f90
+
+1721704808 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memhandlers - complex.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+
+1717224674 c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\includes\intrinsic memalloc - implementation.f90
+
+1717224647 c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\includes\intrinsic memresize - implementation.f90
+
+1721704849 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memhandlers - integer.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+
+1721704891 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memhandlers - logical.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+
+1721704913 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memhandlers - real.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+
+1718346343 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\burkardt\modlib - csv files.f90
+
+1717483753 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\probdist\modbase - mylib.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1714610774 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\core\class - comparable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717203476 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\modbase - slatecutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721708511 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\subbase - realdpconv.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Common - Auxiliary.f90"
+	"Includes/Generic - RawBinary FP Number.f90"
+	"Includes/Generic - HPDecimal.f90"
+	"Includes/Generic - BigUInt.f90"
+	"Includes/Generic - Parse FP String.f90"
+	"Includes/Generic - Binary To Decimal.f90"
+	"Includes/Generic - Decimal To Binary.f90"
+
+1711503740 c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\includes\common - auxiliary.f90
+
+1711503236 c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\includes\generic - rawbinary fp number.f90
+
+1711503903 c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\includes\generic - hpdecimal.f90
+
+1711502346 c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\includes\generic - biguint.f90
+
+1711503082 c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\includes\generic - parse fp string.f90
+
+1711503903 c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\includes\generic - binary to decimal.f90
+
+1711502952 c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\includes\generic - decimal to binary.f90
+
+1721708310 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\subbase - realqpconv.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Common - Auxiliary.f90"
+	"Includes/Generic - RawBinary FP Number.f90"
+	"Includes/Generic - HPDecimal.f90"
+	"Includes/Generic - BigUInt.f90"
+	"Includes/Generic - Parse FP String.f90"
+	"Includes/Generic - Binary To Decimal.f90"
+	"Includes/Generic - Decimal To Binary.f90"
+
+1721708533 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\charconv\subbase - realspconv.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Common - Auxiliary.f90"
+	"Includes/Generic - RawBinary FP Number.f90"
+	"Includes/Generic - HPDecimal.f90"
+	"Includes/Generic - BigUInt.f90"
+	"Includes/Generic - Parse FP String.f90"
+	"Includes/Generic - Binary To Decimal.f90"
+	"Includes/Generic - Decimal To Binary.f90"
+
+1714442624 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\modbase - referencehash64.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717545705 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\sint128\modbase - sint128.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717548530 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\uint128\subbase - u128_arithmetic.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717224137 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\uint128\subbase - u128_bitwise.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717223591 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\uint128\subbase - u128_comparision.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717224113 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\uint128\subbase - u128_conversion.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1721613871 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\uint128\subbase - u128_experimental.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717755104 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\inputnoutput\modbase - ltk input.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1717224237 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memhandlers - assignable.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+
+1717224289 c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\includes\assignable memfree - implementation.f90
+
+1717224365 c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\includes\assignable memalloc - implementation.f90
+
+1717224394 c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\includes\assignable memresize - implementation.f90
+
+1717224885 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memhandlers - misc.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1721695096 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\miscellaneous\modlib - eplusinput.f90
+
+1717804672 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\core\class - hashable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717199306 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\core\class - keystore.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202310 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\collections\intrusive\class - intrusivebstrees.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717224113 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\sint128\subbase - i128_arithmetic.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717224137 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\sint128\subbase - i128_bitwise.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717223581 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\sint128\subbase - i128_comparision.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717224113 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\sint128\subbase - i128_conversion.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1721613922 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\int128bits\sint128\subbase - i128_experimental.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717224725 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memhandlers - comparable.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+
+1721870520 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memory handlers.f90
+
+1721616457 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\bases\class - baserng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717225734 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\modbase - ranking.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1721799708 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\modbase - sortascend.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1717225843 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\modbase - sortdescend.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1718337443 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\thirdparties\miscellaneous\modlib - primenumbers.f90
+
+1721779557 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\collections\intrusive\class - intrusivehashtree.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202310 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\collections\intrusive\subclass - commonbstree.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1715303120 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\collections\intrusive\subclass - intrusiveavltree.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1715303120 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\collections\intrusive\subclass - intrusiverbtree.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721613155 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listanytype.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717740019 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listassignable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717740019 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listcharacter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717656155 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\includes\intrinsic list - declaraction.f90
+
+1717206931 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\includes\intrinsic list - implementation.f90
+
+1717740019 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listcmpxdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740019 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listcmpxqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740019 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listcmpxsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740051 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listinteger1b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740051 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listinteger2b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740051 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listinteger4b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740050 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listinteger8b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740085 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listlogical.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740085 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listrealdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740085 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listrealqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740085 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dbllnklist\class - listrealsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1721779688 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrassignable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717221009 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrcharacter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1710413547 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\includes\intrinsic dynarr - declaraction.f90
+
+1721779807 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\includes\intrinsic dynarr - implementation.f90
+
+1717221097 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrcmpxdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221097 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrcmpxqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221097 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrcmpxsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221121 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrinteger1b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221121 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrinteger2b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221121 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrinteger4b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221121 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrinteger8b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221143 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrlogical.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221143 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrrealdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221143 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrrealqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221143 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\dynarray\class - darrrealsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1721613520 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\class - pqbasic.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1718702172 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\class - pqcharacter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721613498 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\class - pqheap.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1718700522 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\class - pqinteger1b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718236670 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\includes\intrinsic pqheap - declaraction.f90
+
+1718702120 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\includes\intrinsic pqheap - implementation.f90
+
+1718700556 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\class - pqinteger2b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718700556 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\class - pqinteger4b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718700614 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\class - pqinteger8b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718700614 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\class - pqrealdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718700614 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\class - pqrealqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718700647 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\priorityq\class - pqrealsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1721619088 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint32\class - apint32.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619131 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\class - apint64.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721704831 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memhandlers - hashable.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+
+1721704863 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\memhandlers\modbase - memhandlers - keystore.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+
+1717543872 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\bases\class - integerrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\bases\subclass - rng auxiliary.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1713069107 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\bases\subclass - rng ziggurat.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717225399 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\ranking\subbase - ranking - char.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1721621466 c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\includes\generic rank implementation.f90
+
+1717225924 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\ranking\subbase - ranking - comparable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\ranking\subbase - ranking - i16.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\ranking\subbase - ranking - i32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\ranking\subbase - ranking - i64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\ranking\subbase - ranking - i8.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\ranking\subbase - ranking - r128.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\ranking\subbase - ranking - r32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\ranking\subbase - ranking - r64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717226005 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortascend\subbase - sortascend - char.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1721801174 c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\includes\generic sort implementation.f90
+
+1721801101 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortascend\subbase - sortascend - comparable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226077 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortascend\subbase - sortascend - i16.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226077 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortascend\subbase - sortascend - i32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226077 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortascend\subbase - sortascend - i64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226077 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortascend\subbase - sortascend - i8.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortascend\subbase - sortascend - r128.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortascend\subbase - sortascend - r32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortascend\subbase - sortascend - r64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortdescend\subbase - sortdescend - char.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortdescend\subbase - sortdescend - comparable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortdescend\subbase - sortdescend - i16.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortdescend\subbase - sortdescend - i32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortdescend\subbase - sortdescend - i64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortdescend\subbase - sortdescend - i8.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortdescend\subbase - sortdescend - r128.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortdescend\subbase - sortdescend - r32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\sortnrank\sortdescend\subbase - sortdescend - r64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717487607 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\modtest - diehard.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717483753 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\probdist\modbase - probdist.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717739928 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\modbase - doublylinkedlists.f90
+
+1712740588 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\modbase - dynamicarrays.f90
+
+1718321774 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\modbase - priorityqueues.f90
+
+1721619044 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint32\subclass - api32 - bitwise.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1721619031 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint32\subclass - api32 - comparison.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721714126 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\subclass - api64 - bitwise.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1721619183 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\subclass - api64 - comparison.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717544061 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\bases\class - longrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717225215 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\bases\class - streamrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - cmwc4096rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - isaacrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - jsf32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - kiss32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - l32x64mrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - l32x64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - lfsr113rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - mrg32k3arng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - mt32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - mwc256rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - pcglcg32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - pcgmcg32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - ranluxrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - sfc32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - superkiss32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - taus88rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1711028678 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - well32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - xoroshiro64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\integer\class - xoshiro128rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482961 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - 3dsphere.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - binaryrank3132.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717483109 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - binaryrank6x8.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717483109 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - birthday.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - bitstream.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - countthe1s_specificbytes.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - countthe1s_stream.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - craps.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482961 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - mindistance.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717483019 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - operm5.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/OPerm5_Param.f90"
+
+1702641551 c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\includes\operm5_param.f90
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - opso_oqso_dna.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - overlapsum.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - parkinglot.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - runs.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\diehard\subtest - squeeze.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717484004 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\probdist\subbase - fbar.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721868367 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\probdist\subbase - fdist.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717487121 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\probdist\subbase - finv.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717487280 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\tools\probdist\subbase - fmass.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1720224739 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\class - errorinfo.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717890741 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\bases\util\class - mathexpparser.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721780168 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\class - htabhashable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717890844 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\class - treecharacter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1718188408 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\includes\intrinsic tree - declaraction.f90
+
+1717718441 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\includes\intrinsic tree - implementation.f90
+
+1718257760 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\class - treecomparable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717890862 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\class - treeinteger1b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890869 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\class - treeinteger2b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890844 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\class - treeinteger4b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890882 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\class - treeinteger8b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890890 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\class - treerealdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890897 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\class - treerealqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890904 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\rbtree\class - treerealsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - chacharng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - jsf64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - kiss64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - komirng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - l128x1024rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - l128x128rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - l128x256rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721794172 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - l128xmrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - l64x1024rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - l64x128rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - l64x256rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721794237 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - l64xmrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - lfsr258rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - mrg63k3arng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - mswsrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - mt64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - pcgrxsmxs64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - ranluxpprng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - sfc64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721794420 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - sip24rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - splitmixrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - superkiss64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - wyrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - xoroshiro1024rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - xoroshiro128rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - xoshiro256rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\long\class - xoshiro512rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1719383752 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\modbase - chrstr.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1718146963 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\modbase - balancedtrees.f90
+
+1717221881 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashutil\modbase - byteutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1711325734 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\randgen\modbase - prngbuilder.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1717227154 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\chrstring\subbase - character.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1711708078 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\chrstring\subbase - chrstr assignment.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1716545616 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\chrstring\subbase - chrstr conversion.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717890938 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\chrstring\subbase - chrstr inquiry.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717227154 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\chrstring\subbase - chrstr manipulation.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721812266 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\class - patternfinder.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+
+1714019372 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\modbase - experimentalhash32.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1714019341 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\modbase - experimentalhash64.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1714696554 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\bases\class - basehasher.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717319338 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\modbase - optimalhash32.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717319338 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\modbase - optimalhash64.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - citynfarmhash32 - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - crapwowhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - fasthash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - halfsiphash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - lookup3hash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - murmur3hash32 - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - nmhashv1 - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - nmhashv2 - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - superfasthash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - waterhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash32\subbase - xxhash32 - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - citynfarmhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - komihash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - metrohash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - mirmumhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - murmur3hash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - mx3hash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - pengyhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - siphash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - spookyhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - wyhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781048 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\reference\hash64\subbase - xxhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721614836 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\simple\modbase - simplehash32.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1713168638 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\simple\modbase - simplehash64.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1721619075 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint32\subclass - api32 - auxiliary.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619156 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\subclass - api64 - auxiliary.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721616055 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\class - htabcharacter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Character HashTable - Implementation.f90"
+
+1718189804 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\includes\intrinsic hashtable - declaraction.f90
+
+1721780517 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\includes\character hashtable - implementation.f90
+
+1718086142 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\class - htabinteger1b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1721780592 c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\includes\intrinsic hashtable - implementation.f90
+
+1718086183 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\class - htabinteger2b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1718086219 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\class - htabinteger4b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1718086251 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\class - htabinteger8b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1718086289 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\class - htabrealdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1718086362 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\class - htabrealqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1718086362 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\hashtable\class - htabrealsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash32\subbase - citynfarmhash32 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash32\subbase - lookup3hash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash32\subbase - murmur3hash32 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash32\subbase - nmhashv2 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash32\subbase - waterhash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash32\subbase - xxhash32 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721619890 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - cityhash64 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721787027 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - farmnahash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721787217 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - farmuohash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - komihash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - metrohash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721793027 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - murmur3hash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - pengyhash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721793218 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - spookyhash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721793562 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - wyhash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721620079 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - xx3hash64 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721793627 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - xxhash64 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714609514 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\bases\class - hasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+
+1714609547 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\bases\class - hasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash32\subbase - citynfarmhash32 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash32\subbase - lookup3hash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash32\subbase - murmur3hash32 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash32\subbase - nmhashv2 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash32\subbase - waterhash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash32\subbase - xxhash32 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash64\subbase - citynfarmhash64 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash64\subbase - komihash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash64\subbase - metrohash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash64\subbase - murmur3hash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781157 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash64\subbase - pengyhash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781131 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash64\subbase - spookyhash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash64\subbase - wyhash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721620367 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash64\subbase - xx3hash64 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721811761 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint32\subclass - api32 - arithmetic.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721618925 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint32\subclass - api32 - conversion.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619237 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\subclass - api64 - arithmetic.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619370 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\subclass - api64 - assignment.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619267 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\subclass - api64 - constructor.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721813363 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\class - fvlstr.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1718147610 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\containers\modbase - hashtables.f90
+
+1721793771 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\experimental\hash64\subbase - xx3hash128 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714349683 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher32\class - halfsip24hasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714349671 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher32\class - murmur3hasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714349660 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher32\class - nmhasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714349646 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher32\class - waterhasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714349630 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher32\class - xxhasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714442733 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher64\class - farmnahasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714442749 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher64\class - farmuohasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714356099 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher64\class - komihasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781701 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher64\class - metrohasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714442785 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher64\class - murmur3hasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714523315 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher64\class - siphasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781734 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher64\class - spookyhasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714436061 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher64\class - wyhasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781757 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher64\class - xx3hasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714442802 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\hashers\hasher64\class - xxhasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721620350 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash64\subbase - xx3hash128 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\hashfunc\hashgeneral\optimal\hash64\subbase - xxhash64 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721619385 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\subclass - api64 - addsub.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619334 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\subclass - api64 - conversion.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619438 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\subclass - api64 - divmod.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619438 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\highprecision\arbritary\apint64\subclass - api64 - multiply.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1719104890 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\class - alphabets.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+
+1719384074 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\class - stringbuilder.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+
+1717227190 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\fvlstring\subclass - fvlstr assignment.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1718419307 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\fvlstring\subclass - fvlstr conversion.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717227437 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\fvlstring\subclass - fvlstr inquiry.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1716683485 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\fvlstring\subclass - fvlstr intrinsic.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1716767271 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\fvlstring\subclass - fvlstr manipulation.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717227437 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\fvlstring\subclass - fvlstr miscellaneous.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721814192 source:c:\research\projects-2024\08-xpflib\xpfgenenal\source\strings\modbase - stringsorts.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+
+1719823081 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\core\modbase - common.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1716935764 c:\research\projects-2024\08-xpflib\xpfgeneral\source\macrodef\macro - basic definitions.f90
+
+1721611983 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\modbase - cppstdutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721714651 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\burkardt\modlib - cdflib.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\burkardt\modlib - chrpak.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\burkardt\modlib - probability.f90
+
+1702971785 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\burkardt\modlib - ranlib.f90
+
+1702971917 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\burkardt\modlib - specfunc.f90
+
+1718345567 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\miscellaneous\modlib - adjac.f90
+
+1718345608 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\miscellaneous\modlib - adjactapeless.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\miscellaneous\modlib - biginteger.f90
+
+1721694383 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\miscellaneous\modlib - evaluate.f90
+
+1671257819 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\miscellaneous\modlib - fparser.f90
+
+1718336741 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\miscellaneous\modlib - primeconstants1.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\miscellaneous\modlib - random.f90
+
+1710201436 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\core\modbase - conversion.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710201436 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\class - progressbar.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710201436 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\class - timer.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1719383975 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\modbase - charutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721708468 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\modbase - largetables.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Table - Reciprocity.f90"
+	"Includes/Table - CharDigits.f90"
+	"Includes/Table - LeftShift.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 1.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 2.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 3.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 4.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 5.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 6.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 7.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 8.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 9.f90"
+	"Includes/Table - PowTen 256 Bits - Full - 10.f90"
+	"Includes/Table - PowTen 256 Bits - Small.f90"
+	"Includes/Table - PowTen 256 Bits - Compressed.f90"
+
+1711346387 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - reciprocity.f90
+
+1711346582 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - chardigits.f90
+
+1711346486 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - leftshift.f90
+
+1721693290 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - full - 1.f90
+
+1721693304 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - full - 2.f90
+
+1721693381 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - full - 3.f90
+
+1721693447 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - full - 4.f90
+
+1721693509 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - full - 5.f90
+
+1721693562 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - full - 6.f90
+
+1721693618 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - full - 7.f90
+
+1721693702 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - full - 8.f90
+
+1721693748 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - full - 9.f90
+
+1721693810 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - full - 10.f90
+
+1711346814 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - small.f90
+
+1711347040 c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\includes\table - powten 256 bits - compressed.f90
+
+1720343550 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\modbase - mathutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721633059 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\modbase - sintutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\modbase - charconv.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1719910833 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\collections\intrusive\class - intrusivelinkedlists.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1714019372 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\modbase - referencehash32.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1715672069 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashutil\modbase - bytepack.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\burkardt\modlib - filum.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\burkardt\modlib - pdflib.f90
+
+1702692571 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\burkardt\modlib - polpak.f90
+
+1718336914 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\miscellaneous\modlib - primeconstants2.f90
+
+1717203674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\core\modbase - error handlers.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721633772 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\core\modbase - io handlers.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721633390 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\modbase - uintutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717204175 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\subbase - intfromchar.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1717845925 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\collections\intrusive\subclass - intrusivelinearlist.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202310 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\collections\intrusive\subclass - intrusiveringlist.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717198586 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\core\class - assignable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1719642856 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\core\class - errordata.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721636925 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\modbase - miscutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717232126 c:\research\projects-2024\08-xpflib\xpfgeneral\source\macrodef\macro - util definitions.f90
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\subbase - inttochar.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1721779525 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\collections\intrusive\class - intrusivehashlist.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717232282 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashutil\class - byteconverter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717548530 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\uint128\modbase - uint128.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717315885 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\inputnoutput\modbase - html report.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1721704744 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memhandlers - character.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Character MemAlloc - Implementation.f90"
+	"Includes/Character MemAlloc - Implementation.f90"
+	"Includes/Character MemResize - Implementation.f90"
+	"Includes/Character MemResize - Implementation.f90"
+
+1657337351 c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\includes\macro - memhandling.f90
+
+1717224696 c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\includes\intrinsic memfree - implementation.f90
+
+1717224674 c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\includes\character memalloc - implementation.f90
+
+1717224647 c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\includes\character memresize - implementation.f90
+
+1721704808 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memhandlers - complex.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+
+1717224674 c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\includes\intrinsic memalloc - implementation.f90
+
+1717224647 c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\includes\intrinsic memresize - implementation.f90
+
+1721704849 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memhandlers - integer.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+
+1721704891 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memhandlers - logical.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+
+1721704913 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memhandlers - real.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemFree - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemAlloc - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+	"Includes/Intrinsic MemResize - Implementation.f90"
+
+1718346343 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\burkardt\modlib - csv files.f90
+
+1717483753 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\probdist\modbase - mylib.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1714610774 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\core\class - comparable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717203476 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\modbase - slatecutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721708511 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\subbase - realdpconv.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Common - Auxiliary.f90"
+	"Includes/Generic - RawBinary FP Number.f90"
+	"Includes/Generic - HPDecimal.f90"
+	"Includes/Generic - BigUInt.f90"
+	"Includes/Generic - Parse FP String.f90"
+	"Includes/Generic - Binary To Decimal.f90"
+	"Includes/Generic - Decimal To Binary.f90"
+
+1711503740 c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\includes\common - auxiliary.f90
+
+1711503236 c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\includes\generic - rawbinary fp number.f90
+
+1711503903 c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\includes\generic - hpdecimal.f90
+
+1711502346 c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\includes\generic - biguint.f90
+
+1711503082 c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\includes\generic - parse fp string.f90
+
+1711503903 c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\includes\generic - binary to decimal.f90
+
+1711502952 c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\includes\generic - decimal to binary.f90
+
+1721708310 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\subbase - realqpconv.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Common - Auxiliary.f90"
+	"Includes/Generic - RawBinary FP Number.f90"
+	"Includes/Generic - HPDecimal.f90"
+	"Includes/Generic - BigUInt.f90"
+	"Includes/Generic - Parse FP String.f90"
+	"Includes/Generic - Binary To Decimal.f90"
+	"Includes/Generic - Decimal To Binary.f90"
+
+1721708533 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\charconv\subbase - realspconv.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Common - Auxiliary.f90"
+	"Includes/Generic - RawBinary FP Number.f90"
+	"Includes/Generic - HPDecimal.f90"
+	"Includes/Generic - BigUInt.f90"
+	"Includes/Generic - Parse FP String.f90"
+	"Includes/Generic - Binary To Decimal.f90"
+	"Includes/Generic - Decimal To Binary.f90"
+
+1714442624 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\modbase - referencehash64.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717545705 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\sint128\modbase - sint128.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717548530 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\uint128\subbase - u128_arithmetic.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717224137 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\uint128\subbase - u128_bitwise.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717223591 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\uint128\subbase - u128_comparision.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717224113 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\uint128\subbase - u128_conversion.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1721613871 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\uint128\subbase - u128_experimental.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717755104 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\inputnoutput\modbase - ltk input.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1717224237 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memhandlers - assignable.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+
+1717224289 c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\includes\assignable memfree - implementation.f90
+
+1717224365 c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\includes\assignable memalloc - implementation.f90
+
+1717224394 c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\includes\assignable memresize - implementation.f90
+
+1717224885 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memhandlers - misc.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1721695096 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\miscellaneous\modlib - eplusinput.f90
+
+1717804672 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\core\class - hashable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717199306 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\core\class - keystore.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202310 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\collections\intrusive\class - intrusivebstrees.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717224113 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\sint128\subbase - i128_arithmetic.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717224137 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\sint128\subbase - i128_bitwise.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1717223581 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\sint128\subbase - i128_comparision.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717224113 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\sint128\subbase - i128_conversion.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1721613922 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\int128bits\sint128\subbase - i128_experimental.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717224725 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memhandlers - comparable.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+
+1721870520 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memory handlers.f90
+
+1721616457 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\bases\class - baserng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717225734 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\modbase - ranking.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1721799708 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\modbase - sortascend.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1717225843 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\modbase - sortdescend.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1718337443 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\thirdparties\miscellaneous\modlib - primenumbers.f90
+
+1721779557 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\collections\intrusive\class - intrusivehashtree.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202310 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\collections\intrusive\subclass - commonbstree.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1715303120 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\collections\intrusive\subclass - intrusiveavltree.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1715303120 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\collections\intrusive\subclass - intrusiverbtree.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721613155 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listanytype.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717740019 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listassignable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717740019 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listcharacter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717656155 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\includes\intrinsic list - declaraction.f90
+
+1717206931 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\includes\intrinsic list - implementation.f90
+
+1717740019 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listcmpxdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740019 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listcmpxqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740019 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listcmpxsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740051 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listinteger1b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740051 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listinteger2b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740051 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listinteger4b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740050 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listinteger8b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740085 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listlogical.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740085 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listrealdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740085 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listrealqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1717740085 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dbllnklist\class - listrealsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic List - Declaraction.f90"
+	"Includes/Intrinsic List - Implementation.f90"
+
+1721779688 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrassignable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717221009 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrcharacter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1710413547 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\includes\intrinsic dynarr - declaraction.f90
+
+1721779807 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\includes\intrinsic dynarr - implementation.f90
+
+1717221097 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrcmpxdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221097 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrcmpxqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221097 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrcmpxsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221121 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrinteger1b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221121 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrinteger2b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221121 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrinteger4b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221121 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrinteger8b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221143 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrlogical.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221143 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrrealdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221143 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrrealqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1717221143 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\dynarray\class - darrrealsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic DynArr - Declaraction.f90"
+	"Includes/Intrinsic DynArr - Implementation.f90"
+
+1721613520 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\class - pqbasic.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1718702172 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\class - pqcharacter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721613498 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\class - pqheap.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1718700522 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\class - pqinteger1b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718236670 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\includes\intrinsic pqheap - declaraction.f90
+
+1718702120 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\includes\intrinsic pqheap - implementation.f90
+
+1718700556 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\class - pqinteger2b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718700556 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\class - pqinteger4b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718700614 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\class - pqinteger8b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718700614 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\class - pqrealdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718700614 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\class - pqrealqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1718700647 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\priorityq\class - pqrealsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic PQHeap - Declaraction.f90"
+	"Includes/Intrinsic PQHeap - Implementation.f90"
+
+1721619088 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint32\class - apint32.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619131 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\class - apint64.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721704831 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memhandlers - hashable.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+
+1721704863 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\memhandlers\modbase - memhandlers - keystore.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Macro - MemHandling.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemFree - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemAlloc - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+	"Includes/Assignable MemResize - Implementation.f90"
+
+1717543872 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\bases\class - integerrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\bases\subclass - rng auxiliary.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1713069107 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\bases\subclass - rng ziggurat.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717225399 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\ranking\subbase - ranking - char.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1721621466 c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\includes\generic rank implementation.f90
+
+1717225924 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\ranking\subbase - ranking - comparable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\ranking\subbase - ranking - i16.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\ranking\subbase - ranking - i32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\ranking\subbase - ranking - i64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\ranking\subbase - ranking - i8.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\ranking\subbase - ranking - r128.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\ranking\subbase - ranking - r32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717225974 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\ranking\subbase - ranking - r64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Rank Implementation.f90"
+
+1717226005 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortascend\subbase - sortascend - char.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1721801174 c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\includes\generic sort implementation.f90
+
+1721801101 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortascend\subbase - sortascend - comparable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226077 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortascend\subbase - sortascend - i16.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226077 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortascend\subbase - sortascend - i32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226077 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortascend\subbase - sortascend - i64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226077 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortascend\subbase - sortascend - i8.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortascend\subbase - sortascend - r128.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortascend\subbase - sortascend - r32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortascend\subbase - sortascend - r64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortdescend\subbase - sortdescend - char.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortdescend\subbase - sortdescend - comparable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226120 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortdescend\subbase - sortdescend - i16.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortdescend\subbase - sortdescend - i32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortdescend\subbase - sortdescend - i64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortdescend\subbase - sortdescend - i8.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortdescend\subbase - sortdescend - r128.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortdescend\subbase - sortdescend - r32.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717226159 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\sortnrank\sortdescend\subbase - sortdescend - r64.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"../Includes/Generic Sort Implementation.f90"
+
+1717487607 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\modtest - diehard.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717483753 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\probdist\modbase - probdist.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717739928 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\modbase - doublylinkedlists.f90
+
+1712740588 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\modbase - dynamicarrays.f90
+
+1718321774 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\modbase - priorityqueues.f90
+
+1721619044 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint32\subclass - api32 - bitwise.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1721619031 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint32\subclass - api32 - comparison.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721714126 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\subclass - api64 - bitwise.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1721619183 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\subclass - api64 - comparison.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717544061 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\bases\class - longrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717225215 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\bases\class - streamrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - cmwc4096rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - isaacrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - jsf32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - kiss32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - l32x64mrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - l32x64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - lfsr113rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - mrg32k3arng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - mt32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202653 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - mwc256rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - pcglcg32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - pcgmcg32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - ranluxrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - sfc32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - superkiss32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - taus88rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1711028678 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - well32rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - xoroshiro64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202692 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\integer\class - xoshiro128rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482961 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - 3dsphere.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - binaryrank3132.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717483109 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - binaryrank6x8.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717483109 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - birthday.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - bitstream.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - countthe1s_specificbytes.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - countthe1s_stream.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - craps.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482961 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - mindistance.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717483019 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - operm5.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/OPerm5_Param.f90"
+
+1702641551 c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\includes\operm5_param.f90
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - opso_oqso_dna.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - overlapsum.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - parkinglot.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - runs.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717482657 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\diehard\subtest - squeeze.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717484004 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\probdist\subbase - fbar.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721868367 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\probdist\subbase - fdist.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717487121 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\probdist\subbase - finv.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717487280 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\tools\probdist\subbase - fmass.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1720224739 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\class - errorinfo.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717890741 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\bases\util\class - mathexpparser.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721780168 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\class - htabhashable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717890844 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\class - treecharacter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1718188408 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\includes\intrinsic tree - declaraction.f90
+
+1717718441 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\includes\intrinsic tree - implementation.f90
+
+1718257760 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\class - treecomparable.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717890862 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\class - treeinteger1b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890869 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\class - treeinteger2b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890844 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\class - treeinteger4b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890882 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\class - treeinteger8b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890890 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\class - treerealdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890897 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\class - treerealqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1717890904 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\rbtree\class - treerealsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+	"Includes/Intrinsic Tree - Declaraction.f90"
+	"Includes/Intrinsic Tree - Implementation.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - chacharng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - jsf64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - kiss64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - komirng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - l128x1024rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - l128x128rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - l128x256rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721794172 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - l128xmrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - l64x1024rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - l64x128rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - l64x256rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721794237 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - l64xmrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - lfsr258rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - mrg63k3arng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - mswsrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - mt64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - pcgrxsmxs64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - ranluxpprng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - sfc64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721794420 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - sip24rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - splitmixrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - superkiss64rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - wyrng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - xoroshiro1024rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - xoroshiro128rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - xoshiro256rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1710202836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\long\class - xoshiro512rng.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1719383752 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\modbase - chrstr.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1718146963 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\modbase - balancedtrees.f90
+
+1717221881 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashutil\modbase - byteutil.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1711325734 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\randgen\modbase - prngbuilder.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1717227154 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\chrstring\subbase - character.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1711708078 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\chrstring\subbase - chrstr assignment.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1716545616 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\chrstring\subbase - chrstr conversion.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717890938 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\chrstring\subbase - chrstr inquiry.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717227154 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\chrstring\subbase - chrstr manipulation.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721812266 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\class - patternfinder.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+
+1714019372 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\modbase - experimentalhash32.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1714019341 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\modbase - experimentalhash64.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1714696554 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\bases\class - basehasher.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717319338 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\modbase - optimalhash32.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717319338 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\modbase - optimalhash64.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - citynfarmhash32 - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - crapwowhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - fasthash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - halfsiphash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - lookup3hash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - murmur3hash32 - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - nmhashv1 - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - nmhashv2 - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - superfasthash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - waterhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash32\subbase - xxhash32 - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - citynfarmhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - komihash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - metrohash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - mirmumhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - murmur3hash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - mx3hash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - pengyhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - siphash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - spookyhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - wyhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781048 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\reference\hash64\subbase - xxhash - ref.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721614836 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\simple\modbase - simplehash32.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1713168638 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\simple\modbase - simplehash64.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../MacroDef/Macro - Util Definitions.f90"
+
+1721619075 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint32\subclass - api32 - auxiliary.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619156 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\subclass - api64 - auxiliary.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721616055 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\class - htabcharacter.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Character HashTable - Implementation.f90"
+
+1718189804 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\includes\intrinsic hashtable - declaraction.f90
+
+1721780517 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\includes\character hashtable - implementation.f90
+
+1718086142 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\class - htabinteger1b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1721780592 c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\includes\intrinsic hashtable - implementation.f90
+
+1718086183 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\class - htabinteger2b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1718086219 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\class - htabinteger4b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1718086251 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\class - htabinteger8b.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1718086289 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\class - htabrealdp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1718086362 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\class - htabrealqp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1718086362 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\hashtable\class - htabrealsp.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"Includes/Intrinsic HashTable - Declaraction.f90"
+	"Includes/Intrinsic HashTable - Implementation.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash32\subbase - citynfarmhash32 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash32\subbase - lookup3hash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash32\subbase - murmur3hash32 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash32\subbase - nmhashv2 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash32\subbase - waterhash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash32\subbase - xxhash32 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721619890 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - cityhash64 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721787027 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - farmnahash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721787217 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - farmuohash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - komihash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - metrohash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721793027 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - murmur3hash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - pengyhash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721793218 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - spookyhash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721793562 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - wyhash - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721620079 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - xx3hash64 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721793627 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - xxhash64 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714609514 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\bases\class - hasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+
+1714609547 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\bases\class - hasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash32\subbase - citynfarmhash32 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash32\subbase - lookup3hash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash32\subbase - murmur3hash32 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash32\subbase - nmhashv2 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash32\subbase - waterhash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash32\subbase - xxhash32 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash64\subbase - citynfarmhash64 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash64\subbase - komihash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash64\subbase - metrohash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash64\subbase - murmur3hash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781157 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash64\subbase - pengyhash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781131 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash64\subbase - spookyhash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash64\subbase - wyhash - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721620367 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash64\subbase - xx3hash64 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721811761 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint32\subclass - api32 - arithmetic.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721618925 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint32\subclass - api32 - conversion.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619237 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\subclass - api64 - arithmetic.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619370 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\subclass - api64 - assignment.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619267 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\subclass - api64 - constructor.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721813363 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\class - fvlstr.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+
+1718147610 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\containers\modbase - hashtables.f90
+
+1721793771 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\experimental\hash64\subbase - xx3hash128 - exp.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714349683 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher32\class - halfsip24hasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714349671 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher32\class - murmur3hasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714349660 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher32\class - nmhasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714349646 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher32\class - waterhasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714349630 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher32\class - xxhasher32.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714442733 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher64\class - farmnahasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714442749 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher64\class - farmuohasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714356099 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher64\class - komihasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781701 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher64\class - metrohasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714442785 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher64\class - murmur3hasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714523315 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher64\class - siphasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781734 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher64\class - spookyhasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714436061 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher64\class - wyhasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721781757 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher64\class - xx3hasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1714442802 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\hashers\hasher64\class - xxhasher64.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721620350 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash64\subbase - xx3hash128 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1717030674 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\hashfunc\hashgeneral\optimal\hash64\subbase - xxhash64 - opt.f90
+	"../../../../MacroDef/Macro - Basic Definitions.f90"
+	"../../../../MacroDef/Macro - Util Definitions.f90"
+
+1721619385 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\subclass - api64 - addsub.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619334 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\subclass - api64 - conversion.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619438 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\subclass - api64 - divmod.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1721619438 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\highprecision\arbritary\apint64\subclass - api64 - multiply.f90
+	"../../../MacroDef/Macro - Basic Definitions.f90"
+
+1719104890 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\class - alphabets.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+
+1719384074 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\class - stringbuilder.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+
+1717227190 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\fvlstring\subclass - fvlstr assignment.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1718419307 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\fvlstring\subclass - fvlstr conversion.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1717227437 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\fvlstring\subclass - fvlstr inquiry.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1716683485 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\fvlstring\subclass - fvlstr intrinsic.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1716767271 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\fvlstring\subclass - fvlstr manipulation.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1717227437 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\fvlstring\subclass - fvlstr miscellaneous.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+
+1721814192 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\modbase - stringsorts.f90
+	"../MacroDef/Macro - Basic Definitions.f90"
+	"../MacroDef/Macro - Util Definitions.f90"
+
+1721867822 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\tries_gfortran\class - alphabettrie.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721867462 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\tries_gfortran\class - multiwaytrie.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+
+1721868066 source:c:\research\projects-2024\08-xpflib\xpfgeneral\source\strings\tries_gfortran\class - ternarytrie.f90
+	"../../MacroDef/Macro - Basic Definitions.f90"
+	"../../MacroDef/Macro - Util Definitions.f90"
+

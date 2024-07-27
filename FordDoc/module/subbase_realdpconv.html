@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="XpfLib - General Package Documentation">
+    <meta name="author" content="Niranama" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>SubBase_RealDPConv &ndash; XpfGeneral</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">XpfGeneral </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/absint.html">Abstract Interfaces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>SubBase_RealDPConv
+      <small>Submodule</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title=" 1.3% of total for modules and submodules.">4280 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/SubBase - RealDPConv.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/subbase - realdpconv.f90.html'>SubBase - RealDPConv.f90</a></li>
+            <li class="breadcrumb-item active" aria-current="page">SubBase_RealDPConv</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+        <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+    <em>None</em>
+
+  </div>
+
+    </div>
+
+    <div class="col-md-9" id='text'>
+      <p><strong>PURPOSE OF THIS SUBMODULE</strong>: <br>
+  This submodule contains an implementation for routines relating to conversions
+  between a double-precision real (floating-point) number and a string. <br>
+  <br>
+  <strong>TECHNICAL AND IMPLEMENTATION NOTES</strong>: <br>
+  <em>On the output to string</em>: <br>
+  1) Three routines are available to convert a real (floating-point) number into a string. <br>
+   - "RealToString_DragonBox" is based on the Dragonbox binary-to-decimal conversion algorithm [1]
+     and the reference implementation [11, 14, 20]. <br>
+   - "RealToString_Ryu" is based on the Ryu binary-to-decimal conversion algorithm [2]
+     and the reference implementation [12, 14]. <br>
+   - "RealToString_Schubfach" is based on the Schubfach binary-to-decimal conversion algorithm [3]
+     and the reference implementation [13, 14, 15]. <br>
+  2) All three binary-to-decimal conversion algorithms employed here produce the so-called shortest
+     output representation that provide an error-free write-read cycle.  This means that any correct
+     parsers (e.g. RealFromString routines) will read in the output string and return the original
+     real (floating-point) number. <br>
+  3) Although the DragonBox reference implementation provides several modes of rounding, only the
+     round-to-nearest mode is implemented here (the other two algorithms also use this mode). <br>
+  4) Although the Ryu reference implementation provides several conversion output formats (Shortest,
+     Scientific, Fixed), only the shortest representation (as mentioned above) is implemented.
+     Therefore, all three routines will produces the output string in a format similar to "G0" format
+     specification in Fortran. <br>
+  5) Actually, the RealToString routines have an optional "format" argument that we can use to specify
+     whether to output the string in "General (G)" or "Scientific (ES)" format.  However, because they
+     always produce the shortest output, no input argument to the routines is provided to specify
+     the desired number of significant digits as typically done in Fortran format specifications. <br>
+  <em>On the input from string</em>: <br>
+  1) Four routines are available to convert a string into a real (floating-point) number.  All four
+     routines utilize the so-call Clinger's fast-path algorithm [4].  Three of them (except "YY") employ
+     the so-call Eisel-Lemire decimal-to-binary conversion algorithm [5, 9] but are based on different
+     reference implementation.  When the Eisel-Lemire (or YY's fast-path) algorithm is NOT valid, three
+     of the routines (except "LibC") use multi-precision (unsigned) integer arithmetic (i.e. BigUInt)
+     whereas "LibC" employs the so-call Simple Decimal Conversion algorithm [10]. <br>
+     - "RealFromString_FastFloat" is based on the reference implementation [16]. <br>
+     - "RealFromString_LibC" is based on the reference implementation [18]. <br>
+     - "RealFromString_YY" is based on the reference implementation [15, 19]. <br>
+     - "RealFromString_Lemire" is based on the reference implementation [17, 19]. <br>
+  2) The RealFromString routines have an optional "parsing" argument that we can use to specify how
+     the routines interpret the input string. <br>
+  3) The "Parse_Fortran_String" routine is called when the optional "parsing" argument is not specified
+     (i.e. the default option) or "FortNum (or 1)" value is supplied as the parsing argument.  The routine
+     will interpret the input string as a valid Fortran real (floating point) number if it has one of
+     the two following forms: <br>
+     &lt;1&gt; A number without exponent part -&gt; [S]N[N...], and <br>
+     &lt;2&gt; A number with exponent part    -&gt; [S]N[N...]E[S]N[N...] <br>
+         where <br>
+         - [ ] indicates an optional field. <br>
+         - S is a sign indicator (required if negative '-', optional if positive '+'). <br>
+         - N is a decimal digit (0 through 9). A decimal point (a period) may appear anywhere
+              after the sign (but before the exponent). <br>
+         - E is an exponent indicator (either 'e' or 'E'). <br>
+     The valid number is similar to "Real" Fortran constant (literal) with some small differences. <br>
+      - A whole number without a decimal point (i.e. "Integer" constant) is considered valid. <br>
+      - The optional kind parameter (e.g. 1.23_DP) is not allowed here. <br>
+     Leading and/or trailing space(s) are allowed.  For example, "  1.23" and "1.23   " are considered
+     valid.  However, no space is allowed inside the supposedly valid number.  For instance, "1 .2 3"
+     is considered NOT valid. Therefore, this routine is not totally compatible with Fortran READ statement
+     where spaces inside the valid number are allowed. However, this can easily be done by adding an
+     optional 'Inside Space' flag that provide an interpretation of the spaces as 'zero' or 'ignored'.
+     Then, the input will be pre-processed according to the flag.  Nonetheless, this routine neglects
+     this optional input because it will make the routine much less efficient due to the fact that
+     we will need to scan the whole string twice and we will also need to copy the input string into
+     a buffer string and working with the buffer instead of directly handling the input string. <br>
+  4) The "Parse_FPlus_String" routine is called when "FPlusNum (or 2)" value is supplied as the parsing
+     argument.  The routine will parse a valid Fortran real (floating point) number with more relaxed
+     rules than those used in "Parse_Fortran_Number" routine. The relaxed rules consider the following
+     numbers as valid: <br>
+     - A number expressed in the scientific format can use 'd', 'D', 'q' and 'Q'
+     in place of 'e' or 'E'. <br>
+     - A number with '+' or '-' after digits (e.g. 1.23-20 or 123+50) is considered to
+     be a valid number expressed in the scientific format where an exponent indicator
+     is omitted. <br>
+     - Digits before any invalid character encountered are treated as a valid number
+     and any characters after the first encounter (including the first invalid one)
+     are neglected.  Therefore, for example, a '12.56ax-300' string is considered to
+     be a valid number with a value of 12.56. <br>
+  5) The "Parse_JSON_String" routine is called when "JsonNum (or 3)" value is supplied
+     as the parsing argument.  The routine will parse a valid JSON floating point number
+     where its differences from Fortran number are as follows: <br>
+     - Leading and trailing spaces are not allowed. <br>
+     - A plus sign as the first character is not allowed. <br>
+     - Leading zero(s) is not allowed (if 0 is the first character, the second one
+     must either be a period or an exponent indicator.) <br>
+     - A period must be followed by at least one digit. <br>
+  <br>
+  <strong>USAGE</strong>: <br>
+  <em>On the output to string</em>: <br>
+  =&gt; cStr = RealXP_ToString_DragonBox(Number, IsScientific) <br>
+  =&gt; cStr = RealXP_ToString_Ryu(Number, IsScientific) <br>
+  =&gt; cStr = RealXP_ToString_Schubfach(Number, IsScientific) <br>
+     where <br>
+     "cStr" is an <em>allocatable</em> character string representing the output string.  <br>
+     "Number" is a real number representing the floating point value.  <br>
+     "IsScientific" is a logical flag (optional argument) indicating whether
+        the output string is in <em>General</em> or <em>Scientific</em> format.
+        If present and true, the output string is in <em>Scientific</em> format.
+        Otherwise, the output string is in <em>General</em> format. <br>
+  <em>On the input from string</em>: <br>
+  =&gt; Number = RealXP_FromString_FastFloat(cStr, ParseOpt, ErrFlag, ErrMsg) <br>
+  =&gt; Number = RealXP_FromString_LibC(cStr, ParseOpt, ErrFlag, ErrMsg) <br>
+  =&gt; Number = RealXP_FromString_YY(cStr, ParseOpt, ErrFlag, ErrMsg) <br>
+  =&gt; Number = RealXP_FromString_Lemire(cStr, ParseOpt, ErrFlag, ErrMsg) <br>
+     where <br>
+     "Number" is a real number representing the floating point value if the input
+        string is valid. <br>
+     "cStr" is a character string representing the floating-point number string. <br>
+     "ParseOpt" is an integer input flag (optional) indicating how to interpret
+        the input string.  The valid value is FortNum (1), FPlusNum (2) or JsonNum (3).
+        If not specified or invalid, the routines will interpret the input string
+        as a Fortran number. <br>
+     "ErrFlag" is a logical output flag (optional) indicating whether there is an
+        error in parsing the input string.  True if the string represents an invalid
+        number.  False, otherwise. <br>
+     "ErrMsg" is an allocatable output character string (optional) that returns a
+        message describing the result of string parsing. <br>
+  <em>NOTE</em>: "XP" in the routine names shown above indicates the precision of the
+      real number.  The actual name will either be "RealSP_...", "RealDP_..." or
+      "RealQP_..." for single-precision, double-precision and quadruple-precision
+      number, respectively. <br>
+  <br>
+ <strong>REFERENCE TECHNICAL ARTICLES</strong>: <br>
+  [1] <a href="https://github.com/jk-jeon/dragonbox/blob/master/other_files/Dragonbox.pdf">
+      Junekey Jeon.  "Dragonbox: A New Floating-Point Binary-to-Decimal Conversion Algorithm".</a> <br>
+  [2] <a href="https://dl.acm.org/doi/10.1145/3192366.3192369">
+      Ulf Adams.  "Ryu: Fast Float-to-String Conversion".</a> <br>
+  [3] <a href="https://drive.google.com/open?id=1luHhyQF9zKlM8yJ1nebU0OgVYhfC6CBN">
+      Raffaello Giulietti.  "The Schubfach way to render doubles".</a> <br>
+  [4] <a href="https://doi.org/10.1145/989393.989430">
+      Clinger WD. How to Read Floating Point Numbers Accurately. SIGPLAN Not 2004 Apr;
+      39(4):360-371.</a> <br>
+  [5] <a href="https://arxiv.org/abs/2101.11408">Daniel Lemire.  "Number Parsing at a
+      Gigabyte per Second", Software: Practice and Experience 51 (8), 2021.</a> <br>
+  [6] <a href="https://arxiv.org/abs/2212.06644">Noble Mushtak and Daniel Lemire.
+      "Fast  Number Parsing Without Fallback", Software: Practice and Experience
+      53 (7), 2023.</a> <br>
+  [7] <a href="https://hal.inria.fr/hal-00864293v1/document">Bouvier &amp; Zimmermann.
+      "Division-Free Binary-to-Decimal Conversion".</a> <br>
+  [8] Hacker's Delight, 2nd Edition.
+  [9] <a href="https://nigeltao.github.io/blog/2020/eisel-lemire.html">Nigel Tao.
+      "The Eisel-Lemire ParseNumberF64 Algorithm".</a> <br>
+  [10] <a href="https://nigeltao.github.io/blog/2020/parse-number-f64-simple.html">
+      Nigel Tao.  "ParseNumberF64 by Simple Decimal Conversion".</a> <br>
+  <br>
+  <strong>REFERENCE CODE IMPLEMENTATION</strong>: <br>
+  [11] <a href="https://github.com/jk-jeon/dragonbox">DragonBox: C++ reference
+      implementation.</a> <br>
+  [12] <a href="https://github.com/ulfjack/ryu">Ryu: C reference implementation.</a> <br>
+  [13] <a href="https://github.com/c4f7fcce9cb06515/Schubfach">Schubfach: Java
+      reference implementation.</a> <br>
+  [14] <a href="https://github.com/abolz/Drachennest">Drachennest: Different
+      algorithms for converting binary to decimal floating-point numbers.</a> <br>
+  [15] <a href="https://github.com/ibireme/c_numconv_benchmark">Number Conversion
+      Benchmark in C.</a> <br>
+  [16] <a href="https://github.com/fastfloat/fast_float">Fast_Float Number
+      Parsing Library.</a> <br>
+  [17] <a href="https://github.com/lemire/fast_double_parser">Fast_Double_Parser.</a> <br>
+  [18] <a href="https://github.com/llvm/llvm-project/tree/main/libc/src/__support">
+      The LLVM Project (LibC).</a> <br>
+  [19] <a href="https://github.com/google/double-conversion">Double Conversion:
+      Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles.</a> <br>
+  [20] <a href="https://github.com/fmtlib/fmt">fmt: A modern formatting library.</a> <br></p>
+<br>          <div class="card mb-4">
+      <h3 class="card-header card-title bg-light">Uses</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href='../module/modbase_largetables.html'>ModBase_LargeTables</a></li>
+                  <li class="list-inline-item"><a href='../module/modbase_uint128.html'>ModBase_UInt128</a></li>
+                  <li class="list-inline-item"><a href='../module/modbase_sintutil.html'>ModBase_SIntUtil</a></li>
+                  <li class="list-inline-item"><a href='../module/modbase_uintutil.html'>ModBase_UIntUtil</a></li>
+                  <li class="list-inline-item"><a href='http://fortranwiki.org/fortran/show/ieee_arithmetic'>ieee_arithmetic</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <ul class="list-inline">
+                <li><h5>Ancestors:</h5></li>
+                  <li class="list-inline-item"><a href='../module/modbase_charconv.html'>ModBase_CharConv</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+      
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col"><p>XpfGeneral was developed by Niranama<br>&copy; 2024 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>

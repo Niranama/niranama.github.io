@@ -1,0 +1,688 @@
+MODULE ModLib_FglImage
+
+#ifdef  __INTEL_COMPILER
+    USE IFPORT
+#endif
+
+   IMPLICIT NONE
+
+   TYPE RGBIMAGE
+      INTEGER, DIMENSION(:,:), POINTER :: RED, GREEN, BLUE
+      INTEGER                          :: WIDTH, HEIGHT
+   END TYPE RGBIMAGE
+
+   TYPE RGBAIMAGE
+      INTEGER, DIMENSION(:,:), POINTER :: RED, GREEN, BLUE, ALPHA
+      INTEGER                          :: WIDTH, HEIGHT
+   END TYPE RGBAIMAGE
+
+   TYPE RGB
+      INTEGER :: RED, GREEN, BLUE
+   END TYPE RGB
+
+   TYPE RGBA
+      INTEGER :: RED, GREEN, BLUE, ALPHA
+   END TYPE RGBA
+
+   INTERFACE ALLOC_IMAGE
+      MODULE PROCEDURE ALLOC_IMAGERGB
+      MODULE PROCEDURE ALLOC_IMAGERGBA
+   END INTERFACE
+
+   INTERFACE INIT_IMAGE
+      MODULE PROCEDURE INIT_IMAGERGB
+      MODULE PROCEDURE INIT_IMAGERGBA
+   END INTERFACE
+
+   INTERFACE GET_PIXEL
+      MODULE PROCEDURE GET_PIXELRGB
+      MODULE PROCEDURE GET_PIXELRGBA
+   END INTERFACE
+
+   INTERFACE SET_PIXEL
+      MODULE PROCEDURE SET_PIXELRGB
+      MODULE PROCEDURE SET_PIXELRGBA
+   END INTERFACE
+
+   INTERFACE FILL_IMG
+      MODULE PROCEDURE FILL_IMGRGB
+      MODULE PROCEDURE FILL_IMGRGBA
+   END INTERFACE
+
+   INTERFACE READ_PPM
+      MODULE PROCEDURE READ_PPM_RGB
+      MODULE PROCEDURE READ_PPM_RGBA
+   END INTERFACE READ_PPM
+
+   INTERFACE WRITE_PPM
+      MODULE PROCEDURE WRITE_PPM_RGB
+      MODULE PROCEDURE WRITE_PPM_RGBA
+   END INTERFACE
+
+   INTERFACE OPEN_IMAGE
+      MODULE PROCEDURE OPEN_IMAGERGB
+      MODULE PROCEDURE OPEN_IMAGERGBA
+   END INTERFACE
+
+   INTERFACE SAVE_IMAGE
+      MODULE PROCEDURE SAVE_IMAGERGB
+      MODULE PROCEDURE SAVE_IMAGERGBA
+   END INTERFACE
+
+   INTERFACE OPERATOR (==)
+      MODULE PROCEDURE RGBEQUAL
+      MODULE PROCEDURE RGBAEQUAL
+   END INTERFACE
+
+   INTERFACE OPERATOR (/=)
+      MODULE PROCEDURE RGBNOTEQUAL
+      MODULE PROCEDURE RGBANOTEQUAL
+   END INTERFACE
+
+   INTERFACE OPERATOR (.DIST.)
+      MODULE PROCEDURE COLOURDISTANCE
+   END INTERFACE
+
+   INTERFACE OPERATOR (*)
+      MODULE PROCEDURE COLOURMULTIPLY
+   END INTERFACE
+
+   INTERFACE OPERATOR (+)
+      MODULE PROCEDURE COLOURADD
+   END INTERFACE
+
+   INTERFACE ASSIGNMENT (=)
+      MODULE PROCEDURE RGBIMAGEEQUAL
+      MODULE PROCEDURE RGBAIMAGEEQUAL
+   END INTERFACE
+
+CONTAINS
+
+   SUBROUTINE INIT_IMAGERGB(IMG)
+
+      IMPLICIT NONE
+
+      TYPE(RGBIMAGE), INTENT(OUT) :: IMG
+
+      NULLIFY(IMG%RED)
+      NULLIFY(IMG%GREEN)
+      NULLIFY(IMG%BLUE)
+      IMG%WIDTH = 0
+      IMG%HEIGHT = 0
+
+   END SUBROUTINE INIT_IMAGERGB
+
+  SUBROUTINE INIT_IMAGERGBA(IMG)
+
+      IMPLICIT NONE
+
+      TYPE(RGBAIMAGE), INTENT(OUT) :: IMG
+
+      NULLIFY(IMG%RED)
+      NULLIFY(IMG%GREEN)
+      NULLIFY(IMG%BLUE)
+      NULLIFY(IMG%ALPHA)
+
+      IMG%WIDTH = 0
+      IMG%HEIGHT = 0
+
+   END SUBROUTINE INIT_IMAGERGBA
+
+
+   SUBROUTINE ALLOC_IMAGERGB(IMAGE, W, H)
+
+      IMPLICIT NONE
+
+      TYPE(RGBIMAGE)      :: IMAGE
+      INTEGER, INTENT(IN) :: W, H
+
+      ALLOCATE(IMAGE%RED(W, H))
+      ALLOCATE(IMAGE%GREEN(W, H))
+      ALLOCATE(IMAGE%BLUE(W, H))
+      IMAGE%WIDTH = W
+      IMAGE%HEIGHT = H
+
+   END SUBROUTINE ALLOC_IMAGERGB
+
+
+   SUBROUTINE ALLOC_IMAGERGBA(IMAGE, W, H)
+
+      IMPLICIT NONE
+
+      TYPE(RGBAIMAGE)     :: IMAGE
+      INTEGER, INTENT(IN) :: W, H
+
+      ALLOCATE(IMAGE%RED(W, H))
+      ALLOCATE(IMAGE%GREEN(W, H))
+      ALLOCATE(IMAGE%BLUE(W, H))
+      ALLOCATE(IMAGE%ALPHA(W, H))
+
+      IMAGE%WIDTH = W
+      IMAGE%HEIGHT = H
+
+   END SUBROUTINE ALLOC_IMAGERGBA
+
+   SUBROUTINE SET_PIXELRGB(IMG, X, Y, COLOUR)
+
+      IMPLICIT NONE
+
+      TYPE(RGBIMAGE), INTENT(INOUT) :: IMG
+      INTEGER,        INTENT(IN)    :: X, Y
+      TYPE(RGB),      INTENT(IN)    :: COLOUR
+
+      IF(X > IMG%WIDTH .OR. X < 1)THEN
+         RETURN
+      ELSEIF(Y > IMG%HEIGHT .OR. Y < 1)THEN
+         RETURN
+      END IF
+
+      IMG%RED(X, Y) = COLOUR%RED
+      IMG%GREEN(X, Y) = COLOUR%GREEN
+      IMG%BLUE(X, Y) = COLOUR%BLUE
+
+   END SUBROUTINE SET_PIXELRGB
+
+
+   SUBROUTINE SET_PIXELRGBA(IMG, X, Y, COLOUR)
+
+      IMPLICIT NONE
+
+      TYPE(RGBAIMAGE), INTENT(INOUT) :: IMG
+      INTEGER,        INTENT(IN)     :: X, Y
+      TYPE(RGBA),      INTENT(IN)    :: COLOUR
+
+      IF(X > IMG%WIDTH .OR. X < 1)THEN
+         RETURN
+      ELSEIF(Y > IMG%HEIGHT .OR. Y < 1)THEN
+         RETURN
+      END IF
+
+      IMG%RED(X, Y) = COLOUR%RED
+      IMG%GREEN(X, Y) = COLOUR%GREEN
+      IMG%BLUE(X, Y) = COLOUR%BLUE
+      IMG%ALPHA(X, Y) = COLOUR%ALPHA
+
+
+   END SUBROUTINE SET_PIXELRGBA
+
+
+   SUBROUTINE GET_PIXELRGB(IMG, X, Y, COLOUR)
+
+      IMPLICIT NONE
+
+      TYPE(RGBIMAGE), INTENT(INOUT) :: IMG
+      TYPE(RGB),      INTENT(INOUT) :: COLOUR
+      INTEGER,        INTENT(IN)    :: X, Y
+
+      IF(X > IMG%WIDTH .OR. X < 1)THEN
+         RETURN
+      ELSEIF(Y > IMG%HEIGHT .OR. Y < 1)THEN
+         RETURN
+      END IF
+
+      COLOUR%RED = IMG%RED(X, Y)
+      COLOUR%GREEN = IMG%GREEN(X, Y)
+      COLOUR%BLUE = IMG%BLUE(X, Y)
+
+   END SUBROUTINE GET_PIXELRGB
+
+
+   SUBROUTINE GET_PIXELRGBA(IMG, X, Y, COLOUR)
+
+      IMPLICIT NONE
+
+      TYPE(RGBAIMAGE), INTENT(INOUT) :: IMG
+      TYPE(RGBA),      INTENT(INOUT) :: COLOUR
+      INTEGER,        INTENT(IN)     :: X, Y
+
+
+      IF(X > IMG%WIDTH .OR. X < 1)THEN
+         RETURN
+      ELSEIF(Y > IMG%HEIGHT .OR. Y < 1)THEN
+         RETURN
+      END IF
+
+      COLOUR%RED = IMG%RED(X, Y)
+      COLOUR%GREEN = IMG%GREEN(X, Y)
+      COLOUR%BLUE = IMG%BLUE(X, Y)
+      COLOUR%ALPHA = IMG%BLUE(X, Y)
+
+
+   END SUBROUTINE GET_PIXELRGBA
+
+   SUBROUTINE FILL_IMGRGB(IMG, COLOUR)
+
+      IMPLICIT NONE
+
+      TYPE(RGBIMAGE), INTENT(INOUT) :: IMG
+      TYPE(RGB),      INTENT(IN)    :: COLOUR
+      INTEGER                       :: I, J
+
+      DO J = 1, IMG%HEIGHT
+         DO I = 1, IMG%WIDTH
+            IMG%RED(I,J) = COLOUR%RED
+            IMG%GREEN(I,J) = COLOUR%GREEN
+            IMG%BLUE(I,J) = COLOUR%BLUE
+         END DO
+      END DO
+   END SUBROUTINE FILL_IMGRGB
+
+   SUBROUTINE FILL_IMGRGBA(IMG, COLOUR)
+
+      IMPLICIT NONE
+
+      TYPE(RGBAIMAGE), INTENT(INOUT) :: IMG
+      TYPE(RGBA),      INTENT(IN)    :: COLOUR
+      INTEGER                        :: I, J
+
+      DO J = 1, IMG%HEIGHT
+         DO I = 1, IMG%WIDTH
+            IMG%RED(I,J) = COLOUR%RED
+            IMG%GREEN(I,J) = COLOUR%GREEN
+            IMG%BLUE(I,J) = COLOUR%BLUE
+            IMG%ALPHA(I,J) = COLOUR%ALPHA
+         END DO
+      END DO
+   END SUBROUTINE FILL_IMGRGBA
+
+   SUBROUTINE RGBIMAGEEQUAL(A1, A2)
+
+      IMPLICIT NONE
+
+      TYPE(RGBIMAGE), INTENT(OUT) :: A1
+      TYPE(RGBIMAGE), INTENT(IN)  :: A2
+
+      A1%RED = A2%RED
+      A1%GREEN = A2%GREEN
+      A1%BLUE = A2%BLUE
+
+   END SUBROUTINE RGBIMAGEEQUAL
+
+
+   SUBROUTINE RGBAIMAGEEQUAL(A1, A2)
+
+      IMPLICIT NONE
+
+      TYPE(RGBAIMAGE), INTENT(OUT) :: A1
+      TYPE(RGBAIMAGE), INTENT(IN)  :: A2
+
+      A1%RED = A2%RED
+      A1%GREEN = A2%GREEN
+      A1%BLUE = A2%BLUE
+      A1%ALPHA = A2%ALPHA
+
+   END SUBROUTINE RGBAIMAGEEQUAL
+
+
+   LOGICAL FUNCTION RGBEQUAL(C1, C2)
+
+      TYPE(RGB), INTENT(IN) :: C1, C2
+
+      RGBEQUAL = .TRUE.
+      IF( (C1%RED == C2%RED) .AND. (C1%GREEN == C2%GREEN) .AND. (C1%BLUE == C2%BLUE))THEN
+         RETURN
+      END IF
+      RGBEQUAL = .FALSE.
+
+   END FUNCTION RGBEQUAL
+
+   LOGICAL FUNCTION RGBAEQUAL(C1, C2)
+
+      TYPE(RGBA), INTENT(IN) :: C1, C2
+
+      RGBAEQUAL = .TRUE.
+      IF( (C1%RED == C2%RED) .AND. (C1%GREEN == C2%GREEN) .AND. (C1%BLUE == C2%BLUE) .AND. (C1%ALPHA == C2%ALPHA))THEN
+         RETURN
+      END IF
+      RGBAEQUAL = .FALSE.
+
+   END FUNCTION RGBAEQUAL
+
+   INTEGER FUNCTION CLAMPINT(VAL, LO, HI)
+
+      INTEGER, INTENT(IN) :: LO, HI, VAL
+
+      IF(VAL < LO)THEN
+         CLAMPINT = LO
+      ELSEIF(VAL > HI)THEN
+         CLAMPINT = HI
+      ELSE
+         CLAMPINT = VAL
+      END IF
+
+   END FUNCTION
+
+
+   LOGICAL FUNCTION RGBNOTEQUAL(C1, C2)
+
+      TYPE(RGB), INTENT(IN) :: C1, C2
+
+      RGBNOTEQUAL = .FALSE.
+      IF( (C1%RED == C2%RED) .AND. (C1%GREEN == C2%GREEN) .AND. (C1%BLUE == C2%BLUE))THEN
+         RETURN
+      END IF
+      RGBNOTEQUAL = .TRUE.
+
+   END FUNCTION RGBNOTEQUAL
+
+
+   LOGICAL FUNCTION RGBANOTEQUAL(C1, C2)
+
+      TYPE(RGBA), INTENT(IN) :: C1, C2
+
+      RGBANOTEQUAL = .FALSE.
+      IF( (C1%RED == C2%RED) .AND. (C1%GREEN == C2%GREEN) .AND. (C1%BLUE == C2%BLUE) .AND. (C1%ALPHA == C2%ALPHA))THEN
+         RETURN
+      END IF
+      RGBANOTEQUAL = .TRUE.
+
+   END FUNCTION RGBANOTEQUAL
+
+
+   REAL FUNCTION COLOURDISTANCE(C1, C2)
+
+         TYPE(RGB), INTENT(IN) :: C1, C2
+
+         COLOURDISTANCE = SQRT(REAL(C1%RED - C2%RED)**2 + REAL(C1%GREEN - C2%GREEN)**2 &
+                               + REAL(C1%BLUE - C2%BLUE)**2 )
+
+   END FUNCTION COLOURDISTANCE
+
+   FUNCTION COLOURADD(C1, C2)
+
+      TYPE(RGBA), INTENT(IN) :: C1, C2
+      TYPE(RGBA)             :: COLOURADD
+
+      COLOURADD = RGBA(C1%RED + C2%RED, C1%GREEN + C2%GREEN, C1%BLUE + C2%BLUE, C1%ALPHA + C2%ALPHA)
+
+   END FUNCTION COLOURADD
+
+   FUNCTION COLOURMULTIPLY(COLOUR, SCALAR)
+
+      TYPE(RGBA),INTENT(IN) :: COLOUR
+      TYPE(RGBA)            :: COLOURMULTIPLY
+      REAL,      INTENT(IN) :: SCALAR
+
+      COLOURMULTIPLY = RGBA(INT(COLOUR%RED*SCALAR), INT(COLOUR%GREEN*SCALAR), INT(COLOUR%BLUE*SCALAR), COLOUR%ALPHA)
+
+   END FUNCTION
+
+   SUBROUTINE READ_PPM_RGB(FILENAME, IMG)
+
+      IMPLICIT NONE
+
+      TYPE(RGBIMAGE),     INTENT(OUT) :: IMG
+      INTEGER                         :: NMAX, I, J, OFFSET
+      CHARACTER(LEN = *), INTENT(IN)  :: FILENAME
+      CHARACTER(2)                    :: MODE
+      CHARACTER                       :: CODE
+
+      IMG%WIDTH = 0
+      IMG%HEIGHT = 0
+      NULLIFY(IMG%RED)
+      NULLIFY(IMG%GREEN)
+      NULLIFY(IMG%BLUE)
+
+      OPEN(56, FILE = FILENAME, ACCESS='stream',FORM='formatted',STATUS= 'old')
+
+      READ(56, '(A2)') MODE
+      READ(56, *) IMG%WIDTH, IMG%HEIGHT
+      READ(56, *) NMAX
+      INQUIRE(56,POS=OFFSET)
+      CLOSE(56)
+      OPEN(56 ,FILE=FILENAME,ACCESS='stream',STATUS='old')
+      READ(56, POS=OFFSET-1) CODE
+      CALL ALLOC_IMAGE(IMG, IMG%WIDTH, IMG%HEIGHT)
+
+      IF(MODE == 'P6')THEN
+         DO J = 1, IMG%HEIGHT
+            DO I = 1, IMG%WIDTH
+               READ(56) CODE
+               IMG%RED(I,J) = IACHAR(CODE)
+               READ(56) CODE
+               IMG%GREEN(I,J) = IACHAR(CODE)
+               READ(56) CODE
+               IMG%BLUE(I,J) = IACHAR(CODE)
+            END DO
+         END DO
+      ELSE
+         PRINT*,'Mode not supported!'
+         CALL EXIT(0)
+!         do j = 1, img%height
+!            do i = 1, img%width
+!               read(56) img%red(i,j)
+!               read(56),img%green(i,j)
+!               read(56),img%blue(i,j)
+!               print*,img%red(i,j),img%green(i,j),img%blue(i,j)
+!               call exit(0)
+!            end do
+!         end do
+      END IF
+
+      CLOSE(56)
+
+   END SUBROUTINE READ_PPM_RGB
+
+   SUBROUTINE READ_PPM_RGBA(FILENAME, IMG)
+
+      IMPLICIT NONE
+
+      TYPE(RGBAIMAGE),     INTENT(OUT) :: IMG
+      INTEGER                          :: NMAX, I, J, OFFSET
+      CHARACTER(LEN = *), INTENT(IN)   :: FILENAME
+      CHARACTER(2)                     :: MODE
+      CHARACTER                        :: CODE
+
+      IMG%WIDTH = 0
+      IMG%HEIGHT = 0
+      NULLIFY(IMG%RED)
+      NULLIFY(IMG%GREEN)
+      NULLIFY(IMG%BLUE)
+      NULLIFY(IMG%ALPHA)
+
+      OPEN(56, FILE = FILENAME, ACCESS='stream',FORM='formatted',STATUS= 'old')
+
+      READ(56, '(A2)') MODE
+      READ(56, *) IMG%WIDTH, IMG%HEIGHT
+      READ(56, *) NMAX
+      INQUIRE(56,POS=OFFSET)
+      CLOSE(56)
+      OPEN(56 ,FILE=FILENAME,ACCESS='stream',STATUS='old')
+      READ(56, POS=OFFSET-1) CODE
+      CALL ALLOC_IMAGE(IMG, IMG%WIDTH, IMG%HEIGHT)
+
+      IF(MODE == 'P6')THEN
+         DO J = 1, IMG%HEIGHT
+            DO I = 1, IMG%WIDTH
+               READ(56) CODE
+               IMG%RED(I,J) = IACHAR(CODE)
+               READ(56) CODE
+               IMG%GREEN(I,J) = IACHAR(CODE)
+               READ(56) CODE
+               IMG%BLUE(I,J) = IACHAR(CODE)
+            END DO
+         END DO
+      ELSE
+         PRINT*,'Mode not supported!'
+         CALL EXIT(0)
+!         do j = 1, img%height
+!            do i = 1, img%width
+!               read(56) img%red(i,j)
+!               read(56),img%green(i,j)
+!               read(56),img%blue(i,j)
+!               print*,img%red(i,j),img%green(i,j),img%blue(i,j)
+!               call exit(0)
+!            end do
+!         end do
+      END IF
+
+      CLOSE(56)
+
+   END SUBROUTINE READ_PPM_RGBA
+
+
+   SUBROUTINE WRITE_PPM_RGB(FILENAME, IMG, MODE)
+
+      IMPLICIT NONE
+
+      TYPE(RGBIMAGE),             INTENT(IN) :: IMG
+      CHARACTER(LEN=*),           INTENT(IN) :: FILENAME
+      CHARACTER(LEN=*), OPTIONAL, INTENT(IN) :: MODE
+      INTEGER                                :: I, J
+      LOGICAL                                :: FLAG
+
+      IF(PRESENT(MODE))THEN
+         IF(MODE == 'P6')THEN
+            FLAG = .TRUE.
+         ELSE
+            FLAG=.FALSE.
+         END IF
+      END IF
+
+      OPEN(45, FILE = FILENAME)
+
+      IF(FLAG)THEN
+         WRITE(45, '(A2)') 'P6'
+      ELSE
+         WRITE(45, '(A2)') MODE
+         PRINT*,MODE
+      END IF
+
+      WRITE(45, '(i0, " ",i0)') IMG%WIDTH, IMG%HEIGHT
+      WRITE(45, '(i0)') 255
+
+      IF(FLAG)THEN
+         DO J = 1, IMG%HEIGHT
+            DO I = 1, IMG%WIDTH
+               WRITE(45, '(3A1)', ADVANCE='no') ACHAR(IMG%RED(I,J)), ACHAR(IMG%GREEN(I,J)), ACHAR(IMG%BLUE(I,J))
+            END DO
+         END DO
+      ELSE
+         DO J = 1, IMG%HEIGHT
+            DO I = 1, IMG%WIDTH
+               WRITE(45, '(3(I3.1,1X))',ADVANCE='no') IMG%RED(I,J), IMG%GREEN(I,J), IMG%BLUE(I,J)
+            END DO
+         END DO
+      END IF
+      CLOSE(45)
+
+   END SUBROUTINE WRITE_PPM_RGB
+
+   SUBROUTINE WRITE_PPM_RGBA(FILENAME, IMG, MODE)
+
+      IMPLICIT NONE
+
+      TYPE(RGBAIMAGE),             INTENT(IN) :: IMG
+      CHARACTER(LEN=*),           INTENT(IN)  :: FILENAME
+      CHARACTER(LEN=*), OPTIONAL, INTENT(IN)  :: MODE
+      INTEGER                                 :: I, J
+      LOGICAL                                 :: FLAG
+
+      IF(PRESENT(MODE))THEN
+         IF(MODE == 'P6')THEN
+            FLAG = .TRUE.
+         ELSE
+            FLAG=.FALSE.
+         END IF
+      END IF
+
+      OPEN(45, FILE = FILENAME)
+
+      IF(FLAG)THEN
+         WRITE(45, '(A2)') 'P6'
+      ELSE
+         WRITE(45, '(A2)') MODE
+         PRINT*,MODE
+      END IF
+
+      WRITE(45, '(i0, " ",i0)') IMG%WIDTH, IMG%HEIGHT
+      WRITE(45, '(i0)') 255
+
+      IF(FLAG)THEN
+         DO J = 1, IMG%HEIGHT
+            DO I = 1, IMG%WIDTH
+               WRITE(45, '(3A1)', ADVANCE='no') ACHAR(IMG%RED(I,J)), ACHAR(IMG%GREEN(I,J)), ACHAR(IMG%BLUE(I,J))
+            END DO
+         END DO
+      ELSE
+         DO J = 1, IMG%HEIGHT
+            DO I = 1, IMG%WIDTH
+               WRITE(45, '(3(I3.1,1X))',ADVANCE='no') IMG%RED(I,J), IMG%GREEN(I,J), IMG%BLUE(I,J)
+            END DO
+         END DO
+      END IF
+      CLOSE(45)
+
+   END SUBROUTINE WRITE_PPM_RGBA
+
+
+   SUBROUTINE OPEN_IMAGERGB(IMG, FILENAME, FORMAT)
+
+      IMPLICIT NONE
+
+      TYPE(RGBIMAGE), INTENT(OUT) :: IMG
+      CHARACTER(*),   INTENT(IN)  :: FILENAME, FORMAT
+      INTEGER   :: STAT
+
+!      call system('convert '//filename//format//' '//filename//'.ppm')
+      STAT = SYSTEM('convert '//FILENAME//FORMAT//' '//FILENAME//'.ppm')
+      CALL READ_PPM(FILENAME//'.ppm', IMG)
+!      call system('rm '//filename//'.ppm')
+      STAT = SYSTEM('rm '//FILENAME//'.ppm')
+
+   END SUBROUTINE OPEN_IMAGERGB
+
+   SUBROUTINE OPEN_IMAGERGBA(IMG, FILENAME, FORMAT)
+
+      IMPLICIT NONE
+
+      TYPE(RGBAIMAGE), INTENT(OUT) :: IMG
+      CHARACTER(*),   INTENT(IN)  :: FILENAME, FORMAT
+      INTEGER   :: STAT
+
+!      call system('convert '//filename//format//' '//filename//'.ppm')
+      STAT = SYSTEM('convert '//FILENAME//FORMAT//' '//FILENAME//'.ppm')
+      CALL READ_PPM(FILENAME//'.ppm', IMG)
+!      call system('rm '//filename//'.ppm')
+      STAT = SYSTEM('rm '//FILENAME//'.ppm')
+
+   END SUBROUTINE OPEN_IMAGERGBA
+
+
+   SUBROUTINE SAVE_IMAGERGB(IMG, FILENAME, FORMAT)
+
+      IMPLICIT NONE
+
+      TYPE(RGBIMAGE), INTENT(IN) :: IMG
+      CHARACTER(*),   INTENT(IN) :: FILENAME, FORMAT
+      INTEGER   :: STAT
+
+      PRINT*,'Saving: ',FILENAME//FORMAT
+      ! call exit(0)
+      CALL WRITE_PPM(FILENAME//'.ppm', IMG, 'P6')
+!      call system('convert '//filename//'.ppm '//filename//format)
+!      call system('rm '//filename//'.ppm')
+      STAT = SYSTEM('convert '//FILENAME//'.ppm '//FILENAME//FORMAT)
+      STAT = SYSTEM('rm '//FILENAME//'.ppm')
+
+   END SUBROUTINE SAVE_IMAGERGB
+
+
+   SUBROUTINE SAVE_IMAGERGBA(IMG, FILENAME, FORMAT)
+
+      IMPLICIT NONE
+
+      TYPE(RGBAIMAGE), INTENT(IN) :: IMG
+      CHARACTER(*),   INTENT(IN) :: FILENAME, FORMAT
+      INTEGER   :: STAT
+
+      PRINT*,'Saving: ',FILENAME//FORMAT
+      ! call exit(0)
+      CALL WRITE_PPM(FILENAME//'.ppm', IMG, 'P6')
+!      call system('convert '//filename//'.ppm '//filename//format)
+!      call system('rm '//filename//'.ppm')
+      STAT = SYSTEM('convert '//FILENAME//'.ppm '//FILENAME//FORMAT)
+      STAT = SYSTEM('rm '//FILENAME//'.ppm')
+
+   END SUBROUTINE SAVE_IMAGERGBA
+END MODULE ModLib_FglImage

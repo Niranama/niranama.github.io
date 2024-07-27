@@ -1,0 +1,2578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="XpfLib - General Package Documentation">
+    <meta name="author" content="Niranama" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>HashMap &ndash; XpfGeneral </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">XpfGeneral </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/absint.html">Abstract Interfaces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>HashMap
+      <small>Derived Type</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title="<p> 0.7% of total for derived types.</p>Including implementation: 499 statements,  0.6% of total for derived types.">35 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/Class - HashMap.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/class - hashmap.f90.html'>Class - HashMap.f90</a></li>
+                <li class="breadcrumb-item"><a href='../module/class_hashmap.html'>Class_HashMap</a></li>
+            <li class="breadcrumb-item active" aria-current="page">HashMap</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+      <div id="sidebar">
+      <h3>Contents</h3>
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#vars-0"
+         aria-expanded="false" aria-controls="vars-0">
+         <h4 class="card-header bg-primary text-white">Variables</h4>
+      </a>
+      <div id="vars-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/hashmap.html#variable-valsize~6">ValSize</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#fins-0"
+         aria-expanded="false" aria-controls="fins-0">
+         <h4 class="card-header bg-primary text-white">Finalization Procedures</h4>
+      </a>
+      <div id="fins-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/hashmap.html#finalproc-hashmap_finalize">HashMap_Finalize</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#boundprocs-0"
+         aria-expanded="false" aria-controls="boundprocs-0">
+         <h4 class="card-header bg-primary text-white">Type-Bound Procedures</h4>
+      </a>
+      <div id="boundprocs-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-assignment%28%3D%29~8">ASSIGNMENT(=)</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-memfree~8">MemFree</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-getclone~43">GetClone</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-getname~110">GetName</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-isempty~15">IsEmpty</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-construct~81">Construct</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-symboltable_createbyarray">SymbolTable_CreateByArray</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-clear~11">Clear</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-copyassign~4">CopyAssign</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-makeclone~4">MakeClone</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-isequalto~6">IsEqualTo</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-freememory~5">FreeMemory</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-gettypename~4">GetTypeName</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-makecopy~4">MakeCopy</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-destruct~11">Destruct</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-getsize~11">GetSize</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-startfirst~8">StartFirst</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-moveforward~8">MoveForward</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-insert~9">Insert</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-delete~5">Delete</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-remove~8">Remove</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-contain~5">Contain</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-getvalue~4">GetValue</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-getkeyptr">GetKeyPtr</a>
+            <a class="list-group-item" href="../type/hashmap.html#boundprocedure-createempty~8">CreateEmpty</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+    <div class="card card-primary">
+      <div class="card-header text-left"><h3 class="card-title">Source Code</h3></div>
+      <div class="list-group">
+        <a class="list-group-item" href="../type/hashmap.html#src">HashMap</a>
+      </div>
+    </div>
+
+
+  </div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+      <h2>type, public, extends(<a href='../type/basesymtable.html'>BaseSymTable</a>) :: HashMap</h2>
+    <p>The <em>HashMap</em> type is a collection type that employs a linear-probing
+ hash table implementation to provide common operations for an unordered
+ symbol table.  The linear-probing is a collision handling technique used
+ in hashing, where the algorithm looks for the next available slot in the
+ hash table to store the collided key.  The <em>HashMap</em> type employs an array
+ of the <em>TabItem</em> type as its component (i.e. table items as its Items)
+ to store a key-value pair. <br>
+ As an unordered symbol table, the <em>HashMap</em> type extends the <em>BaseSymTable</em>
+ type directly and implements all deferred procedures required by all its super
+ classes (including the <em>Assignable</em> type and the <em>BaseCollection</em> type).  As a
+ symbol table, the <em>HashMap</em> type does not allow duplicated keys; therefore,
+ if an inserted key is equal to a key stored in the table, an associated value
+ of the stored key is replaced by an associated value of the inserted key.  <br>
+ The <em>HashMap</em> type employs the dynamic-array technique to resize the <em>TabItem</em>
+ array when the load factor is greater than or equal to 0.5 for an insertion
+ operation or less than or equal to 0.125 for a removal operation.  As a result,
+ the <em>HashMap</em> type requires an explicit construction via either the <em>CreateEmpty</em>
+ or the <em>Construct</em> method before using other provided operations.  When the
+ <em>MemFree</em> or the <em>Destruct</em> method is called, the hash table also needs to be
+ re-construct because those methods essentially deallocate the working array.</p>
+    <br>
+
+    <section>
+    <h2>Components</h2>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Visibility</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+<th></th><th scope="col">Initial</th>        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-valsize~6"></span>
+              integer(kind=kI4B),
+            </td>
+              <td>public,</td>
+            <td>
+              LEN
+            </td>
+            <td>::</td>
+            <td><strong>ValSize</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>size of data content (value) in bytes</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    </section>
+    <br>
+    
+
+      <section>
+        <h2>Finalization Procedures</h2>
+            <div class="card">
+    <div class="card-header codesum">
+      <span class="anchor" id="finalproc-hashmap_finalize"></span>
+      <h3>final :: <strong>HashMap_Finalize</strong> </h3>
+    </div>
+    <div class="card-body">
+      
+      <p>To perform finalization of the object.</p>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item">
+            <h3>
+    private  subroutine HashMap_Finalize(Collection)  
+
+    </h3>
+  <p>To perform finalization of the object.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-collection~174"></span>
+              type(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+      </li>
+    </ul>
+  </div>
+
+      </section>
+      <br>
+
+      <section>
+        <h2>Type-Bound Procedures</h2>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-assignment%28%3D%29~8"></span>
+      <h3>
+          generic, public ::
+  <strong>ASSIGNMENT(=)</strong> => <a href='../type/stringbuilder.html#boundprocedure-copyassign~3'>CopyAssign</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_CopyAssign(DstObj, SrcObj)  
+</h3>
+
+  <p>To copy the source object to the destination object.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-memfree~8"></span>
+      <h3>
+          generic, public ::
+  <strong>MemFree</strong> => <a href='../type/stringbuilder.html#boundprocedure-freememory~4'>FreeMemory</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_Free(Obj)  
+</h3>
+
+  <p>To free memory of the StringBuilder object.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getclone~43"></span>
+      <h3>
+          generic, public ::
+  <strong>GetClone</strong> => <a href='../type/stringbuilder.html#boundprocedure-makeclone~3'>MakeClone</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_Clone(SrcObj, DstObj)  
+</h3>
+
+  <p>To clone the StringBuilder object.   This is a deferred
+ procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getname~110"></span>
+      <h3>
+          generic, public ::
+  <strong>GetName</strong> => <a href='../type/stringbuilder.html#boundprocedure-gettypename~3'>GetTypeName</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function StringBuilder_GetTypeName(Obj) result(Name)  
+</h3>
+
+  <p>To get the name of the StringBuilder type.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-isempty~15"></span>
+      <h3>
+          procedure, public ::
+  <strong>IsEmpty</strong> => BaseCollection_IsEmpty
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: IsEmpty <br>
+ <strong>Purpose</strong>:  To check whether the collection is empty or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = Collection%IsEmpty() <br>
+  ---&gt;    IF (.NOT.Collection%IsEmpty()) DoSomeThing</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function BaseCollection_IsEmpty(Collection) result(Flag)  
+</h3>
+
+  <p>To check whether the collection is currently empty or not.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if the collection currently contains no item.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-construct~81"></span>
+      <h3>
+          generic, public ::
+  <strong>Construct</strong> => <a href='../type/treetable.html#boundprocedure-makecopy~14'>MakeCopy</a>, <a href='../type/basesymtable.html#boundprocedure-symboltable_createbyarray~3'>SymbolTable_CreateByArray</a>
+        
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine TreeTable_CopyCollection(This, Other)  
+</h3>
+
+  <p>To creates a new collection (This) with the same items
+ as the given collection (Other). <br>
+ This is a deferred procedure by the <em>BaseCollection</em> class. <br>
+ <em>Note</em>:  Other must be in the <em>OrderedSymTable</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/treetable.html'>TreeTable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>This</strong></td>
+            <td>
+                <p>collection object to be created</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Other</strong></td>
+            <td>
+                <p>collection object to be copied</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine SymbolTable_CreateByArray(Collection, N, Keys, Values)  
+</h3>
+
+  <p>To create a collection from an array of key-value pairs.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basesymtable.html'>BaseSymTable</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>BaseSymTable object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>N</strong></td>
+            <td>
+                <p>number of key-value pairs</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Keys</strong>(:)</td>
+            <td>
+                <p>the keys to be added to the collection</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Values</strong>(:)</td>
+            <td>
+                <p>the associated values to be added to the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-symboltable_createbyarray"></span>
+      <h3>
+          procedure, public ::
+  <strong>SymbolTable_CreateByArray</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>SymbolTable_CreateByArray</em> is a procedure to create the collection
+  from an array of key-value pairs. See the <em>Construct</em> method for usage.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine SymbolTable_CreateByArray(Collection, N, Keys, Values)  
+</h3>
+
+  <p>To create a collection from an array of key-value pairs.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>HashMap object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>N</strong></td>
+            <td>
+                <p>number of key-value pairs</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Keys</strong>(:)</td>
+            <td>
+                <p>the keys to be added to the collection</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Values</strong>(:)</td>
+            <td>
+                <p>the associated values to be added to the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-clear~11"></span>
+      <h3>
+          procedure, public ::
+  <strong>Clear</strong> => HashMap_ClearItems
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Subroutine</strong>: Clear <br>
+ <strong>Purpose</strong>:  To remove all key-value pairs from the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Clear()</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine HashMap_ClearItems(Collection)  
+</h3>
+
+  <p>To remove all of the items from the collection. <br>
+This is a deferred procedure by the <em>BaseCollection</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>HashMap object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-copyassign~4"></span>
+      <h3>
+          procedure, public ::
+  <strong>CopyAssign</strong> => HashMap_CopyAssign
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>CopyAssign</em> is a procedure deferred by the <em>Assignable</em> type. <br>
+ Use the assignment expression in place of the <em>CopyAssign</em> method
+ to make a copy of an <em>Assignable</em> object.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine HashMap_CopyAssign(DstObj, SrcObj)  
+</h3>
+
+  <p>To copy the source object to the destination object.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.
+ <em>Note</em>:  SrcObj must be in the <em>HashMap</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-makeclone~4"></span>
+      <h3>
+          procedure, public ::
+  <strong>MakeClone</strong> => HashMap_Clone
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>MakeClone</em> is a procedure deferred by the <em>Assignable</em> type. <br>
+ Use the <em>GetClone</em> method in place of the <em>MakeClone</em> method
+ to create and return a copy of an <em>Assignable</em> object.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine HashMap_Clone(SrcObj, DstObj)  
+</h3>
+
+  <p>To clone the HashMap object.  This is a deferred
+ procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-isequalto~6"></span>
+      <h3>
+          procedure, public ::
+  <strong>IsEqualTo</strong> => HashMap_IsEqualTo
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>IsEqualTo</em> is a procedure deferred by the <em>Assignable</em> type. <br>
+<strong>Type-Bound Function</strong>: IsEqualTo <br>
+ <strong>Purpose</strong>: To check whether two objects are equal to one another or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = ObjA%IsEqualTo(ObjB) <br>
+  ---&gt;    IF (ObjA%IsEqualTo(ObjB)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function HashMap_IsEqualTo(LhsObj, RhsObj) result(Flag)  
+</h3>
+
+  <p>To check whether LhsObj and RhsObj are equal or not.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>LhsObj</strong></td>
+            <td>
+                <p>an object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>RhsObj</strong></td>
+            <td>
+                <p>another object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if both objects are equal</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-freememory~5"></span>
+      <h3>
+          procedure, public ::
+  <strong>FreeMemory</strong> => HashMap_Free
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>FreeMemory</em> is a procedure deferred by the <em>Assignable</em> type. <br>
+ Use the <em>MemFree</em> method in place of the <em>FreeMemory</em> method to free
+ memory the <em>Assignable</em> object if the object contains allocatable and/or
+ pointer component(s).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine HashMap_Free(Obj)  
+</h3>
+
+  <p>To free memory of the HashMap object.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-gettypename~4"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetTypeName</strong> => HashMap_GetTypeName
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>GetTypeName</em> is a procedure deferred by the <em>Assignable</em> type. <br>
+ Use the <em>GetName</em> method in place of the <em>GetTypeName</em> method to get
+ the name of the <em>concrete</em> type of an <em>Assignable</em> object (i.e. name
+ of a concrete subtype of an <em>Assignable</em> abstract type).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function HashMap_GetTypeName(Obj) result(Name)  
+</h3>
+
+  <p>To get the name of the HashMap type.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-makecopy~4"></span>
+      <h3>
+          procedure, public ::
+  <strong>MakeCopy</strong> => HashMap_CopyCollection
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>MakeCopy</em> is a procedure deferred by the <em>BaseCollection</em> type. <br>
+ Use the <em>Construct</em> method in place of the <em>MakeCopy</em> method to
+ create a collection from another collection.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine HashMap_CopyCollection(This, Other)  
+</h3>
+
+  <p>To creates a new collection (This) with the same items
+ as the given collection (Other). <br>
+ This is a deferred procedure by the <em>BaseCollection</em> class. <br>
+ <em>Note</em>:  Other must be in the <em>BaseSymTable</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>This</strong></td>
+            <td>
+                <p>collection object to be created</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/basecollection.html'>BaseCollection</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Other</strong></td>
+            <td>
+                <p>collection object to be copied</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-destruct~11"></span>
+      <h3>
+          procedure, public ::
+  <strong>Destruct</strong> => HashMap_Destroy
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>Destruct</em> is a procedure deferred by the <em>BaseCollection</em> type. <br>
+ <strong>Type-Bound Subroutine</strong>: Destruct <br>
+ <strong>Purpose</strong>:  To remove all items from the collection and free memory
+               of items stored in the collection.<br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Destruct() <br>
+ <strong>Note</strong>:  This method is NOT equivalent to the <em>Clear</em> method because the
+            <em>Items</em> component is deallocated.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine HashMap_Destroy(Collection)  
+</h3>
+
+  <p>To destruct the collection. <br>
+This is a deferred procedure by the <em>BaseCollection</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>HashMap object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getsize~11"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetSize</strong> => HashMap_GetSize
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>GetSize</em> is a procedure deferred by the <em>BaseCollection</em> type. <br>
+ <strong>Type-Bound Function</strong>: GetSize <br>
+ <strong>Purpose</strong>:  To get the current size of the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Size = Collection%GetSize()</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function HashMap_GetSize(Collection) result(Size)  
+</h3>
+
+  <p>To get the number of items in the collection.
+ This is a deferred procedure inherited from the <em>BaseCollection</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer(kind=kI4B)</small>
+    </h4>
+    
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-startfirst~8"></span>
+      <h3>
+          procedure, public ::
+  <strong>StartFirst</strong> => HashMap_Move2FirstPair
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: StartFirst <br>
+ <strong>Purpose</strong>:  To start an iteration and return a flag indicating whether
+               the collection is empty or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    IsEmpty = Collection%StartFirst() <br>
+  ---&gt;    IsEmpty = Collection%StartFirst(FirstKey) <br>
+  ---&gt;    IsEmpty = Collection%StartFirst(Value=FirstVal) <br>
+  ---&gt;    IsEmpty = Collection%StartFirst(FirstKey, FirstVal)</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function HashMap_Move2FirstPair(Collection, Key, Value) result(IsEmpty)  
+</h3>
+
+  <p>To move to the first (starting) pair data in a symbol table.  For the <em>HashMap</em>,
+ which is an unordered symbol table, the starting pair is a pair inserted into
+ the first non-empty item of its' <em>Items</em> component.  <br>
+ This is a deferred procedure by the <em>BaseSymTable</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>symbol-table collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Key</strong></td>
+            <td>
+                <p>the first key as output if requested (and available)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Value</strong></td>
+            <td>
+                <p>the first value as output if requested (and available)</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>a flag indicating whether the collection contains no pair data or not <br>
+- true if the collection is empty. <br>
+- otherwise the first pair data is available.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-moveforward~8"></span>
+      <h3>
+          procedure, public ::
+  <strong>MoveForward</strong> => HashMap_Move2NextPair
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: MoveForward <br>
+ <strong>Purpose</strong>:  To move to the next key-value pair and return a flag
+               indicating whether the cursor pointer has reached the end of
+               the collection or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward() <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward(NextKey) <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward(Value=NextVal) <br>
+  ---&gt;    IsTheEnd = Collection%MoveForward(NextKey, NextVal)</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function HashMap_Move2NextPair(Collection, Key, Value) result(IsTheEnd)  
+</h3>
+
+  <p>To move to the next pair data in a symbol table.  For the <em>HashMap</em>,
+ which is an unordered symbol table, the next pair is a pair inserted
+ in the first non-empty item after the previous one.  <br>
+ This is a deferred procedure by the <em>BaseSymTable</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>symbol-table collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Key</strong></td>
+            <td>
+                <p>the next key as output if requested (and available)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Value</strong></td>
+            <td>
+                <p>the next value as output if requested (and available)</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>a flag indicating whether the move to the end of the
+ collection occurs or not <br>
+- true if next pair data is NOT available. <br>
+- otherwise next pair data is available.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-insert~9"></span>
+      <h3>
+          procedure, public ::
+  <strong>Insert</strong> => HashMap_Insert
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Subroutine</strong>: Insert <br>
+ <strong>Purpose</strong>:  To insert the specified key-value pair to the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Insert(Key, Value) <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine HashMap_Insert(Collection, Key, Value)  
+</h3>
+
+  <p>To add a key-value pair into a symbol table.  If the specified key
+ is already stored in the table, replace the old value with the
+ new one.  <br>
+ This is a deferred procedure by the <em>BaseSymTable</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>symbol-table collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Key</strong></td>
+            <td>
+                <p>the key to be added to the collection</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Value</strong></td>
+            <td>
+                <p>the associated value to be added to the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-delete~5"></span>
+      <h3>
+          procedure, public ::
+  <strong>Delete</strong> => HashMap_Delete
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Subroutine</strong>: Delete <br>
+ <strong>Purpose</strong>:  To delete the current key-value pair from the collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%Delete() <br>
+ <strong>Note</strong>: This method is intended to be used in conjunction with the
+ <em>StartFirst</em> and <em>MoveForward</em> methods.  Therefore, after the call to
+ one of those methods and then calling this one will result in a removal
+ of the current pair data of the iteration (i.e. the same key-value pair
+ that can be retrieved via the <em>StartFirst</em> and <em>MoveForward</em> methods).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine HashMap_Delete(Collection)  
+</h3>
+
+  <p>To delete a key-value pair from a symbol table.  This procedure is intended
+ to be used in conjunction with the <em>StartFirst</em> and <em>MoveForward</em> procedures.
+ Therefore, after the call to either procedure and then calling this procedure
+ will result in a removal of the current key-value pair of the iteration (i.e.
+ the same key-value pair that can be retrieved via those <em>Move</em> procedures). <br>
+ This is a deferred procedure by the <em>BaseSymTable</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>symbol-table collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-remove~8"></span>
+      <h3>
+          procedure, public ::
+  <strong>Remove</strong> => HashMap_Remove
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: Remove <br>
+ <strong>Purpose</strong>:  To remove the specified key (and its associated value) from
+               the collection.  Also, return a flag indicating whether the
+               key-value pair is successfully removed or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = Collection%Remove(Key) <br>
+  ---&gt;    IF (.NOT.Collection%Remove(Key)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function HashMap_Remove(Collection, Key) result(Flag)  
+</h3>
+
+  <p>To delete the specified key (and its associated value) from a symbol
+ table.  Also, return a flag indicating whether the key-value pair is
+ successfully removed or not.  <br>
+ This is a deferred procedure by the <em>BaseSymTable</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>symbol-table collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Key</strong></td>
+            <td>
+                <p>the key to be removed from the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>flag indicating whether the specified key and its associated
+ value are successfully removed or not.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-contain~5"></span>
+      <h3>
+          procedure, public ::
+  <strong>Contain</strong> => HashMap_Contain
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: Contain <br>
+ <strong>Purpose</strong>:  To find the specified key in the collection.  Return true if
+               the specified key is found.  Otherwise, return false. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = Collection%Contain(Key) <br>
+  ---&gt;    IF (.NOT.Collection%Contain(Key)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function HashMap_Contain(Collection, Key) result(Found)  
+</h3>
+
+  <p>To check whether the specified key is currently stored in a symbol table.  <br>
+ This is a deferred procedure by the <em>BaseSymTable</em> class.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>symbol-table collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Key</strong></td>
+            <td>
+                <p>the key to be looked for in the collection</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>flag indicating whether the specified key is found or not.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getvalue~4"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetValue</strong> => HashMap_GetValue
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: GetValue <br>
+ <strong>Purpose</strong>:  To get a value associated with the specified key in the collection.
+               Also, return a flag indicating whether the key-value pair is
+               successfully found or not. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    Flag = Collection%GetValue(Key, Value) <br>
+  ---&gt;    IF (.NOT.Collection%GetValue(Key, Value)) DoSomething</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function HashMap_GetValue(Collection, Key, Value) result(Flag)  
+</h3>
+
+  <p>To get a value associated with the specified key in a symbol table.
+ Also, return a flag indicating whether the key-value pair is successfully
+ found or not.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>symbol-table collection object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Key</strong></td>
+            <td>
+                <p>the key to be looked for in the collection</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(*),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Value</strong></td>
+            <td>
+                <p>the value associated with the specified key</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>flag indicating whether the key-value pair is found or not.</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getkeyptr"></span>
+      <h3>
+          procedure, public ::
+  <strong>GetKeyPtr</strong> => HashMap_GetKeyPtr
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: GetKeyPtr <br>
+ <strong>Purpose</strong>:  To get a pointer to a key stored in a symbol table.
+               The pointer is intended to be used as a mold for
+               the key (i.e. provides type of the stored key).
+               Return null pointer if the table is empty. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    KeyPtr =&gt; Collection%GetKeyPtr()</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function HashMap_GetKeyPtr(Collection) result(Key)  
+</h3>
+
+  <p>To get a pointer to a key stored in a symbol table.  The pointer
+ is intended to be used as a mold for the key (i.e. provides type
+ of the stored key).  Return null pointer if the table is empty.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              TARGET
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>symbol-table collection object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>class(*), POINTER</small>
+    </h4>
+    <p>pointer to a stored key</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-createempty~8"></span>
+      <h3>
+          procedure, public ::
+  <strong>CreateEmpty</strong> => HashMap_CreateEmpty
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Subroutine</strong>: CreateEmpty <br>
+ <strong>Purpose</strong>:  To construct an empty collection. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Collection%CreateEmpty() <br>
+  ---&gt;    CALL Collection%CreateEmpty(InitCap) <br>
+  ---&gt;    CALL Collection%CreateEmpty(HashCal=HashFunction) <br>
+  ---&gt;    CALL Collection%CreateEmpty(InitCap, HashFunction) <br>
+ <strong>Note</strong>: Any suitable hash function routine from the <em>ModBase_SimpleHash32</em>,
+      <em>ModBase_SimpleHash64</em>, <em>ModBase_ReferenceHash32</em>, <em>ModBase_ReferenceHash64</em>
+      <em>ModBase_OptimalHash32</em>, and <em>ModBase_OptimalHash64</em> modules can be used to
+      specify the <em>HashCal</em> argument.  The term <em>suitable</em> means that any routine
+      that has exactly the same interface as the <em>HashFunc</em> abstract function
+      is the suitable one.  <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine HashMap_CreateEmpty(Collection, InitCap, HashCalc)  
+</h3>
+
+  <p>To create an empty hash table with a <em>power of 2</em> capacity.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/hashmap.html'>HashMap</a>(*)),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Collection</strong></td>
+            <td>
+                <p>HashMap object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=kI4B),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>InitCap</strong></td>
+            <td>
+                <p>initial capacity of the hash table (must be a power of 2)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              procedure(HashFunc),
+            </td>
+<td></td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>HashCalc</strong></td>
+            <td>
+                <p>hash function to compute the hash value of the key;
+ if not present, use default hash function.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+      </section>
+
+    <section>
+    <h3><span class="anchor" id="src"></span>Source Code</h3>
+    <div class="hl codehilite"><pre><span></span><span class="w">    </span><span class="k">TYPE</span><span class="p">,</span><span class="w"> </span><span class="k">EXTENDS</span><span class="p">(</span><span class="n">BaseSymTable</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">HashMap</span>
+<span class="w">        </span><span class="k">PRIVATE</span>
+<span class="w">        </span><span class="c">!% current size (number of key-value pairs) of the hash table</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">                                  </span><span class="kd">::</span><span class="w"> </span><span class="n">Size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">        </span><span class="c">!% current capacity of the hash table</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">                                  </span><span class="kd">::</span><span class="w"> </span><span class="n">Capacity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">        </span><span class="c">!% modification count</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">                                  </span><span class="kd">::</span><span class="w"> </span><span class="n">ModCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">        </span><span class="c">!% working table items</span>
+<span class="w">        </span><span class="k">TYPE</span><span class="p">(</span><span class="n">TabItem</span><span class="p">(</span><span class="n">ValSize</span><span class="p">)),</span><span class="w"> </span><span class="k">ALLOCATABLE</span><span class="w">     </span><span class="kd">::</span><span class="w"> </span><span class="n">Items</span><span class="p">(:)</span>
+<span class="w">        </span><span class="c">!% current index into the working items (used for iteration purpose)</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">                                  </span><span class="kd">::</span><span class="w"> </span><span class="n">Indx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">        </span><span class="c">!% the number of keys not yet visited (used for iteration purpose)</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">                                  </span><span class="kd">::</span><span class="w"> </span><span class="n">KeyLeft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">        </span><span class="c">!% current modification count (used for iteration purpose)</span>
+<span class="w">        </span><span class="n">tIndex</span><span class="w">                                  </span><span class="kd">::</span><span class="w"> </span><span class="n">IterModCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0_kIndex</span>
+<span class="w">        </span><span class="c">!% pointer to a hash function</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">HashFunc</span><span class="p">),</span><span class="w"> </span><span class="k">NOPASS</span><span class="p">,</span><span class="w"> </span><span class="k">POINTER</span><span class="w">    </span><span class="kd">::</span><span class="w"> </span><span class="n">HashCalc</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="nb">NULL</span><span class="p">()</span>
+<span class="w">    </span><span class="k">CONTAINS</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----                     Private Procedures                    -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: FindKey &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To find the specified key in the collection.  Return true if</span>
+<span class="w">        </span><span class="c">!                the specified key is found.  Otherwise, return false. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Flag = Collection%FindKey(Key, KeyItem) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.Collection%FindKey(Key)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">,</span><span class="w"> </span><span class="k">PRIVATE</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">FindKey</span><span class="w">      </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_FindKey</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: FindIndex &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To find the index of the available slot in the symbol table. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Indx = Collection%FindIndex(InitIndx)</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">,</span><span class="w"> </span><span class="k">PRIVATE</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">FindIndex</span><span class="w">    </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_FindIndex</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Subroutine**: Resize &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To resize the collection to the specified capacity. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Resize(64)</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">,</span><span class="w"> </span><span class="k">PRIVATE</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">Resize</span><span class="w">       </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_Resize</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----                   Overridden Procedures                   -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; *SymbolTable_CreateByArray* is a procedure to create the collection</span>
+<span class="w">        </span><span class="c">!   from an array of key-value pairs. See the *Construct* method for usage.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">SymbolTable_CreateByArray</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Subroutine**: Clear &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To remove all key-value pairs from the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Clear()</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Clear</span><span class="w">        </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_ClearItems</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----         Deferred Procedures from Assignable Type          -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; *CopyAssign* is a procedure deferred by the *Assignable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the assignment expression in place of the *CopyAssign* method</span>
+<span class="w">        </span><span class="c">!  to make a copy of an *Assignable* object.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">CopyAssign</span><span class="w">   </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_CopyAssign</span>
+<span class="w">        </span><span class="c">!&gt; *MakeClone* is a procedure deferred by the *Assignable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *GetClone* method in place of the *MakeClone* method</span>
+<span class="w">        </span><span class="c">!  to create and return a copy of an *Assignable* object.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">MakeClone</span><span class="w">    </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_Clone</span>
+<span class="w">        </span><span class="c">!&gt; *IsEqualTo* is a procedure deferred by the *Assignable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: IsEqualTo &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**: To check whether two objects are equal to one another or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Flag = ObjA%IsEqualTo(ObjB) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (ObjA%IsEqualTo(ObjB)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">IsEqualTo</span><span class="w">    </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_IsEqualTo</span>
+<span class="w">        </span><span class="c">!&gt; *FreeMemory* is a procedure deferred by the *Assignable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *MemFree* method in place of the *FreeMemory* method to free</span>
+<span class="w">        </span><span class="c">!  memory the *Assignable* object if the object contains allocatable and/or</span>
+<span class="w">        </span><span class="c">!  pointer component(s).</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">FreeMemory</span><span class="w">   </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_Free</span>
+<span class="w">        </span><span class="c">!&gt; *GetTypeName* is a procedure deferred by the *Assignable* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *GetName* method in place of the *GetTypeName* method to get</span>
+<span class="w">        </span><span class="c">!  the name of the *concrete* type of an *Assignable* object (i.e. name</span>
+<span class="w">        </span><span class="c">!  of a concrete subtype of an *Assignable* abstract type).</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetTypeName</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_GetTypeName</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----         Deferred Procedures from BaseCollection Type      -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; *MakeCopy* is a procedure deferred by the *BaseCollection* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *Construct* method in place of the *MakeCopy* method to</span>
+<span class="w">        </span><span class="c">!  create a collection from another collection.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">MakeCopy</span><span class="w">     </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_CopyCollection</span>
+<span class="w">        </span><span class="c">!&gt; *Destruct* is a procedure deferred by the *BaseCollection* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Subroutine**: Destruct &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To remove all items from the collection and free memory</span>
+<span class="w">        </span><span class="c">!                of items stored in the collection.&lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Destruct() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**:  This method is NOT equivalent to the *Clear* method because the</span>
+<span class="w">        </span><span class="c">!             *Items* component is deallocated.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Destruct</span><span class="w">     </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_Destroy</span>
+<span class="w">        </span><span class="c">!&gt; *GetSize* is a procedure deferred by the *BaseCollection* type. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Type-Bound Function**: GetSize &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get the current size of the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Size = Collection%GetSize()</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetSize</span><span class="w">      </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_GetSize</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----         Deferred Procedures from BaseSymTable Type        -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: StartFirst &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To start an iteration and return a flag indicating whether</span>
+<span class="w">        </span><span class="c">!                the collection is empty or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsEmpty = Collection%StartFirst() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsEmpty = Collection%StartFirst(FirstKey) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsEmpty = Collection%StartFirst(Value=FirstVal) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsEmpty = Collection%StartFirst(FirstKey, FirstVal)</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">StartFirst</span><span class="w">   </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_Move2FirstPair</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: MoveForward &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To move to the next key-value pair and return a flag</span>
+<span class="w">        </span><span class="c">!                indicating whether the cursor pointer has reached the end of</span>
+<span class="w">        </span><span class="c">!                the collection or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsTheEnd = Collection%MoveForward() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsTheEnd = Collection%MoveForward(NextKey) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsTheEnd = Collection%MoveForward(Value=NextVal) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IsTheEnd = Collection%MoveForward(NextKey, NextVal)</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">MoveForward</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_Move2NextPair</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Subroutine**: Insert &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To insert the specified key-value pair to the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Insert(Key, Value) &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Insert</span><span class="w">       </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_Insert</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Subroutine**: Delete &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To delete the current key-value pair from the collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%Delete() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: This method is intended to be used in conjunction with the</span>
+<span class="w">        </span><span class="c">!  *StartFirst* and *MoveForward* methods.  Therefore, after the call to</span>
+<span class="w">        </span><span class="c">!  one of those methods and then calling this one will result in a removal</span>
+<span class="w">        </span><span class="c">!  of the current pair data of the iteration (i.e. the same key-value pair</span>
+<span class="w">        </span><span class="c">!  that can be retrieved via the *StartFirst* and *MoveForward* methods).</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Delete</span><span class="w">       </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_Delete</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: Remove &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To remove the specified key (and its associated value) from</span>
+<span class="w">        </span><span class="c">!                the collection.  Also, return a flag indicating whether the</span>
+<span class="w">        </span><span class="c">!                key-value pair is successfully removed or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Flag = Collection%Remove(Key) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.Collection%Remove(Key)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Remove</span><span class="w">       </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_Remove</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: Contain &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To find the specified key in the collection.  Return true if</span>
+<span class="w">        </span><span class="c">!                the specified key is found.  Otherwise, return false. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Flag = Collection%Contain(Key) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.Collection%Contain(Key)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">Contain</span><span class="w">      </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_Contain</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: GetValue &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get a value associated with the specified key in the collection.</span>
+<span class="w">        </span><span class="c">!                Also, return a flag indicating whether the key-value pair is</span>
+<span class="w">        </span><span class="c">!                successfully found or not. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    Flag = Collection%GetValue(Key, Value) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    IF (.NOT.Collection%GetValue(Key, Value)) DoSomething</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetValue</span><span class="w">     </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_GetValue</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: GetKeyPtr &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get a pointer to a key stored in a symbol table.</span>
+<span class="w">        </span><span class="c">!                The pointer is intended to be used as a mold for</span>
+<span class="w">        </span><span class="c">!                the key (i.e. provides type of the stored key).</span>
+<span class="w">        </span><span class="c">!                Return null pointer if the table is empty. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    KeyPtr =&gt; Collection%GetKeyPtr()</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetKeyPtr</span><span class="w">    </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_GetKeyPtr</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----         Specific Procedures by HashMap Type             -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Subroutine**: CreateEmpty &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To construct an empty collection. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%CreateEmpty() &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%CreateEmpty(InitCap) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%CreateEmpty(HashCal=HashFunction) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Collection%CreateEmpty(InitCap, HashFunction) &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Note**: Any suitable hash function routine from the *ModBase_SimpleHash32*, </span>
+<span class="w">        </span><span class="c">!       *ModBase_SimpleHash64*, *ModBase_ReferenceHash32*, *ModBase_ReferenceHash64*</span>
+<span class="w">        </span><span class="c">!       *ModBase_OptimalHash32*, and *ModBase_OptimalHash64* modules can be used to</span>
+<span class="w">        </span><span class="c">!       specify the *HashCal* argument.  The term *suitable* means that any routine</span>
+<span class="w">        </span><span class="c">!       that has exactly the same interface as the *HashFunc* abstract function</span>
+<span class="w">        </span><span class="c">!       is the suitable one.  &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">CreateEmpty</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">HashMap_CreateEmpty</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----                   Finalize Procedure                      -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; To perform finalization of the object.</span>
+<span class="w">        </span><span class="k">FINAL</span><span class="w">       </span><span class="kd">::</span><span class="w"> </span><span class="n">HashMap_Finalize</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">    </span><span class="k">END TYPE </span><span class="n">HashMap</span>
+</pre></div>
+
+    </section>
+    
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col"><p>XpfGeneral was developed by Niranama<br>&copy; 2024 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+#undef AESx
+#undef AES0
+#undef AES1
+#undef AES2
+#undef AES3
+#undef Mask
+#undef AES_Assign
+#undef AES_ROUND_LE
+#undef AES_ROUND_NOKEY_LE
+#undef AES_ROUND_BE
+#undef AES_ROUND_NOKEY_BE

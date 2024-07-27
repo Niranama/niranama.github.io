@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="XpfLib - General Package Documentation">
+    <meta name="author" content="Niranama" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>Assignable &ndash; XpfGeneral </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">XpfGeneral </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/absint.html">Abstract Interfaces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>Assignable
+      <small>Derived Type</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title="<p> 0.2% of total for derived types.</p>Including implementation: 12 statements,  0.0% of total for derived types.">12 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/Class - Assignable.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/class - assignable.f90.html'>Class - Assignable.f90</a></li>
+                <li class="breadcrumb-item"><a href='../module/class_assignable.html'>Class_Assignable</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Assignable</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+      <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#boundprocs-0"
+         aria-expanded="false" aria-controls="boundprocs-0">
+         <h4 class="card-header bg-primary text-white">Type-Bound Procedures</h4>
+      </a>
+      <div id="boundprocs-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/assignable.html#boundprocedure-copyassign~2">CopyAssign</a>
+            <a class="list-group-item" href="../type/assignable.html#boundprocedure-makeclone~2">MakeClone</a>
+            <a class="list-group-item" href="../type/assignable.html#boundprocedure-isequalto~2">IsEqualTo</a>
+            <a class="list-group-item" href="../type/assignable.html#boundprocedure-freememory~3">FreeMemory</a>
+            <a class="list-group-item" href="../type/assignable.html#boundprocedure-gettypename~2">GetTypeName</a>
+            <a class="list-group-item" href="../type/assignable.html#boundprocedure-assignment%28%3D%29">ASSIGNMENT(=)</a>
+            <a class="list-group-item" href="../type/assignable.html#boundprocedure-memfree~2">MemFree</a>
+            <a class="list-group-item" href="../type/assignable.html#boundprocedure-getclone~5">GetClone</a>
+            <a class="list-group-item" href="../type/assignable.html#boundprocedure-getname~18">GetName</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+    <div class="card card-primary">
+      <div class="card-header text-left"><h3 class="card-title">Source Code</h3></div>
+      <div class="list-group">
+        <a class="list-group-item" href="../type/assignable.html#src">Assignable</a>
+      </div>
+    </div>
+
+
+  </div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+      <h2>type, public, ABSTRACT :: Assignable</h2>
+    <p>The <em>Assignable</em> type is an abstract data type that must be able to
+ make a copy of itself. <br></p>
+    <br>
+
+    
+
+
+      <section>
+        <h2>Type-Bound Procedures</h2>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-copyassign~2"></span>
+      <h3>
+          procedure(CopyObj), public, deferred ::
+  <strong>CopyAssign</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>CopyAssign</em> is a binding name of the <em>CopyObj</em> deferred procedure. <br>
+ Use the assignment expression in place of the <em>CopyAssign</em> method
+ to make a copy of an <em>Assignable</em> object.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     subroutine CopyObj(DstObj, SrcObj)  
+<small>Prototype</small></h3>
+
+  <p><em>CopyObj</em> is a deferred procedure to copy the source object to the
+destination object.  The procedure typically provides a value-copying
+task for the object's components.  However, for objects with pointer
+and/or allocatable components, the procedure may also provide a storage
+allocation task of those pointer and/or allocatable components for the
+destination object.  The procedure should also provides a type-guard
+statement to check whether the source and destination objects have the
+same <em>concrete</em> type or not.  If their types are not the same, the
+procedure should report an error.  It is important to note that the
+<em>CopyObj</em> procedure is intended to be used in an assignment expression,
+such as "DstObj = SrcObj".</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-makeclone~2"></span>
+      <h3>
+          procedure(CloneObj), public, deferred ::
+  <strong>MakeClone</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>MakeClone</em> is a binding name of the <em>CloneObj</em> deferred procedure. <br>
+ Use the <em>GetClone</em> method in place of the <em>MakeClone</em> method
+ to create and return a copy of an <em>Assignable</em> object.</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     subroutine CloneObj(SrcObj, DstObj)  
+<small>Prototype</small></h3>
+
+  <p><em>CloneObj</em> is a deferred procedure to create and return a copy of
+an <em>Assignable-class</em> object.  The difference between the <em>CopyObj</em>
+and <em>CloneObj</em> procedures is that when comparing the source and
+destination objects using the <em>EqualObj</em> procedure, the comparison
+based on using the <em>CopyObj</em> procedure should always return true
+(i.e. both objects are equal) whereas the comparison based on using
+the <em>CloneObj</em> procedure may or may not return true depending on
+the concrete extended type.  Also, the <em>CloneObj</em> procedure does not
+need a type-guard statement because it must allocate the destination
+based on the actual type of the source object.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-isequalto~2"></span>
+      <h3>
+          procedure(EqualObj), public, deferred ::
+  <strong>IsEqualTo</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>IsEqualTo</em> is a binding name of the <em>EqualObj</em> deferred procedure. <br></p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     function EqualObj(LhsObj, RhsObj) result(Flag)  
+<small>Prototype</small></h3>
+
+  <p><em>EqualObj</em> is a deferred procedure to compare whether two objects
+are equal to one another or not.  It is important to note that the
+<em>EqualObj</em> procedure is intended to be used in an equal expression,
+such as "LhsObj == RhsObj".  The procedure should implement an
+equivalence relation on non-null objects such that: <br>
+- It is <em>reflexive</em>: for any non-null object X, the expression (X == X)
+  should return true. <br>
+- It is <em>symmetric</em>: for any non-null objects X and Y, (X == Y) returns
+  true if and only if (Y == X) returns true. <br>
+- It is <em>transitive</em>: for any non-null objects X, Y and Z, if (X == Y)
+  returns true and (Y == Z)  returns true, then (X == Z) should return
+  true. <br>
+- For a non-null object X and a null object Y, (X == Y) should return
+  false.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>LhsObj</strong></td>
+            <td>
+                <p>an object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>RhsObj</strong></td>
+            <td>
+                <p>another object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    <p>true if both objects are equal</p>
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-freememory~3"></span>
+      <h3>
+          procedure(FreeObj), public, deferred ::
+  <strong>FreeMemory</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>FreeMemory</em> is a binding name of the <em>FreeObj</em> deferred procedure. <br>
+ Use the <em>MemFree</em> method in place of the <em>FreeMemory</em> method to free
+ memory the <em>Assignable</em> object if the object contains allocatable and/or
+ pointer component(s).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     subroutine FreeObj(Obj)  
+<small>Prototype</small></h3>
+
+  <p><em>FreeObj</em> is a deferred procedure to free storage/memory of an object
+with pointer and/or allocatable components.  For an object without
+any pointer or allocatable components, the routine would do nothing
+(i.e. it is a dummy routine).</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-gettypename~2"></span>
+      <h3>
+          procedure(TypeName), public, deferred ::
+  <strong>GetTypeName</strong>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><em>GetTypeName</em> is a binding name of the <em>TypeName</em> deferred procedure. <br>
+ Use the <em>GetName</em> method in place of the <em>GetTypeName</em> method to get
+ the name of the <em>concrete</em> type of an <em>Assignable</em> object (i.e. name
+ of a concrete subtype of an <em>Assignable</em> abstract type).</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+     function TypeName(Obj) result(Name)  
+<small>Prototype</small></h3>
+
+  <p><em>TypeName</em> is a deferred procedure to get name of a concrete
+  extended type that is a subtype of the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-assignment%28%3D%29"></span>
+      <h3>
+          generic, public ::
+  <strong>ASSIGNMENT(=)</strong> => <a href='../type/stringbuilder.html#boundprocedure-copyassign~3'>CopyAssign</a>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Operator Overload</strong>: ASSIGNMENT(=)  <br>
+ <strong>Purpose</strong>:  To copy a source object to a destination object. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    DstObj = SrcObj</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_CopyAssign(DstObj, SrcObj)  
+</h3>
+
+  <p>To copy the source object to the destination object.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-memfree~2"></span>
+      <h3>
+          generic, public ::
+  <strong>MemFree</strong> => <a href='../type/stringbuilder.html#boundprocedure-freememory~4'>FreeMemory</a>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Subroutine</strong>: MemFree <br>
+ <strong>Purpose</strong>:  To free memory of an <em>Assignable</em> object. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL Obj%MemFree()</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_Free(Obj)  
+</h3>
+
+  <p>To free memory of the StringBuilder object.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getclone~5"></span>
+      <h3>
+          generic, public ::
+  <strong>GetClone</strong> => <a href='../type/stringbuilder.html#boundprocedure-makeclone~3'>MakeClone</a>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Subroutine</strong>: GetClone <br>
+ <strong>Purpose</strong>:  To create and return a copy of an <em>Assignable</em> object. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    CALL SrcObj%GetClone(DstObj)</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  subroutine StringBuilder_Clone(SrcObj, DstObj)  
+</h3>
+
+  <p>To clone the StringBuilder object.   This is a deferred
+ procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>SrcObj</strong></td>
+            <td>
+                <p>source object</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/assignable.html'>Assignable</a>),
+            </td>
+<td>intent(out),</td>
+              <td></td>            <td>
+              ALLOCATABLE
+            </td>
+            <td>::</td>
+            <td><strong>DstObj</strong></td>
+            <td>
+                <p>destination object</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-getname~18"></span>
+      <h3>
+          generic, public ::
+  <strong>GetName</strong> => <a href='../type/stringbuilder.html#boundprocedure-gettypename~3'>GetTypeName</a>
+        
+      </h3>
+    </div>
+      <div class="card-body">
+        
+        <p><strong>Type-Bound Function</strong>: GetName <br>
+ <strong>Purpose</strong>:  To get the <em>concrete</em> type name of an <em>Assignable</em> object. <br>
+ <strong>Usage</strong>: <br>
+  ---&gt;    TypeName = Obj%GetName()</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+                  <h3>
+    private  function StringBuilder_GetTypeName(Obj) result(Name)  
+</h3>
+
+  <p>To get the name of the StringBuilder type.
+ This is a deferred procedure inherited from the <em>Assignable</em> type.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/stringbuilder.html'>StringBuilder</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>Obj</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>character(len=:), ALLOCATABLE</small>
+    </h4>
+    
+
+        </li>
+    </ul>
+  </div>
+
+          </div>
+      </section>
+
+    <section>
+    <h3><span class="anchor" id="src"></span>Source Code</h3>
+    <div class="hl codehilite"><pre><span></span><span class="w">    </span><span class="k">TYPE</span><span class="p">,</span><span class="w"> </span><span class="k">ABSTRACT</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">Assignable</span>
+<span class="w">    </span><span class="k">CONTAINS</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----                     Deferred Procedures                   -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; *CopyAssign* is a binding name of the *CopyObj* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the assignment expression in place of the *CopyAssign* method</span>
+<span class="w">        </span><span class="c">!  to make a copy of an *Assignable* object.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">CopyObj</span><span class="p">),</span><span class="w">  </span><span class="k">DEFERRED</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">CopyAssign</span>
+<span class="w">        </span><span class="c">!&gt; *MakeClone* is a binding name of the *CloneObj* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *GetClone* method in place of the *MakeClone* method</span>
+<span class="w">        </span><span class="c">!  to create and return a copy of an *Assignable* object.</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">CloneObj</span><span class="p">),</span><span class="w"> </span><span class="k">DEFERRED</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">MakeClone</span>
+<span class="w">        </span><span class="c">!&gt; *IsEqualTo* is a binding name of the *EqualObj* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">EqualObj</span><span class="p">),</span><span class="w"> </span><span class="k">DEFERRED</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">IsEqualTo</span>
+<span class="w">        </span><span class="c">!&gt; *FreeMemory* is a binding name of the *FreeObj* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *MemFree* method in place of the *FreeMemory* method to free</span>
+<span class="w">        </span><span class="c">!  memory the *Assignable* object if the object contains allocatable and/or</span>
+<span class="w">        </span><span class="c">!  pointer component(s).</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">FreeObj</span><span class="p">),</span><span class="w">  </span><span class="k">DEFERRED</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">FreeMemory</span>
+<span class="w">        </span><span class="c">!&gt; *GetTypeName* is a binding name of the *TypeName* deferred procedure. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  Use the *GetName* method in place of the *GetTypeName* method to get</span>
+<span class="w">        </span><span class="c">!  the name of the *concrete* type of an *Assignable* object (i.e. name</span>
+<span class="w">        </span><span class="c">!  of a concrete subtype of an *Assignable* abstract type).</span>
+<span class="w">        </span><span class="k">PROCEDURE</span><span class="p">(</span><span class="n">TypeName</span><span class="p">),</span><span class="w"> </span><span class="k">DEFERRED</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">GetTypeName</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">! -----                     Generic Interfaces                    -----</span>
+<span class="w">        </span><span class="c">! ---------------------------------------------------------------------</span>
+<span class="w">        </span><span class="c">!&gt; **Operator Overload**: ASSIGNMENT(=)  &lt;br&gt; </span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To copy a source object to a destination object. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    DstObj = SrcObj</span>
+<span class="w">        </span><span class="k">GENERIC</span><span class="w">     </span><span class="kd">::</span><span class="w"> </span><span class="n">ASSIGNMENT</span><span class="p">(</span><span class="o">=</span><span class="p">)</span><span class="w">    </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">CopyAssign</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Subroutine**: MemFree &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To free memory of an *Assignable* object. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL Obj%MemFree()</span>
+<span class="w">        </span><span class="k">GENERIC</span><span class="w">     </span><span class="kd">::</span><span class="w"> </span><span class="n">MemFree</span><span class="w">          </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">FreeMemory</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Subroutine**: GetClone &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To create and return a copy of an *Assignable* object. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    CALL SrcObj%GetClone(DstObj)</span>
+<span class="w">        </span><span class="k">GENERIC</span><span class="w">     </span><span class="kd">::</span><span class="w"> </span><span class="n">GetClone</span><span class="w">         </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">MakeClone</span>
+<span class="w">        </span><span class="c">!&gt; **Type-Bound Function**: GetName &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Purpose**:  To get the *concrete* type name of an *Assignable* object. &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!  **Usage**: &lt;br&gt;</span>
+<span class="w">        </span><span class="c">!   ---&gt;    TypeName = Obj%GetName()</span>
+<span class="w">        </span><span class="k">GENERIC</span><span class="w">     </span><span class="kd">::</span><span class="w"> </span><span class="n">GetName</span><span class="w">          </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">GetTypeName</span>
+<span class="w">    </span><span class="k">END TYPE </span><span class="n">Assignable</span>
+</pre></div>
+
+    </section>
+    
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col"><p>XpfGeneral was developed by Niranama<br>&copy; 2024 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>
